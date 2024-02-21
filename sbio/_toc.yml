@@ -1,0 +1,30 @@
+# Table of contents
+format: jb-book
+root: naslovnica
+parts:
+- caption: Strukture
+  chapters:
+  - file: strukture/navodila
+  - file: strukture/vizualizacija
+  - file: strukture/prim
+  - file: strukture/ss
+- caption: Orodjarna
+  chapters:
+  - file: orodjarna/zbirke
+    sections:
+    - file: orodjarna/zbirke-eksperimentalne
+    - file: orodjarna/modeli
+    - file: orodjarna/zbirke-druge
+  - file: orodjarna/vizualizacija
+    sections:
+    - file: orodjarna/chimera
+    - file: orodjarna/pymol
+    - file: orodjarna/molstar
+  - file: orodjarna/analiza
+- caption: Seminar
+  chapters:
+  - file: seminar/navodila
+    title: Navodila
+- caption: Priloge
+  chapters:
+  - file: priloge/reference

@@ -1,0 +1,49 @@
+# Book settings
+title: Struktura proteinov
+author: Miha Pavšič
+copyright: "2024"
+logo: logo/logo_sbio_s.png
+exclude_patterns: [_build, .DS_Store, "**.ipynb_checkpoints"]
+only_build_toc_files: false
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/mpavsic/sbio 
+  path_to_book: sbio
+  branch: main
+
+# Customizations
+html:
+  favicon: favicon.ico
+  use_issues_button: true
+  use_edit_page_button: true
+  use_repository_button: true
+  home_page_in_navbar: true
+  use_multitoc_numbering: false
+  extra_navbar: ""
+#  extra_footer: ""
+  baseurl: https://mpavsic.github.io/sbio
+  extra_footer :
+      <div>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+          All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+      </div>
+
+bibtex_bibfiles:
+    - references.bib
+
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+
+parse:
+  myst_url_schemes: [mailto, http, https]
+#  myst_enable_extensions:
+#    - deflist
+
+html:
+  extra_footer : |
+      <div>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+          All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+      </div>
