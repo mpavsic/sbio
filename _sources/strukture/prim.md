@@ -8,7 +8,7 @@
 :::{grid-item}
 ```{image} ../seje/ak-abeceda.png
 :name: ak-abeceda
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/ak-abeceda.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-abeceda.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
 
@@ -19,7 +19,7 @@ V seji je peptid z aminokislinskim zaporedjem GASTCDNEQHPLIVMKRFYW (torej vseh 2
 :::
 ::::
 
-Za ogled je na voljo tudi [seja](https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/ak-abeceda_H.molx&snapshot-url-type=molx&hide-controls=1), kjer so prikazani in označeni vodikovi atomi. Bodite pozorni na protonacijsko stanje N- ter C-konca in aspartatnega, glutamatnega, argininskega, lizinskega in histidinskega ostanka.
+Za ogled je na voljo tudi [seja](https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-abeceda_H.molx&snapshot-url-type=molx&hide-controls=1), kjer so prikazani in označeni vodikovi atomi. Bodite pozorni na protonacijsko stanje N- ter C-konca in aspartatnega, glutamatnega, argininskega, lizinskega in histidinskega ostanka.
 
 (tabela-grske-latinske-oznake)=
 **Tabela pretvorb iz grških v latinske oznake**
@@ -39,7 +39,7 @@ Za ogled je na voljo tudi [seja](https://molstar.org/viewer/?snapshot-url=https:
 ```{dropdown} Povezave
 ```{image} ../seje/ak-abeceda-qr.png
 :width: 200px
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/ak-abeceda.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-abeceda.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
 
@@ -51,7 +51,7 @@ Za ogled je na voljo tudi [seja](https://molstar.org/viewer/?snapshot-url=https:
 :::{grid-item}
 ```{image} ../seje/ak-D-ak.png
 :name: vijacnica-beta-2
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/ak-D-ak.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-D-ak.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
 
@@ -67,7 +67,7 @@ Nekateri peptidi in proteini vsebujejo D-aminokislinske ostanke, ki so lahko klj
 ```{dropdown} Povezave
 ```{image} ../seje/ak-D-ak-qr.png
 :width: 200px
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/ak-D-ak.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-D-ak.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
 
