@@ -11,7 +11,7 @@ Sekundarna struktura je takoj nad primarno (aminokislinsko zaporedje) – gre za
 :::{grid-item}
 ```{image} ../seje/vijacnica-alfa-desna-leva.png
 :name: vijacnica-alfa-desna-leva
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-alfa-desna-leva.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-alfa-desna-leva.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
 
@@ -23,7 +23,7 @@ V naravnih proteinih prevladujejo desne $\alpha$ vijačnice. Občasno najdemo (p
 ```{dropdown} Povezave
 ```{image} ../seje/vijacnica-alfa-desna-leva-qr.png
 :width: 200px
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-alfa-desna-leva.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-alfa-desna-leva.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
 
@@ -36,7 +36,7 @@ V naravnih proteinih prevladujejo desne $\alpha$ vijačnice. Občasno najdemo (p
 :::{grid-item}
 ```{image} ../seje/vijacnica-310.png
 :name: vijacnica-310
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-310.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-310.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
 
@@ -48,7 +48,7 @@ $3_{10}$ vijačnice so ponavadi kratke, lahko se nahajajo na začetku ali koncu 
 ```{dropdown} Povezave
 ```{image} ../seje/vijacnica-310-qr.png
 :width: 200px
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-310.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-310.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
 
@@ -60,7 +60,7 @@ $3_{10}$ vijačnice so ponavadi kratke, lahko se nahajajo na začetku ali koncu 
 :::{grid-item}
 ```{image} ../seje/vijacnica-310-sinteticna.png
 :name: vijacnica-310-sinteticna
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-310-sinteticna.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-310-sinteticna.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
 
@@ -72,7 +72,7 @@ V naravi najdemo daljše $3_{10}$ vijačnice le izjemoma, lahko pa jih ustvarimo
 ```{dropdown} Povezave
 ```{image} ../seje/vijacnica-310-sinteticna-qr.png
 :width: 200px
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-310-sinteticna.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-310-sinteticna.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
 
@@ -85,7 +85,7 @@ V naravi najdemo daljše $3_{10}$ vijačnice le izjemoma, lahko pa jih ustvarimo
 :::{grid-item}
 ```{image} ../seje/vijacnica-pi-aktivno_mesto.png
 :name: vijacnica-pi-aktivno_mesto
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-pi-aktivno_mesto.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-pi-aktivno_mesto.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
 
@@ -97,7 +97,7 @@ Primer, ko je insercija aminokislinskega ostanka vodila do nastanka $\pi$ vijač
 ```{dropdown} Povezave
 ```{image} ../seje/vijacnica-pi-aktivno_mesto-qr.png
 :width: 200px
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-pi-aktivno_mesto.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-pi-aktivno_mesto.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
 
@@ -109,7 +109,7 @@ Primer, ko je insercija aminokislinskega ostanka vodila do nastanka $\pi$ vijač
 :::{grid-item}
 ```{image} ../seje/vijacnica-beta.png
 :name: vijacnica-beta
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-beta.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-beta.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
 
@@ -121,7 +121,7 @@ Ena izmed oblik $\beta$ vijačnice je struktura, ki jo tvori polipeptidna veriga
 ```{dropdown} Povezave
 ```{image} ../seje/vijacnica-beta-qr.png
 :width: 200px
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-beta.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-beta.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
 
@@ -133,7 +133,7 @@ Ena izmed oblik $\beta$ vijačnice je struktura, ki jo tvori polipeptidna veriga
 :::{grid-item}
 ```{image} ../seje/vijacnica-beta-2.png
 :name: vijacnica-beta-2
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-beta.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-beta-2.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
 
@@ -145,6 +145,6 @@ Drug primer $\beta$ vijačnic so strukture, sestavljene iz kratkih $\beta$ trako
 ```{dropdown} Povezave
 ```{image} ../seje/vijacnica-beta-2-qr.png
 :width: 200px
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vijacnica-beta.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-beta-2.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````

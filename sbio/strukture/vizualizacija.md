@@ -8,7 +8,7 @@
 :::{grid-item}
 ```{image} ../seje/vizualizacija-nacini_prikaza.png
 :name: vizualizacija-nacini_prikaza
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vizualizacija-nacini_prikaza.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vizualizacija-nacini_prikaza.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
 
@@ -30,6 +30,6 @@ Za vse, ki jih zanima zgodovina (in sedanjost) področja vizualizacije makromole
 ```{dropdown} Povezave
 ```{image} ../seje/vizualizacija-nacini_prikaza-qr.png
 :width: 200px
-:target: https://molstar.org/viewer/?snapshot-url=https://github.com/mpavsic/sbio/blob/main/sbio/seje/vizualizacija-nacini_prikaza.molx&snapshot-url-type=molx&hide-controls=1
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vizualizacija-nacini_prikaza.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
