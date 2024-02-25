@@ -142,6 +142,8 @@ Drug primer $\beta$ vijačnic so strukture, sestavljene iz kratkih $\beta$ trako
 :::
 ::::
 
+> **V razmislek**: Kakšen karakter (hidrofoben, polaren) imajo aminokislinski ostanki, ki tvorijo prikazano $\beta$ vijačnico? Kako je to povezano s stabilizacijo strukture?
+
 ```{dropdown} Povezave
 ```{image} ../seje/vijacnica-beta-2-qr.png
 :width: 200px
