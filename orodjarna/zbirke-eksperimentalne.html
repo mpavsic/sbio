@@ -58,6 +58,8 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'orodjarna/zbirke-eksperimentalne';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/sbio/orodjarna/zbirke-eksperimentalne.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Modeli" href="modeli.html" />
@@ -252,6 +254,53 @@
 
 
 
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/orodjarna/zbirke-eksperimentalne.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Forodjarna/zbirke-eksperimentalne.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -354,9 +403,25 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#protein-data-bank-pdb">Protein Data Bank (PDB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nucleic-acid-knowledgebase-nakb">Nucleic Acid Knowledgebase (NAKB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-microscopy-data-bank-emdb">Electron Microscopy Data Bank (EMDB)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pdb-protein-data-bank">PDB (Protein Data Bank)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uvod">Uvod</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vsebina-zbirke">Vsebina zbirke</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spletna-stran">Spletna stran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iskanje-po-zbirki">Iskanje po zbirki</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#osnovno-iskanje">Osnovno iskanje</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#napredno-iskanje">Napredno iskanje</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brskanje-po-pripisih">Brskanje po pripisih</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ogled-posameznega-zapisa">Ogled posameznega zapisa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternativni-dostopi-do-podatkov">Alternativni dostopi do podatkov</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#video-vodic-po-zbirki">Video vodič po zbirki</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uporabne-povezave">Uporabne povezave</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nakb-nucleic-acid-knowledgebase">NAKB (Nucleic Acid Knowledgebase)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bmrb-biological-magnetic-resonance-data-bank">BMRB (Biological Magnetic Resonance Data Bank)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emdb-electron-microscopy-data-bank">EMDB (Electron Microscopy Data Bank)</a></li>
 </ul>
             </nav>
         </div>
@@ -370,39 +435,158 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="eksperimentalno-dolocene-strukture">
 <h1>Eksperimentalno določene strukture<a class="headerlink" href="#eksperimentalno-dolocene-strukture" title="Link to this heading">#</a></h1>
+<p>Na tej strani so na kratko predstavljene najpomembnejše zbirke podatkov o strukturah bioloških makromolekul.</p>
+<section id="pdb-protein-data-bank">
+<span id="pdb"></span><h2>PDB (Protein Data Bank)<a class="headerlink" href="#pdb-protein-data-bank" title="Link to this heading">#</a></h2>
+<section id="uvod">
+<h3>Uvod<a class="headerlink" href="#uvod" title="Link to this heading">#</a></h3>
+<p>Zbirka Protein Data Bank (PDB) je <strong>največja in najpomembnejša zbirka eksperimentalno določenih struktur</strong> bioloških ter biološko-relevantnih makromolekul, predvsem gre pri tem za proteine, nukleinske kisline ter njihove komplekse. Za uraden začetek zbirke štejemo leto 1971, ko sta zbirko ustanovila Cambridge Crystallographic Data Centre (UK) and Brookhaven National Laboratory (USA), kasneje pa je bdenje nad zbirko prevzel Research Collaboratory for Structural Bioinformatics (RCSB; USA). Več o zgodovini zbirke lahko preberete <a class="reference external" href="https://www.rcsb.org/pages/about-us/history">tukaj</a>. Danes za delovanje zbirke skrbi mednarodna organizacija <a class="reference external" href="https://www.wwpdb.org/"><strong>wwPDB</strong></a>, članice pa so <a class="reference external" href="https://www.rcsb.org/"><strong>RCSB PDB</strong></a>, <a class="reference external" href="https://www.ebi.ac.uk/pdbe/"><strong>PDBe (PDB Europe)</strong></a>, <a class="reference external" href="https://pdbj.org/"><strong>PDBj (PDB Japan)</strong></a> ter <a class="reference external" href="https://www.ebi.ac.uk/emdb/"><strong>EMDB (Electron Microscopy Data Bank)</strong></a> in <a class="reference external" href="https://bmrb.io/"><strong>BMRB (Biological Magnetic Resonance Data Bank)</strong></a>. Medtem ko RCSB PDB, PDBe in PDBj vsebujejo ekvivalentne podatke (razlike so v vmesniku, dodatnih možnostih ipd.) pa sta zbirki EMDB in BMRB specializirani za podatke, pridobljene s pomočjo krio-elektronske mikroskopije in spektroskopije na osnovi jedrske magnetne resonance.</p>
+<p><img alt="wwPDB in sodelujoče institucije" src="../_images/wwPDB_logotipi.png" /></p>
+<p>Leta 2021 je zbirka PDB praznovala 50-letnico delovanja, kar so med drugim obeležili s posebnim video posnetkom s kratko predstavitvijo zbirke in podatkov:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bHyi7bIzlfo?si=DTzEYRPfgADF_3Ni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <div class="note admonition">
 <p class="admonition-title">Opomba</p>
-<p><strong>Vsebina je v nastajanju</strong></p>
+<p><strong>V nadaljevanju je predstavljen dostop do zbirke RCSB PDB</strong> in njena uporaba – to zbirko bomo uporabljali tudi pri predmetu Struktura proteinov, za poimenovanje pa je <strong>uporabljena kar kratica PDB in ne popolna kratica RCSB PDB.</strong> Način interakcije s podatki v PDBe se nekoliko razlikuje, še bolj drugačen pa je pri zbirki PDBj.</p>
 </div>
-<aside class="margin sidebar" id="pdb">
-<p class="sidebar-title"></p>
-<p><img alt="wwPDB" src="../_images/logo_wwPDB.png" /></p>
-<p><img alt="RCSB PDB" src="../_images/logo_RCSB_PDB.png" /></p>
-<p><img alt="PDBe" src="../_images/logo_PDBe.png" /></p>
-<p><img alt="PDBj" src="../_images/logo_PDBj.png" /></p>
-</aside>
-<section id="protein-data-bank-pdb">
-<h2>Protein Data Bank (PDB)<a class="headerlink" href="#protein-data-bank-pdb" title="Link to this heading">#</a></h2>
-<p><strong>Protein Data Bank</strong></p>
-<p><a class="reference external" href="https://www.rcsb.org/pages/about-us/history">zgodovina</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bHyi7bIzlfo?si=DTzEYRPfgADF_3Ni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<aside class="margin sidebar" id="nakb">
-<p class="sidebar-title"></p>
-<p><img alt="NAKB" src="../_images/logo_NAKB.png" /></p>
-</aside>
 </section>
-<section id="nucleic-acid-knowledgebase-nakb">
-<h2>Nucleic Acid Knowledgebase (NAKB)<a class="headerlink" href="#nucleic-acid-knowledgebase-nakb" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://www.nakb.org/">https://www.nakb.org/</a></p>
-<aside class="margin sidebar" id="emdb">
-<p class="sidebar-title"></p>
-<p><img alt="EMDB" src="../_images/logo_EMDB.png" /></p>
-</aside>
+<section id="vsebina-zbirke">
+<span id="pdb-vsebina"></span><h3>Vsebina zbirke<a class="headerlink" href="#vsebina-zbirke" title="Link to this heading">#</a></h3>
+<p>Zbirka vsebuje <strong>eksperimentalno določene strukture</strong> (rentgenska kristalografija (<em>X-ray crystallography</em>), krio-elektronska mikroskopija (<em>cryo-electron microscopy</em>), spektroskopija na osnovi jedrske magnetne resonance (<em>NMR spectroscopy</em>) idr.). Od leta 2022 omogoča dostop tudi do t.i. <strong>izračunanih modelov struktur</strong> (<em>computed structure models</em>, <strong>CSM</strong>), pripravljenih z <a class="reference external" href="https://alphafold.ebi.ac.uk/">AlphaFold</a> in <a class="reference external" href="https://robetta.bakerlab.org/">RoseTTAFold</a>. Nekaj zbirk modelov je opisanih <a class="reference internal" href="modeli.html"><span class="std std-doc">tukaj</span></a>.</p>
+<p>Vsak zapis v zbirko lahko enolično identificiramo preko t.i. <strong>PDB ID oz. identifikatorja</strong> (<em><strong>identifier</strong></em>, v drugih zbirkah temu rečemo koda za dostop oz. <em>accession code</em>), ki je sestavljen iz kombinacije črk in številk (skupno štirje znaki, na primer 2EC2). To sicer ne velja za CSM – slednji imajo daljše identifikatorje, primer slednjega za nek AlfaFold model je AF_AFA0A132Z2Z7F1. Zapise lahko identificiramo tudi preko posebne kode <strong>DOI</strong>, ki vsebuje PDB ID – primer take kode za PDB ID 2EC2 je 10.2210/pdb2EC2/pdb.</p>
 </section>
-<section id="electron-microscopy-data-bank-emdb">
-<h2>Electron Microscopy Data Bank (EMDB)<a class="headerlink" href="#electron-microscopy-data-bank-emdb" title="Link to this heading">#</a></h2>
-<p>EMDB je javni repozitorij za karte gostote, pridobljene s pomočjo elektronske krio-mikroskopije ter tomografije.</p>
-<p>Vključuje tudi končne modele struktur, ki so bili na osnovi teh eksperimentalnih podatkov pripravljeni s pomočjo analize posameznih delcev (<em>single-particle analysis</em>, SPA), tomografije, elektronske kristalografije (2D ali 3D) in povezanih pristopov.</p>
+<section id="spletna-stran">
+<h3>Spletna stran<a class="headerlink" href="#spletna-stran" title="Link to this heading">#</a></h3>
+<p>Osnovna spletna stran PDB nudi številne možnosti, od iskanja struktur in orodij za njihovo analizo in vizualizacijo do dokumentacije in izobraževalnih vsebin.</p>
+<p><img alt="osnovna spletna stran PDB" src="../_images/pdb-stran-osnovna.png" /></p>
+</section>
+<section id="iskanje-po-zbirki">
+<h3>Iskanje po zbirki<a class="headerlink" href="#iskanje-po-zbirki" title="Link to this heading">#</a></h3>
+<p>Po zbirki lahko iščemo z uporabo iskalnih terminov (<strong>osnovno in napredno iskanje</strong>), kot iskalni termin pa lahko služi celo aminokislinsko zaporedje (iskanje struktur s podobnim zaporejem) ali makromolekulska struktura (iskanje podobnih struktur). Rezultate iskanja lahko dodatno filtriramo, na primer prikažemo samo tiste iz nekega organizma ali skupine organizmov, glede na metodo določitve strukture, ločljivost ipd. Posamezne strukture lahko tudi izberemo ter hkrati na svoj računalnik prenesemo več zapisov, rezultate iskanja pa lahko izvozimo tudi v obliki tabele (posebej lahko prilagodimo, katere podatke naj vsebuje).</p>
+<p><strong>Do posameznega zapisa v celoti dostopamo s klikom na PDB ID ali naslov strukture.</strong></p>
+<section id="osnovno-iskanje">
+<h4>Osnovno iskanje<a class="headerlink" href="#osnovno-iskanje" title="Link to this heading">#</a></h4>
+<p>Do osnovnega iskanja dostopamo z glavne strani, kjer se nahaja iskalno polje (zaslonska slika zgoraj). Spodaj je prikazan primer rezultatov iskanja s terminom ‘transposase’, ki je na dan 2024-02-27 dal 179 eksperimentalnih struktur (prikaz CSM je bil izklopljen).</p>
+<p><img alt="primer osnovnega iskanja po PDB" src="../_images/pdb-iskanje-osnovno-primer.png" /></p>
+</section>
+<section id="napredno-iskanje">
+<h4>Napredno iskanje<a class="headerlink" href="#napredno-iskanje" title="Link to this heading">#</a></h4>
+<p>Do <strong>naprednega iskanja (<em>Advanced Search</em>)</strong> dostopamo s klikom na povezavo pod poljem za osnovno iskanje ali preko glavnega menija (<em>Search</em>). Uporabimo lahko t.i. <strong>iskanje po polnem besedilu (<em>Full Text</em>)</strong>, kjer z enim ali večimi termini, vpisanimi v polje ter kombiniranimi preko Boolovih operatorjev <code class="docutils literal notranslate"><span class="pre">AND</span></code>, <code class="docutils literal notranslate"><span class="pre">OR</span></code> ali <code class="docutils literal notranslate"><span class="pre">NOT</span></code>, iščemo po vseh atributih zapisov, ki vsebujejo besedilo.</p>
+<p>Primer iskanja zapisov, ki vsebujejo hkrati besedi ‘transposase’ in ‘inhibitor’ ali hkrati besedi ‘transposase’ in ‘activator’ (klik na <em>Count</em> pri posameznem polju nam že vnaprej pove, koliko zadetkov lahko pričakujemo):</p>
+<p><img alt="primer naprednega iskanja po PDB" src="../_images/pdb-iskanje-napredno-primer1.png" /></p>
+<p>V zgornjem primeru iskanje zgolj s posameznimi termini ‘transposase’, ‘inhibitor’ in ‘activator’ da 179, 40501 oz. 19704 zadetkov, iskanje kot prikazano zgoraj kot celota pa 15 (od tega jih 14 odpade na ‘transposase’+’inhibitor’, 1 pa na ‘transposase’+’activator’ – to sicer ni enostavno razvidno, narediti moramo ločeni iskanji).</p>
+<p>Še bolje lahko možnosti naprednega iskanja izkoristimo z uporabo posebnih polj, kjer lahko iščemo glede na:</p>
+<ul class="simple">
+<li><p><strong>atribute strukture (<em>Structure Attributes</em>)</strong>: metoda, s katero je bila določena, število atomov, število aminokislinskih ostankov, število polipeptidnih verig, …, skratka, skoraj glede na karkoli kar vam srce poželi <i class="fa-regular fa-face-smile" style="color:Red"></i>;</p>
+<ul>
+<li><p>oglejte si možnosti, vsak atribut ima pripisano razlago (z miško pokažite na <i class="fa-solid fa-circle-question" style="color:Grey"></i>);</p></li>
+<li><p>nekateri atributi lahko imajo zgolj točno določeno vrednost, ki jo izberemo iz spustnega seznama (npr. <em>X-DAY DIFFRACTION</em>), pri drugih ra lahko gre za razpon vrednosti (npr. ločljivost v območju od 1 do 2 Å);</p></li>
+</ul>
+</li>
+<li><p>nizkomolekularne kemijske komponente (<em>Chemical Attributes</em>), prisotne v strukturi;</p></li>
+<li><p>podobnost:</p>
+<ul>
+<li><p><strong>zaporedja (<em>Sequence Similarity</em>)</strong>, pri čemer vnesemo iskalno zaporedje ali izberemo zapis z nekim identifikatorjem v PDB in iščemo z zaporedjem v tistem zapisu,</p></li>
+<li><p><strong>podobnost strukture (<em>Structure Similarity</em>)</strong>, pri čemer preko identifikatorja izberemo določeno strukturo v PDB ali pa jo naložimo z našega računalnika;</p></li>
+</ul>
+</li>
+<li><p><strong>kratkim motivom v strukturi (<em>Structure Motif</em>)</strong>, pri čemer izberemo neko strukturo in določimo, s katerim delom te strukture bomo iskali (določimo torej strukturni motiv);</p></li>
+<li><p><strong>kemijsko podobnost (<em>Chemical Similarity</em>)</strong>, kjer vnesemo sestavo nizkomolekularne spojine.</p></li>
+</ul>
+<p>Kot primer je spodaj prikazano iskanje struktur, ki hkrati izpolnjujejo vse navedene pogoje:</p>
+<ul class="simple">
+<li><p>so določene z X-žarkovno kristalografijo (<em>X-RAY DIFFRACTION</em>), pri tem pa so bili difrakcijski podatki posneti do ločljivosti 1.5 Å ali boljše,</p></li>
+<li><p>vsebujejo med 2 in 4 makromolekulskih verig (<em>Total Number of Polymer Instances (Chains)</em>) (bodite pozorni, da je nastavljeno zgornje število na 5, a je zgornja meja izključena),</p></li>
+<li><p>vsebuje proteinske oz. polipeptidne verige (<em>Polymer Entity Type</em>),</p></li>
+<li><p>makromolekula je človeškega izvora (<em>Scientific Name of the Source Organism</em>).</p></li>
+</ul>
+<p>Dne 2024-02-28 je bilo zadetkov, ki ustrezajo vsem tem pogojem, 2595.</p>
+<p><img alt="primer naprednega iskanja po PDB" src="../_images/pdb-iskanje-napredno-primer2.png" /></p>
+</section>
+</section>
+<section id="brskanje-po-pripisih">
+<h3>Brskanje po pripisih<a class="headerlink" href="#brskanje-po-pripisih" title="Link to this heading">#</a></h3>
+<p>Zbirko lahko pregledujemo tudi glede na pripise zapisov (<em>Browse Annotations</em>), pri čemer pa so na voljo številne možnosti, med drugim:</p>
+<ul class="simple">
+<li><p>termini <a class="reference external" href="https://geneontology.org/"><strong>Gene Ontology (GO)</strong></a>:</p>
+<ul>
+<li><p>biološki proces, pri katerem makromolekula sodeluje (<em>Biological Process</em>),</p></li>
+<li><p>kje v celici se makromolekula nahaja oz. opravlja funkcijo (<em>Cellular Component</em>),</p></li>
+<li><p>kakšno funkcijo opravlja (<em>Molecular Function</em>),</p></li>
+</ul>
+</li>
+<li><p><strong>klasifikacija struktur</strong> <a class="reference external" href="https://www.cathdb.info/">CATH</a> (prikazano spodaj), <a class="reference external" href="https://scop.berkeley.edu/">SCOP-e</a> in <a class="reference external" href="https://scop2.mrc-lmb.cam.ac.uk/">SCOP2</a>,</p></li>
+<li><p><strong>klasifikacija encimov v razrede</strong> (<em>Enzyme Classification</em>),</p></li>
+<li><p>termine <a class="reference external" href="https://www.nlm.nih.gov/mesh/"><strong>MeSH</strong></a>,</p></li>
+<li><p><strong>organizem (<em>Source Organism</em>)</strong> ter še nekatere druge možnosti.</p></li>
+</ul>
+<p>V vseh primerih gre za nek hierarhičen prikaz zapisov v zbirki PDB glede na pripise.</p>
+<p><img alt="primer brskanja po CATH" src="../_images/pdb-brskanje-pripisi.png" /></p>
+</section>
+<section id="ogled-posameznega-zapisa">
+<h3>Ogled posameznega zapisa<a class="headerlink" href="#ogled-posameznega-zapisa" title="Link to this heading">#</a></h3>
+<p>Kot primer si bomo ogledali zapis, ki predstavlja strukturo homo-dimernega proteina, določeno z X-žarkovno kristalografijo, in sicer gre za NADPH:FMN oksidoreduktazo iz <em>Vibrio harveyi</em> z vezanim FMN in fosfatnim ionom (PDB ID <a class="reference external" href="https://www.rcsb.org/structure/1bkj">1BKJ</a>).</p>
+<p>Na vrhu strani s posameznim zapisom najdemo na prvem zavihku (<em>Structure Summary</em>) vse glavne podatke o strukturi, pod tem pa se nahajajo deli, kjer so ločeno predstavljene makromolekule in pa majhne molekule ter ioni. Za makromolekule najdemo povezavo na zbirko zaporedij, povezave do podobnih zaporedij ter nekaj osnovnih podatkov, kartiranih na zaporedje (hidrofobnost, neurejenost ipd.), prikazano pa je tudi, kateri deli makromolekul so sploh razvidni v modelu strukture (<em>UNMODELED</em>). Za majhne molekule je podatkov manj, v glavnem gre za povezavo na zbirko majhnih spojin, prikaz 2D strukturnega diagrama ter povezavo na prikaz interakcij z makromolekulo v 3D. Tu je pomembno omeniti, da ima vsaka majhna molekula ali ion svojo unikatno oznako, ki je identična za pojavljanje iste molekule v drugih strukturah.</p>
+<p><img alt="primer zapisa v PDB 1" src="../_images/pdb-primer1.png" /></p>
+<p>Preko zavihkov lahko dostopamo do 3D vizualizacije strukture (zavihek <em>Structure</em> – vizualizacija v 3D z orodjem Molstar – uporaba opisana <a class="reference internal" href="molstar.html"><span class="std std-doc">posebej</span></a>), pripisov, eksperimentalnih podatkov, zaporedja idr. Izredno uporabna je povezava <em>Sequence Annotations</em> na osnovni strani zapisa (zavihek <em>Structure Summary</em>), nahaja se pod sličico strukture. Omogoča nam prikaz pripisov (npr. lokacija vezavnega mesta ipd.) direktno na 3D prikazu strukture z orodjem MolStar. Kot primer je prikazano označeno vezavno mesto za FMN:</p>
+<p><img alt="primer zapisa v PDB 2" src="../_images/pdb-primer2.png" /></p>
+<div class="hint admonition">
+<p class="admonition-title">MolStar</p>
+<p>Orodje <a class="reference external" href="https://molstar.org/">MolStar</a>, integrirano na spletni strani PDB, sicer deluje popolnoma enako kot isto orodje na primarni strani <a class="reference external" href="https://molstar.org/viewer/">MolStar</a>, razlika je pa v tem, da imamo le v okviru zbirke PDB direkten dostop do pripisov in izjemno enostavno možnost njihovega prikaza na strukturi.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Z metodo določitve strukture povezane razlike</p>
+<p>Posamezni zapisi v zbirki so oblikovani na enak način, pomembnejše razlike pa izvirajo iz specifik metod, s katerimi so bile strukture oz. modeli določeni. Razlika je že v validacijskem poročilu, tukaj pa je navedenih še nekaj drugih najbolj očitnih razlik:</p>
+<ul class="simple">
+<li><p>Strukture, določene z NMR spektroskopijo, so deponirane kot ansambli modelov (ponavadi 20 modelov), ki vsi ustrezajo eksperimentalnim podatkom ter stereokemijskim omejitvam.</p></li>
+<li><p>Pri strukturah, določenih z rentgensko difrakcijo, moramo biti pozorni na razliko med vsebino asimetrične enote (ta je enaka deponiranemu modelu) ter biološko relevantni oligomerni obliki. Na primer, zaradi sovpadanja dvoštevne osi rotacije homo-dimernega proteina z dvoštevno osjo prostorske skupine imamo lahko v asimetrični enoti le eno podenoto, celoten kompleks pa dobimo z aplikacijo ustrezne simetrijske operacije. To je v zbirki posebej označeno.</p>
+<ul>
+<li><p>Bodite pozorni na zapis pod “hitrim” prikazom strukture na zavihku <em>Structure Summary</em>, glejte <em><strong>Biological Assembly</strong></em>.</p></li>
+</ul>
+</li>
+<li><p>Modeli struktur, izračunani z AlphaFold in RoseTTAFold, imajo namesto z eksperimentom povezanih podatkov pripisane vrednosti zanesljivosti (npr. pLDDT za AlphaFold modele).</p></li>
+</ul>
+</div>
+</section>
+<section id="alternativni-dostopi-do-podatkov">
+<h3>Alternativni dostopi do podatkov<a class="headerlink" href="#alternativni-dostopi-do-podatkov" title="Link to this heading">#</a></h3>
+<p>Do posameznih zapisov v zbirki PDB lahko dostopamo iz nekaterih drugih zbirk, ki vsebujejo povezave na PDB v obliki pripisov (<em>anotacij</em>). Primer tovrstnega dostopa predstavljajo povezave na eksperimentalno določene strukture in modele iz zapisov v zbirki aminokislinskih zaporedij <a class="reference external" href="https://www.uniprot.org">UniProt</a>. Vsaj v tem primeru velja tudi obratno – zapisi v zbirki PDB, ki vsebujejo strukture proteinov, vsebujejo kot pripis povezavo na zapis njihovega aminokislinskega zaporedja v zbirki UniProt.</p>
+</section>
+<section id="video-vodic-po-zbirki">
+<h3>Video vodič po zbirki<a class="headerlink" href="#video-vodic-po-zbirki" title="Link to this heading">#</a></h3>
+<p>Pri RCSB so pripravili zelo informativen video vodič po PDB, dolg dobrih 30 min, priporočam ogled!</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EsJ-CscWL4I?si=Waw69CH6hkjbVg7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+<section id="uporabne-povezave">
+<h3>Uporabne povezave<a class="headerlink" href="#uporabne-povezave" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>YouTube kanali z vodiči in primeri uporabe:</p>
+<ul>
+<li><p><a class="reference external" href="https://www.youtube.com/user/RCSBProteinDataBank">RCSBProteinDataBank</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/&#64;ProteinDataBank/">Protein Data Bank in Europe - PDBe</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="nakb-nucleic-acid-knowledgebase">
+<span id="nakb"></span><h2>NAKB (Nucleic Acid Knowledgebase)<a class="headerlink" href="#nakb-nucleic-acid-knowledgebase" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://www.nakb.org/">NAKB</a> je nova zbirka 3D strukturnih podatkov o nukleinskih kislinah in sicer gre za naslednico NDB (Nucleic Acid Database). Zbirka pravzaprav vsebuje tiste zapise iz zbirke PDB, kjer se kot komponente pojavljajo nukleinske kisline, zaradi specifike struktur slednjih pa omogoča določene dodatne prikaze značilnosti struktur teh makromolekul. Koda oz. identifikator zapisa v zbirki PDB je enak identifikatorju v NAKB/NDB.</p>
+<p>Kot primer je spodaj prikazan zapis za strukturno kompleksa Myc:Max, vezanega na DNA (PDB ID 1NKP). Posebnosti, povezane s strukturo nukleinske kisline, so označene z okvirčki.</p>
+<p><img alt="primer zapisa v NAKB 1" src="../_images/nakb-primer1.png" /></p>
+<p><img alt="primer zapisa v NAKB 2" src="../_images/nakb-primer2.png" /></p>
+</section>
+<section id="bmrb-biological-magnetic-resonance-data-bank">
+<span id="bmrb"></span><h2>BMRB (Biological Magnetic Resonance Data Bank)<a class="headerlink" href="#bmrb-biological-magnetic-resonance-data-bank" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://bmrb.io/">BMRB</a> je namenjena predvsem tistim, ki se ukvarjajo z biomolekularno NMR spektroskopijo, saj prikazuje podrobnosti procesa določitve strukture s to metodo, na primer sklopitve med jedri. Za razliko od NAKB identifikatorji med PDB in BMRB niso enaki, je pa v PDB pri strukturah, določenih z NMR spektroskopijo, v glavi zapisa opaziti povezavo na BMRB. Na primer, za zapis s PDB ID <a class="reference external" href="https://www.rcsb.org/structure/8U27">8U27</a> si lahko v BMRB pod identifikatorjem <a class="reference external" href="https://bmrb.io/data_library/summary/index.php?bmrbId=52100">52100</a> ogledamo nekatere eksperimentalne podrobnosti:</p>
+<p><img alt="primer zapisa v BMRB 1" src="../_images/bmrb-primer1.png" /></p>
+</section>
+<section id="emdb-electron-microscopy-data-bank">
+<span id="emdb"></span><h2>EMDB (Electron Microscopy Data Bank)<a class="headerlink" href="#emdb-electron-microscopy-data-bank" title="Link to this heading">#</a></h2>
+<p>EMDB je javni repozitorij za karte gostote, pridobljene s pomočjo elektronske krio-mikroskopije ter tomografije. Vključuje tudi končne modele struktur, ki so bili na osnovi teh eksperimentalnih podatkov pripravljeni s pomočjo analize posameznih delcev (<em>single-particle analysis</em>, SPA), tomografije, elektronske kristalografije (2D ali 3D) in povezanih pristopov. Identifikator zapisa v PDB ni enak identifikatorju v EMDB, je pa EMDB identifikator pripisan v glavi zapisa V PDB, podobno kot to velja za BMRB.</p>
+<p>Kot primer so spodaj prikazane zaslonske slike zapisa v EMDB s kodo <a class="reference external" href="https://www.ebi.ac.uk/emdb/EMD-1046">EMD-1046</a>, ki je povezan z zapisom PDB ID <a class="reference external" href="https://www.rcsb.org/structure/1GRU">1GRU</a> – gre pa za kompleks GroES:ADP7:GroEL:ATP7. Prikazana sta osnovni pregled (<em>Overview</em>) in 3D pogled (<em>3D view</em>), na voljo pa so še podrobnosti o vzorcu (<em>Sample</em>), eksperimentu (<em>Experiment</em>), validaciji modela strukture (<em>Validation</em>), “pregledovalnik volumna” oz. rezultata združevanja posameznih slik (<em>Volume Browser</em>) idr.</p>
+<p><img alt="primer zapisa v EMDB 1" src="../_images/emdb-primer1.png" /></p>
+<p>Pri <em>3D View</em> lahko model strukture vrtimo v 3D, prikaz pa lahko prilagajamo preko ikon na levi strani zgoraj v okencu s prikazom (<i class="fa-solid fa-gear"></i> – spreminjanje načina prikaza gostote (konturiranje, prosojnost), način prikaza proteina).</p>
+<p><img alt="primer zapisa v EMDB 2" src="../_images/emdb-primer2.png" /></p>
 </section>
 </section>
 
@@ -470,9 +654,25 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#protein-data-bank-pdb">Protein Data Bank (PDB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nucleic-acid-knowledgebase-nakb">Nucleic Acid Knowledgebase (NAKB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-microscopy-data-bank-emdb">Electron Microscopy Data Bank (EMDB)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pdb-protein-data-bank">PDB (Protein Data Bank)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uvod">Uvod</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vsebina-zbirke">Vsebina zbirke</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spletna-stran">Spletna stran</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iskanje-po-zbirki">Iskanje po zbirki</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#osnovno-iskanje">Osnovno iskanje</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#napredno-iskanje">Napredno iskanje</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brskanje-po-pripisih">Brskanje po pripisih</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ogled-posameznega-zapisa">Ogled posameznega zapisa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternativni-dostopi-do-podatkov">Alternativni dostopi do podatkov</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#video-vodic-po-zbirki">Video vodič po zbirki</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uporabne-povezave">Uporabne povezave</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nakb-nucleic-acid-knowledgebase">NAKB (Nucleic Acid Knowledgebase)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bmrb-biological-magnetic-resonance-data-bank">BMRB (Biological Magnetic Resonance Data Bank)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emdb-electron-microscopy-data-bank">EMDB (Electron Microscopy Data Bank)</a></li>
 </ul>
   </nav></div>
 
@@ -495,13 +695,6 @@ By Miha Pavšič
   <div class="footer-item">
     
 
-  <p class="copyright">
-    
-      © Copyright 2024.
-      <br/>
-    
-  </p>
-
   </div>
   
   <div class="footer-item">
@@ -512,9 +705,9 @@ By Miha Pavšič
     
 <div class="extra_footer">
   <div>
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
-    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mpavsic.github.io/sbio">Strukturna biologija</a> by <span property="cc:attributionName">Miha Pavšič</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
 </div>
+
 </div>
   </div>
   

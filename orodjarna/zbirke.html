@@ -58,6 +58,8 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'orodjarna/zbirke';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/sbio/orodjarna/zbirke.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Eksperimentalno določene strukture" href="zbirke-eksperimentalne.html" />
@@ -252,6 +254,53 @@
 
 
 
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/orodjarna/zbirke.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Forodjarna/zbirke.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -358,9 +407,17 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="zbirke-strukturnih-podatkov">
 <h1>Zbirke strukturnih podatkov<a class="headerlink" href="#zbirke-strukturnih-podatkov" title="Link to this heading">#</a></h1>
+<p>V osnovi bi lahko rekli, da k strukturnim podatkom spadajo vsi nivoji strukture proteinov, torej tudi aminokislinska zaporedja (primarna struktura) ter podatki o sekundarnih strukturah, a v praksi temu ni tako in <strong>vsak biokemik bo ob besedni zvezi “strukturni podatki” najprej pomislil na 3D strukturne podatke</strong>. Seveda so slednji neločljivo povezani s primarno strukturo, navsezadnje slednja določa 3D strukturo, elementi sekundarne strukture pa so del 3D strukture – oboje tako najdemo kot pripise v zbirkah strukturnih podatkov.</p>
+<p>Poznamo sicer tudi ločene zbirke zaporedij, najbolj znana in najpogosteje uporabljana je zbirka <a class="reference external" href="https://www.uniprot.org/">UniProt</a> (obravnavamo jo pri <a class="reference external" href="https://mpavsic.github.io/biokeminfo/">Biokemijski informatiki</a>). Neke prave zbirke elementov sekundarnih struktur nimamo, ti podatki so vedno nekako integrirani v druge zbirke – navsezadnje sekundarno strukturo nedvoumno določimo šele ob določitvi terciarne strukture. Morda se boste vprašali “Kje pa so podatki o kvartarni strukturi?”… Slednji so del zbirk 3D strukturnih podatkov, saj nekatere metode omogočajo neposredno določitev strukture homo- in hetero-oligomernih kompleksov, le-te pa lahko tudi zmodeliramo, npr. z uporabo programov za umeščanje (angl. <em>docking</em>) in sicer brez uporabe ali ob uporabi določenih eksperimentalnih podatkov.</p>
+<p>Zbirke strukturnih podatkov so na tej strani razdeljene v tri skupine:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="zbirke-eksperimentalne.html"><span class="std std-doc">zbirke eksperimentalno določenih struktur</span></a>,</p></li>
+<li><p><a class="reference internal" href="modeli.html"><span class="std std-doc">zbirke “teoretičnih” modelov struktur</span></a> in</p></li>
+<li><p><a class="reference internal" href="zbirke-druge.html"><span class="std std-doc">druge zbirke</span></a>, pri katerih gre predvsem za integracijo oz. povezovanje strukturnih, funkcijskih, evolucijskih in drugih podatkov.</p></li>
+</ul>
 <div class="note admonition">
 <p class="admonition-title">Opomba</p>
-<p><strong>Vsebina je v nastajanju</strong></p>
+<p>Pri vseh teh skupinah so navedene le najpomembnejše in najbolj pogosto uporabljane zbirke, obravnavane pri predmetu Struktura proteinov.</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -440,13 +497,6 @@ By Miha Pavšič
   <div class="footer-item">
     
 
-  <p class="copyright">
-    
-      © Copyright 2024.
-      <br/>
-    
-  </p>
-
   </div>
   
   <div class="footer-item">
@@ -457,9 +507,9 @@ By Miha Pavšič
     
 <div class="extra_footer">
   <div>
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
-    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mpavsic.github.io/sbio">Strukturna biologija</a> by <span property="cc:attributionName">Miha Pavšič</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
 </div>
+
 </div>
   </div>
   
