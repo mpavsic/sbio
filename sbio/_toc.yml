@@ -23,8 +23,13 @@ parts:
   - file: orodjarna/analiza
 - caption: Seminar
   chapters:
-  - file: seminar/navodila
-    title: Navodila
+  - file: seminar/delavnice
+    sections:
+    - file: seminar/delavnice-pdb
+  - file: seminar/studenti
+    sections:
+    - file: seminar/studenti-navodila
+      title: Navodila
 - caption: Priloge
   chapters:
   - file: priloge/reference
