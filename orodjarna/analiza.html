@@ -62,7 +62,7 @@
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Navodila za pripravo seminarske naloge" href="../seminar/navodila.html" />
+    <link rel="next" title="Seminarske delavnice" href="../seminar/delavnice.html" />
     <link rel="prev" title="MolStar" href="molstar.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -203,7 +203,14 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../seminar/navodila.html">Navodila</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/delavnice.html">Seminarske delavnice</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pdb.html">Delavnica: PDB</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/studenti.html">Seminarske naloge</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/studenti-navodila.html">Navodila</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Priloge</span></p>
 <ul class="nav bd-sidenav">
@@ -404,6 +411,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validacija">Validacija</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oligomeri">Oligomeri</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podobne-strukture">Podobne strukture</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#razno">Razno</a></li>
 </ul>
@@ -426,11 +434,18 @@ document.write(`
 <li><p><a class="reference external" href="http://molprobity.biochem.duke.edu/help/about.html">MolProbity</a>: Orodje za <strong>validacijo/evaluacijo makromolekulskih struktur</strong>, določenih z rentgensko difrakcijo, krio-elektronsko mikroskopijo itd., do določene mere deluje tudi za ansamble struktur, določenih z NMR <span id="id1">[<a class="reference internal" href="../priloge/reference.html#id3" title="Christopher J. Williams, Jeffrey J. Headd, Nigel W. Moriarty, Michael G. Prisant, Lizbeth L. Videau, Lindsay N. Deis, Vishal Verma, Daniel A. Keedy, Bradley J. Hintze, Vincent B. Chen, Swati Jain, Steven M. Lewis, W. Bryan Arendall III, Jack Snoeyink, Paul D. Adams, Simon C. Lovell, Jane S. Richardson, and David C. Richardson. Molprobity: more and better reference data for improved all-atom structure validation. Protein Science, 27(1):293-315, 2018. doi:https://doi.org/10.1002/pro.3330.">Williams <em>et al.</em>, 2018</a>]</span>. Med drugim vam izpiše/izriše podatke o geometriji, neugodnih stikih, rotamerah ter Ramachandranov diagram.</p></li>
 </ul>
 </section>
+<section id="oligomeri">
+<h2>Oligomeri<a class="headerlink" href="#oligomeri" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.ebi.ac.uk/msd-srv/prot_int/pistart.html">PDBePISA (Proteins, Interfaces, Structures and Assemblies)</a>: Orodje za interaktiven prikaz interakcijskih površin med makromolekulami, kar je uporabno pri analizi oligo- ali multi-mernih proteinov. Orodje je izjemno uporabno za analizo vseh možnih simetrij v strukturh, določenih s kristalografijo, kar nam lahko pomaga identificirati biološko relevantne medmolekulske stike v kristalu.</p></li>
+</ul>
+</section>
 <section id="podobne-strukture">
-<h2>Podobne strukture<a class="headerlink" href="#podobne-strukture" title="Link to this heading">#</a></h2>
+<span id="analiza-podobne-strukture"></span><h2>Podobne strukture<a class="headerlink" href="#podobne-strukture" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.rcsb.org/alignment">Pairwise Structure Alignment</a>: <strong>Poravnava dveh struktur</strong> direktno na strežniku RCSB v povezavi z zbirko PDB, lahko naložimo tudi svoje datoteke. Na voljo več algoritmov (od zaporedja odvisni ter od zaporedja neodvisni).</p></li>
 <li><p><a class="reference external" href="https://www.ebi.ac.uk/msd-srv/ssm/">PDBeFold</a>: Orodje za <strong>iskanje podobnih struktur</strong> preko ujemanja prostorske razporeditve elementov sekundarne strukture (algoritem <em>secondary structure matching</em> (SSM)) <span id="id2">[<a class="reference internal" href="../priloge/reference.html#id2" title="E. Krissinel and K. Henrick. Secondary-structure matching (SSM), a new tool for fast protein structure alignment in three dimensions. Acta Crystallographica Section D, 60(12 Part 1):2256–2268, 2004. doi:10.1107/S0907444904026460.">Krissinel and Henrick, 2004</a>]</span>.</p></li>
+<li><p><a class="reference external" href="http://ekhidna2.biocenter.helsinki.fi/dali/">DALI</a>: Orodje za iskanje podobnih struktur po principu lokalne podobnosti v kontaktih/bližinah aminokislinskih ostankov.</p></li>
 </ul>
 </section>
 <section id="razno">
@@ -481,11 +496,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../seminar/navodila.html"
+       href="../seminar/delavnice.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Navodila za pripravo seminarske naloge</p>
+        <p class="prev-next-title">Seminarske delavnice</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -506,6 +521,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validacija">Validacija</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oligomeri">Oligomeri</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podobne-strukture">Podobne strukture</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#razno">Razno</a></li>
 </ul>

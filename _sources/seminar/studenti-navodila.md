@@ -84,9 +84,9 @@ Zgoraj je večkrat uporabljena beseda 'razložite' – pri navajanju metodološk
 Pomembno je, da tematiko, ki jo predstavljate, tudi sami **razumete**, saj boste le tako lahko predstavitev izvedli dobro, na razumljiv način in bodo tudi kolegi od nje nekaj imeli (kar je na koncu koncev tudi eden od namenov seminarja). Če pri razumevanju izbranega članka in metod naletite na težave se obrnite na predavatelja, ki vam bo z veseljem pomagal (ne odlašajte in ne čakajte do zadnjega trenutka!).
 ```
 
-```{admonition} Biokemijska informatika
+```{admonition} Uporaba znanj in veščin pri predmetih Biokemijska informatika in Struktura proteinov
 :class: hint
-Še zdaleč ne bo nič narobe, če pri pripravi predstavitve uporabite znanje in veščine, pridobljene pri Biokemijski informatiki!
+Še zdaleč ne bo nič narobe, če pri pripravi predstavitve uporabite znanje in veščine, pridobljene pri Biokemijski informatiki! **Seveda to velja tudi za zanje, posredovano tekom predavanj, vaj in seminarskih delavnic pri predmetu Stuktura proteinov!** Primeri: prikaz posebnosti kot so $\pi$ vijačnica, pakiranje v kristalu, karta (elektronske) gostote, simetrija, ...
 ```
 
 #### Predstavitev

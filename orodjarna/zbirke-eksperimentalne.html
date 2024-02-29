@@ -203,7 +203,14 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../seminar/navodila.html">Navodila</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/delavnice.html">Seminarske delavnice</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pdb.html">Delavnica: PDB</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/studenti.html">Seminarske naloge</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/studenti-navodila.html">Navodila</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Priloge</span></p>
 <ul class="nav bd-sidenav">
@@ -485,8 +492,8 @@ document.write(`
 <li><p>nizkomolekularne kemijske komponente (<em>Chemical Attributes</em>), prisotne v strukturi;</p></li>
 <li><p>podobnost:</p>
 <ul>
-<li><p><strong>zaporedja (<em>Sequence Similarity</em>)</strong>, pri čemer vnesemo iskalno zaporedje ali izberemo zapis z nekim identifikatorjem v PDB in iščemo z zaporedjem v tistem zapisu,</p></li>
-<li><p><strong>podobnost strukture (<em>Structure Similarity</em>)</strong>, pri čemer preko identifikatorja izberemo določeno strukturo v PDB ali pa jo naložimo z našega računalnika;</p></li>
+<li><p><strong>zaporedja (<em>Sequence Similarity</em>)</strong>, pri čemer vnesemo iskalno zaporedje ali izberemo zapis z nekim identifikatorjem v PDB in iščemo z zaporedjem v tistem zapisu (glede na podobnost zaporedja lahko iskanje izvajamo tudi preko npr. <a class="reference external" href="https://blast.ncbi.nlm.nih.gov/">BLAST</a>, pri tem pa moramo izbrati ustrezno zbirko – več o tem pri <a class="reference external" href="https://mpavsic.github.io/biokeminfo/">Biokemijski informatiki</a>),</p></li>
+<li><p><strong>podobnost strukture (<em>Structure Similarity</em>)</strong>, pri čemer preko identifikatorja izberemo določeno strukturo v PDB ali pa jo naložimo z našega računalnika (iskanje po podobnosti strukture lahko izvajamo tudi z <a class="reference internal" href="analiza.html#analiza-podobne-strukture"><span class="std std-ref">drugimi orodji izven zbirke PDB</span></a>);</p></li>
 </ul>
 </li>
 <li><p><strong>kratkim motivom v strukturi (<em>Structure Motif</em>)</strong>, pri čemer izberemo neko strukturo in določimo, s katerim delom te strukture bomo iskali (določimo torej strukturni motiv);</p></li>
@@ -577,7 +584,7 @@ document.write(`
 </section>
 <section id="bmrb-biological-magnetic-resonance-data-bank">
 <span id="bmrb"></span><h2>BMRB (Biological Magnetic Resonance Data Bank)<a class="headerlink" href="#bmrb-biological-magnetic-resonance-data-bank" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://bmrb.io/">BMRB</a> je namenjena predvsem tistim, ki se ukvarjajo z biomolekularno NMR spektroskopijo, saj prikazuje podrobnosti procesa določitve strukture s to metodo, na primer sklopitve med jedri. Za razliko od NAKB identifikatorji med PDB in BMRB niso enaki, je pa v PDB pri strukturah, določenih z NMR spektroskopijo, v glavi zapisa opaziti povezavo na BMRB. Na primer, za zapis s PDB ID <a class="reference external" href="https://www.rcsb.org/structure/8U27">8U27</a> si lahko v BMRB pod identifikatorjem <a class="reference external" href="https://bmrb.io/data_library/summary/index.php?bmrbId=52100">52100</a> ogledamo nekatere eksperimentalne podrobnosti:</p>
+<p><a class="reference external" href="https://bmrb.io/">BMRB</a> je namenjena predvsem tistim, ki se ukvarjajo z biomolekularno NMR spektroskopijo, saj prikazuje podrobnosti procesa določitve strukture s to metodo, na primer sklopitve med jedri. Za razliko od NAKB identifikatorji med PDB in BMRB niso enaki, je pa v PDB pri strukturah, določenih z NMR spektroskopijo, v glavi zapisa opaziti povezavo na BMRB, a to ne velja za vse tovrstne strukture. Na primer, za zapis s PDB ID <a class="reference external" href="https://www.rcsb.org/structure/8U27">8U27</a> si lahko v BMRB pod identifikatorjem <a class="reference external" href="https://bmrb.io/data_library/summary/index.php?bmrbId=52100">52100</a> ogledamo nekatere eksperimentalne podrobnosti:</p>
 <p><img alt="primer zapisa v BMRB 1" src="../_images/bmrb-primer1.png" /></p>
 </section>
 <section id="emdb-electron-microscopy-data-bank">

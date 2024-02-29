@@ -60,8 +60,8 @@ V zgornjem primeru iskanje zgolj s posameznimi termini 'transposase', 'inhibitor
   - nekateri atributi lahko imajo zgolj točno določeno vrednost, ki jo izberemo iz spustnega seznama (npr. *X-DAY DIFFRACTION*), pri drugih ra lahko gre za razpon vrednosti (npr. ločljivost v območju od 1 do 2 Å);
 - nizkomolekularne kemijske komponente (*Chemical Attributes*), prisotne v strukturi;
 - podobnost:
-  - **zaporedja (*Sequence Similarity*)**, pri čemer vnesemo iskalno zaporedje ali izberemo zapis z nekim identifikatorjem v PDB in iščemo z zaporedjem v tistem zapisu,
-  - **podobnost strukture (*Structure Similarity*)**, pri čemer preko identifikatorja izberemo določeno strukturo v PDB ali pa jo naložimo z našega računalnika;
+  - **zaporedja (*Sequence Similarity*)**, pri čemer vnesemo iskalno zaporedje ali izberemo zapis z nekim identifikatorjem v PDB in iščemo z zaporedjem v tistem zapisu (glede na podobnost zaporedja lahko iskanje izvajamo tudi preko npr. [BLAST](https://blast.ncbi.nlm.nih.gov/), pri tem pa moramo izbrati ustrezno zbirko – več o tem pri [Biokemijski informatiki](https://mpavsic.github.io/biokeminfo/)),
+  - **podobnost strukture (*Structure Similarity*)**, pri čemer preko identifikatorja izberemo določeno strukturo v PDB ali pa jo naložimo z našega računalnika (iskanje po podobnosti strukture lahko izvajamo tudi z [drugimi orodji izven zbirke PDB](analiza-podobne-strukture));
 - **kratkim motivom v strukturi (*Structure Motif*)**, pri čemer izberemo neko strukturo in določimo, s katerim delom te strukture bomo iskali (določimo torej strukturni motiv);
 - **kemijsko podobnost (*Chemical Similarity*)**, kjer vnesemo sestavo nizkomolekularne spojine.
 
@@ -147,7 +147,7 @@ Kot primer je spodaj prikazan zapis za strukturno kompleksa Myc:Max, vezanega na
 (bmrb)=
 ## BMRB (Biological Magnetic Resonance Data Bank)
 
-[BMRB](https://bmrb.io/) je namenjena predvsem tistim, ki se ukvarjajo z biomolekularno NMR spektroskopijo, saj prikazuje podrobnosti procesa določitve strukture s to metodo, na primer sklopitve med jedri. Za razliko od NAKB identifikatorji med PDB in BMRB niso enaki, je pa v PDB pri strukturah, določenih z NMR spektroskopijo, v glavi zapisa opaziti povezavo na BMRB. Na primer, za zapis s PDB ID [8U27](https://www.rcsb.org/structure/8U27) si lahko v BMRB pod identifikatorjem [52100](https://bmrb.io/data_library/summary/index.php?bmrbId=52100) ogledamo nekatere eksperimentalne podrobnosti:
+[BMRB](https://bmrb.io/) je namenjena predvsem tistim, ki se ukvarjajo z biomolekularno NMR spektroskopijo, saj prikazuje podrobnosti procesa določitve strukture s to metodo, na primer sklopitve med jedri. Za razliko od NAKB identifikatorji med PDB in BMRB niso enaki, je pa v PDB pri strukturah, določenih z NMR spektroskopijo, v glavi zapisa opaziti povezavo na BMRB, a to ne velja za vse tovrstne strukture. Na primer, za zapis s PDB ID [8U27](https://www.rcsb.org/structure/8U27) si lahko v BMRB pod identifikatorjem [52100](https://bmrb.io/data_library/summary/index.php?bmrbId=52100) ogledamo nekatere eksperimentalne podrobnosti:
 
 ![primer zapisa v BMRB 1](slike/bmrb-primer1.png)
 
