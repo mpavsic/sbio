@@ -2,6 +2,7 @@
 
 Sekundarna struktura je takoj nad primarno (aminokislinsko zaporedje) – gre za dele polipeptidne verige, kjer diherdalni koti aminokislinskih ostankov v [Ramachandranovem diagramu](https://en.wikipedia.org/wiki/Ramachandran_plot) zasedajo značilna območja.
 
+## Vijačnice
 
 ````{card} Desna in leva $\alpha$ vijačnica
 
@@ -100,6 +101,8 @@ Primer, ko je insercija aminokislinskega ostanka vodila do nastanka $\pi$ vijač
 :target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/vijacnica-pi-aktivno_mesto.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
+
+## $\beta$ nagubane strukture
 
 ````{card} $\beta$ vijačnica (primer 1)
 

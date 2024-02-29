@@ -15,9 +15,11 @@ Glavno študijsko gradivo so drsnice s predavanj (naložene so v [spletno učiln
 (opomba-povratna-info)=
 ```{admonition} Opomba
 :class: note
-Spletna knjiga je v nastajanju in bo kot taka sproti dopolnjena in posodobljena. Priporočam, da si med zaznamke shranite samo osnovni naslov [https://mpavsic.github.io/sbio](https://mpavsic.github.io/sbio), saj se lahko naslovi podstrani v primeru reorganizacije vsebine spremenijo. Če v knjigi najdete napako mi to sporočite preko klika na ikono GitHub na vrhu dotične strani > `Suggest edit` (predlagajte popravek) ali `Open issue` (pokomentirajte).
+Spletna knjiga je v nastajanju in bo kot taka sproti dopolnjena in posodobljena. Priporočam, da si med zaznamke shranite samo osnovni naslov [https://mpavsic.github.io/sbio](https://mpavsic.github.io/sbio), saj se lahko naslovi podstrani v primeru reorganizacije vsebine spremenijo. Če v knjigi najdete napako mi to sporočite preko klika na ikono GitHub <i class="fa-brands fa-github" style="color:Black"></i> na vrhu dotične strani > `Suggest edit` (predlagajte popravek) ali `Open issue` (pokomentirajte) – za oboje morete biti vpisani v GitHub, ustvaritev uporabniškega računa je brezplačna.
 ```
 
 ---
 
 Pri pripravi logotipa je bila uporabljena modificirana abeceda kristalnih struktur {cite:p}`Howarth2015aaa` – zamenjana črka 'b' (PDB [5IZK](https://www.rcsb.org/structure/5IZK)), dodan <i class="fa fa-heart" style="color:Red"></i> (PDB [4MZV](https://www.rcsb.org/structure/4MZV)).
+
+Vse slike v tej spletni knjigi, razen logotipi institucij in organizacij, so bile pripravljene bodisi kot zaslonske slike ali pa gre za računalniško izrisane vizualizacije (modelov) struktur s programom [ChimeraX](https://www.cgl.ucsf.edu/chimerax/) {cite:p}`Pettersen2021aaa` ali [MolStar](https://molstar.org/) {cite:p}`Sehnal2021aaa`.

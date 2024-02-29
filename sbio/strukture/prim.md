@@ -1,5 +1,7 @@
 # Primarna struktura
 
+## Aminokislinski ostanki
+
 ````{card} Označevanje atomov aminokislinskih ostankov
 
 ::::{grid} 1 1 2 2
@@ -70,6 +72,7 @@ Nekateri peptidi in proteini vsebujejo D-aminokislinske ostanke, ki so lahko klj
 :target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-D-ak.molx&snapshot-url-type=molx&hide-controls=1
 ```
 ````
+## Peptidna vez
 
 ````{card} Cis konfiguracija peptidne vezi
 
@@ -87,9 +90,10 @@ Nekateri peptidi in proteini vsebujejo D-aminokislinske ostanke, ki so lahko klj
 Cis konfugiracija peptidne vezi je v proteinih relativno redka – ne ravno pogosta je že pri {Pro}–Pro, prava redkost pa je pri {Pro}–{Pro} vezeh. V strukturi človeškega koagulacijskega faktorja XIII (PDB [1F13](https://www.rcsb.org/structure/1F13), dimer), določeni pri ločljivosti 2,1 Å, sta razvidni obe! Cis konfiguracija vezi Arg310–Tyr311 je pomemben faktor pri strukturi v bližini funkcionalnega mesta, Gln425–Phe426 pa pri dimerizaciji. Zanimivo, v predhodno določenih strukturah tega proteina so zaradi slabše ločljivosti ti dve vezi zmodelirali v trans konfiguraciji (strukturi [1GGT](https://www.rcsb.org/structure/1GGT) pri 2,65 Å in [1FIE](https://www.rcsb.org/structure/1FIE) pri 2,5 Å). V strukturi 1F13 je lepo razvidno, da CO in NH skupini cis peptidne vezi Arg310–Tyr311 sodelujeta v vodikovih vezeh z ogrodjem drugega dela iste polipeptidne verige, pri 1FIE pa tega ni.
 Posamezna podenota dimera v strukturi 1F13 vsebuje tudi dve cis peptidni vezi, pri katerih je udeležen prolinski ostanek, primer je vez Gly410–Pro411.
 
-Priložena seja vsebuje več posnetkov in sicer posamični prikaz cis peptidnih vezi Arg310–Tyr311, Gln425–Phe426 in Gly410–Pro411, superpozicijo Arg310–Tyr311 iz PDB 1F13 (cis) in 1FIE (trans), zraven tega pa še ločen prikaz okoliških ostankov z nekovalentimi interakcijami za Arg310–Tyr311 v cis (1F13) in trans (1FIE) konfiguraciji.
 :::
 ::::
+
+Priložena seja vsebuje več posnetkov in sicer posamični prikaz cis peptidnih vezi Arg310–Tyr311, Gln425–Phe426 in Gly410–Pro411, superpozicijo Arg310–Tyr311 iz PDB 1F13 (cis) in 1FIE (trans), zraven tega pa še ločen prikaz okoliških ostankov z nekovalentimi interakcijami za Arg310–Tyr311 v cis (1F13) in trans (1FIE) konfiguraciji.
 
 ```{dropdown} Povezave
 ```{image} ../seje/peptidna_vez-cis-qr.png
