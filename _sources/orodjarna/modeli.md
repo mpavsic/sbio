@@ -12,6 +12,10 @@ Spodaj je prikazan primer zapisa, kjer je polipeptidna veriga pobarvana glede na
 
 ![primer zapisa v AlphaFold structure database](slike/alphafold-primer1.png)
 
+Pri EMBL-EBI so pripravili tudi videoposnetek spletnega seminarja na temo dostopa do AlphaFold modelov (od objave posnetka se je spletna stran ybirke sicer malce spremenila):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5k8Lm9w9mpY?si=bmz73mW6oh572qSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## ModelArchive
 
 [**ModelArchive**](https://www.modelarchive.org/) vzdržuje [Swiss Institute of Bioinformatics (SIB)](https://www.sib.swiss/). Primarni namen je bil omogočiti denponiranje in javni dostop do modelov struktur, ki niso bili določeni primarno z eksperimentalnimi pristopi (X-žarkovna kristalografija, NMR spektroskopija, krio-EM ipd.). Namreč, zaradi leta 2006 vspostavljenih smernic modeli struktur, primarno izračunani brez eksperimentalnih podatkov, niso smeli biti deponirani v PDB {cite:p}`Berman2006aaa`. Tako je še sedaj, so pa sedaj [v PDB povezave na te modele](pdb-modeli).

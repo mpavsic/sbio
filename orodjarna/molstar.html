@@ -207,6 +207,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/delavnice.html">Seminarske delavnice</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pdb.html">Delavnica: PDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-molstar.html">Delavnica: MolStar</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/studenti.html">Seminarske naloge</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -413,11 +414,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uvod">Uvod</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dostop">Dostop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uporaba">Uporaba</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shranjevanje-sej">Shranjevanje sej</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lokalna-instalacija">Lokalna instalacija</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dodatni-viri">Dodatni viri</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#navodila-za-uporabo">Navodila za uporabo</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dodatni-viri">Dodatni viri</a></li>
 </ul>
             </nav>
         </div>
@@ -431,32 +432,75 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="molstar">
 <h1>MolStar<a class="headerlink" href="#molstar" title="Link to this heading">#</a></h1>
-<div class="note admonition">
-<p class="admonition-title">Opomba</p>
-<p><strong>Vsebina je v nastajanju</strong></p>
-</div>
 <section id="uvod">
 <h2>Uvod<a class="headerlink" href="#uvod" title="Link to this heading">#</a></h2>
-<p>Mol* <span id="id1">[<a class="reference internal" href="../priloge/reference.html#id6" title="David Sehnal, Sebastian Bittrich, Mandar Deshpande, Radka Svobodová, Karel Berka, Václav Bazgier, Sameer Velankar, Stephen K Burley, Jaroslav Koča, and Alexander S Rose. Mol* Viewer: modern web app for 3D visualization and analysis of large biomolecular structures. Nucleic Acids Research, 49(W1):W431–W437, 2021. doi:10.1093/nar/gkab314.">Sehnal <em>et al.</em>, 2021</a>]</span></p>
+<p><strong>Mol* oz. MolStar</strong> je sodobno spletno orodje z odprtokodno licenco, ki omogoča vizualizacijo in analizo struktur bioloških makromolekul ter njihovih kompleksov (tudi do velikosti celotnih virusov) <span id="id1">[<a class="reference internal" href="../priloge/reference.html#id6" title="David Sehnal, Sebastian Bittrich, Mandar Deshpande, Radka Svobodová, Karel Berka, Václav Bazgier, Sameer Velankar, Stephen K Burley, Jaroslav Koča, and Alexander S Rose. Mol* Viewer: modern web app for 3D visualization and analysis of large biomolecular structures. Nucleic Acids Research, 49(W1):W431–W437, 2021. doi:10.1093/nar/gkab314.">Sehnal <em>et al.</em>, 2021</a>]</span>. Sestavljeno je iz večih komponent, ki omogočajo pridobivanje strukturnih podatkov iz zbirk ali lokalnih datotek, analizo, shranjevanje sej in stanj ter njihovo vizualizacijo idr. Tehnično gledano se komponenta za vizualizacijo imenuje <strong>Mol* Viewer</strong>, a bo za oboje na tej strani zaradi enostavnosti uporabljeno kar poimenovanje MolStar.</p>
+<p>Pri razvoju so sodelovali in ga financirali <a class="reference external" href="https://pdbe.org/">PDBe</a> (EMBL-EBI), <a class="reference external" href="https://rcsb.org/">RCSB PDB</a> (USA), <a class="reference external" href="https://ceitec.cz/">Central European Institute of Technology</a> (CEITEC; Češka) in <a class="reference external" href="https://www.elixir-czech.cz/services">ELIXIR CZ</a> (Češka).</p>
+</section>
+<section id="dostop">
+<h2>Dostop<a class="headerlink" href="#dostop" title="Link to this heading">#</a></h2>
+<p>Program je zasnovan tako, da teče na strežniku, z njim pa interagiramo preko spletnega brskalnika (možna je sicer tudi <a class="reference internal" href="#molstar-lokalno"><span class="std std-ref">lokalna instalacija</span></a>). V osnovi ga lahko uporabljamo na:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://molstar.org/">spletni strani programa MolStar</a>, kjer kliknemo na gumb <a class="reference external" href="https://molstar.org/viewer"><strong>Open Mol* Viewer</strong></a>, ali</p></li>
+<li><p>spletnih straneh različnih zbirk strukturnih podatkov kot sta RCSB PDB in PDBe (opisano <a class="reference internal" href="zbirke-eksperimentalne.html"><span class="std std-doc">tukaj</span></a>), pa tudi AlphaFold Protein Structure Database (opisano <a class="reference internal" href="modeli.html"><span class="std std-doc">tukaj</span></a>) in nekaterih <a class="reference external" href="https://molstar.org/viewer-docs/integrations/">drugih</a> – pri tem gre za to, da do vizualizacij posameznih modelov iz teh zbirk dostopamo zgolj z enim klikom brez vpisovanja kod za dostop oz. identifikatorjev zapisov, prav tako pa nekatere zbirke omogočajo posebne načine vizualizacije (npr. barvanje po pLDDT pri AlphaFold modelih).</p>
+<ul>
+<li><p><strong>Bistvena razlika med MolStar na “uradni” spletni strani ter med implementacijami na straneh kot je RCSB PDB je ta, da pri slednjih (ponavadi) ni možno naložiti lokalnih datotek PDB/mmCIF ali shranjenih sej, prav tako sej ni mogoče shraniti.</strong> Omejeni ste torej na ogled datotek, ki jih gosti dotična zbirka.</p></li>
+</ul>
+</li>
+</ul>
+<p>MolStar koda je dostopna na <a class="reference external" href="https://github.com/molstar">GitHub repozitoriju</a>, kar pomeni, da bi si ga z nekaj truda lahko celo sami namestili na lasten strežnik, prav tako sta na voljo implementaciji na strani <a class="reference external" href="https://github.com/molstar/rcsb-molstar">RCSB PDB</a> in <a class="reference external" href="https://github.com/molstar/pdbe-molstar">PDBe</a>.</p>
+<div class="attention admonition">
+<p class="admonition-title">Razlike med navodili in dejanskim stanjem</p>
+<p>Zaradi še vedno aktivnega razvoja MolStar se lahko zgodi, da pride do posodobitve spletne oblike programa, dokumentacija oz. navodila za uporabo na različnih spletnih straneh (nekaj jih najdete <a class="reference internal" href="#molstar-dodatni-viri"><span class="std std-ref">spodaj</span></a>) pa prikazuje uporabo na prejšnji različici programa. To je tudi eden izmed razlogov, da na tej strani ni podrobnih navodil za uporabo.</p>
+</div>
+</section>
+<section id="uporaba">
+<h2>Uporaba<a class="headerlink" href="#uporaba" title="Link to this heading">#</a></h2>
+<p>V nadaljevanju je opisana uporaba <a class="reference external" href="https://molstar.org/viewer">MolStar na “uradni” strani programa</a>, uporaba na npr. RCSB PDB je praktično identična (le nekaj manj možnosti je na voljo, predvsem v smislu shranjevanja sej in odpiranja lokalno shranjenih datotek).</p>
+<p>Uporabniški vmesnik lahko razdelimo na več “plošč” (<em>panels</em>) in še nekaj dodatnih gumbov:</p>
+<p><img alt="uporabniški vmesnik MolStar" src="../_images/molstar-vmesnik1.png" /></p>
+<p>Skrajno levi vertikalni meni (oznaka <strong>1</strong>) nam omogoča preklapljanje med različnimi levimi ploščami (polje <strong>2</strong>) in sicer od zgoraj navzdol:</p>
+<ul class="simple">
+<li><p><em><strong>Home</strong></em> za nalaganje struktur iz zbirke PDB ter prenos datotek na naš računalnik (ter nekaj dodatnih funkcij) – ta je prikazana na zgornji sliki;</p></li>
+<li><p><em><strong>State Tree</strong></em>, kjer se nam v obliki hierarhije izpisujejo naloženi strukturni podatki (npr. zapisi iz zbirke PDB) ter načini njihove vizualizacije;</p></li>
+<li><p><em><strong>Plugin State</strong></em>, ki nam omogoča shranjevanje posameznih stanj (lahko bi jim tudi rekli ‘pogledi’), prav tako pa tudi prenos sej na naš računalnik in njihovo nalaganje;</p></li>
+<li><p><em><strong>Help</strong></em>, kjer je na voljo zgolj osnovna pomoč.</p></li>
+</ul>
+<p>V plošči v sredini zgoraj (oznaka <strong>3</strong>, <em><strong>Sequence Panel</strong></em>) si lahko ogledamo aminokislinsko zaporedje (ali nukleotidno, če gre za nukleinske kisline), prav tako pa so navedeni tudi ligandi in druge molekule (npr. molekule vode). Čisto na vrhu te plošče je več spustnih menijev preko katerih izbiramo molekule oz. verige, katerih zaporedje je prikazano. Ob kliku na oznako aminokislinskega/nukleotidnega ostanka ali na oznako majhne molekule/iona se ta del modela strukture približa v polju za ogled strukture (oznaka <strong>5</strong>), prav tako se ta del in pa bližnji deli (v polmeru 5 Å) prikažejo na način kroglice in paličice. Ta plošča nam preko klikanja na oznake aminokislinskih/nukleotidnih ostankov ter oznak majhnih molekul omogoča tudi njihovo izbiranje in ustvarjanje posebnih ‘komponent’ strukture (lahko bi jim rekli tudi ‘shranjena izbira’), za kar pa moramo aktivirati posebno funkcijo (puščica na dnu menija <strong>6</strong>). Uporaba plošče z zaporedjem je podrobneje opisana v <a class="reference external" href="https://molstar.org/viewer-docs/navigating-by-sequence/"><em><strong>Navigating by Sequence</strong></em></a>.</p>
+<p>Plošča <strong>4</strong> omogoča preklapljanje med različnimi pogledi ter vizualizacijo različnih komponent strukture na različne načine, dodajanje oznak, … Pri tem so komponente lahko nekaj čisto splošnega kot npr. <em>Protein</em>, <em>Ligand</em> in <em>Water</em> (le-te se samodejno ustvarijo), lahko pa jih preko izbiranja delov modela in shranjevanjem te izbire ustvarjamo sami ter jim nato dodajamo različne načine vizualizacije (MolStar jih imenuje <em><strong>Components</strong></em>, načine vizualizacije pa <em><strong>Representations</strong></em>). To je podrobneje opisano pod <a class="reference external" href="https://molstar.org/viewer-docs/managing-the-display/"><em><strong>Managing the display</strong></em></a>. Pri nekaterih strukturah, npr. tistih, določenih z X-žarkovno kristalografijo, imamo tudi možnost prikaza elektronske gostote (<em><strong>Density</strong></em>) – starejše strukture tega nimajo, četudi so bile določene s to metodo, saj včasih deponiranje teh podatkov ni bilo obvezno.</p>
+<p>Plošča <strong>4</strong> med drugim omogoča tudi meritve razdalj in kotov ter dodajanje poljubnih oznak (<a class="reference external" href="https://molstar.org/viewer-docs/tips/measurements/"><em><strong>Measurements</strong></em></a>), za kar pa moramo najprej izbrati posamezne atome ali dele molekul, ki jih želimo označiti. Prav tako so tukaj funkcije za superpozicijo večih naloženih modelov struktur, ilustrativen/poenostavljen prikaz (<a class="reference external" href="https://molstar.org/viewer-docs/tips/illustrative-style/"><em><strong>Illustrative Style</strong></em></a>) ter “hitre” prednastavljene stile (<a class="reference external" href="https://molstar.org/viewer-docs/tips/quick-styles/"><em><strong>Quick Styles</strong></em></a>) in drugo. Izvozimo lahko celo videoposnetke vrtenja molekul (<a class="reference external" href="https://molstar.org/viewer-docs/tips/movie-export/"><em><strong>Export Animation</strong></em></a>).</p>
+<p>V polju <strong>5</strong> (<em><strong>3D Canvas</strong></em>) vidimo model strukture, prikazan na izbran način. Lahko ga vrtimo in približujemo/oddaljujemo, klik na nek del strukture pa nam ta del postavi v središče ter podrobneje prikaže okoliške ostanke/atome – podobno, kot če bi kliknili na nek ostanek v zaporedju (opisano zgoraj). Načini manipulacije so opisani <a class="reference external" href="https://molstar.org/viewer-docs/">tukaj</a>, kjer najdete tudi podrobnejše opise gumbov pod oznako <strong>6</strong> (<em><strong>Toggle Menu</strong></em>) – slednji omogočajo ponastavitev pogleda v smislu pozicije “kamere” ter smeri gledanja, shranjevanje statičnih slik (npr. v formatu PNG), vklop/izklop plošč, pogled z zapolnjenim zaslonom, nastavitve izrisa (ozadje, senčenje, …) in vklop/izklop funkcije izbiranja (<a class="reference external" href="https://molstar.org/viewer-docs/making-selections/"><em><strong>Making Selections</strong></em></a>).</p>
+<p>Nazadnje imamo na dnu v sredini še t.i. izpis dnevnika (<em>log</em>, oznaka <strong>7</strong>), kjer se sproti izpisuje vse, kar počnemo.</p>
+<p>Priporočam ogled pogosto zastavljenih vprašanj in odgovorov nanja – <a class="reference external" href="https://molstar.org/viewer-docs/faqs-scenarios/"><strong>FAQ</strong></a> ter “plonkca” – <a class="reference external" href="https://molstar.org/viewer-docs/mol_-cheat-sheet/"><strong>Mol* Cheat Sheet</strong></a>.</p>
+<div class="seealso admonition">
+<p class="admonition-title">Podrobna navodila</p>
+<p>Za podrobna navodila si oglejte <a class="reference external" href="https://molstar.org/viewer-docs/">uradno dokumentacijo</a> ter druge <a class="reference internal" href="#molstar-dodatni-viri"><span class="std std-ref">dodatne vire</span></a>.</p>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Učite se iz primerov</p>
+<p>Vse interaktivne <a class="reference internal" href="../strukture/navodila.html"><span class="std std-doc">vizualizacije molekul</span></a>, ki so pripravljene v tej spletni knjigi in jih uporabljamo med predavanji, so prav tako ustvarjene v programu MolStar. Privzeto so pri teh prikazih kontrolne plošče skrite, lahko pa si jih prikažete s klikom na simbol za orodni ključ (<i class="fa-solid fa-wrench"></i>) in analizirate seje v smislu komponent in načina njihovega prikaza.</p>
+</div>
+</section>
+<section id="shranjevanje-sej">
+<h2>Shranjevanje sej<a class="headerlink" href="#shranjevanje-sej" title="Link to this heading">#</a></h2>
+<p>Seje shranimo tako, da v meniju na skrajno levi strani zgoraj (oznaka <strong>1</strong>) kliknemo na ikono <i class="fa-solid fa-floppy-disk"></i>, nato pa kliknemo na <strong>Session</strong>. Na naš računalnik se nam prenese datoteka s končnico <code class="docutils literal notranslate"><span class="pre">molx</span></code>, ki jo lahko ponovno naložimo v MolStar preko klika na <strong>Open</strong>. Lahk joo spreminjamo in spet prenesemo (spremenjeno) sejo na naš računalnik.</p>
+<p>Pozor – bolje je shranjevati seje kot ‘Session’ in ne zgolj kot ‘State’ (stanje), saj se pri ‘State’ morebitne koordinate iz datotek PDB, ki jih prenesemo z našega računalnika, ne shranijo v datoteko s sejo.</p>
 </section>
 <section id="lokalna-instalacija">
 <span id="molstar-lokalno"></span><h2>Lokalna instalacija<a class="headerlink" href="#lokalna-instalacija" title="Link to this heading">#</a></h2>
-<p>MolStar lahko uporabljate tudi brez internetne povezave in sicer v obliki vtičnika <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ArianJamasb.protein-viewer">Protein Viewer</a> za <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>. Najprej si morate namestiti slednjega (na voljo je brezplačno in sicer za operacijske sisteme Windows, Linux in macOS), nato pa kar preko zbirke razširitev (<em>Extensions</em>) v samem programu pooščite <strong>Protein Viewer</strong> ter ga namestite. Zaženete in uporabljate ga tako:</p>
 <ol class="arabic simple">
-<li><p>S kombinacijo tipk (Ctrl + Shift + P na Windows/Linux, Command + Shifp + P) odprete “ukazno ploščo” (<em>command palette</em>) in začnete tipkati npr. Protein <span class="math notranslate nohighlight">\(\rightarrow\)</span> ponudilo vam bo ‘Start Protein Viewer’, kar izberete in potrdite v pritiskom na ‘Enter’ <span class="math notranslate nohighlight">\(\rightarrow\)</span> vpraša vas po kodi zapisa v PDB ali UniProt. Če želite odpreti lokalno shranjeno datoteko ali kasneje izbrati, kaj boste odprli, ne vnašajte ničesar ampak samo pritisnite tipko ‘Enter’ ali ‘Esc’, da se vam odpre program brez naložene strukture.</p></li>
+<li><p>S kombinacijo tipk (<code class="docutils literal notranslate"><span class="pre">Ctrl</span></code>+<code class="docutils literal notranslate"><span class="pre">Shift</span></code>+<code class="docutils literal notranslate"><span class="pre">P</span></code> na Linux in Windows, <code class="docutils literal notranslate"><span class="pre">Command</span></code>+<code class="docutils literal notranslate"><span class="pre">Shift</span></code>+<code class="docutils literal notranslate"><span class="pre">P</span></code> na macOS) odprete “ukazno ploščo” (<em>command palette</em>) in začnete tipkati npr. Protein <span class="math notranslate nohighlight">\(\rightarrow\)</span> ponudilo vam bo ‘Start Protein Viewer’, kar izberete in potrdite v pritiskom na ‘Enter’ <span class="math notranslate nohighlight">\(\rightarrow\)</span> vpraša vas po kodi zapisa v PDB ali UniProt. Če želite odpreti lokalno shranjeno datoteko ali kasneje izbrati, kaj boste odprli, ne vnašajte ničesar ampak samo pritisnite tipko ‘Enter’ ali ‘Esc’, da se vam odpre program brez naložene strukture.</p></li>
 <li><p>V vertikalni orodni vrstici na skrajno levi strani za disketo (‘Plugin State’), kliknete na ‘Open’ in izberete datoteko formata <code class="docutils literal notranslate"><span class="pre">molx</span></code> na lokalnem disku (deluje tudi za npr. <code class="docutils literal notranslate"><span class="pre">pdb</span></code> in <code class="docutils literal notranslate"><span class="pre">cif</span></code> datoteke).</p></li>
 <li><p>Od tu naprej je uporaba enaka kot za MolStar, ki teče v brskalniku preko spletne strani <a class="reference external" href="https://molstar.org/viewer/">MolStar Viewer</a>.</p></li>
 </ol>
 </section>
 <section id="dodatni-viri">
-<h2>Dodatni viri<a class="headerlink" href="#dodatni-viri" title="Link to this heading">#</a></h2>
-<section id="navodila-za-uporabo">
-<h3>Navodila za uporabo<a class="headerlink" href="#navodila-za-uporabo" title="Link to this heading">#</a></h3>
+<span id="molstar-dodatni-viri"></span><h2>Dodatni viri<a class="headerlink" href="#dodatni-viri" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.youtube.com/playlist?list=PLHib7JgKNUUeG1kMKLMtWwds-pIvvf4iU">“uradna” stran MolStar z navodili za uporabo</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/playlist?list=PLHib7JgKNUUeG1kMKLMtWwds-pIvvf4iU">Exploring PDB structures in 3D with Mol* (MolStar) &#64; RCSB YouTube kanal</a> (več posameznih video posnetkov)</p></li>
+<li><p><a class="reference external" href="https://molstar.org/viewer-docs/">dokumentacija</a> na “uradni” strani MolStar</p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/playlist?list=PLHib7JgKNUUeG1kMKLMtWwds-pIvvf4iU">Exploring PDB structures in 3D with Mol* (MolStar)</a> (več posameznih video posnetkov) &#64; RCSB YouTube kanal</p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=Yv2dApiymxY">Mol* at PDBe webinar</a></p></li>
 </ul>
-</section>
 </section>
 </section>
 
@@ -525,11 +569,11 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uvod">Uvod</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dostop">Dostop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uporaba">Uporaba</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shranjevanje-sej">Shranjevanje sej</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lokalna-instalacija">Lokalna instalacija</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dodatni-viri">Dodatni viri</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#navodila-za-uporabo">Navodila za uporabo</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dodatni-viri">Dodatni viri</a></li>
 </ul>
   </nav></div>
 
