@@ -14,9 +14,9 @@
 
 :::{grid-item}
 Strukturo proteinov lahko vizualiziramo na različne načine, najpogostejši so:
-- atomi kot kroglice z radiji, proporcionalni vdW radijem (**CPK**)
+- atomi kot **kroglice** z radiji, proporcionalni vdW radijem (**CPK**)
 - vezi kot **črtice** (*lines*)
-- vezi kot **paličice**, atomi pa kot pomanjšane kroglice (*ball-and-stick*)
+- vezi kot **paličice**, atomi pa kot pomanjšane **kroglice** (*ball-and-stick*)
 - enostaven **trak** (*ribbon*, *backbone*)
 - trak s prikazom elementov sekundarne strukture (*cartoon*)
 - trak oz. "klobasa" (***putty***), katere radij je sorazmeren z nekim parametrom, npr. neurejenostjo

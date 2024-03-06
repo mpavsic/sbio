@@ -117,7 +117,7 @@ Pripravite samo predstavitev! Datoteke, ki bi vsebovala predvsem besedilo s spre
 :class: danger
 **Vse slike struktur, katere določitev je opisana v izbranem članku, morate pripraviti sami z uporabo zbirk strukturnih podatkov in orodij za njihovo vizualizacijo, pri tem pa morate zraven predstavitve oddati točno tiste datoteke s sejami (*session files*), ki so bile uporabljene za pripravo teh slik.**
 
-**Neupoštevanje tega navodila se šteje kot neopravljena seminarska naloga.**
+**Neupoštevanje tega se šteje kot neopravljena seminarska naloga.**
 ```
 
 V člankih, ki opisujejo določitev neke strukture, so navedene zbirke in kode zapisov (*accession codes*) za dostop do deponiranih podatkov, dotičen članek pa je pogosto t.i. primarna referenca (v zbirki PDB se imenuje *Primary Citation*). Strukturni podatki so torej prosto dostopni (to je tudi pogoj za objavo članka!) in jih lahko uporabite za pripravo slik, ob tem pa obvezno navedite uporabljeno zbirko in kodo zapisa.
@@ -130,7 +130,7 @@ Za vizualizacijo struktur (slike za predstavitev, priprava datotek s sejami) lah
 :class: tip
 Zbirka PDB bo na kratko predstavljena med predavanji, podrobneje pa na enem izmed uvodnih seminarjev. Med predavanji bo na kratko predstavljena tudi zbirka EMDB.
 
-Programa za vizualizacijo struktur MolStar in PyMOL bosta predstavljena med uvodnimi seminarji, s programom UCSF Chimera pa se boste spoznali na vajah (ChimeraX ima enako sintakso za izbiro, tudi možnosti za vizualizacijo ipd. so zelo podobne tistim v UCSF Chimera). Če se boste srečali s težavami pri instalaciji katerega od programov poprosite za pomoč predavatelja.
+Programa za vizualizacijo struktur MolStar in PyMOL bosta predstavljena med uvodnimi seminarji, s programom UCSF Chimera pa se boste spoznali na vajah (ChimeraX ima enako sintakso za izbiro, tudi možnosti za vizualizacijo ipd. so zelo podobne tistim v UCSF Chimera). Če se boste srečali s težavami pri instalaciji katerega od programov poprosite za pomoč predavatelja, **enako velja tudi za uporabo posameznih programov** (npr. načini vizualizacije).
 
 Udeležba na treh uvodnih seminarjih (PDB, MolStar, PyMOL) je obvezna.
 ```

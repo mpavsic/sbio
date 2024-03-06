@@ -15,7 +15,7 @@ Obe orodji zraven vizualizacije omogočata tudi izvajanje analiz struktur – ne
 
 Za vizualizacijo se pogosto uporablja tudi [**MolStar**](molstar), sploh z ozirom na njegovo integracijo v spletno stran zbirke PDB oz. možnostjo uporabe v brskalniku.
 
-*Vse tri zgoraj navedene programe boste spoznali v okviru seminarjev in vaj pri predmetu Struktura proteinov.*
+*Vse tri zgoraj navedene programe boste spoznali v okviru seminarjev in vaj pri predmetu Struktura proteinov.* Opisi zgoraj navedenih programov so na posebnih podstraneh, katerih namen pa nikakor ni biti (popoln) uporabniški priročnik temveč zgolj seznanjanje z res osnovami uporabe ter relevantnimi spletnimi viri/povezavami, na katerih najdete podrobnejša navodila za uporabo (tudi v obliki videovodičev). **Upoštevajte, da so programi v neprestanem (bolj ali manj aktivnem) razvoju in da so lahko kakšne stvari (meniji ipd.) malce drugačni kot prikazani na teh straneh ter javno dostopnih spletnih uporabniških priročnikih.**
 
 ## Drugi programi
 

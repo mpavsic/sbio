@@ -26,6 +26,7 @@ parts:
   - file: seminar/delavnice
     sections:
     - file: seminar/delavnice-pdb
+    - file: seminar/delavnice-molstar
   - file: seminar/studenti
     sections:
     - file: seminar/studenti-navodila
