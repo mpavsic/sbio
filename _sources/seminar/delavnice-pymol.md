@@ -2,7 +2,7 @@
 
 ## Namen
 
-Namen delavnice je seznaniti s programom PyMOL, ki še vedno ostaja eden izmed najpogosteje uporabljanih programov za vizualizacijo bioloških makromolekul.
+Namen delavnice je seznaniti se s programom PyMOL, ki še vedno ostaja eden izmed najpogosteje uporabljanih programov za vizualizacijo bioloških makromolekul.
 
 ## Potrebščine
 
