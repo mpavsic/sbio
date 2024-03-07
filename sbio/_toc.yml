@@ -18,8 +18,8 @@ parts:
   - file: orodjarna/vizualizacija
     sections:
     - file: orodjarna/chimera
-    - file: orodjarna/pymol
     - file: orodjarna/molstar
+    - file: orodjarna/pymol
   - file: orodjarna/analiza
 - caption: Seminar
   chapters:
@@ -27,6 +27,7 @@ parts:
     sections:
     - file: seminar/delavnice-pdb
     - file: seminar/delavnice-molstar
+    - file: seminar/delavnice-pymol
   - file: seminar/studenti
     sections:
     - file: seminar/studenti-navodila

@@ -42,10 +42,11 @@ Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja [MolStar](
   - filmi oz. animacije
 - [ ] shranjevanje in ponovno nalaganje sej
 - [ ] primerjava med samostojnim MolStar ([https://molstar.org/viewer/](https://molstar.org/viewer/)) ter MolStar, integriranim v RCSB PDB
-  - nalaganje lokalnih datotek in shranjevanje sej (samo v samostojnem MolStar)
+  - nalaganje lokalnih datotek in shranjevanje sej (omejeno v MolStar @ RCSB PDB)
   - hierarhičen prikaz odprtih struktur (samo v samostojnem MolStar)
   - (manjkajoča "leva" kontrolna plošča v MolStar @ RCSB PDB)
   - 3D kartiranje pripisov na strukturo (samo v MolStar @ RCSB PDB)
+  - manjkajoč prikaz elektronske gostote v samostojnem MolStar
 
 ## Poizkusite sami
 
