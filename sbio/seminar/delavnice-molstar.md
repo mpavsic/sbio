@@ -15,9 +15,9 @@ Za izvedbo potrebujete:
 Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja [MolStar](../orodjarna/molstar.md). Delavnico ste uspešno opravili če lahko za vsako od navedenih točk rečete "Vem, za kaj se gre in znam uporabiti!".
 
 - [ ] nalaganje datotek iz zbirke PDB – na primeru človeškega citokroma P450 (PDB ID [1TQN](https://www.rcsb.org/structure/1TQN))
-- [ ] fokusiranje na določen del strukture
+- [ ] podrobnejši pogled na določen del strukture (*focus*)
   - preko klikanja po zaporedju
-    - spreminjanje prikaza oznak delov strukture
+    - spreminjanje prikaza aminokislinskega zaporedja, ligandov, vode, ...
   - preko klikanja na strukturo
   - ponastavitev pogleda
 - [ ] tip prikaza strukture (*Model*, *Assembly*, *Symmetry Mates*) – to se pojavlja le pri nekaterih strukturah (odvisno od metode določitve)
@@ -33,8 +33,13 @@ Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja [MolStar](
 - [ ] prikaz nekovalentnih interakcij
 - [ ] meritve razdalj
 - [ ] superpozicija (superpozicija z govejim citokromom P540 (PDB ID [3MZS](https://www.rcsb.org/structure/3MZS)))
-- [ ] nastavitve vizualizacije (barva ozadja, *clipping*, ...)
-- [ ] shranjevanje slik
+- [ ] nastavitve vizualizacije
+  - barva ozadja
+  - prikaz režnja (*clipping*)
+  - pogled iz perspektive
+- [ ] shranjevanje slik in filmov
+  - slike
+  - filmi oz. animacije
 - [ ] shranjevanje in ponovno nalaganje sej
 - [ ] primerjava med samostojnim MolStar ([https://molstar.org/viewer/](https://molstar.org/viewer/)) ter MolStar, integriranim v RCSB PDB
   - nalaganje lokalnih datotek in shranjevanje sej (samo v samostojnem MolStar)
