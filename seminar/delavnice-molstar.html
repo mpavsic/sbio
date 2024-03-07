@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -450,11 +450,11 @@ document.write(`
 <p>Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja <a class="reference internal" href="../orodjarna/molstar.html"><span class="std std-doc">MolStar</span></a>. Delavnico ste uspešno opravili če lahko za vsako od navedenih točk rečete “Vem, za kaj se gre in znam uporabiti!”.</p>
 <ul class="contains-task-list simple">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> nalaganje datotek iz zbirke PDB – na primeru človeškega citokroma P450 (PDB ID <a class="reference external" href="https://www.rcsb.org/structure/1TQN">1TQN</a>)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> fokusiranje na določen del strukture</p>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> podrobnejši pogled na določen del strukture (<em>focus</em>)</p>
 <ul>
 <li><p>preko klikanja po zaporedju</p>
 <ul>
-<li><p>spreminjanje prikaza oznak delov strukture</p></li>
+<li><p>spreminjanje prikaza aminokislinskega zaporedja, ligandov, vode, …</p></li>
 </ul>
 </li>
 <li><p>preko klikanja na strukturo</p></li>
@@ -480,8 +480,19 @@ document.write(`
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> prikaz nekovalentnih interakcij</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> meritve razdalj</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> superpozicija (superpozicija z govejim citokromom P540 (PDB ID <a class="reference external" href="https://www.rcsb.org/structure/3MZS">3MZS</a>))</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> nastavitve vizualizacije (barva ozadja, <em>clipping</em>, …)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> shranjevanje slik</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> nastavitve vizualizacije</p>
+<ul>
+<li><p>barva ozadja</p></li>
+<li><p>prikaz režnja (<em>clipping</em>)</p></li>
+<li><p>pogled iz perspektive</p></li>
+</ul>
+</li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> shranjevanje slik in filmov</p>
+<ul>
+<li><p>slike</p></li>
+<li><p>filmi oz. animacije</p></li>
+</ul>
+</li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> shranjevanje in ponovno nalaganje sej</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> primerjava med samostojnim MolStar (<a class="reference external" href="https://molstar.org/viewer/">https://molstar.org/viewer/</a>) ter MolStar, integriranim v RCSB PDB</p>
 <ul>
