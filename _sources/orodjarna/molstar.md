@@ -29,7 +29,7 @@ Uporabniški vmesnik lahko razdelimo na več "plošč" (*panels*) in še nekaj d
 ![uporabniški vmesnik MolStar](slike/molstar-vmesnik1.png)
 
 Skrajno levi vertikalni meni (oznaka **1**) nam omogoča preklapljanje med različnimi levimi ploščami (polje **2**) in sicer od zgoraj navzdol:
-- ***Home*** za nalaganje struktur iz zbirke PDB ter prenos datotek na naš računalnik (ter nekaj dodatnih funkcij) – ta je prikazana na zgornji sliki;
+- ***Home*** za nalaganje struktur iz zbirke PDB (in drugih, npr. zbirke modelov AlphaFold, pri slednjih vpišemo UniProt kodo) ter prenos datotek na naš računalnik (ter nekaj dodatnih funkcij) – ta je prikazana na zgornji sliki;
 - ***State Tree***, kjer se nam v obliki hierarhije izpisujejo naloženi strukturni podatki (npr. zapisi iz zbirke PDB) ter načini njihove vizualizacije;
 - ***Plugin State***, ki nam omogoča shranjevanje posameznih stanj (lahko bi jim tudi rekli 'pogledi'), prav tako pa tudi prenos sej na naš računalnik in njihovo nalaganje;
 - ***Help***, kjer je na voljo zgolj osnovna pomoč.
