@@ -79,3 +79,8 @@ Pozor – bolje je shranjevati seje kot 'Session' in ne zgolj kot 'State' (stanj
 - [dokumentacija](https://molstar.org/viewer-docs/) na "uradni" strani MolStar
 - [Exploring PDB structures in 3D with Mol\* (MolStar)](https://www.youtube.com/playlist?list=PLHib7JgKNUUeG1kMKLMtWwds-pIvvf4iU) (več posameznih video posnetkov) @ RCSB YouTube kanal
 - [Mol\* at PDBe webinar](https://www.youtube.com/watch?v=Yv2dApiymxY)
+
+```{admonition} Citiranje
+:class: note
+V delih, kjer za analizo in/ali izris slik uporabljate MolStar, ne pozabite navesti ustreznega vira. Informacije najdete na [spletni strani programa](https://molstar.org/).
+```

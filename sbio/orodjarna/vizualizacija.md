@@ -30,3 +30,8 @@ Seveda ima vsak od programov samosvoj uporabniški vmesnik. Za prenos in uporabo
 
 Na spletu lahko najdete še nekatera druga orodja, prav tako tudi sezname orodij za vizualizacijo kot sta, na primer, seznama na [RCSB PDB](https://www.rcsb.org/docs/additional-resources/molecular-graphics-software) in [Wikipediji](https://en.wikipedia.org/wiki/List_of_molecular_graphics_systems).
 
+## Citiranje
+
+Za vsak program, ki ga uporabljate, je potrebno navesti ustrezno referenco, večinoma gre za članek ali spletno stran. Kaj in kako navesti je napisano na spletni strani posameznega programa, ponavadi v razdelku poimenovanem "*Citing*", "*How to cite*, "*Reference*" ipd. Na primer, na spletni strani MolStar najdemo naslednji zapis:
+
+![citiranje MolStar](slike/molstar-citiranje.png)

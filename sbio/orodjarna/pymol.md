@@ -63,3 +63,8 @@ Neokrnjen PyMOL je "najlažje" namestiti po [navodilih](https://pymolwiki.org/in
   - [A Simple Tutorial for PyMOL: Visualising Proteins Using Molecular Graphics](https://dasher.wustl.edu/bio5357/software/pymol/simple-tutorial.pdf) (avtor Dr. Dafyd Jones)
   - [Introduction to PyMOL](https://sites.pitt.edu/~epolinko/IntroPyMOL.pdf) (DeLano Scientific, leto 2009)
   - [A Beginner’s Guide to Molecular Visualization Using PyMOL](https://fitzkee.chemistry.msstate.edu/sites/default/files/bootcamp/2023/session-09_pymol-tutorial.pdf) (avtor Nicholas Fitzkee, leto 2023)
+
+```{admonition} Citiranje
+:class: note
+V delih, kjer za analizo in/ali izris slik uporabljate PyMOL, ne pozabite navesti ustreznega vira. Informacije najdete na [spletni strani programa](https://pymol.org/support.html?), glejte razdelek *Citing PyMOL and AxPyMOL*.
+```
