@@ -2,6 +2,10 @@
 
 Spodaj je zbranih nekaj uporabnih povezav do zbirk in orodij, ki omogočajo analizo makromolekulskih struktur.
 
+## Lastnosti
+
+- [APBS](https://server.poissonboltzmann.org/): Strežnik na osnovi programa Adaptive Poisson-Boltzmann Solver, ki omogoča izračun **elektrostatskih lastnosti** molekul in ob tem upošteva solvatacijo {cite:p}`Jurrus2018aaa`.
+
 ## Validacija
 
 - [MolProbity](http://molprobity.biochem.duke.edu/help/about.html): Orodje za **validacijo/evaluacijo makromolekulskih struktur**, določenih z rentgensko difrakcijo, krio-elektronsko mikroskopijo itd., do določene mere deluje tudi za ansamble struktur, določenih z NMR {cite:p}`Williams2018aaa`. Med drugim vam izpiše/izriše podatke o geometriji, neugodnih stikih, rotamerah ter Ramachandranov diagram.
