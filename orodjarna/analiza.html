@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -415,6 +415,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lastnosti">Lastnosti</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validacija">Validacija</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oligomeri">Oligomeri</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podobne-strukture">Podobne strukture</a></li>
@@ -433,10 +434,16 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="analiza-struktur-idr">
 <h1>Analiza struktur idr.<a class="headerlink" href="#analiza-struktur-idr" title="Link to this heading">#</a></h1>
 <p>Spodaj je zbranih nekaj uporabnih povezav do zbirk in orodij, ki omogočajo analizo makromolekulskih struktur.</p>
+<section id="lastnosti">
+<h2>Lastnosti<a class="headerlink" href="#lastnosti" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://server.poissonboltzmann.org/">APBS</a>: Strežnik na osnovi programa Adaptive Poisson-Boltzmann Solver, ki omogoča izračun <strong>elektrostatskih lastnosti</strong> molekul in ob tem upošteva solvatacijo <span id="id1">[<a class="reference internal" href="../priloge/reference.html#id10" title="Elizabeth Jurrus, Dave Engel, Keith Star, Kyle Monson, Juan Brandi, Lisa E. Felberg, David H. Brookes, Leighton Wilson, Jiahui Chen, Karina Liles, Minju Chun, Peter Li, David W. Gohara, Todd Dolinsky, Robert Konecny, David R. Koes, Jens Erik Nielsen, Teresa Head-Gordon, Weihua Geng, Robert Krasny, Guo-Wei Wei, Michael J. Holst, J. Andrew McCammon, and Nathan A. Baker. Improvements to the apbs biomolecular solvation software suite. Protein Science, 27(1):112-128, 2018. doi:https://doi.org/10.1002/pro.3280.">Jurrus <em>et al.</em>, 2018</a>]</span>.</p></li>
+</ul>
+</section>
 <section id="validacija">
 <h2>Validacija<a class="headerlink" href="#validacija" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="http://molprobity.biochem.duke.edu/help/about.html">MolProbity</a>: Orodje za <strong>validacijo/evaluacijo makromolekulskih struktur</strong>, določenih z rentgensko difrakcijo, krio-elektronsko mikroskopijo itd., do določene mere deluje tudi za ansamble struktur, določenih z NMR <span id="id1">[<a class="reference internal" href="../priloge/reference.html#id3" title="Christopher J. Williams, Jeffrey J. Headd, Nigel W. Moriarty, Michael G. Prisant, Lizbeth L. Videau, Lindsay N. Deis, Vishal Verma, Daniel A. Keedy, Bradley J. Hintze, Vincent B. Chen, Swati Jain, Steven M. Lewis, W. Bryan Arendall III, Jack Snoeyink, Paul D. Adams, Simon C. Lovell, Jane S. Richardson, and David C. Richardson. Molprobity: more and better reference data for improved all-atom structure validation. Protein Science, 27(1):293-315, 2018. doi:https://doi.org/10.1002/pro.3330.">Williams <em>et al.</em>, 2018</a>]</span>. Med drugim vam izpiše/izriše podatke o geometriji, neugodnih stikih, rotamerah ter Ramachandranov diagram.</p></li>
+<li><p><a class="reference external" href="http://molprobity.biochem.duke.edu/help/about.html">MolProbity</a>: Orodje za <strong>validacijo/evaluacijo makromolekulskih struktur</strong>, določenih z rentgensko difrakcijo, krio-elektronsko mikroskopijo itd., do določene mere deluje tudi za ansamble struktur, določenih z NMR <span id="id2">[<a class="reference internal" href="../priloge/reference.html#id3" title="Christopher J. Williams, Jeffrey J. Headd, Nigel W. Moriarty, Michael G. Prisant, Lizbeth L. Videau, Lindsay N. Deis, Vishal Verma, Daniel A. Keedy, Bradley J. Hintze, Vincent B. Chen, Swati Jain, Steven M. Lewis, W. Bryan Arendall III, Jack Snoeyink, Paul D. Adams, Simon C. Lovell, Jane S. Richardson, and David C. Richardson. Molprobity: more and better reference data for improved all-atom structure validation. Protein Science, 27(1):293-315, 2018. doi:https://doi.org/10.1002/pro.3330.">Williams <em>et al.</em>, 2018</a>]</span>. Med drugim vam izpiše/izriše podatke o geometriji, neugodnih stikih, rotamerah ter Ramachandranov diagram.</p></li>
 </ul>
 </section>
 <section id="oligomeri">
@@ -449,7 +456,7 @@ document.write(`
 <span id="analiza-podobne-strukture"></span><h2>Podobne strukture<a class="headerlink" href="#podobne-strukture" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.rcsb.org/alignment">Pairwise Structure Alignment</a>: <strong>Poravnava dveh struktur</strong> direktno na strežniku RCSB v povezavi z zbirko PDB, lahko naložimo tudi svoje datoteke. Na voljo več algoritmov (od zaporedja odvisni ter od zaporedja neodvisni).</p></li>
-<li><p><a class="reference external" href="https://www.ebi.ac.uk/msd-srv/ssm/">PDBeFold</a>: Orodje za <strong>iskanje podobnih struktur</strong> preko ujemanja prostorske razporeditve elementov sekundarne strukture (algoritem <em>secondary structure matching</em> (SSM)) <span id="id2">[<a class="reference internal" href="../priloge/reference.html#id2" title="E. Krissinel and K. Henrick. Secondary-structure matching (SSM), a new tool for fast protein structure alignment in three dimensions. Acta Crystallographica Section D, 60(12 Part 1):2256–2268, 2004. doi:10.1107/S0907444904026460.">Krissinel and Henrick, 2004</a>]</span>.</p></li>
+<li><p><a class="reference external" href="https://www.ebi.ac.uk/msd-srv/ssm/">PDBeFold</a>: Orodje za <strong>iskanje podobnih struktur</strong> preko ujemanja prostorske razporeditve elementov sekundarne strukture (algoritem <em>secondary structure matching</em> (SSM)) <span id="id3">[<a class="reference internal" href="../priloge/reference.html#id2" title="E. Krissinel and K. Henrick. Secondary-structure matching (SSM), a new tool for fast protein structure alignment in three dimensions. Acta Crystallographica Section D, 60(12 Part 1):2256–2268, 2004. doi:10.1107/S0907444904026460.">Krissinel and Henrick, 2004</a>]</span>.</p></li>
 <li><p><a class="reference external" href="http://ekhidna2.biocenter.helsinki.fi/dali/">DALI</a>: Orodje za iskanje podobnih struktur po principu lokalne podobnosti v kontaktih/bližinah aminokislinskih ostankov.</p></li>
 </ul>
 </section>
@@ -525,6 +532,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lastnosti">Lastnosti</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validacija">Validacija</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oligomeri">Oligomeri</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podobne-strukture">Podobne strukture</a></li>
