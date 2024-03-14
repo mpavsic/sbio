@@ -8,6 +8,9 @@ parts:
   - file: strukture/vizualizacija
   - file: strukture/prim
   - file: strukture/ss
+  - file: strukture/interakcije
+  - file: strukture/motivi
+  - file: strukture/razredi
 - caption: Orodjarna
   chapters:
   - file: orodjarna/zbirke

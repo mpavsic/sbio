@@ -10,6 +10,11 @@ Za izvedbo potrebujete:
 - nameščen program PyMOL,
 - povezavo v splet.
 
+```{admonition} Miška
+:class: hint
+Priporočam uporabo miške, ki omogoča levi in desni klik ter kolešček (sredinski klik), saj to bistveno olajša manipulacijo struktur v 3D.
+```
+
 ## Shema delavnice
 
 Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja [PyMOL](../orodjarna/pymol.md). Delavnico ste uspešno opravili če lahko za vsako od navedenih točk rečete "Vem, za kaj se gre in znam uporabiti!".

@@ -21,6 +21,10 @@ Večji del okna, označen s **5**, je namenjen 3D prikazu modelov strukture, na 
 
 Program omogoča izjemno število funkcij, za napredno uporabo pa se je vsekakor potrebno naučiti nekaj [ukazov](https://pymol.org/pymol-command-ref.html) in [sintakse za izbiro molekul ali njihovih delov](https://pymolwiki.org/index.php/Selection_Algebra). Za podrobno seznanitev s programom priporočam branje navodil in ogled videovodičev na YouTube, povezave na nekatere najdete pod [dodatnimi viri](pymol-dodatni-viri).
 
+```{admonition} Miška
+:class: hint
+Priporočam uporabo miške, ki omogoča levi in desni klik ter kolešček (sredinski klik), saj to bistveno olajša manipulacijo struktur v 3D.
+```
 
 (pymol-namestitev)=
 ## Namestitev

@@ -46,6 +46,11 @@ Nazadnje imamo na dnu v sredini še t.i. izpis dnevnika (*log*, oznaka **7**), k
 
 Priporočam ogled pogosto zastavljenih vprašanj in odgovorov nanja – [**FAQ**](https://molstar.org/viewer-docs/faqs-scenarios/) ter "plonkca" – [**Mol\* Cheat Sheet**](https://molstar.org/viewer-docs/mol_-cheat-sheet/).
 
+```{admonition} Miška
+:class: hint
+Priporočam uporabo miške, ki omogoča levi in desni klik ter kolešček (sredinski klik), saj to bistveno olajša manipulacijo struktur v 3D.
+```
+
 ```{admonition} Podrobna navodila
 :class: seealso
 Za podrobna navodila si oglejte [uradno dokumentacijo](https://molstar.org/viewer-docs/) ter druge [dodatne vire](molstar-dodatni-viri).
