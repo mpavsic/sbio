@@ -10,6 +10,11 @@ Za izvedbo potrebujete:
 - spletni brskalnik (najbolje na namiznem ali prenosnem računalniku, pogojno na tablici, na slednji je sicer malce težje manipulirati z modeli struktur; mobilni telefon ni primeren),
 - povezavo v splet.
 
+```{admonition} Miška
+:class: hint
+Priporočam uporabo miške, ki omogoča levi in desni klik ter kolešček (sredinski klik), saj to bistveno olajša manipulacijo struktur v 3D.
+```
+
 ## Shema delavnice
 
 Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja [MolStar](../orodjarna/molstar.md). Delavnico ste uspešno opravili če lahko za vsako od navedenih točk rečete "Vem, za kaj se gre in znam uporabiti!".
@@ -46,7 +51,6 @@ Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja [MolStar](
   - hierarhičen prikaz odprtih struktur (samo v samostojnem MolStar)
   - (manjkajoča "leva" kontrolna plošča v MolStar @ RCSB PDB)
   - 3D kartiranje pripisov na strukturo (samo v MolStar @ RCSB PDB)
-  - manjkajoč prikaz elektronske gostote v samostojnem MolStar
 
 ## Poizkusite sami
 
