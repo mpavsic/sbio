@@ -141,7 +141,7 @@ Ena izmed oblik $\beta$ vijačnice je struktura, ki jo tvori polipeptidna veriga
 :::
 
 :::{grid-item}
-Drug primer $\beta$ vijačnic so strukture, sestavljene iz kratkih $\beta$ trakov, povezanih s kratkimi regijami, pri čemer se polipeptidna veriga zavija tako, da nastanejo paralelne $\beta$ površine; v osnovi gre za t.i. solenoidno strukturo. To najdemo npr. v pektat liazah, tu pa je prikazan drug primer – *antifreeze* protein iz *Chorisoneuta fumerana* (vešča, katere ličinke se prehranjujejo na smrekah) (PDB [1M8N](https://www.rcsb.org/structure/1M8N)). Glede na to, da so dihedralni koti kot v $\beta$ trakovih, ne govorimo o posebnem elementu sekundarne strukture.
+Drug primer $\beta$ vijačnic so strukture, sestavljene iz kratkih $\beta$ trakov, povezanih s kratkimi regijami, pri čemer se polipeptidna veriga zavija tako, da nastanejo paralelne $\beta$ površine; v osnovi gre za t.i. solenoidno strukturo. To najdemo npr. v pektat liazah, tu pa je prikazan drug primer – *antifreeze* protein iz *Chorisoneuta fumerana* (vešča, katere ličinke se prehranjujejo na smrekah) (PDB [1M8N](https://www.rcsb.org/structure/1M8N)). Glede na to, da so dihedralni koti kot v $\beta$ trakovih, ne govorimo o posebnem elementu sekundarne strukture, gre za tip zvitja.
 :::
 ::::
 

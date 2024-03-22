@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Primarna struktura &#8212; Struktura proteinov</title>
+    <title>Kristalografija &#8212; Struktura proteinov</title>
   
   
   
@@ -59,13 +59,13 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'strukture/prim';</script>
-    <link rel="canonical" href="https://mpavsic.github.io/sbio/strukture/prim.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'strukture/kristalografija';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/sbio/strukture/kristalografija.html" />
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Sekundarna struktura" href="ss.html" />
-    <link rel="prev" title="Vizualizacija" href="vizualizacija.html" />
+    <link rel="next" title="Zbirke strukturnih podatkov" href="../orodjarna/zbirke.html" />
+    <link rel="prev" title="Razredi" href="razredi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -184,12 +184,12 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="navodila.html">Kako uporabljati modele?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vizualizacija.html">Vizualizacija</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Primarna struktura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prim.html">Primarna struktura</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ss.html">Sekundarna struktura</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interakcije.html">Interakcije</a></li>
 <li class="toctree-l1"><a class="reference internal" href="motivi.html">Motivi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="razredi.html">Razredi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kristalografija.html">Kristalografija</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Kristalografija</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Orodjarna</span></p>
 <ul class="nav bd-sidenav">
@@ -277,7 +277,7 @@
       
       
       
-      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/strukture/prim.md" target="_blank"
+      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/strukture/kristalografija.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -294,7 +294,7 @@
       
       
       
-      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fstrukture/prim.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fstrukture/kristalografija.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -324,7 +324,7 @@
       
       
       
-      <li><a href="../_sources/strukture/prim.md" target="_blank"
+      <li><a href="../_sources/strukture/kristalografija.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -408,7 +408,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Primarna struktura</h1>
+    <h1>Kristalografija</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -418,8 +418,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aminokislinski-ostanki">Aminokislinski ostanki</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peptidna-vez">Peptidna vez</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#splosne-lastnosti">Splošne lastnosti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simetrija">Simetrija</a></li>
 </ul>
             </nav>
         </div>
@@ -431,73 +431,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="primarna-struktura">
-<h1>Primarna struktura<a class="headerlink" href="#primarna-struktura" title="Link to this heading">#</a></h1>
-<section id="aminokislinski-ostanki">
-<h2>Aminokislinski ostanki<a class="headerlink" href="#aminokislinski-ostanki" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="kristalografija">
+<h1>Kristalografija<a class="headerlink" href="#kristalografija" title="Link to this heading">#</a></h1>
+<p>Seje naslavljajo lastnosti makromolekulskih kristalov, ki se uporabljajo pri določanju strukture z X-žarkovno kristalografijo. Slike sej spremlja kratek opis, dodatne opombe pa so neposredno na sejah.</p>
+<section id="splosne-lastnosti">
+<h2>Splošne lastnosti<a class="headerlink" href="#splosne-lastnosti" title="Link to this heading">#</a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Označevanje atomov aminokislinskih ostankov</div>
+Kanali topila v proteinskih kristalih</div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-abeceda.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/ak-abeceda.png" id="ak-abeceda" src="../_images/ak-abeceda.png" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-kanali_topila.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-kanali_topila.png" id="kristali-kanali-topila" src="../_images/kristali-kanali_topila.png" /></a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<p class="sd-card-text">Elementnim oznakam atomov aminokislin(skih ostankov) po dogovoru dodajamo majhne črke grške abecede začenpi z <span class="math notranslate nohighlight">\(\alpha\)</span> ter eventuelno še arabske številke, s čimer vsak atom dobi unikatno oznako. Programi za vizualizacijo grške črke ponavadi pretvorijo kar v latinske in na tak način so atomi označeni tudi v datotekah PDB in (mm)CIF – pri tem npr. <span class="math notranslate nohighlight">\(\alpha\)</span> postane A itd. (vse pretvorbe so zbrane v <a class="reference internal" href="#tabela-grske-latinske-oznake"><span class="std std-ref">tabeli</span></a>).</p>
-<p class="sd-card-text">V seji je peptid z aminokislinskim zaporedjem GASTCDNEQHPLIVMKRFYW (torej vseh 20 standarnih aminokislinskih ostankov), kjer so atomi označeni v skladu z zgoraj omenjeno nomenklaturo.</p>
+<p class="sd-card-text">Del kristala glikolat oksidaze 2 iz špinače (PDB <a class="reference external" href="https://www.rcsb.org/structure/1GOX">1GOX</a>), kjer le 27 % prostornine kristala predstavljajo molekule proteina, 73 % prostornine pa topilo. Molekul slednjega se zaradi neurejenosti “ne vidi”, vidi se pa tiste molekule vode, ki so neposredno ob proteinskih molekulah in se tako kot le-te periodično ponavljajo v kristalu. Glikolat oksidaza sicer tvori močan tetramer, ki se preko šibkih interakcij poveže z drugim tetramerom v oktamer.</p>
 </div>
 </div>
 </div>
-<p class="sd-card-text">Za ogled je na voljo tudi <a class="reference external" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-abeceda_H.molx&amp;amp;snapshot-url-type=molx&amp;amp;hide-controls=1">seja</a>, kjer so prikazani in označeni vodikovi atomi. Bodite pozorni na protonacijsko stanje N- ter C-konca in aspartatnega, glutamatnega, argininskega, lizinskega in histidinskega ostanka.</p>
-<p class="sd-card-text" id="tabela-grske-latinske-oznake"><strong>Tabela pretvorb iz grških v latinske oznake</strong></p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p class="sd-card-text">grška oznaka</p></th>
-<th class="head text-left"><p class="sd-card-text">latinska oznaka</p></th>
-<th class="head text-left"><p class="sd-card-text">ime</p></th>
-<th class="head text-left"><p class="sd-card-text">primer</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
-<td class="text-left"><p class="sd-card-text">A</p></td>
-<td class="text-left"><p class="sd-card-text">alfa</p></td>
-<td class="text-left"><p class="sd-card-text">CA (vse ak)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\beta\)</span></p></td>
-<td class="text-left"><p class="sd-card-text">B</p></td>
-<td class="text-left"><p class="sd-card-text">beta</p></td>
-<td class="text-left"><p class="sd-card-text">CB (Ala)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\gamma\)</span></p></td>
-<td class="text-left"><p class="sd-card-text">G</p></td>
-<td class="text-left"><p class="sd-card-text">gama</p></td>
-<td class="text-left"><p class="sd-card-text">CG (Glu), OG (Ser)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\delta\)</span></p></td>
-<td class="text-left"><p class="sd-card-text">D</p></td>
-<td class="text-left"><p class="sd-card-text">delta</p></td>
-<td class="text-left"><p class="sd-card-text">CD (Lys), CD (Glu), OD1 (Asp), SD (Met)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\epsilon\)</span></p></td>
-<td class="text-left"><p class="sd-card-text">E</p></td>
-<td class="text-left"><p class="sd-card-text">epsilon</p></td>
-<td class="text-left"><p class="sd-card-text">CE1 (Tyr), OE2 (Glu), NE2 (His), CE (Met)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\zeta\)</span></p></td>
-<td class="text-left"><p class="sd-card-text">Z</p></td>
-<td class="text-left"><p class="sd-card-text">zeta</p></td>
-<td class="text-left"><p class="sd-card-text">CZ (Tyr), CZ3 (Trp), CZ (Arg)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p class="sd-card-text"><span class="math notranslate nohighlight">\(\eta\)</span></p></td>
-<td class="text-left"><p class="sd-card-text">H</p></td>
-<td class="text-left"><p class="sd-card-text">eta</p></td>
-<td class="text-left"><p class="sd-card-text">NH1 (Arg), CH2 (Trp), OH (Tyr)</p></td>
-</tr>
-</tbody>
-</table>
+<p class="sd-card-text">Nekateri kristali vsebujejo še večji delež topila, znani pa so tudi zelo na gosto pakirani kristali, kjer topilo predstavlja manj kot 1 % prostornine kristala. En tak primer je kristal 6. in 7. domene mišjega faktorja H, ki regulira delovanje komplementa (PDB <a class="reference external" href="https://www.rcsb.org/structure/2YBY">2YBY</a>), predpripravljeno sejo si lahko ogledate <a class="reference external" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-tesno_pakiranje.molx&amp;amp;snapshot-url-type=molx&amp;amp;hide-controls=1">tukaj</a>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Povezave<div class="sd-summary-down docutils">
@@ -505,58 +458,27 @@ Povezave<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-abeceda.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/ak-abeceda-qr.png" src="../_images/ak-abeceda-qr.png" style="width: 200px;" /></a>
-</div>
-</details></div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Kiralnost aminokislinskih ostankov</div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
-<div class="sd-col sd-d-flex-column docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-D-ak.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/ak-D-ak.png" id="vijacnica-beta-2" src="../_images/ak-D-ak.png" /></a>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<p class="sd-card-text">Nekateri peptidi in proteini vsebujejo D-aminokislinske ostanke, ki so lahko ključni za samo strukturo, hkrati pa pogosto omogočajo odpornost peptidne vezi, v kateri so udeleženi, na “napad” s strani peptidaz, ki so večinoma prilagojene za hidrolizo peptidnih vezi med L-aminokislinskimi ostanki. Primer je antibiotik gramicidin A iz <em>Bacillus brevis</em> (PDB <a class="reference external" href="https://www.rcsb.org/structure/1BDW">1BDW</a>), pri katerem si alternirajoče sledijo D- in L-aminokislinski ostanki.</p>
-</div>
-</div>
-</div>
-<p class="sd-card-text"><em>Naj vas razlika v imenu gramicidin A (na tej strani) in gramicidin D (na strani RCSB PDB) ne zmoti – gramicidin A je ime za točno določeno obliko, medtem ko je gramicidin D mešanica gramicidina A, B in C, od tega pa ima vsak 2 izoobliki …</em></p>
-<blockquote>
-<div><p class="sd-card-text"><strong>V razmislek</strong>: Aktivna oblika gramicidina A je dimer dveh kratkih verig. Prepoznate kak poseben vzorec vodikovih vezi med glavnima verigama v dimeru?</p>
-</div></blockquote>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Povezave<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/ak-D-ak.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/ak-D-ak-qr.png" src="../_images/ak-D-ak-qr.png" style="width: 200px;" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-kanali_topila.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-kanali_topila-qr.png" src="../_images/kristali-kanali_topila-qr.png" style="width: 200px;" /></a>
 </div>
 </details></div>
 </div>
 </section>
-<section id="peptidna-vez">
-<h2>Peptidna vez<a class="headerlink" href="#peptidna-vez" title="Link to this heading">#</a></h2>
+<section id="simetrija">
+<h2>Simetrija<a class="headerlink" href="#simetrija" title="Link to this heading">#</a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Cis konfiguracija peptidne vezi</div>
+Kristalografska simetrija in proteinski oligomeri (primer 1)</div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/peptidna_vez-cis.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/peptidna_vez-cis.png" id="peptidna-vez-cis" src="../_images/peptidna_vez-cis.png" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-1.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-1.png" id="kristali-simetrija-1" src="../_images/kristali-simetrija-1.png" /></a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<p class="sd-card-text">Cis konfugiracija peptidne vezi je v proteinih relativno redka – ne ravno pogosta je že pri {Pro}–Pro, prava redkost pa je pri {Pro}–{Pro} vezeh. V strukturi človeškega koagulacijskega faktorja XIII (PDB <a class="reference external" href="https://www.rcsb.org/structure/1F13">1F13</a>, dimer), določeni pri ločljivosti 2,1 Å, sta razvidni obe! Cis konfiguracija vezi Arg310–Tyr311 je pomemben faktor pri strukturi v bližini funkcionalnega mesta, Gln425–Phe426 pa pri dimerizaciji. Zanimivo, v predhodno določenih strukturah tega proteina so zaradi slabše ločljivosti ti dve vezi zmodelirali v trans konfiguraciji (strukturi <a class="reference external" href="https://www.rcsb.org/structure/1GGT">1GGT</a> pri 2,65 Å in <a class="reference external" href="https://www.rcsb.org/structure/1FIE">1FIE</a> pri 2,5 Å). V strukturi 1F13 je lepo razvidno, da CO in NH skupini cis peptidne vezi Arg310–Tyr311 sodelujeta v vodikovih vezeh z ogrodjem drugega dela iste polipeptidne verige, pri 1FIE pa tega ni.
-Posamezna podenota dimera v strukturi 1F13 vsebuje tudi dve cis peptidni vezi, pri katerih je udeležen prolinski ostanek, primer je vez Gly410–Pro411.</p>
+<p class="sd-card-text">Pri homo-oligomernih proteinih se pogosto zgodi, da je v asimetrični enoti kristala le ena podenota, celoten biološko relevanten oligomer pa dobimo z aplikacijo ustreznih simetrijskih operacij. Primer je kristalna struktura zunajceličnega dela proteina EpCAM, ki tvori biološko relevanten močan dimer (konstanta disociacije v raztopini je v nanomolarnem območju). Dimer ima dvoštevno os ciklične simetrije (<span class="math notranslate nohighlight">\(C2\)</span>), kar pomeni, da lahko iz ene kopije podenote dobimo drugo z rotacijo okoli te osi za 180°. V kristalu ta os sovpada z <span class="math notranslate nohighlight">\(2_1\)</span> osjo prostorske skupine (v tej monoklinski <span class="math notranslate nohighlight">\(C_1 2_1\)</span> prostorski skupini so v osnovni celici 4 asimetrične enote). Tako je v asimetrični enoti le ena kopija polipeptidne verige oz. ena podenota, biolološko relevanten dimer pa dobimo z aplikacijo rotacije za 180° okoli ustrezne osi. V osnovni celici tega kristala so 4 polipeptidne verige.</p>
 </div>
 </div>
 </div>
-<p class="sd-card-text">Priložena seja vsebuje več posnetkov in sicer posamični prikaz cis peptidnih vezi Arg310–Tyr311, Gln425–Phe426 in Gly410–Pro411, superpozicijo Arg310–Tyr311 iz PDB 1F13 (cis) in 1FIE (trans), zraven tega pa še ločen prikaz okoliških ostankov z nekovalentimi interakcijami za Arg310–Tyr311 v cis (1F13) in trans (1FIE) konfiguraciji.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Povezave<div class="sd-summary-down docutils">
@@ -564,7 +486,58 @@ Povezave<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/peptidna_vez-cis.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/peptidna_vez-cis-qr.png" src="../_images/peptidna_vez-cis-qr.png" style="width: 200px;" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-1.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-1-qr.png" src="../_images/kristali-simetrija-1-qr.png" style="width: 200px;" /></a>
+</div>
+</details></div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Kristalografska simetrija in proteinski oligomeri (primer 2)</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-2.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-2.png" id="kristali-simetrija-2" src="../_images/kristali-simetrija-2.png" /></a>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p class="sd-card-text">Eden izmed mnogih primerov, kjer osi simetrije homo-oligomernega proteina sovpadajo z osmi prostorske skupine, je tudi kristal keto reduktaze iz žuželke <em>Bemisia argentifolii</em>, ki rada napada božične zvezde (PDB <a class="reference external" href="https://www.rcsb.org/structure/1E3J">1E3J</a>). Biološko relevantna oligomerna oblika tega encima je homo-tetramer, a v asimetrični enoti kristala je le ena podenota. Med pari podenot tetramera so dvoštevne simetrijske osi – v tetrameru so take osi 3, druga na drugo so pravokotne, v takem primeru govorimo o dihedralni simetriji tipa <span class="math notranslate nohighlight">\(D2\)</span>.</p>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Povezave<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-2.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-2-qr.png" src="../_images/kristali-simetrija-2-qr.png" style="width: 200px;" /></a>
+</div>
+</details></div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Translacijska nekristalografska simetrija</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-tncs.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-tncs.png" id="kristali-ncs" src="../_images/kristali-tncs.png" /></a>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p class="sd-card-text">Primer posebne vrste nekristalografske simetrije, t.i. translacijske NCS (tNCS), je struktura kokošjega kalmodulina (PDB <a class="reference external" href="https://www.rcsb.org/structure/1UP5">1UP5</a>), kjer sta v asimetrični enoti dve kopiji te molekule. Na hitro bi skoraj rekli, da bi lahko iz ene kopije dobili drugo zgolj z enostavno translacijo, a to ne bo šlo, saj se molekuli
+razlikujeta v konformaciji. V seji so kopije molekul z isto konformacijo obarvane z enako barvo (oranžna oz. modra za vsako od konformacij). Razlike v konformaciji med molekulama v isti asimetrični enoti najbolje razkrije superpozicija, čeprav jih pozorno oko opazi že brez tega.</p>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Povezave<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-tncs.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-tncs-qr.png" src="../_images/kristali-tncs-qr.png" style="width: 200px;" /></a>
 </div>
 </details></div>
 </div>
@@ -602,20 +575,20 @@ Povezave<div class="sd-summary-down docutils">
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="vizualizacija.html"
+       href="razredi.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Vizualizacija</p>
+        <p class="prev-next-title">Razredi</p>
       </div>
     </a>
     <a class="right-next"
-       href="ss.html"
+       href="../orodjarna/zbirke.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sekundarna struktura</p>
+        <p class="prev-next-title">Zbirke strukturnih podatkov</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -635,8 +608,8 @@ Povezave<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aminokislinski-ostanki">Aminokislinski ostanki</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peptidna-vez">Peptidna vez</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#splosne-lastnosti">Splošne lastnosti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simetrija">Simetrija</a></li>
 </ul>
   </nav></div>
 
