@@ -11,6 +11,7 @@ parts:
   - file: strukture/interakcije
   - file: strukture/motivi
   - file: strukture/razredi
+  - file: strukture/kristalografija
 - caption: Orodjarna
   chapters:
   - file: orodjarna/zbirke
