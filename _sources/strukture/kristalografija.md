@@ -30,6 +30,30 @@ Nekateri kristali vsebujejo še večji delež topila, znani pa so tudi zelo na g
 ```
 ````
 
+````{card} Ločljivost
+
+::::{grid} 1 1 2 2
+:reverse:
+
+:::{grid-item}
+```{image} ../seje/kristali-locljivost.png
+:name: kristali-locljivost
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivost.molx&snapshot-url-type=molx&hide-controls=1
+```
+:::
+
+:::{grid-item}
+Različne kristalne strukture so določene pri različnih ločljivostih. Na ločljivost vpliva v prvi vrsti notranja urejenost v kristalu (ki pa je spet odvisna od številnih faktorjev kot so strukturna "urejenost" proteina, način zlaganja molekul v kristalno mrežo, kristalni kontakti, ...), odvisna je tudi čisto tehničnih karakteristik difraktometra (na sinhrotronih se dosega višje ločljivosti).
+
+Primer proteina, katerega struktura je določena pri izredno visoki (0,77 Å) in hkrati srednji ločljivosti (2,67 Å), je mioglobin iz kita glavača (PDB [5YCE](https://www.rcsb.org/structure/5YCE) za 0,77 Å in [108M](https://www.rcsb.org/structure/108m) za 2,67 Å). Iz primerjave kart elektronske gostote je jasno razvidno, da v primeru atomske ločljivosti opazimo oblake elektronske gostote, ki ustrezajo posameznim atomom, jasno pa so razvidne tudi alternativne konformacije delov polipeptidne verige ali posameznih aminokislinskih ostankov. V primeru slabše ločljivosti take podrobnosti niso razvidne.
+
+Prikaza omenjenih struktur sta dosegljiva v dveh ločenih sejah: [2,67 Å](https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivostA.molx&snapshot-url-type=molx&hide-controls=1) in [0,77 Å](https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivostB.molx&snapshot-url-type=molx&hide-controls=1).
+
+:::
+::::
+
+````
+
 ## Simetrija
 
 ````{card} Kristalografska simetrija in proteinski oligomeri (primer 1)
