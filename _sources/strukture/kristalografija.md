@@ -30,14 +30,14 @@ Nekateri kristali vsebujejo še večji delež topila, znani pa so tudi zelo na g
 ```
 ````
 
-````{card} Ločljivost
+````{card} Ločljivost: primerjava elektronske gostote v kristalih istih proteinov pri različni ločljivosti
 
 ::::{grid} 1 1 2 2
 :reverse:
 
 :::{grid-item}
-```{image} ../seje/kristali-locljivost.png
-:name: kristali-locljivost
+```{image} ../seje/kristali-locljivost-1.png
+:name: kristali-locljivost-1
 :target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivost.molx&snapshot-url-type=molx&hide-controls=1
 ```
 :::
@@ -45,12 +45,18 @@ Nekateri kristali vsebujejo še večji delež topila, znani pa so tudi zelo na g
 :::{grid-item}
 Različne kristalne strukture so določene pri različnih ločljivostih. Na ločljivost vpliva v prvi vrsti notranja urejenost v kristalu (ki pa je spet odvisna od številnih faktorjev kot so strukturna "urejenost" proteina, način zlaganja molekul v kristalno mrežo, kristalni kontakti, ...), odvisna je tudi čisto tehničnih karakteristik difraktometra (na sinhrotronih se dosega višje ločljivosti).
 
-Primer proteina, katerega struktura je določena pri izredno visoki (0,77 Å) in hkrati srednji ločljivosti (2,67 Å), je mioglobin iz kita glavača (PDB [5YCE](https://www.rcsb.org/structure/5YCE) za 0,77 Å in [108M](https://www.rcsb.org/structure/108m) za 2,67 Å). Iz primerjave kart elektronske gostote je jasno razvidno, da v primeru atomske ločljivosti opazimo oblake elektronske gostote, ki ustrezajo posameznim atomom, jasno pa so razvidne tudi alternativne konformacije delov polipeptidne verige ali posameznih aminokislinskih ostankov. V primeru slabše ločljivosti take podrobnosti niso razvidne.
+Primer proteina, katerega struktura je določena pri izredno visoki (0,77 Å) in pa ločeno pri srednji ločljivosti (2,67 Å), je mioglobin iz kita glavača (PDB [5YCE](https://www.rcsb.org/structure/5YCE) za 0,77 Å in [108M](https://www.rcsb.org/structure/108m) za 2,67 Å). Iz primerjave kart elektronske gostote je jasno razvidno, da v primeru atomske ločljivosti opazimo oblake elektronske gostote, ki ustrezajo posameznim atomom, jasno pa so razvidne tudi alternativne konformacije delov polipeptidne verige ali posameznih aminokislinskih ostankov. V primeru slabše ločljivosti take podrobnosti niso razvidne.
 
-Prikaza omenjenih struktur sta dosegljiva v dveh ločenih sejah: [2,67 Å](https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivostA.molx&snapshot-url-type=molx&hide-controls=1) in [0,77 Å](https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivostB.molx&snapshot-url-type=molx&hide-controls=1).
+Drug primer je struktura C-končne DNA-vezavne domene OmpR iz bakterije *Escherichia coli*. Znanih je več struktur, od teh pa je ena bila določena pri ločljivosti 3,56 Å (PDB [6LXL](https://www.rcsb.org/structure/6LXL)), druga pa pri 1,95 Å (PDB [1OPC](https://www.rcsb.org/structure/1opc)).
 
 :::
 ::::
+
+Prikazi struktur in elektronskih gostot omenjenih struktur so na voljo v ločenih sejah:
+- mioglobin iz kita glavača: [2,67 Å](https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivost-1niz.molx&snapshot-url-type=molx&hide-controls=1) in [0,77 Å](https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivost-1vis.molx&snapshot-url-type=molx&hide-controls=1);
+- DNA-vezavna domena OmpR iz bakterije *E. coli*: [3,56 Å](https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivost-2niz.molx&snapshot-url-type=molx&hide-controls=1) in [1,95 Å](https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivost-2vis.molx&snapshot-url-type=molx&hide-controls=1).
+
+Elektronska gostota okoli posameznih ostankov je bolje vidna, če izklopite prikaz traku.
 
 ````
 
