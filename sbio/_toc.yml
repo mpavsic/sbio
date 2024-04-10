@@ -12,6 +12,7 @@ parts:
   - file: strukture/motivi
   - file: strukture/razredi
   - file: strukture/kristalografija
+  - file: strukture/membranski_proteini
 - caption: Orodjarna
   chapters:
   - file: orodjarna/zbirke
