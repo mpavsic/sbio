@@ -172,8 +172,8 @@ Miha Pavšič, katerega seminar ima zaporedno številko 7 in bi predstavljal str
 - **Ne berite z drsnic, iz opomb k drsnicam ali drugih beležk.** Besedilo na drsnicah naj vam služi kot oporne točke med predstavitvijo, vsekakor pa naj to ne bo edino besedilo, ki ga na predstavitvi izgovorite.
 - Strukture lahko med predstavitvijo [prikažete interaktivno](interaktivni-prikaz-struktur).
 - **Upoštevajte časovno omejitev**:
-  - predstavitev: 14 min,
-  - diskusija: 4 min.
+  - predstavitev: 12 min,
+  - diskusija: 3 min.
 
 (interaktivni-prikaz-struktur)=
 ```{admonition} Interaktivni prikaz struktur
