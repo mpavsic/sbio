@@ -34,11 +34,11 @@ parts:
     - file: seminar/delavnice-pdb
     - file: seminar/delavnice-molstar
     - file: seminar/delavnice-pymol
-  - file: seminar/studenti
+  - file: seminar/naloge
     sections:
-    - file: seminar/studenti-navodila
+    - file: seminar/naloge-navodila
       title: Navodila
-    - file: seminar/studenti_2023-2024/studenti_2023-2024
+    - file: seminar/naloge_2023-2024/naloge_2023-2024
 - caption: Priloge
   chapters:
   - file: priloge/reference
