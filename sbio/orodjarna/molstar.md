@@ -63,7 +63,7 @@ Vse interaktivne [vizualizacije molekul](../strukture/navodila.md), ki so pripra
 
 ## Shranjevanje sej
 
-Seje shranimo tako, da v meniju na skrajno levi strani zgoraj (oznaka **1**) kliknemo na ikono <i class="fa-solid fa-floppy-disk"></i>, nato pa kliknemo na **Session**. Na naš računalnik se nam prenese datoteka s končnico `molx`, ki jo lahko ponovno naložimo v MolStar preko klika na **Open**. Lahk joo spreminjamo in spet prenesemo (spremenjeno) sejo na naš računalnik.
+Seje shranimo tako, da v meniju na skrajno levi strani zgoraj (oznaka **1**) kliknemo na ikono <i class="fa-solid fa-floppy-disk"></i>, nato pa kliknemo na **Session**. Na naš računalnik se nam prenese datoteka s končnico `molx`, ki jo lahko ponovno naložimo v MolStar preko klika na **Open**. Lahko jo spreminjamo in spet prenesemo (spremenjeno) sejo na naš računalnik.
 
 Pozor – bolje je shranjevati seje kot 'Session' in ne zgolj kot 'State' (stanje), saj se pri 'State' morebitne koordinate iz datotek PDB, ki jih prenesemo z našega računalnika, ne shranijo v datoteko s sejo.
 
