@@ -148,7 +148,7 @@ Datoteke, ki jih boste oddali, **obvezno** poimenujte po ključu `SP-S##-Priimek
 
 Upoštevajte velike oz. male črke, kot so prikazane v ključu. Operacijski sistemi končnic pogosto ne prikazujejo (čeprav so prisotne v imenih datotek), zato pazite, da jih ne boste po nepotrebnem dodajali sami.
 
-**Ne nalagajte predstavitev v formatu PowerPoint** ipd. temveč jih tam shranite kot datoteko PDF; če želite vključiti komentarje k drsnicam za kolege, izberite ustrezno postavitev (*layout*) ob izvozu.
+**Ne nalagajte predstavitev v formatu PowerPoint** ipd. temveč jih tam shranite kot datoteko PDF; če želite vključiti komentarje k drsnicam za kolege, izberite ustrezno postavitev (*layout*) ob izvozu. Datoteko PDF s komentarji lahko ustvarite tudi funkcijo *Print > Save as PDF* oz. podobno.
 
 Pri ključu za poimenovanje je `##` zaporedna številka vaše seminarske naloge, če gre za številko v rangu 1–9 dodajte vodilno ničlo (npr. `9` $\rightarrow$ `09`). Dovoljeni znaki v imenih datotek so le:
 - znaki za številke 0–9,
