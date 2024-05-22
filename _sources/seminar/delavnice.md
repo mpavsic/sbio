@@ -1,6 +1,6 @@
 # Seminarske delavnice
 
-Zraven [predstavitev seminarskih nalog](studenti.md) bodo v okviru seminarskih terminov izvedene tri praktične delavnice, katerih teme bodo:
+Zraven [predstavitev seminarskih nalog](naloge.md) bodo v okviru seminarskih terminov izvedene tri praktične delavnice, katerih teme bodo:
 - [**zbirke struktur**](delavnice-pdb.md) s poudarkom na zbirki RCSB PDB, predstavljene pa bodo tudi PDBe, AlphaFold Protein Structure Database, BMRB in EMDB,
 - [**vizualizacija struktur z orodjem MolStar**](delavnice-molstar.md),
 - [**vizualizacija struktur z orodjem PyMOL**](delavnice-pymol.md).
