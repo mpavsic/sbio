@@ -2,6 +2,14 @@
 
 Spodaj je zbranih nekaj uporabnih povezav do zbirk in orodij, ki omogočajo analizo makromolekulskih struktur.
 
+## Sekundarna struktura
+
+Orodja za **pripis (*asignacijo*) sekundarne strukture** posameznim aminokislinskim ostankom na osnovi 3D strukture (pogosto jih najdemo integrirana v programe za vizualizacijo struktur ipd.):
+- [STRIDE](https://webclu.bio.wzw.tum.de/cgi-bin/stride/stridecgi.py) (STRuctural IDEntification), ki kombinira vodikove vezi in njihovo energetiko (glede na geometrijo, s prilagoditvami na osnovi empiričnih podatkov iz znanih struktur) s torzijskimi koti ogrodja {cite:p}`Frishman1995aaa`;
+- [DSSP](https://pdb-redo.eu/dssp) (Dictionary of Secondary Structure of Proteins), ki, podobno kot STRIDE, kombinira vodikove vezi in njihovo energetiko (glede na geometrijo, na osnovi enačbe za izračun elektrostatskega potenciala) {cite:p}`Kabsch1983aaa`.
+
+
+
 ## Lastnosti
 
 - [APBS](https://server.poissonboltzmann.org/): Strežnik na osnovi programa Adaptive Poisson-Boltzmann Solver, ki omogoča izračun **elektrostatskih lastnosti** molekul in ob tem upošteva solvatacijo {cite:p}`Jurrus2018aaa`.
