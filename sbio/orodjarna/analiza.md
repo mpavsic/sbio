@@ -37,4 +37,5 @@ Orodja za **pripis (*asignacijo*) sekundarne strukture** posameznim aminokislins
 
 ## Nukleinske kisline
 
+- [DNATCO](https://dnatco.datmos.org/): orodje za podrobno **analizo in validacijo struktur nukleinskih kislin**, ki preko analize konformerov dinukleotidov (uporablja posebno strukturno "abecedo", vsak simbol označuje unikaten konformer {cite:p}`Cerny2020aaa`) daje podroben vpogled v konformacijo nukleinskih kislin.
 - [X3DNA-DSSR web](http://wdssr.x3dna.org/): spletna oblika orodja [X3DNA-DSSR](https://x3dna.org/) za **analizo in vizualizacijo strukturnih značilnosti 3D struktur nukleinskih kislin**, med drugim izpiše bazne pare in z njimi povezane parametre, parametre vijačnih delov strukture, nalaganje baz (*stacking*), lasnice, konformacije sladkorjev ...
