@@ -34,3 +34,7 @@ Orodja za **pripis (*asignacijo*) sekundarne strukture** posameznim aminokislins
 ## Razno
 
 - [PDBsum](https://www.ebi.ac.uk/thornton-srv/databases/pdbsum/): **poenostavljen grafični prikaz struktur** v zbirki PDB ter tudi AlphaFold modelov, med drugim izriše topološki diagram, prikaže različne elemente sekundarne strukture, ligande ter interakcije protein:ligand, žepe in tunele v proteinu itd.
+
+## Nukleinske kisline
+
+- [X3DNA-DSSR web](http://wdssr.x3dna.org/): spletna oblika orodja [X3DNA-DSSR](https://x3dna.org/) za **analizo in vizualizacijo strukturnih značilnosti 3D struktur nukleinskih kislin**, med drugim izpiše bazne pare in z njimi povezane parametre, parametre vijačnih delov strukture, nalaganje baz (*stacking*), lasnice, konformacije sladkorjev ...
