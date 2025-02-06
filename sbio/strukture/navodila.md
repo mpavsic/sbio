@@ -14,7 +14,7 @@ S sejami lahko poljubno manipulirate. Najenostavnejše operacije so rotacija, pr
 
 Če želite seje uporabljati brez internetne povezave (*offline*) morate storiti dvoje:
 - posamezne seje (datoteke s končnico `molx`) ali kar [celotno mapo s sejami](https://github.com/mpavsic/sbio/tree/main/sbio/seje) (`seje`) si prenesite z repozitorija, za prenos mape kot dela repozitorija lahko uporabite več pristopov, na primer [tega](https://www.wikihow.com/Download-a-GitHub-Folder) ali [tega](https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo),
-- nainstalirajte si [Visual Studio Code](https://code.visualstudio.com/) (na voljo za Windows, Linux in macOS) z razširitvijo [Protein Viewer](https://marketplace.visualstudio.com/items?itemName=ArianJamasb.protein-viewer), kot je to na kratko opisano v [razdelku MolStar](molstar-lokalno).
+- nainstalirajte si [Visual Studio Code](https://code.visualstudio.com/) ali odprtokodno različivo [VSCodium](https://vscodium.com/) (na voljo za Windows, Linux in macOS) z razširitvijo [Protein Viewer](https://marketplace.visualstudio.com/items?itemName=ArianJamasb.protein-viewer), kot je to na kratko opisano v [razdelku MolStar](molstar-lokalno).
 
 
 (nedelovanje-sej)=
