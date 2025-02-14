@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,10 +27,10 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -39,10 +39,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -209,7 +209,6 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/naloge.html">Seminarske naloge</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../seminar/naloge-navodila.html">Navodila</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../seminar/naloge_2023-2024/naloge_2023-2024.html">Seminarske naloge 2023/2024</a></li>
 </ul>
 </details></li>
 </ul>
@@ -224,9 +223,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -409,6 +413,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oligomeri">Oligomeri</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podobne-strukture">Podobne strukture</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#razno">Razno</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nukleinske-kisline">Nukleinske kisline</a></li>
 </ul>
             </nav>
         </div>
@@ -427,20 +432,20 @@
 <h2>Sekundarna struktura<a class="headerlink" href="#sekundarna-struktura" title="Link to this heading">#</a></h2>
 <p>Orodja za <strong>pripis (<em>asignacijo</em>) sekundarne strukture</strong> posameznim aminokislinskim ostankom na osnovi 3D strukture (pogosto jih najdemo integrirana v programe za vizualizacijo struktur ipd.):</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://webclu.bio.wzw.tum.de/cgi-bin/stride/stridecgi.py">STRIDE</a> (STRuctural IDEntification), ki kombinira vodikove vezi in njihovo energetiko (glede na geometrijo, s prilagoditvami na osnovi empiričnih podatkov iz znanih struktur) s torzijskimi koti ogrodja <span id="id1">[<a class="reference internal" href="../priloge/reference.html#id3" title="Dmitrij Frishman and Patrick Argos. Knowledge-based protein secondary structure assignment. Proteins: Structure, Function, and Bioinformatics, 23(4):566–579, 1995. doi:https://doi.org/10.1002/prot.340230412.">Frishman and Argos, 1995</a>]</span>;</p></li>
-<li><p><a class="reference external" href="https://pdb-redo.eu/dssp">DSSP</a> (Dictionary of Secondary Structure of Proteins), ki, podobno kot STRIDE, kombinira vodikove vezi in njihovo energetiko (glede na geometrijo, na osnovi enačbe za izračun elektrostatskega potenciala) <span id="id2">[<a class="reference internal" href="../priloge/reference.html#id2" title="Wolfgang Kabsch and Christian Sander. Dictionary of protein secondary structure: pattern recognition of hydrogen-bonded and geometrical features. Biopolymers, 22(12):2577–2637, 1983. doi:https://doi.org/10.1002/bip.360221211.">Kabsch and Sander, 1983</a>]</span>.</p></li>
+<li><p><a class="reference external" href="https://webclu.bio.wzw.tum.de/cgi-bin/stride/stridecgi.py">STRIDE</a> (STRuctural IDEntification), ki kombinira vodikove vezi in njihovo energetiko (glede na geometrijo, s prilagoditvami na osnovi empiričnih podatkov iz znanih struktur) s torzijskimi koti ogrodja <span id="id1">[<a class="reference internal" href="../priloge/reference.html#id4" title="Dmitrij Frishman and Patrick Argos. Knowledge-based protein secondary structure assignment. Proteins: Structure, Function, and Bioinformatics, 23(4):566–579, 1995. doi:https://doi.org/10.1002/prot.340230412.">Frishman and Argos, 1995</a>]</span>;</p></li>
+<li><p><a class="reference external" href="https://pdb-redo.eu/dssp">DSSP</a> (Dictionary of Secondary Structure of Proteins), ki, podobno kot STRIDE, kombinira vodikove vezi in njihovo energetiko (glede na geometrijo, na osnovi enačbe za izračun elektrostatskega potenciala) <span id="id2">[<a class="reference internal" href="../priloge/reference.html#id3" title="Wolfgang Kabsch and Christian Sander. Dictionary of protein secondary structure: pattern recognition of hydrogen-bonded and geometrical features. Biopolymers, 22(12):2577–2637, 1983. doi:https://doi.org/10.1002/bip.360221211.">Kabsch and Sander, 1983</a>]</span>.</p></li>
 </ul>
 </section>
 <section id="lastnosti">
 <h2>Lastnosti<a class="headerlink" href="#lastnosti" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://server.poissonboltzmann.org/">APBS</a>: Strežnik na osnovi programa Adaptive Poisson-Boltzmann Solver, ki omogoča izračun <strong>elektrostatskih lastnosti</strong> molekul in ob tem upošteva solvatacijo <span id="id3">[<a class="reference internal" href="../priloge/reference.html#id12" title="Elizabeth Jurrus, Dave Engel, Keith Star, Kyle Monson, Juan Brandi, Lisa E. Felberg, David H. Brookes, Leighton Wilson, Jiahui Chen, Karina Liles, Minju Chun, Peter Li, David W. Gohara, Todd Dolinsky, Robert Konecny, David R. Koes, Jens Erik Nielsen, Teresa Head-Gordon, Weihua Geng, Robert Krasny, Guo-Wei Wei, Michael J. Holst, J. Andrew McCammon, and Nathan A. Baker. Improvements to the apbs biomolecular solvation software suite. Protein Science, 27(1):112-128, 2018. doi:https://doi.org/10.1002/pro.3280.">Jurrus <em>et al.</em>, 2018</a>]</span>.</p></li>
+<li><p><a class="reference external" href="https://server.poissonboltzmann.org/">APBS</a>: Strežnik na osnovi programa Adaptive Poisson-Boltzmann Solver, ki omogoča izračun <strong>elektrostatskih lastnosti</strong> molekul in ob tem upošteva solvatacijo <span id="id3">[<a class="reference internal" href="../priloge/reference.html#id13" title="Elizabeth Jurrus, Dave Engel, Keith Star, Kyle Monson, Juan Brandi, Lisa E. Felberg, David H. Brookes, Leighton Wilson, Jiahui Chen, Karina Liles, Minju Chun, Peter Li, David W. Gohara, Todd Dolinsky, Robert Konecny, David R. Koes, Jens Erik Nielsen, Teresa Head-Gordon, Weihua Geng, Robert Krasny, Guo-Wei Wei, Michael J. Holst, J. Andrew McCammon, and Nathan A. Baker. Improvements to the apbs biomolecular solvation software suite. Protein Science, 27(1):112-128, 2018. doi:https://doi.org/10.1002/pro.3280.">Jurrus <em>et al.</em>, 2018</a>]</span>.</p></li>
 </ul>
 </section>
 <section id="validacija">
 <h2>Validacija<a class="headerlink" href="#validacija" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="http://molprobity.biochem.duke.edu/help/about.html">MolProbity</a>: Orodje za <strong>validacijo/evaluacijo makromolekulskih struktur</strong>, določenih z rentgensko difrakcijo, krio-elektronsko mikroskopijo itd., do določene mere deluje tudi za ansamble struktur, določenih z NMR <span id="id4">[<a class="reference internal" href="../priloge/reference.html#id5" title="Christopher J. Williams, Jeffrey J. Headd, Nigel W. Moriarty, Michael G. Prisant, Lizbeth L. Videau, Lindsay N. Deis, Vishal Verma, Daniel A. Keedy, Bradley J. Hintze, Vincent B. Chen, Swati Jain, Steven M. Lewis, W. Bryan Arendall III, Jack Snoeyink, Paul D. Adams, Simon C. Lovell, Jane S. Richardson, and David C. Richardson. Molprobity: more and better reference data for improved all-atom structure validation. Protein Science, 27(1):293-315, 2018. doi:https://doi.org/10.1002/pro.3330.">Williams <em>et al.</em>, 2018</a>]</span>. Med drugim vam izpiše/izriše podatke o geometriji, neugodnih stikih, rotamerah ter Ramachandranov diagram.</p></li>
+<li><p><a class="reference external" href="http://molprobity.biochem.duke.edu/help/about.html">MolProbity</a>: Orodje za <strong>validacijo/evaluacijo makromolekulskih struktur</strong>, določenih z rentgensko difrakcijo, krio-elektronsko mikroskopijo itd., do določene mere deluje tudi za ansamble struktur, določenih z NMR <span id="id4">[<a class="reference internal" href="../priloge/reference.html#id6" title="Christopher J. Williams, Jeffrey J. Headd, Nigel W. Moriarty, Michael G. Prisant, Lizbeth L. Videau, Lindsay N. Deis, Vishal Verma, Daniel A. Keedy, Bradley J. Hintze, Vincent B. Chen, Swati Jain, Steven M. Lewis, W. Bryan Arendall III, Jack Snoeyink, Paul D. Adams, Simon C. Lovell, Jane S. Richardson, and David C. Richardson. Molprobity: more and better reference data for improved all-atom structure validation. Protein Science, 27(1):293-315, 2018. doi:https://doi.org/10.1002/pro.3330.">Williams <em>et al.</em>, 2018</a>]</span>. Med drugim vam izpiše/izriše podatke o geometriji, neugodnih stikih, rotamerah ter Ramachandranov diagram.</p></li>
 </ul>
 </section>
 <section id="oligomeri">
@@ -453,7 +458,7 @@
 <span id="analiza-podobne-strukture"></span><h2>Podobne strukture<a class="headerlink" href="#podobne-strukture" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.rcsb.org/alignment">Pairwise Structure Alignment</a>: <strong>Poravnava dveh struktur</strong> direktno na strežniku RCSB v povezavi z zbirko PDB, lahko naložimo tudi svoje datoteke. Na voljo več algoritmov (od zaporedja odvisni ter od zaporedja neodvisni).</p></li>
-<li><p><a class="reference external" href="https://www.ebi.ac.uk/msd-srv/ssm/">PDBeFold</a>: Orodje za <strong>iskanje podobnih struktur</strong> preko ujemanja prostorske razporeditve elementov sekundarne strukture (algoritem <em>secondary structure matching</em> (SSM)) <span id="id5">[<a class="reference internal" href="../priloge/reference.html#id4" title="E. Krissinel and K. Henrick. Secondary-structure matching (SSM), a new tool for fast protein structure alignment in three dimensions. Acta Crystallographica Section D, 60(12 Part 1):2256–2268, 2004. doi:https://doi.org/10.1107/S0907444904026460.">Krissinel and Henrick, 2004</a>]</span>.</p></li>
+<li><p><a class="reference external" href="https://www.ebi.ac.uk/msd-srv/ssm/">PDBeFold</a>: Orodje za <strong>iskanje podobnih struktur</strong> preko ujemanja prostorske razporeditve elementov sekundarne strukture (algoritem <em>secondary structure matching</em> (SSM)) <span id="id5">[<a class="reference internal" href="../priloge/reference.html#id5" title="E. Krissinel and K. Henrick. Secondary-structure matching (SSM), a new tool for fast protein structure alignment in three dimensions. Acta Crystallographica Section D, 60(12 Part 1):2256–2268, 2004. doi:https://doi.org/10.1107/S0907444904026460.">Krissinel and Henrick, 2004</a>]</span>.</p></li>
 <li><p><a class="reference external" href="http://ekhidna2.biocenter.helsinki.fi/dali/">DALI</a>: Orodje za iskanje podobnih struktur po principu lokalne podobnosti v kontaktih/bližinah aminokislinskih ostankov.</p></li>
 </ul>
 </section>
@@ -461,6 +466,13 @@
 <h2>Razno<a class="headerlink" href="#razno" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.ebi.ac.uk/thornton-srv/databases/pdbsum/">PDBsum</a>: <strong>poenostavljen grafični prikaz struktur</strong> v zbirki PDB ter tudi AlphaFold modelov, med drugim izriše topološki diagram, prikaže različne elemente sekundarne strukture, ligande ter interakcije protein:ligand, žepe in tunele v proteinu itd.</p></li>
+</ul>
+</section>
+<section id="nukleinske-kisline">
+<h2>Nukleinske kisline<a class="headerlink" href="#nukleinske-kisline" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://dnatco.datmos.org/">DNATCO</a>: orodje za podrobno <strong>analizo in validacijo struktur nukleinskih kislin</strong>, ki preko analize konformerov dinukleotidov (uporablja posebno strukturno “abecedo”, vsak simbol označuje unikaten konformer <span id="id6">[<a class="reference internal" href="../priloge/reference.html#id2" title="Jiří Černý, Paulína Božíková, Jakub Svoboda, and Bohdan Schneider. A unified dinucleotide alphabet describing both rna and dna structures. Nucleic Acids Research, 48(11):6367–6381, 05 2020. doi:10.1093/nar/gkaa383.">Černý <em>et al.</em>, 2020</a>]</span>) daje podroben vpogled v konformacijo nukleinskih kislin.</p></li>
+<li><p><a class="reference external" href="http://wdssr.x3dna.org/">X3DNA-DSSR web</a>: spletna oblika orodja <a class="reference external" href="https://x3dna.org/">X3DNA-DSSR</a> za <strong>analizo in vizualizacijo strukturnih značilnosti 3D struktur nukleinskih kislin</strong>, med drugim izpiše bazne pare in z njimi povezane parametre, parametre vijačnih delov strukture, nalaganje baz (<em>stacking</em>), lasnice, konformacije sladkorjev …</p></li>
 </ul>
 </section>
 </section>
@@ -536,6 +548,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oligomeri">Oligomeri</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podobne-strukture">Podobne strukture</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#razno">Razno</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nukleinske-kisline">Nukleinske kisline</a></li>
 </ul>
   </nav></div>
 
@@ -583,8 +596,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

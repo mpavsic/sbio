@@ -62,13 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/naloge-navodila';</script>
-    <link rel="canonical" href="https://mpavsic.github.io/sbio/seminar/naloge-navodila.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/naloge-navodila_2023-2024';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/sbio/seminar/naloge-navodila_2023-2024.html" />
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Reference" href="../priloge/reference.html" />
-    <link rel="prev" title="Seminarske naloge" href="naloge.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -119,6 +117,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -202,15 +202,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../orodjarna/analiza.html">Analiza struktur idr.</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="delavnice.html">Seminarske delavnice</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="delavnice-pdb.html">Delavnica: PDB</a></li>
 <li class="toctree-l2"><a class="reference internal" href="delavnice-molstar.html">Delavnica: MolStar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="delavnice-pymol.html">Delavnica: PyMOL</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="naloge.html">Seminarske naloge</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Navodila</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="naloge.html">Seminarske naloge</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="naloge-navodila.html">Navodila</a></li>
 </ul>
 </details></li>
 </ul>
@@ -276,7 +276,7 @@
       
       
       
-      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/seminar/naloge-navodila.md" target="_blank"
+      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/seminar/naloge-navodila_2023-2024.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +293,7 @@
       
       
       
-      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fseminar/naloge-navodila.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fseminar/naloge-navodila_2023-2024.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -323,7 +323,7 @@
       
       
       
-      <li><a href="../_sources/seminar/naloge-navodila.md" target="_blank"
+      <li><a href="../_sources/seminar/naloge-navodila_2023-2024.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -427,7 +427,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#izvedba-predstavitve">Izvedba predstavitve</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diskusija">Diskusija</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vodenje-predstavitve">Vodenje predstavitve</a></li>
 </ul>
             </nav>
         </div>
@@ -443,22 +443,26 @@
 <h1>Navodila za pripravo seminarske naloge<a class="headerlink" href="#navodila-za-pripravo-seminarske-naloge" title="Link to this heading">#</a></h1>
 <section id="splosne-informacije">
 <h2>Splošne informacije<a class="headerlink" href="#splosne-informacije" title="Link to this heading">#</a></h2>
-<p>V okviru seminarske naloge, ki jo pripravite <strong>v paru s sošolcem/sošolko</strong>, predstavite strukturo proteina (lahko multiproteinskega kompleksa, kompleksa protein:NA ipd.), pri tem pa se osredotočite na:</p>
+<p>Na seminarjih <strong>vsak posamezno</strong> predstavi strukturo proteina (lahko multiproteinskega kompleksa, tudi kompleksa protein:NA ipd.), pri tem pa se osredotoči na:</p>
 <ul class="simple">
-<li><p>pripravo vzorca,</p></li>
+<li><p>pripravo proteina,</p></li>
 <li><p>metode, neposredno ali posredno uporabljene pri določanju strukture oz. pridobivanju strukturnih podatkov,</p></li>
 <li><p>povezavo med določeno strukturo in funkcijo proteina (<em>Kaj struktura razloži?</em>).</p></li>
 </ul>
-<p>Navodila za pripravo in  predstavitev seminarske naloge so zbrana na tej strani, v <a class="reference external" href="https://ucilnica.fkkt.uni-lj.si">spletni učilnici UL FKKT</a> (predmet Struktura proteinov, razdelek Seminar) pa najdete še:</p>
+<p>Navodila za pripravo, predstavitev in vodenje predstavitve seminarske naloge so zbrana na tej strani, v <a class="reference external" href="https://ucilnica.fkkt.uni-lj.si">spletni učilnici UL FKKT</a> (predmet Struktura proteinov, razdelek Seminar) pa najdete še:</p>
 <ul class="simple">
-<li><p>tabelo z izbranimi temami/članki, razporedom predstavitev ter roki za oddajo,</p></li>
+<li><p>tabelo z izbranimi temami/članki, razporedom predstavitev, roki za oddajo in razporedom vodij predstavitev,</p></li>
 <li><p>povezavo za oddajo predstavitve in spremljajočih datotek,</p></li>
 <li><p>zbirko vseh predstavitev in datotek s sejami za interaktivni ogled struktur in</p></li>
-<li><p>seznam seminarjev, ki pridejo v poštev kot <a class="reference internal" href="naloge-navodila_2023-2024.html#seminar-izpit"><span class="std std-ref">snov za izpit</span></a>.</p></li>
+<li><p>seznam seminarjev, ki pridejo v poštev kot <a class="reference internal" href="#seminar-izpit"><span class="std std-ref">snov za izpit</span></a>.</p></li>
 </ul>
 <section id="ocena-seminarske-naloge">
 <h3>Ocena seminarske naloge<a class="headerlink" href="#ocena-seminarske-naloge" title="Link to this heading">#</a></h3>
-<p>Vse seminarske naloge bodo ocenjene, k oceni pa prispeva tako vsebina naloge (besedilo in slikovni material na drsnicah, še posebej <a class="reference internal" href="naloge-navodila_2023-2024.html#vizualizacija-struktur"><span class="std std-ref">slikovni material, ki ste ga pripravili sami</span></a>) kot tudi sama predstavitev pred publiko in odgovori med diskusijo. Ocena seminarske naloge je del končne ocene pri predmetu. Ni nujno, da oba posameznika v paru dobita enako oceno.</p>
+<p>Vse seminarske naloge bodo ocenjene, k oceni pa prispeva tako vsebina naloge (besedilo in slikovni material na drsnicah, še posebej <a class="reference internal" href="#vizualizacija-struktur"><span class="std std-ref">slikovni material, ki ste ga pripravili sami</span></a>) kot tudi sama predstavitev pred publiko in odgovori med diskusijo. Ocena seminarske naloge je del končne ocene pri predmetu.</p>
+<div class="attention admonition">
+<p class="admonition-title">Pomembno</p>
+<p>K oceni lahko (med drugim) <strong>negativno</strong> prispeva slabo vodenje predstavitve seminarske naloge vašega kolega.</p>
+</div>
 </section>
 <section id="snov-za-izpit">
 <span id="seminar-izpit"></span><h3>Snov za izpit<a class="headerlink" href="#snov-za-izpit" title="Link to this heading">#</a></h3>
@@ -466,31 +470,30 @@
 </section>
 <section id="prisotnost-na-predstavitvah">
 <h3>Prisotnost na predstavitvah<a class="headerlink" href="#prisotnost-na-predstavitvah" title="Link to this heading">#</a></h3>
-<p><strong>Vsak mora biti aktivno prisoten na vsaj 50 % terminov predstavitev seminarskih nalog</strong> (na 50 % terminov lahko torej manjkate brez opravičila). Prisotnost se bo preverjala. Neizpolnitev tega pogoja se šteje kot neopravljena seminarska obveznost (enako kot neoddaja seminarske naloge in/ali neizvedena predstavitev), posledično ne morete pristopiti k izpitu. V primeru večkratne odsotnosti zaradi zdravstvenih težav, treningov (status športnika) ipd. kontaktirajte predavatelja.</p>
-<p>Skupaj s seminarskimi delavnicami, kjer je prisotnost obvezna, morate tako biti prisotni na približno 75 % seminarskih terminov.</p>
+<p><strong>Vsak mora biti aktivno prisoten na vsaj 70 % terminov predstavitev seminarskih nalog</strong> (na 30 % terminov lahko torej manjkate brez opravičila). Prisotnost se bo preverjala. Neizpolnitev tega pogoja se šteje kot neopravljena seminarska obveznost (enako kot neoddaja seminarske naloge in/ali neizvedena predstavitev), posledično ne morete pristopiti k izpitu. V primeru večkratne odsotnosti zaradi zdravstvenih težav, treningov (status športnika) ipd. kontaktirajte predavatelja. <em>Opomba: ne izkoriščajte po nepotrebnem možnosti 30 % odsotnosti, nato pa še dodatno manjkate na seminarjih zaradi slabega počutja ipd.</em></p>
 </section>
 </section>
 <section id="priprava-in-predstavitev-seminarske-naloge">
 <h2>Priprava in predstavitev seminarske naloge<a class="headerlink" href="#priprava-in-predstavitev-seminarske-naloge" title="Link to this heading">#</a></h2>
 <p>Celoten proces zgleda tako:</p>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="naloge-navodila_2023-2024.html#izbira-clanka"><span class="std std-ref">Izberite izhodiščni članek</span></a>, ki opisuje neko nedavno določeno strukturo – <strong>do roka, navedenega na uvodnem predavanju pri predmetu</strong>.</p></li>
-<li><p><a class="reference internal" href="naloge-navodila_2023-2024.html#priprava-predstavitve"><span class="std std-ref">Pripravite predstavitev</span></a>, pri tem pa vam kot osnova služi izbrani članek.</p>
+<li><p><a class="reference internal" href="#izbira-clanka"><span class="std std-ref">Izberite izhodiščni članek</span></a>, ki opisuje neko nedavno določeno strukturo – <strong>do roka, navedenega na uvodnem predavanju pri predmetu</strong>.</p></li>
+<li><p><a class="reference internal" href="#priprava-predstavitve"><span class="std std-ref">Pripravite predstavitev</span></a>, pri tem pa vam kot osnova služi izbrani članek.</p>
 <ul class="simple">
 <li><p>Za vizualizacijo struktur obvezno uporabite strukturne podatke iz članka, ki so deponirani v javno dostopnih zbirkah.</p></li>
-<li><p><strong>Vse slike struktur, ki jih boste prikazali, morate <a class="reference internal" href="naloge-navodila_2023-2024.html#vizualizacija-struktur"><span class="std std-ref">narisati sami</span></a>!</strong></p></li>
+<li><p><strong>Vse slike struktur, ki jih boste prikazali, morate <a class="reference internal" href="#vizualizacija-struktur"><span class="std std-ref">narisati sami</span></a>!</strong></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="naloge-navodila_2023-2024.html#oddaja-datotek"><span class="std std-ref">Zahtevane datoteke oddajte</span></a> <strong>najkasneje 3 dni pred predstavitvijo</strong> preko povezave v <a class="reference external" href="https://ucilnica.fkkt.uni-lj.si">spletni učilnici UL FKKT</a>.</p>
+<li><p><a class="reference internal" href="#oddaja-datotek"><span class="std std-ref">Zahtevane datoteke oddajte</span></a> <strong>najkasneje 3 dni pred predstavitvijo</strong> preko povezave v <a class="reference external" href="https://ucilnica.fkkt.uni-lj.si">spletni učilnici UL FKKT</a>.</p>
 <ul class="simple">
 <li><p>Potrebno je oddati tako predstavitev kot tudi datoteke s sejami, uporabljene za pripravo slik.</p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="naloge-navodila_2023-2024.html#izvedba-predstavitve"><span class="std std-ref">Izvedite predstavitev</span></a> na dogovorjeni datum, ki ji sledi diskusija.</p></li>
+<li><p><a class="reference internal" href="#izvedba-predstavitve"><span class="std std-ref">Izvedite predstavitev</span></a> na dogovorjeni datum, pri tem pa za <a class="reference internal" href="#vodenje-predstavitve"><span class="std std-ref"><strong>najavo in vodenje</strong></span></a> poskrbi eden izmed vaših kolegov.</p></li>
 </ol>
 <section id="izbira-clanka">
 <span id="id1"></span><h3>Izbira članka<a class="headerlink" href="#izbira-clanka" title="Link to this heading">#</a></h3>
-<p>Osnova za pripravo seminarja je en izhodiščni članek, ki si ga vsak par izbere sam. Smernice za izbiro:</p>
+<p>Osnova za pripravo seminarja je en izhodiščni članek, ki si ga vsak izbere sam. Smernice za izbiro:</p>
 <ul class="simple">
 <li><p>Članek mora biti objavljen v času od <strong>1. junija preteklega koledarskega leta naprej</strong>.</p></li>
 <li><p>Članek mora biti <strong>raziskovalen</strong> (<em>research article</em>), pregledni članki (<em>review article</em>) ne pridejo v poštev.</p></li>
@@ -522,11 +525,11 @@
 <li><p><strong>uvod</strong>, kjer predstavite proučevano makromolekulo ter problem, ki ga raziskava naslavlja,</p></li>
 <li><p><strong>metodološke pristope</strong> (20–40 % predstavitve), pri tem pa opišite:</p>
 <ul>
-<li><p>pripravo vzorca (navedite in razložite morebitne posebnosti, npr. ekspresijski sistem, uporaba fuzijskih proteinov, skrajšanih oblik, izolacija kompleksov in membranskih proteinov, priprava nukleinskih kislin, ligandi, …),</p></li>
+<li><p>pripravo vzorca (navedite in razložite morebitne posebnosti, npr. ekspresijski sistem, uporaba fuzijskih proteinov, skrajšanih oblik, izolacija kompleksov in membranskih proteinov, …),</p></li>
 <li><p>uporabljene metode in sicer tako tiste, ki so bile neposredno uporabljene pri določitvi strukture, kot tudi morebitne druge komplementarne metode (modeliranje, SAXS, …), pri tem pa poudarite in razložite morebitne posebnosti,</p></li>
 </ul>
 </li>
-<li><p><strong>rezultate</strong> (40–60 % predstavitve), kjer ne prikažete samo določene strukture ampak tudi razložite, na katera biokemijska/molekularna-biološka vprašanja struktura odgovarja, torej povežite strukturo s funkcijo, ne pozabite pa posameznih rezultatov povezati z uporabljenimi metodološkimi pristopi,</p></li>
+<li><p><strong>rezultate</strong> (30–50 % predstavitve), kjer ne prikažete samo določene strukture ampak tudi razložite, na katera biokemijska/molekularna-biološka vprašanja struktura odgovarja, torej povežite strukturo s funkcijo,</p></li>
 <li><p><strong>kratek zaključek</strong>, kjer povzamete ugotovitve in navedete nova raziskovalna vprašanja, ki jih struktura odpira.</p></li>
 </ul>
 <p>Zgoraj je večkrat uporabljena beseda ‘razložite’ – pri navajanju metodoloških pristopov, posebnih korakov pri pripravi vzorca ipd. navedite, <strong>zakaj</strong> so bili uporabljeni ravno ti.</p>
@@ -543,7 +546,7 @@
 <h4>Predstavitev<a class="headerlink" href="#predstavitev" title="Link to this heading">#</a></h4>
 <p>Pripravite “klasično” predstavitev, kot ste to do sedaj že vajeni, pri tem pa upoštevajte smernice in navodila:</p>
 <ul class="simple">
-<li><p>Za pripravo lahko izberite poljuben program, upoštevajte le praktično omejitev glede <a class="reference internal" href="naloge-navodila_2023-2024.html#izvedba-predstavitve"><span class="std std-ref">izvedbe predstavitve</span></a>.</p></li>
+<li><p>Za pripravo lahko izberite poljuben program, upoštevajte le praktično omejitev glede <a class="reference internal" href="#izvedba-predstavitve"><span class="std std-ref">izvedbe predstavitve</span></a>.</p></li>
 <li><p>Predstavitev naj bo v slovenskem jeziku, prav tako vso besedilo na drsnicah.</p>
 <ul>
 <li><p>Pri iskanju slovenskih ustreznic si pomagajte z <a class="reference external" href="https://www.termania.net/slovarji/336/Anglesko_slovenski_slovar_izbranih_izrazov_iz_biokemije_in_molekularne_biologije">Angleško-slovenskim slovarjem izbranih izrazov iz biokemije in molekularne biologije</a>, ki ga ureja Terminološka komisija <a class="reference external" href="https://sbd.si/">Slovenskega biokemijskega društva</a>. V njem zelo specializiranih izrazov včasih ne boste našli – v teh primerih se posvetujte s predavateljem, na drsnice pa lahko vključite primeren opis v slovenščini ter dodatno izvoren zapis v angleščini.</p></li>
@@ -552,24 +555,23 @@
 <li><p>Na naslovni drsnici navedite:</p>
 <ul>
 <li><p>univerzo in fakulteto, študijsko smer, letnik in predmet,</p></li>
-<li><p>ime in priimek obeh avtorjev,</p></li>
+<li><p>vaše ime in priimek,</p></li>
 <li><p>naslov seminarske naloge (to ni nujno zgolj prevod naslova članka!),</p></li>
 <li><p>referenco na osnovni članek (avtorji, naslov, revija, leto, DOI).</p></li>
 </ul>
 </li>
 <li><p>Drsnice naj vsebujejo <strong>zadostno količino besedila</strong>, da bodo lahko služile kot študijsko gradivo kolegom pri pripravi na izpit. Besedila seveda naj ne bo preveč.</p>
 <ul>
-<li><p>Zaželjeno je, da kot pomoč kolegom pri študiju vključite dodatno besedilo kot opombe k drsnicam, predstavitev pa nato shranite kot datoteko PDF na način, da bo končna datoteka vsebovala tudi te opombe.</p></li>
+<li><p>Po potrebi lahko kot pomoč kolegom pri študiju vključite dodatno besedilo kot opombe k drsnicam, predstavitev pa nato shranite kot datoteko PDF na način, da bo končna datoteka vsebovala tudi te opombe.</p></li>
 </ul>
 </li>
 <li><p>Vključite <strong>primerno količino slikovnega materiala</strong>, lahko tudi iz druge literature (če ni vzeto iz osnovnega članka obvezno navedite vire ločeno na zadnji drsnici v obliki seznama).</p></li>
 <li><p><strong>Slike iz osnovnega članka in druge literature lahko uporabite le v uvodu in opisu metodoških pristopov</strong> (npr. pri razlagi neke metode), pri rezultatih pa le takrat, ko ne gre neposredno za prikaze struktur, določenih v izbranem članku.</p></li>
-<li><p><strong>Vse prikaze struktur, katerih določitev je opisana v izbranem članku, morate pripraviti sami z uporabo izbranega <a class="reference internal" href="naloge-navodila_2023-2024.html#vizualizacija-struktur"><span class="std std-ref">orodja za vizualizacijo struktur</span></a>.</strong></p>
+<li><p><strong>Vse prikaze struktur, katerih določitev je opisana v izbranem članku, morate pripraviti sami z uporabo izbranega <a class="reference internal" href="#vizualizacija-struktur"><span class="std std-ref">orodja za vizualizacijo struktur</span></a>.</strong></p>
 <ul>
-<li><p><strong>K vsaki tako pripavljeni sliki morate pripisati <a class="reference internal" href="naloge-navodila_2023-2024.html#oddaja-datotek"><span class="std std-ref">ime datoteke s sejo</span></a>, ki je bila uporabljena za izris.</strong></p></li>
+<li><p><strong>K vsaki tako pripavljeni sliki morate pripisati <a class="reference internal" href="#oddaja-datotek"><span class="std std-ref">ime datoteke s sejo</span></a>, ki je bila uporabljena za izris.</strong></p></li>
 </ul>
 </li>
-<li><p>Vse drsnice lahko izdelate v skupaj s kolegom v paru, lahko pa si delo enakomerno porazdelite. <strong>Da bo razvidno, kaj je bil prispevek posameznika k predstavitvi, naj bodo vse drsnice v desnem spodnjem vogalu označene z inicialkami enega ali obeh avtorjev posamezne drsnice.</strong></p></li>
 </ul>
 <div class="note admonition">
 <p class="admonition-title">Opomba</p>
@@ -584,20 +586,20 @@
 <p><strong>Neupoštevanje tega se šteje kot neopravljena seminarska naloga.</strong></p>
 </div>
 <p>V člankih, ki opisujejo določitev neke strukture, so navedene zbirke in kode zapisov (<em>accession codes</em>) za dostop do deponiranih podatkov, dotičen članek pa je pogosto t.i. primarna referenca (v zbirki PDB se imenuje <em>Primary Citation</em>). Strukturni podatki so torej prosto dostopni (to je tudi pogoj za objavo članka!) in jih lahko uporabite za pripravo slik, ob tem pa obvezno navedite uporabljeno zbirko in kodo zapisa.</p>
-<p>Nemogoče je točno predpisati, koliko različnih sej morate pripraviti, pri tem pa se kot različna seja šteje na različen način vizualizirana struktura, interakcije ipd. To je odvisno od samega članka. Naj vas vodi to, da v seminarski nalogi <strong>v obliki slik predstavite vse najpomembnejše značilnosti strukture, opisane v članku</strong>. Neupoštevanje te smernice lahko negativno vpliva na oceno seminarske naloge.</p>
-<p>Za vizualizacijo struktur (slike za predstavitev, priprava datotek s sejami) lahko uporabite naslednje programe: <a class="reference external" href="https://molstar.org/">MolStar</a>, <a class="reference external" href="https://www.cgl.ucsf.edu/chimerax/">ChimeraX</a>, <a class="reference external" href="https://www.cgl.ucsf.edu/chimera/">UCSF Chimera</a> (pozor, razvoj UCSF Chimera je ustavljen, priporoča se ChimeraX, ki jo v osnovi razvija ista skupina). Razmislite, če želite med predstavitvijo strukture prikazati <a class="reference internal" href="naloge-navodila_2023-2024.html#interaktivni-prikaz-struktur"><span class="std std-ref">interaktivno</span></a>.</p>
+<p>Nemogoče je točno predpisati, koliko različnih sej morate pripraviti, pri tem pa se kot različna seja šteje na različen način vizualizirana struktura, interakcije ipd. To je odvisno od samega članka. Naj vas vodi to, da v seminarski nalogi <strong>v obliki slik predstavite vse pomembne vidike strukture, opisane v članku</strong>. Neupoštevanje te smernice lahko negativno vpliva na oceno seminarske naloge.</p>
+<p>Za vizualizacijo struktur (slike za predstavitev, priprava datotek s sejami) lahko uporabite naslednje programe: <a class="reference external" href="https://molstar.org/">MolStar</a>, <a class="reference external" href="https://www.cgl.ucsf.edu/chimerax/">ChimeraX</a>, <a class="reference external" href="https://www.cgl.ucsf.edu/chimera/">UCSF Chimera</a> (pozor, razvoj UCSF Chimera je ustavljen, priporoča se ChimeraX, ki jo v osnovi razvija ista skupina). Razmislite, če želite med predstavitvijo strukture prikazati <a class="reference internal" href="#interaktivni-prikaz-struktur"><span class="std std-ref">interaktivno</span></a>.</p>
 <div class="tip admonition">
 <p class="admonition-title">Joj, ne znam uporabljati zbirk in programov!</p>
 <p>Zbirka PDB bo na kratko predstavljena med predavanji, podrobneje pa na enem izmed uvodnih seminarjev. Med predavanji bo na kratko predstavljena tudi zbirka EMDB.</p>
 <p>Programa za vizualizacijo struktur MolStar in PyMOL bosta predstavljena med uvodnimi seminarji, s programom UCSF Chimera pa se boste spoznali na vajah (ChimeraX ima enako sintakso za izbiro, tudi možnosti za vizualizacijo ipd. so zelo podobne tistim v UCSF Chimera). Če se boste srečali s težavami pri instalaciji katerega od programov poprosite za pomoč predavatelja, <strong>enako velja tudi za uporabo posameznih programov</strong> (npr. načini vizualizacije).</p>
-<p>Udeležba na treh uvodnih seminarjih (PDB, MolStar, PyMOL, določanje strukture) je obvezna.</p>
+<p>Udeležba na treh uvodnih seminarjih (PDB, MolStar, PyMOL) je obvezna.</p>
 </div>
 </section>
 </section>
 <section id="oddaja-datotek">
 <span id="id4"></span><h3>Oddaja datotek<a class="headerlink" href="#oddaja-datotek" title="Link to this heading">#</a></h3>
 <p>Datoteke s predstavitvijo v formatu PDF, izhodiščni članek (prav tako PDF) ter spremljajoče datoteke s sejami do dogovorjenega roka oddajte preko povezave, objavljene v <a class="reference external" href="https://ucilnica.fkkt.uni-lj.si">spletni učilnici UL FKKT</a>.</p>
-<p>Datoteke, ki jih boste oddali, <strong>obvezno</strong> poimenujte po ključu <code class="docutils literal notranslate"><span class="pre">SP-S##-INICIALKE-oznaka</span></code> + ustrezna končnica, ki je lahko:</p>
+<p>Datoteke, ki jih boste oddali, <strong>obvezno</strong> poimenujte po ključu <code class="docutils literal notranslate"><span class="pre">SP-S##-Priimek-oznaka</span></code> + ustrezna končnica, ki je lahko:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">.pdf</span></code> (predstavitev, članek),</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">.py</span></code> (seja v UCSF Chimera),</p></li>
@@ -615,31 +617,30 @@
 </ul>
 <div class="note admonition">
 <p class="admonition-title">Primer poimenovanja</p>
-<p>Miha Pavšič in Špela Jager, katerih seminar ima zaporedno številko 7 in bi skupaj predstavljala strukturo s kortaktinom stabiliziranega kompleksa Arp2/3, slike pa sta pripravil v MolStar, bi na primer lahko oddala datoteke:</p>
+<p>Miha Pavšič, katerega seminar ima zaporedno številko 7 in bi predstavljal strukturo s kortaktinom stabiliziranega kompleksa Arp2/3, sje pa je pripravil v MolStar, bi na primer oddal datoteke:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-MP_SP-Arp23-kortaktin.pdf</span></code> (vsebuje predstavitev s slikami, katerim je dodan pripis imen datotek s sejami),</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-MP_SP-Arp23-kortaktin-clanek.pdf</span></code> (izhodiščni članek)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-MP-Arp23-kortaktin_kompleks.molx</span></code> (seja za prikaz kompleksa v MolStar),</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-SP-Arp23-kortaktin_hidrofobnost.molx</span></code> (prikaz hidrofobnosti površine Arp2/3),</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-MP_SP-Arp23-kortaktin_interakcije.molx</span></code> (prikaz medmolekulskih interakcij med Arp2/3 in kortaktinom).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-Pavsic-Arp23-kortaktin.pdf</span></code> (vsebuje predstavitev s slikami, katerim je dodan pripis imen datotek s sejami),</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-Pavsic-Arp23-kortaktin-clanek.pdf</span></code> (izhodiščni članek)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-Pavsic-Arp23-kortaktin_kompleks.molx</span></code> (seja za prikaz kompleksa v MolStar),</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-Pavsic-Arp23-kortaktin_hidrofobnost.molx</span></code> (prikaz hidrofobnosti površine Arp2/3),</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SP-S07-Pavsic-Arp23-kortaktin_interakcije.molx</span></code> (prikaz medmolekulskih interakcij med Arp2/3 in kortaktinom).</p></li>
 </ul>
 </div>
 </section>
 <section id="izvedba-predstavitve">
 <span id="id5"></span><h3>Izvedba predstavitve<a class="headerlink" href="#izvedba-predstavitve" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Za predstavitev je na voljo računalnik z operacijskim sistemom Microsoft Windows in paketom Microsoft Office (ena izmed novejših verzij), brskalnikom in prikazovalnikom datotek PDF.</p>
+<li><p>Za predstavitev vam bo na voljo računalnik z operacijskim sistemom Microsoft Windows in paketom Microsoft Office (ena izmed novejših verzij), brskalnikom in prikazovalnikom datotek PDF.</p>
 <ul>
 <li><p>Po želji lahko prinesete svoj računalnik in pri predstavitvi uporabite poljuben program.</p></li>
 </ul>
 </li>
 <li><p><strong>Ne berite z drsnic, iz opomb k drsnicam ali drugih beležk.</strong> Besedilo na drsnicah naj vam služi kot oporne točke med predstavitvijo, vsekakor pa naj to ne bo edino besedilo, ki ga na predstavitvi izgovorite.</p></li>
-<li><p>S kolegom v paru si predstavitev razdelite tako, da bo vsak govoril približno polovico časa celotne predstavitve.</p></li>
-<li><p>Strukture lahko med predstavitvijo <a class="reference internal" href="naloge-navodila_2023-2024.html#interaktivni-prikaz-struktur"><span class="std std-ref">prikažete interaktivno</span></a>.</p></li>
+<li><p>Strukture lahko med predstavitvijo <a class="reference internal" href="#interaktivni-prikaz-struktur"><span class="std std-ref">prikažete interaktivno</span></a>.</p></li>
 <li><p><strong>Upoštevajte časovno omejitev</strong>:</p>
 <ul>
-<li><p>predstavitev: 17 min,</p></li>
-<li><p><a class="reference internal" href="#diskusija"><span class="std std-ref">diskusija</span></a>: 5 min.</p></li>
+<li><p>predstavitev: 12 min,</p></li>
+<li><p>diskusija: 3 min.</p></li>
 </ul>
 </li>
 </ul>
@@ -649,12 +650,14 @@
 </div>
 </section>
 </section>
-<section id="diskusija">
-<span id="id6"></span><h2>Diskusija<a class="headerlink" href="#diskusija" title="Link to this heading">#</a></h2>
+<section id="vodenje-predstavitve">
+<span id="id6"></span><h2>Vodenje predstavitve<a class="headerlink" href="#vodenje-predstavitve" title="Link to this heading">#</a></h2>
+<p>Vsak mora voditi predstavitev enega izmed kolegov. Razpored vodij po seminarskih nalogah bo objavljen v spletni učilnici takrat, ko bo določen datumski razpored vseh predstavitev.</p>
+<p>Naloge vodje predstavitve so:</p>
 <ul class="simple">
-<li><p>Kot prvi imajo možnost postaviti vprašanja vaši kolegi, sledijo vprašanja “urednika” (predavatelja).</p></li>
-<li><p>Zelo zelo zaželjeno je, da vsi prisotni kolegi dejansko poslušajo predstavitve in prispevajo k razpravi.</p></li>
-<li><p><strong>Oba v paru morata biti dobro seznanjena s celotno seminarsko nalogo, ne zgolj z delom, ki ga je posameznik predstavljal. Predavatelj sam izbira, kdo bo odgovarjal njegova vprašanja.</strong></p></li>
+<li><p>najava kolega in navedba naslova predstavitve ter vsebine (ena poved),</p></li>
+<li><p>skrb za upoštevanje časovne omejitve za predstavitev,</p></li>
+<li><p>vodenje diskusije, pri čemer po koncu predstavitve najprej pozove občinstvo k postavljanju vprašanj, na koncu pa tudi sam_a postavi najmanj eno vprašanje.</p></li>
 </ul>
 </section>
 </section>
@@ -689,24 +692,6 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="naloge.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Seminarske naloge</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../priloge/reference.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Reference</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -742,7 +727,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#izvedba-predstavitve">Izvedba predstavitve</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diskusija">Diskusija</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vodenje-predstavitve">Vodenje predstavitve</a></li>
 </ul>
   </nav></div>
 

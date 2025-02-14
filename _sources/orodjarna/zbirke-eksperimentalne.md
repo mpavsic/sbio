@@ -1,6 +1,6 @@
 # Eksperimentalno določene strukture
 
-Na tej strani so na kratko predstavljene najpomembnejše zbirke podatkov o strukturah bioloških makromolekul.
+Na tej strani so na kratko predstavljene najpomembnejše zbirke podatkov o strukturah bioloških makromolekul in njihovih kompleksov.
 
 (pdb)=
 ## PDB (Protein Data Bank)
@@ -132,6 +132,7 @@ Pri RCSB so pripravili zelo informativen video vodič po PDB, dolg dobrih 30 min
 - YouTube kanali z vodiči in primeri uporabe:
   - [RCSBProteinDataBank](https://www.youtube.com/user/RCSBProteinDataBank)
   - [Protein Data Bank in Europe - PDBe](https://www.youtube.com/@ProteinDataBank/)
+- [Spletni vodič po PDBe](https://www.ebi.ac.uk/pdbe/online-tutorials)
 
 (nakb)=
 ## NAKB (Nucleic Acid Knowledgebase)
@@ -163,3 +164,8 @@ Kot primer so spodaj prikazane zaslonske slike zapisa v EMDB s kodo [EMD-1046](h
 Pri *3D View* lahko model strukture vrtimo v 3D, prikaz pa lahko prilagajamo preko ikon na levi strani zgoraj v okencu s prikazom (<i class="fa-solid fa-gear"></i> – spreminjanje načina prikaza gostote (konturiranje, prosojnost), način prikaza proteina).
 
 ![primer zapisa v EMDB 2](slike/emdb-primer2.png)
+
+(bmrb)=
+## PDB-IHM (PDB Integrative anf Hybrid Models)
+
+[PDB-IHM](https://pdb-ihm.org/) je zbirka modelov večjih makromolekulskih struktur/kompleksov, pridobljenih s pristopi integrirane strukturne biologije ali modeliranja. V osnovi spada pod PDB in bo v prihodnosti integrirana v to zbirko tudi integrirana, a zaenkrat obstaja ločeno zaradi specifike metodoloških pristopov, s katerimi so bili modeli pridobljeni. Vsak zapis v to zbirko vključuje seznam uporabljenih pristopov (eksperimentalno določene strukture, podatki iz prečnega povezovanja + masne spektrometrije, modeliranje, ...) ter povezave na nekatere "vhodne" podatke (npr. eksperimentalno določene strukture komponent kompleksa).
