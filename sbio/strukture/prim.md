@@ -74,6 +74,30 @@ Nekateri peptidi in proteini vsebujejo D-aminokislinske ostanke, ki so lahko klj
 ````
 ## Peptidna vez
 
+````{card} Izopeptidna vez
+
+::::{grid} 1 1 2 2
+:reverse:
+
+:::{grid-item}
+```{image} ../seje/peptidna_vez-izopeptidna.png
+:name: peptidna_vez-izopeptidna
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/peptidna_vez-izopeptidna.molx&snapshot-url-type=molx&hide-controls=1
+```
+:::
+
+:::{grid-item}
+Primer izopeptidne vezi, ki nastane v naravi spontano, je izopeptidna vez med Asp in Lys v domeni CnaB2 proteina FbaB iz organizma *Streptococcus pyogenes*, pri čemer sta udeležena ostanka del iste polipeptidne verige. Za uporabo v laboratorijske in druge namene so verigo CnaB2 razdružili v peptid SpyTag in majhen protein SpyCatcher, med katerima pa ob tvorbi njunega kompleksa še vedno spontano nastane izopeptidna vez. Ta sistem je zelo uporaben za konjugacijo rekombinantnih proteinov. Osnovno varianto so z uvedbo mutacij in ob pomoči usmerjene evolucije še izboljšali, tako da reakcija poteče hitreje.
+:::
+::::
+
+```{dropdown} Povezave
+```{image} ../seje/peptidna_vez-izopeptidna-qr.png
+:width: 200px
+:target: https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/peptidna_vez-izopeptidna.molx&snapshot-url-type=molx&hide-controls=1
+```
+````
+
 ````{card} Cis konfiguracija peptidne vezi
 
 ::::{grid} 1 1 2 2
