@@ -38,7 +38,7 @@ parts:
     sections:
     - file: seminar/naloge-navodila
       title: Navodila
-    - file: seminar/naloge_2023-2024/naloge_2023-2024
+#    - file: seminar/naloge_2023-2024/naloge_2023-2024
 - caption: Priloge
   chapters:
   - file: priloge/reference
