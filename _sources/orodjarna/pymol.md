@@ -33,7 +33,7 @@ Koda za PyMOL je sicer dostopna (z izjemo nekaj posebnih funkcij), a povprečen 
 
 ### GNU/Linux
 
-Najenostavnejša varianta je preko repozitorija ("app store") Flathub, kjer je na voljo v obliki kontejnerske aplikacije Flatpak (zraven so zapakirane knjižnjice ipd., ki so potrebne za delovanje): [Python Molecular Graphics](https://flathub.org/apps/org.pymol.PyMOL). Za namestitev aplikacij iz Flathub morate imeti nameščen `flatpak`, kar je opisano za različne distribucije [tukaj](https://flathub.org/setup). Nekatere distribucije imajo ta sistem že vzpostavljen ob namestitvi sistema, primer je [Fedora Linux](https://fedoraproject.org/).
+Najenostavnejša varianta je preko repozitorija ("app store") [Flathub](https://flathub.org/), kjer je na voljo v obliki kontejnerske aplikacije Flatpak (zraven so zapakirane knjižnjice ipd., ki so potrebne za delovanje): [Python Molecular Graphics](https://flathub.org/apps/org.pymol.PyMOL). Za namestitev aplikacij iz Flathub morate imeti nameščen `flatpak`, kar je opisano za različne distribucije [tukaj](https://flathub.org/setup). Nekatere distribucije imajo ta sistem že vzpostavljen ob namestitvi sistema, primer je [Fedora Linux](https://fedoraproject.org/).
 
 Za nekatere distribucije, npr. [Ubuntu Linux](https://ubuntu.com/), je v repozitoriju na voljo že preveden paket, kar je na splošno opisano [tukaj](https://pymolwiki.org/index.php/Linux_Install). Na primer, v Ubuntu ga lahko enostavno namestite v terminalu s `sudo apt install pymol` ter nato zaženete s `pymol`.
 
