@@ -31,8 +31,8 @@ parts:
   chapters:
   - file: seminar/delavnice
     sections:
-    - file: seminar/delavnice-pdb
     - file: seminar/delavnice-molstar
+    - file: seminar/delavnice-pdb
     - file: seminar/delavnice-pymol
   - file: seminar/naloge
     sections:
