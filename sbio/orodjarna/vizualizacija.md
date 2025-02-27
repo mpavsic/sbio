@@ -8,12 +8,13 @@ Vizualizacija molekulskih struktur je ključna tako v smislu analize struktur ko
 ## Najpogosteje uporabljani programi
 
 Najpogosteje uporabljani orodji za vizualizacijo struktur bioloških makromolekul, ki sta v aktivnem razvoju in za uporabo v nekomercialne namene na voljo brezplačno:
-- [**PyMOL**](pymol) in
-- [**Chimera**](chimera) (UCSF Chimera in ChimeraX).
+- [**Chimera**](chimera) (UCSF Chimera in ChimeraX) in
+- [**PyMOL**](pymol).
+
 
 Obe orodji zraven vizualizacije omogočata tudi izvajanje analiz struktur – nekaj osnovnih je na voljo že v samem osnovnem programu, zraven tega pa so za oba na voljo številni vtičniki.
 
-Za vizualizacijo se pogosto uporablja tudi [**MolStar**](molstar), sploh z ozirom na njegovo integracijo v spletno stran zbirke PDB oz. možnostjo uporabe v brskalniku.
+Za vizualizacijo se pogosto uporablja tudi [**MolStar**](molstar), sploh z ozirom na njegovo integracijo v spletno stran zbirk PDB, UniProt, AlphaFold in drugih oz. možnostjo uporabe v brskalniku.
 
 *Vse tri zgoraj navedene programe boste spoznali v okviru seminarjev in vaj pri predmetu Struktura proteinov.* Opisi zgoraj navedenih programov so na posebnih podstraneh, katerih namen pa nikakor ni biti (popoln) uporabniški priročnik temveč zgolj seznanjanje z res osnovami uporabe ter relevantnimi spletnimi viri/povezavami, na katerih najdete podrobnejša navodila za uporabo (tudi v obliki videovodičev). **Upoštevajte, da so programi v neprestanem (bolj ali manj aktivnem) razvoju in da so lahko kakšne stvari (meniji ipd.) malce drugačni kot prikazani na teh straneh ter javno dostopnih spletnih uporabniških priročnikih.**
 
