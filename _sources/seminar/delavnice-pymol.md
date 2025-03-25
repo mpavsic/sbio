@@ -17,7 +17,7 @@ Priporočam uporabo miške, ki omogoča levi in desni klik ter kolešček (sredi
 
 ## Shema delavnice
 
-Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja [PyMOL](../orodjarna/pymol.md). Delavnico ste uspešno opravili če lahko za vsako od navedenih točk rečete "Vem, za kaj se gre in znam uporabiti!".
+Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja [PyMOL](../orodjarna/pymol.md) (na tej strani tudi najdete osnovna navodila za delo s programom). Delavnico ste uspešno opravili če lahko za vsako od navedenih točk rečete "Vem, za kaj se gre in znam uporabiti!".
 
 - [ ] nalaganje datotek iz zbirke PDB – na primeru človeškega citokroma P450 (PDB ID [1TQN](https://www.rcsb.org/structure/1TQN))
 - [ ] različni načini prikaza (trak, paličice, ...)

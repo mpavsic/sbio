@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Delavnica: PyMOL &#8212; Struktura proteinov</title>
+    <title>Delavnica: Konstrukti &#8212; Struktura proteinov</title>
   
   
   
@@ -60,12 +60,14 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/delavnice-pymol';</script>
-    <link rel="canonical" href="https://mpavsic.github.io/sbio/seminar/delavnice-pymol.html" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'seminar/delavnice-konstrukti';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/sbio/seminar/delavnice-konstrukti.html" />
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Seminarske naloge" href="naloge.html" />
+    <link rel="next" title="Delavnica: PyMOL" href="delavnice-pymol.html" />
     <link rel="prev" title="Delavnica: PDB" href="delavnice-pdb.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -204,7 +206,8 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="delavnice.html">Seminarske delavnice</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="delavnice-molstar.html">Delavnica: MolStar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="delavnice-pdb.html">Delavnica: PDB</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Delavnica: PyMOL</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Delavnica: Konstrukti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="delavnice-pymol.html">Delavnica: PyMOL</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="naloge.html">Seminarske naloge</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -274,7 +277,7 @@
       
       
       
-      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/seminar/delavnice-pymol.md" target="_blank"
+      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/seminar/delavnice-konstrukti.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +294,7 @@
       
       
       
-      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fseminar/delavnice-pymol.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fseminar/delavnice-konstrukti.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -321,7 +324,7 @@
       
       
       
-      <li><a href="../_sources/seminar/delavnice-pymol.md" target="_blank"
+      <li><a href="../_sources/seminar/delavnice-konstrukti.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -397,7 +400,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Delavnica: PyMOL</h1>
+    <h1>Delavnica: Konstrukti</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -409,7 +412,8 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potrebscine">Potrebščine</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shema-delavnice">Shema delavnice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obravnavani-primeri">Obravnavani primeri</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drugi-viri-neobvezno">Drugi viri (neobvezno!)</a></li>
 </ul>
             </nav>
         </div>
@@ -421,17 +425,23 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="delavnica-pymol">
-<h1>Delavnica: PyMOL<a class="headerlink" href="#delavnica-pymol" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="delavnica-konstrukti">
+<h1>Delavnica: Konstrukti<a class="headerlink" href="#delavnica-konstrukti" title="Link to this heading">#</a></h1>
 <section id="namen">
 <h2>Namen<a class="headerlink" href="#namen" title="Link to this heading">#</a></h2>
-<p>Namen delavnice je seznaniti se s programom PyMOL, ki še vedno ostaja eden izmed najpogosteje uporabljanih programov za vizualizacijo bioloških makromolekul.</p>
+<p>Namen delavnice je z analizo primerov pridobiti razumevanje o:</p>
+<ul class="simple">
+<li><p>načrtovanju proteinskih konstruktov, primernih za strukturno analizo,</p></li>
+<li><p>razlikah med aminokislinskim zaporedjem proteina v zbirki struktur in tistim v zbirki UniProt,</p></li>
+<li><p>tem, zakaj nekaterih delov polipepotidne verige proteina v modelu strukture ni.</p></li>
+</ul>
+<p>Zgoraj navedeno je pomembno za pripravo seminarske naloge in sicer <a class="reference internal" href="naloge-navodila.html#vsebinavsebina"><span class="std std-ref">dela, ki se nanaša na uporabljene metodološke pristope</span></a>, si mora obsegati nezanemarljiv del predstavitve.</p>
 </section>
 <section id="potrebscine">
 <h2>Potrebščine<a class="headerlink" href="#potrebscine" title="Link to this heading">#</a></h2>
 <p>Za izvedbo potrebujete:</p>
 <ul class="simple">
-<li><p>nameščen program PyMOL,</p></li>
+<li><p>spletni brskalnik (najbolje na namiznem ali prenosnem računalniku, pogojno na tablici, na slednji je sicer malce težje manipulirati z modeli struktur; mobilni telefon ni primeren),</p></li>
 <li><p>povezavo v splet.</p></li>
 </ul>
 <div class="hint admonition">
@@ -439,34 +449,33 @@
 <p>Priporočam uporabo miške, ki omogoča levi in desni klik ter kolešček (sredinski klik), saj to bistveno olajša manipulacijo struktur v 3D.</p>
 </div>
 </section>
-<section id="shema-delavnice">
-<h2>Shema delavnice<a class="headerlink" href="#shema-delavnice" title="Link to this heading">#</a></h2>
-<p>Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja <a class="reference internal" href="../orodjarna/pymol.html"><span class="std std-doc">PyMOL</span></a> (na tej strani tudi najdete osnovna navodila za delo s programom). Delavnico ste uspešno opravili če lahko za vsako od navedenih točk rečete “Vem, za kaj se gre in znam uporabiti!”.</p>
-<ul class="contains-task-list simple">
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> nalaganje datotek iz zbirke PDB – na primeru človeškega citokroma P450 (PDB ID <a class="reference external" href="https://www.rcsb.org/structure/1TQN">1TQN</a>)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> različni načini prikaza (trak, paličice, …)</p>
+<section id="obravnavani-primeri">
+<h2>Obravnavani primeri<a class="headerlink" href="#obravnavani-primeri" title="Link to this heading">#</a></h2>
+<p>V okviru delavnice bomo obravnavali pripravo vzorca dveh proteinov, ki sta bila uporabljena za namen določitve njihove strukture, in sicer:</p>
+<ul class="simple">
+<li><p><strong>kompleks človeškega proteina BCL-X<span class="math notranslate nohighlight">\(_L\)</span> in peptidnega inhibitorja</strong>, ki je opisan v članku <em>Cyclic peptides discriminate BCL-2 and its clinical mutants from BCL-XL by engaging a single-residue discrepancy</em> (<a class="reference external" href="https://doi.org/10.1038/s41467-024-45848-1">10.1038/s41467-024-45848-1</a>);</p></li>
+<li><p><strong>nikotinskega acetilholinskega receptorja α4</strong>, ki je opisan v članku <em>Structural mechanisms of α7 nicotinic receptor allosteric modulation and activation</em> (<a class="reference external" href="https://doi.org/10.1016/j.cell.2024.01.032">10.1016/j.cell.2024.01.032</a>).</p></li>
+</ul>
+<p><em>Oba proteina sta bila obravnavana v okviru študentskih seminarjev pri predmetu Struktura proteinov v študijskem letu 2023/2024.</em></p>
+<p>Za vsakega od obravnavanih primerov bomo odgovorili (vsaj) na naslednja vprašanja:</p>
+<ul class="simple">
+<li><p>So za določanje strukture pripravili celoten protein ali zgolj njegov del? Zakaj?</p></li>
+<li><p>Če gre za rekombinanten protein:</p>
 <ul>
-<li><p>funkcije gumbov <strong>S</strong>, <strong>H</strong> in <strong>C</strong> (<em>Show</em>, <em>Hide</em>, <em>Color</em>)</p></li>
+<li><p>Kateri ekspresijski sistem so uporabili in zakaj?</p></li>
+<li><p>Kako je potekalo izražanje proteina?</p></li>
 </ul>
 </li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> izbiranje:</p>
-<ul>
-<li><p>preko aminokislinskega zaporedja</p></li>
-<li><p>preko ukazne vrstice</p></li>
+<li><p>Kako so protein očistili?</p></li>
+<li><p>Kako so očiščen protein okarakterizirali?</p></li>
+<li><p>Kako so uporabili protein za določitev strukture (navezovanje na uporabljeno metodo za določitev strukture)?</p></li>
 </ul>
-</li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> ustvarjanje novih:</p>
-<ul>
-<li><p>objektov</p></li>
-<li><p>izborov</p></li>
-</ul>
-</li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> funkcije gumba <strong>L</strong> (<em>Label</em>)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> funkcije gumba <strong>A</strong> (<em>Action</em>)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> izris slike v visoki ločljivosti (<em>raytracing</em>)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> superpozicija (superpozicija z govejim citokromom P540 (PDB ID <a class="reference external" href="https://www.rcsb.org/structure/3MZS">3MZS</a>))</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> spreminjanje barve ozadja</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> shranjevanje sej</p></li>
+<p>Na vsa vprašanja včasih ni mogoče nedvoumno odgovoriti zgolj z branjem in analizo primarnega članka temveč se je potrebno obrniti na druge vire (članka, orodja za analizo).</p>
+</section>
+<section id="drugi-viri-neobvezno">
+<h2>Drugi viri (neobvezno!)<a class="headerlink" href="#drugi-viri-neobvezno" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>članek na temo izbire ekspresijskega sistema za pripravo rekombinantnih proteinov: <a class="reference external" href="https://doi.org/10.1016/j.xpro.2023.102572"><strong>A concise guide to choosing suitable gene expression systems for recombinant protein production</strong></a> <span id="id1">[<a class="reference internal" href="../priloge/reference.html#id14" title="Anja Schütz, Frank Bernhard, Nick Berrow, Johannes F. Buyel, Frederico Ferreira-da-Silva, Jurgen Haustraete, Joop Van Den Heuvel, Jan-Erik Hoffmann, Ario De Marco, Yoav Peleg, Sabine Suppmann, Tamar Unger, Martine Vanhoucke, Susanne Witt, and Kim Remans. A concise guide to choosing suitable gene expression systems for recombinant protein production. STAR Protocols, 4(4):102572, December 2023. doi:10.1016/j.xpro.2023.102572.">Schütz <em>et al.</em>, 2023</a>]</span></p></li>
 </ul>
 </section>
 </section>
@@ -511,11 +520,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="naloge.html"
+       href="delavnice-pymol.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Seminarske naloge</p>
+        <p class="prev-next-title">Delavnica: PyMOL</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -538,7 +547,8 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potrebscine">Potrebščine</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shema-delavnice">Shema delavnice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obravnavani-primeri">Obravnavani primeri</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#drugi-viri-neobvezno">Drugi viri (neobvezno!)</a></li>
 </ul>
   </nav></div>
 
