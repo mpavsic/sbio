@@ -101,14 +101,15 @@ Namigi za gradnjo:
 4. Ta ostanek ima alternativno konformacijo. Dodajte jo, zanjo izberite drug konformer, ter zaključite s piljenjem v realnem prostoru.
 5. Seveda, preverite aminokislinsko zaporedje kristaliziranega konstrukta in jih dodajte toliko, kolikor jih lahko glede na elektronsko gostoto ter jih lepo umestite vanjo. Lahko zgradite popolnoma ves C-konec?
 
-#### Analiza oligomernega stanja
+### Analiza oligomernega stanja
 
 Transkripcijsko aktivna oblika ESRRG je dimer.
 
 - Koliko verig je v asimetrični enoti?
 - So med verigami iz sosednjih asimetričnih enot obsežnejši kontakti, ki bi lahko kazali na to, da bi omogočali stabilno oligomerno stanje v raztopini? (Namig: uporabite strežnik [PDBePISA](https://www.ebi.ac.uk/pdbe/pisa/).)
+    - Model strukture shranite (*Menu* > *Models* > kliknite ikono za prenos).
 
-#### Podatki pri nižji ločljivosti
+### Podatki pri nižji ločljivosti
 
 Oglejte si še, kako izgleda elektronska gostota pri nižji ločljivosti in sicer pri 3,2 Å. Gre za strukturo mišjega ESRRG v kompleksu z neko drugo spojino.
 
