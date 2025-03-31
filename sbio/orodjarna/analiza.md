@@ -20,7 +20,7 @@ Orodja za **pripis (*asignacijo*) sekundarne strukture** posameznim aminokislins
 
 ## Oligomeri
 
-- [PDBePISA (Proteins, Interfaces, Structures and Assemblies)](https://www.ebi.ac.uk/msd-srv/prot_int/pistart.html): Orodje za interaktiven prikaz interakcijskih površin med makromolekulami, kar je uporabno pri analizi oligo- ali multi-mernih proteinov. Orodje je izjemno uporabno za analizo vseh možnih simetrij v strukturh, določenih s kristalografijo, kar nam lahko pomaga identificirati biološko relevantne medmolekulske stike v kristalu.
+- [PDBePISA (Proteins, Interfaces, Structures and Assemblies)](https://www.ebi.ac.uk/msd-srv/prot_int/pistart.html): Orodje za interaktiven prikaz interakcijskih površin med makromolekulami, kar je uporabno pri analizi oligo- ali multi-mernih proteinov. Orodje je izjemno uporabno za analizo vseh možnih simetrij v strukturh, določenih s kristalografijo, kar nam lahko pomaga identificirati biološko relevantne medmolekulske stike v kristalu {cite:p}`Krissinel2007aaa`.
 
 (analiza-podobne-strukture)=
 ## Podobne strukture
