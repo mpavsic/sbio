@@ -32,10 +32,15 @@ parts:
   - file: seminar/delavnice
     sections:
     - file: seminar/delavnice-molstar
+      title: Delavnica: MolStar
     - file: seminar/delavnice-pdb
+      title: PDB
     - file: seminar/delavnice-konstrukti
+      title: Delavnica: Konstrukti
     - file: seminar/delavnice-gradnja
+      title: Delavnica: Gradnja
     - file: seminar/delavnice-pymol
+      title: Delavnica: PyMOL
   - file: seminar/naloge
     sections:
     - file: seminar/naloge-navodila
