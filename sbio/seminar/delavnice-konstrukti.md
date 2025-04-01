@@ -1,4 +1,4 @@
-# Delavnica: Načrtovanje in priprava proteinskih konstruktov
+# Delavnica: Konstrukti
 
 ## Namen
 
