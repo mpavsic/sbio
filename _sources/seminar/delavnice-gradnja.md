@@ -1,4 +1,4 @@
-# Delavnica: Gradnja in piljenje modela strukture
+# Delavnica: Gradnja
 
 ## Namen
 
