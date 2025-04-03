@@ -12,6 +12,7 @@ parts:
   - file: strukture/motivi
   - file: strukture/razredi
   - file: strukture/kristalografija
+  - file: strukture/nmr
   - file: strukture/membranski_proteini
   - file: strukture/proteini-na
 - caption: Orodjarna
