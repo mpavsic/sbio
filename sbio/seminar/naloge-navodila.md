@@ -161,6 +161,7 @@ Miha Pavšič in Špela Jager, katerih seminar ima zaporedno številko 7 in bi s
 - `SP-S07-MP-Arp23-kortaktin_kompleks.molx` (seja za prikaz kompleksa v MolStar),
 - `SP-S07-SP-Arp23-kortaktin_hidrofobnost.molx` (prikaz hidrofobnosti površine Arp2/3),
 - `SP-S07-MP_SP-Arp23-kortaktin_interakcije.molx` (prikaz medmolekulskih interakcij med Arp2/3 in kortaktinom).
+
 Zaželjeno je, da vse datoteke, ki jih mislite oddati, spravite v eno ZIP datoteko (poimenovano v stilu `SP-S07-MP_SP.zip` po zgledu zgoraj).
 ```
 
