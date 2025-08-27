@@ -6,7 +6,7 @@ Dobrodošli v fascinantnem svetu strukturne biologije, discipline, ki je z razvo
 
 Strukturni biolog mora imeti številna znanja – ključne so dobre osnove iz kemije, biologije in fizike, nepogrešljive pa so tudi veščine bioinformatike. Nenazadnje mora imeti sposobnost prostorske predstave – danes nam pri tem lahko vsaj malce pomagajo orodja za vizualizacijo struktur. Ravno pomoč pri vizualizaciji je glavni namen te spletne knjige, saj vsebuje številne predpripravljene seje, ki omogočajo ogled in manipulacijo modelov struktur bioloških makromolekul, to pa nadgrajuje s kratkimi razlagami in napotki za pridobivanje strukturnih podatkov iz javno dostopnih zbirk in njihovo analizo z izbranimi orodji. Tako se lahko tudi sami podate na raziskovanje lepot veličastnega molekularnega sveta!
 
-Pričujoča spletna knjiga je dodatno študijsko gradivo pri predmetu **Strukturna biologijs** v okviru univerzitetnega študijskega programa **Biokemija** na [**Univerzi v Ljubljani**](https://www.uni-lj.si/), [**Fakulteti za kemijo in kemijsko tehnologijo**](https://fkkt.uni-lj.si/).
+Pričujoča spletna knjiga je dodatno študijsko gradivo pri predmetu **Strukturna biologija** v okviru univerzitetnega študijskega programa **Biokemija** na [**Univerzi v Ljubljani**](https://www.uni-lj.si/), [**Fakulteti za kemijo in kemijsko tehnologijo**](https://fkkt.uni-lj.si/).
 
 ![UL FKKT](logo/UL_FKKT_logoHOR-RGB_barv.png)
 
