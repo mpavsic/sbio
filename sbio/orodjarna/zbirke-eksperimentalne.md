@@ -16,7 +16,7 @@ Leta 2021 je zbirka PDB praznovala 50-letnico delovanja, kar so med drugim obele
 
 ```{admonition} Opomba
 :class: note
-**V nadaljevanju je predstavljen dostop do zbirke RCSB PDB** in njena uporaba – to zbirko bomo uporabljali tudi pri predmetu Struktura proteinov, za poimenovanje pa je **uporabljena kar kratica PDB in ne popolna kratica RCSB PDB.** Način interakcije s podatki v PDBe se nekoliko razlikuje, še bolj drugačen pa je pri zbirki PDBj.
+**V nadaljevanju je predstavljen dostop do zbirke RCSB PDB** in njena uporaba – to zbirko bomo uporabljali tudi pri predmetu Strukturna biologija, za poimenovanje pa je **uporabljena kar kratica PDB in ne popolna kratica RCSB PDB.** Način interakcije s podatki v PDBe se nekoliko razlikuje, še bolj drugačen pa je pri zbirki PDBj.
 ```
 
 (pdb-vsebina)=

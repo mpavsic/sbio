@@ -1,10 +1,10 @@
 # Struktura proteinov
 
-Repozitorij je namenjen za uporabo pri predmetu **Struktura proteinov** za študente 2. letnika univerzitetnega študijskega programa **Biokemija** na [**Univerzi v Ljubljani**](https://www.uni-lj.si)**, [Fakulteti za kemijo in kemijsko tehnologijo](https://www.fkkt.uni-lj.si)**, in sicer kot dodatno študijsko gradivo.
+Repozitorij je namenjen za uporabo pri predmetu **Strukturna biologija** za študente 2. letnika univerzitetnega študijskega programa **Biokemija** na [**Univerzi v Ljubljani**](https://www.uni-lj.si)**, [Fakulteti za kemijo in kemijsko tehnologijo](https://www.fkkt.uni-lj.si)**, in sicer kot dodatno študijsko gradivo.
 
 Vsebuje primere struktur in povezave do relevantnih zbirk strukturnih podatkov o bioloških (makro)molekulah ter orodij za njihovo vizualizacijo in analizo.
 
-*Repozitorij je bil ustvarjen za prvo uporabo v študijskem letu 2023/2024 - kar vidite ni 'končna' verzija, saj bo vsebina sproti posodobljena in dopolnjena.*
+*Repozitorij je bil ustvarjen za prvo uporabo v študijskem letu 2023/2024 (takrat se je predmet imenoval še Struktura proteinov). Vsebina se sproti dopolnjuje.*
 
 ## Uporaba
 

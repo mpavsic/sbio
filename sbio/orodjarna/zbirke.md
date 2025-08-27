@@ -11,6 +11,6 @@ Zbirke strukturnih podatkov so na tej strani razdeljene v tri skupine:
 
 ```{admonition} Opomba
 :class: note
-Pri vseh teh skupinah so navedene le najpomembnejše in najbolj pogosto uporabljane zbirke, obravnavane pri predmetu Struktura proteinov.
+Pri vseh teh skupinah so navedene le najpomembnejše in najbolj pogosto uporabljane zbirke, obravnavane pri predmetu Strukturna biologija.
 ```
 
