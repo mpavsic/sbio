@@ -73,6 +73,8 @@ Pozor – bolje je shranjevati seje kot 'Session' in ne zgolj kot 'State' (stanj
 2. V vertikalni orodni vrstici na skrajno levi strani za disketo ('Plugin State'), kliknete na 'Open' in izberete datoteko formata `molx` na lokalnem disku (deluje tudi za npr. `pdb` in `cif` datoteke).
 3. Od tu naprej je uporaba enaka kot za MolStar, ki teče v brskalniku preko spletne strani [MolStar Viewer](https://molstar.org/viewer/).
 
+## MolViewStories
+[MolViewStories](https://molstar.org/mol-view-stories/) je posebno spletna aplikacija, katerega delovna verzija je bila predstavljena v začetku leta 2026 – gre torej za relativno novo orodje. Temelji na 3D vizualizaciji z uporabo MolStar in omogoča gradnjo kompleksnih "zgodb" preko uporabe standarda [MolViewSpec](https://molstar.org/mol-view-spec/). Pri zgodbah gre za združevanje različnih elementov, najpogosteje vizualizacije modelov struktur in besedila, dodane pa so lahko še slike, animacije, zvok itd. Kaj vse je možno ustvariti najbolje ilustrirajo primeri na naslovni strani [MolViewStories](https://molstar.org/mol-view-stories/).
 
 (molstar-dodatni-viri)=
 ## Dodatni viri
