@@ -1,10 +1,10 @@
 # Navodila za pripravo seminarske naloge
 
 ## Splošne informacije
-V okviru seminarske naloge, ki jo pripravite **v paru s sošolcem/sošolko**, predstavite strukturo proteina (lahko multiproteinskega kompleksa, kompleksa protein:NA ipd.), pri tem pa se osredotočite na:
+V okviru seminarske naloge, ki jo pripravite **v paru s sošolcem/sošolko**, predstavite strukturo proteina ali nukleinske kisline (lahko multiproteinskega kompleksa, kompleksa protein:NA ipd.), pri tem pa se osredotočite na:
 - pripravo vzorca,
 - metode, neposredno ali posredno uporabljene pri določanju strukture oz. pridobivanju strukturnih podatkov,
-- povezavo med določeno strukturo in funkcijo proteina (*Kaj struktura razloži?*).
+- povezavo med določeno strukturo in funkcijo makromolekule oz. kompleksa (*Kaj struktura razloži?*).
 
 Navodila za pripravo in  predstavitev seminarske naloge so zbrana na tej strani, v [spletni učilnici UL FKKT](https://ucilnica.fkkt.uni-lj.si) (predmet Strukturna biologija, razdelek Seminar) pa najdete še:
 - tabelo z izbranimi temami/članki, razporedom predstavitev ter roki za oddajo,
@@ -39,7 +39,7 @@ Celoten proces zgleda tako:
 Osnova za pripravo seminarja je en izhodiščni članek, ki si ga vsak par izbere sam. Smernice za izbiro:
 - Članek mora biti objavljen v času od **1. junija preteklega koledarskega leta naprej**.
 - Članek mora biti **raziskovalen** (*research article*), pregledni članki (*review article*) ne pridejo v poštev.
-- Eden izmed glavnih rezultatov članka naj bo **struktura** proteina oz. kompleksa.
+- Eden izmed glavnih rezultatov članka naj bo **struktura** proteina/NA oz. kompleksa.
 - Članke naj bo objavljen v reviji s čim višjim faktorjem vpliva (IF).
 - **Obvezno upoštevajte [dodatne smernice glede izbire članka](smernice-za-izbiro-clanka), katerih namen je primerna zastopanost glavnih metodoloških pristopov v strukturni biologiji pri določevanju struktur bioloških mekromolekul.**
 
@@ -60,12 +60,12 @@ Izbran članek (naslov članka in povezava do članka v obliki `https://doi.org/
 :class: hint
 Nekatere revije kot so [Nature Structural & Molecular Biology](https://www.nature.com/nsmb/), [Acta Crystallographica Section D](https://journals.iucr.org/d/) in [Structure](https://www.cell.com/structure/home) so "specializirane" za objavljanje člankov s področja strukturne biologije, odlične in za seminar primerne članke pa seveda najdete tudi v drugih revijah (posebej odmevni so v revijah *ala* [Nature](https://www.nature.com/) in [Science](https://www.science.org/)).
 
-Uporabite lahko tudi **"obratno" iskanje** – najprej izberite strukturo, le-ta pa vas nato pripelje do članka. Pri tem načinu v zbirki PDB izberite napredno iskanje ter ustrezno nastavite leto objave primarnega članka (*Primary Citation Publication Year*), po želji pa dodate (operator `AND`) velikost makromolekule (npr. *Molecular Weight per Deposited Model*) ali druge parametre). Primer iskanja: strukture, pri katerih je bil primarni članek objavljen v letu 2024, molekulska masa deponiranega modela pa je vsaj 500 kDa $\rightarrow$ [klik](https://www.rcsb.org/search?request={"query":{"type":"group","logical_operator":"and","nodes":[{"type":"group","logical_operator":"and","nodes":[{"type":"group","nodes":[{"type":"terminal","service":"text","parameters":{"attribute":"rcsb_primary_citation.year","operator":"equals","negation":false,"value":2024}}],"logical_operator":"and"},{"type":"group","nodes":[{"type":"terminal","service":"text","parameters":{"attribute":"rcsb_entry_info.molecular_weight","operator":"greater_or_equal","negation":false,"value":500}}],"logical_operator":"and"}],"label":"text"}]},"return_type":"entry","request_options":{"paginate":{"start":0,"rows":25},"results_content_type":["experimental"],"sort":[{"sort_by":"score","direction":"desc"}],"scoring_strategy":"combined"}})! Izberite kakšno zanimivo strukturo ter preverite, ali primarna referenca ustreza smernicam.
+Uporabite lahko tudi **"obratno" iskanje** – najprej izberite strukturo, le-ta pa vas nato pripelje do članka. Pri tem načinu v zbirki PDB izberite napredno iskanje ter ustrezno nastavite leto objave primarnega članka (*Primary Citation Publication Year*), po želji pa dodate (operator `AND`) velikost makromolekule (npr. *Molecular Weight per Deposited Model*) ali druge parametre). Lahko vključite tudi iskanje po tipu makromolekule (protein, NA, ...). Primer iskanja: strukture, pri katerih je bil primarni članek objavljen v letu 2024, molekulska masa deponiranega modela pa je vsaj 500 kDa $\rightarrow$ [klik](https://www.rcsb.org/search?request={"query":{"type":"group","logical_operator":"and","nodes":[{"type":"group","logical_operator":"and","nodes":[{"type":"group","nodes":[{"type":"terminal","service":"text","parameters":{"attribute":"rcsb_primary_citation.year","operator":"equals","negation":false,"value":2024}}],"logical_operator":"and"},{"type":"group","nodes":[{"type":"terminal","service":"text","parameters":{"attribute":"rcsb_entry_info.molecular_weight","operator":"greater_or_equal","negation":false,"value":500}}],"logical_operator":"and"}],"label":"text"}]},"return_type":"entry","request_options":{"paginate":{"start":0,"rows":25},"results_content_type":["experimental"],"sort":[{"sort_by":"score","direction":"desc"}],"scoring_strategy":"combined"}})! Izberite kakšno zanimivo strukturo ter preverite, ali primarna referenca ustreza smernicam.
 ```
 
 ```{admonition} Drugi viri
 :class: note
-Priporočam, da kot dodatno gradivo pri pripravi seminarske naloge uporabite še druge vire, na primer članke, citirane v izhodiščnem članku. To je pogosto celo nujno – priprava proteina je opisana v drugem članku, morda boste uporabili še kakšno drugo (podobno) strukturo za ilustracijo ipd., ali pa boste želeli razložiti in ponazoriti delovanje uporabljene metode (pri tem lahko kot vir uporabite tudi Wikipedijo).
+Priporočam, da kot dodatno gradivo pri pripravi seminarske naloge uporabite še druge vire, na primer članke, citirane v izhodiščnem članku. To je pogosto celo nujno – priprava proteina je lahko opisana v drugem članku, morda boste uporabili še kakšno drugo (podobno) strukturo za ilustracijo ipd., ali pa boste želeli razložiti in ponazoriti delovanje uporabljene metode (pri tem lahko kot vir uporabite tudi Wikipedijo).
 ```
 
 ```{admonition} Orodja "umetne inteligence"
