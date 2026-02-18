@@ -20,9 +20,9 @@ Vse seminarske naloge bodo ocenjene, k oceni pa prispeva tako vsebina naloge (be
 **Predavatelj izbere za vsak izpitni rok po 4 seminarske naloge** (na vsakem izpitnem roku bodo tako druge 4 seminarske naloge). Seznam izbranih seminarskih nalog bo objavljen po vseh predstavitvah, najkasneje pa do začetka izpitnega obdobja.
 
 ### Prisotnost na predstavitvah
-**Vsak mora biti aktivno prisoten na vsaj 50 % terminov predstavitev seminarskih nalog** (na 50 % terminov lahko torej manjkate brez opravičila). Prisotnost se bo preverjala. Neizpolnitev tega pogoja se šteje kot neopravljena seminarska obveznost (enako kot neoddaja seminarske naloge in/ali neizvedena predstavitev), posledično ne morete pristopiti k izpitu. V primeru večkratne odsotnosti zaradi zdravstvenih težav, treningov (status športnika) ipd. kontaktirajte predavatelja.
+**Vsak mora biti aktivno prisoten na vsaj 60 % terminov predstavitev seminarskih nalog** na ostalih terminih lahko torej manjkate brez opravičila). Prisotnost se bo preverjala. Neizpolnitev tega pogoja se šteje kot neopravljena seminarska obveznost (enako kot neoddaja seminarske naloge in/ali neizvedena predstavitev), posledično ne morete pristopiti k izpitu. V primeru večkratne odsotnosti zaradi zdravstvenih težav, treningov (status športnika) ipd. kontaktirajte predavatelja.
 
-Skupaj s seminarskimi delavnicami, kjer je prisotnost obvezna, morate tako biti prisotni na približno 75 % seminarskih terminov.
+Ne pozabite, da so seminarske delavnice sicer absolutno obvezne.
 
 ## Priprava in predstavitev seminarske naloge
 Celoten proces zgleda tako:
@@ -41,6 +41,19 @@ Osnova za pripravo seminarja je en izhodiščni članek, ki si ga vsak par izber
 - Članek mora biti **raziskovalen** (*research article*), pregledni članki (*review article*) ne pridejo v poštev.
 - Eden izmed glavnih rezultatov članka naj bo **struktura** proteina oz. kompleksa.
 - Članke naj bo objavljen v reviji s čim višjim faktorjem vpliva (IF).
+- **Obvezno upoštevajte [dodatne smernice glede izbire članka](smernice-za-izbiro-clanka), katerih namen je primerna zastopanost glavnih metodoloških pristopov v strukturni biologiji pri določevanju struktur bioloških mekromolekul.**
+
+(smernice-za-izbiro-clanka)=
+```{admonition} Dodatne smernice za izbiro članka
+:class: danger
+V posameznem študijskem letu morajo biti preko izbire člankov oz. tem seminarskih nalog **ustrezno zastopane glavne metode določanja strukture** in sicer velja za študijsko leto 2025/2026 naslednje:
+- XRD: 10 člankov/seminarjev
+- krio-EM: 9 člankov/seminarjev
+- NMR: 3 članki/seminarji
+
+Ker je število oz. delež tem po metodah težko res tako absolutno definirati in se v nekaterih člankih pojavlja več zgoraj navedenih metod se v primeru dvomov ali težav pri izbiri posvetujte s predavateljem. Glavno metodo boste morali vpisati v tabelo z razporedom seminarskih nalog ob povezavi do članka. Velja pravilo: kdor prvi pride, prvi melje...
+```
+
 
 Če niste prepričani, da je izbrani članek primeren, se posvetujte s predavateljem.
 

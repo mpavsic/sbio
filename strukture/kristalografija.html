@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -53,7 +50,7 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -71,7 +68,6 @@
     <link rel="prev" title="Razredi" href="razredi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -87,8 +83,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -96,6 +103,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -103,8 +111,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -120,8 +128,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -151,17 +158,21 @@
     
     
     <img src="../_static/logo_sbio_s.png" class="logo__image only-light" alt="Strukturna biologija - Home"/>
-    <img src="../_static/logo_sbio_s.png" class="logo__image only-dark pst-js-only" alt="Strukturna biologija - Home"/>
+    <script>document.write(`<img src="../_static/logo_sbio_s.png" class="logo__image only-dark" alt="Strukturna biologija - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -228,14 +239,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -379,16 +385,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -437,7 +451,8 @@ Kanali topila v proteinskih kristalih</div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-kanali_topila.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-kanali_topila.png" id="kristali-kanali-topila" src="../_images/kristali-kanali_topila.png" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-kanali_topila.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-kanali_topila.png" id="kristali-kanali-topila" src="../_images/kristali-kanali_topila.png" />
+</a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <p class="sd-card-text">Del kristala glikolat oksidaze 2 iz špinače (PDB <a class="reference external" href="https://www.rcsb.org/structure/1GOX">1GOX</a>), kjer le 27 % prostornine kristala predstavljajo molekule proteina, 73 % prostornine pa topilo. Molekul slednjega se zaradi neurejenosti “ne vidi”, vidi se pa tiste molekule vode, ki so neposredno ob proteinskih molekulah in se tako kot le-te periodično ponavljajo v kristalu. Glikolat oksidaza sicer tvori močan tetramer, ki se preko šibkih interakcij poveže z drugim tetramerom v oktamer.</p>
@@ -448,7 +463,8 @@ Kanali topila v proteinskih kristalih</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Povezave</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-kanali_topila.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-kanali_topila-qr.png" src="../_images/kristali-kanali_topila-qr.png" style="width: 200px;" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-kanali_topila.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-kanali_topila-qr.png" src="../_images/kristali-kanali_topila-qr.png" style="width: 200px;" />
+</a>
 </div>
 </details></div>
 </div>
@@ -459,7 +475,8 @@ Ločljivost: primerjava elektronske gostote v kristalih istih proteinov pri razl
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivost.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-locljivost-1.png" id="kristali-locljivost-1" src="../_images/kristali-locljivost-1.png" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-locljivost.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-locljivost-1.png" id="kristali-locljivost-1" src="../_images/kristali-locljivost-1.png" />
+</a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <p class="sd-card-text">Različne kristalne strukture so določene pri različnih ločljivostih. Na ločljivost vpliva v prvi vrsti notranja urejenost v kristalu (ki pa je spet odvisna od številnih faktorjev kot so strukturna “urejenost” proteina, način zlaganja molekul v kristalno mrežo, kristalni kontakti, …), odvisna je tudi čisto tehničnih karakteristik difraktometra (na sinhrotronih se dosega višje ločljivosti).</p>
@@ -486,7 +503,8 @@ Kristalografska simetrija in proteinski oligomeri (primer 1)</div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-1.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-1.png" id="kristali-simetrija-1" src="../_images/kristali-simetrija-1.png" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-1.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-1.png" id="kristali-simetrija-1" src="../_images/kristali-simetrija-1.png" />
+</a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <p class="sd-card-text">Pri homo-oligomernih proteinih se pogosto zgodi, da je v asimetrični enoti kristala le ena podenota, celoten biološko relevanten oligomer pa dobimo z aplikacijo ustreznih simetrijskih operacij. Primer je kristalna struktura zunajceličnega dela proteina EpCAM, ki tvori biološko relevanten močan dimer (konstanta disociacije v raztopini je v nanomolarnem območju). Dimer ima dvoštevno os ciklične simetrije (<span class="math notranslate nohighlight">\(C2\)</span>), kar pomeni, da lahko iz ene kopije podenote dobimo drugo z rotacijo okoli te osi za 180°. V kristalu ta os sovpada z <span class="math notranslate nohighlight">\(2_1\)</span> osjo prostorske skupine (v tej monoklinski <span class="math notranslate nohighlight">\(C_1 2_1\)</span> prostorski skupini so v osnovni celici 4 asimetrične enote). Tako je v asimetrični enoti le ena kopija polipeptidne verige oz. ena podenota, biolološko relevanten dimer pa dobimo z aplikacijo rotacije za 180° okoli ustrezne osi. V osnovni celici tega kristala so 4 polipeptidne verige.</p>
@@ -496,7 +514,8 @@ Kristalografska simetrija in proteinski oligomeri (primer 1)</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Povezave</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-1.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-1-qr.png" src="../_images/kristali-simetrija-1-qr.png" style="width: 200px;" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-1.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-1-qr.png" src="../_images/kristali-simetrija-1-qr.png" style="width: 200px;" />
+</a>
 </div>
 </details></div>
 </div>
@@ -507,7 +526,8 @@ Kristalografska simetrija in proteinski oligomeri (primer 2)</div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-2.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-2.png" id="kristali-simetrija-2" src="../_images/kristali-simetrija-2.png" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-2.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-2.png" id="kristali-simetrija-2" src="../_images/kristali-simetrija-2.png" />
+</a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <p class="sd-card-text">Eden izmed mnogih primerov, kjer osi simetrije homo-oligomernega proteina sovpadajo z osmi prostorske skupine, je tudi kristal keto reduktaze iz žuželke <em>Bemisia argentifolii</em>, ki rada napada božične zvezde (PDB <a class="reference external" href="https://www.rcsb.org/structure/1E3J">1E3J</a>). Biološko relevantna oligomerna oblika tega encima je homo-tetramer, a v asimetrični enoti kristala je le ena podenota. Med pari podenot tetramera so dvoštevne simetrijske osi – v tetrameru so take osi 3, druga na drugo so pravokotne, v takem primeru govorimo o dihedralni simetriji tipa <span class="math notranslate nohighlight">\(D2\)</span>.</p>
@@ -517,7 +537,8 @@ Kristalografska simetrija in proteinski oligomeri (primer 2)</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Povezave</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-2.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-2-qr.png" src="../_images/kristali-simetrija-2-qr.png" style="width: 200px;" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-simetrija-2.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-simetrija-2-qr.png" src="../_images/kristali-simetrija-2-qr.png" style="width: 200px;" />
+</a>
 </div>
 </details></div>
 </div>
@@ -528,7 +549,8 @@ Translacijska nekristalografska simetrija</div>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-tncs.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-tncs.png" id="kristali-ncs" src="../_images/kristali-tncs.png" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-tncs.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-tncs.png" id="kristali-ncs" src="../_images/kristali-tncs.png" />
+</a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <p class="sd-card-text">Primer posebne vrste nekristalografske simetrije, t.i. translacijske NCS (tNCS), je struktura kokošjega kalmodulina (PDB <a class="reference external" href="https://www.rcsb.org/structure/1UP5">1UP5</a>), kjer sta v asimetrični enoti dve kopiji te molekule. Na hitro bi skoraj rekli, da bi lahko iz ene kopije dobili drugo zgolj z enostavno translacijo, a to ne bo šlo, saj se molekuli
@@ -539,7 +561,8 @@ razlikujeta v konformaciji. V seji so kopije molekul z isto konformacijo obarvan
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Povezave</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-tncs.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-tncs-qr.png" src="../_images/kristali-tncs-qr.png" style="width: 200px;" /></a>
+<a class="reference external image-reference" href="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/seje/kristali-tncs.molx&amp;snapshot-url-type=molx&amp;hide-controls=1"><img alt="../_images/kristali-tncs-qr.png" src="../_images/kristali-tncs-qr.png" style="width: 200px;" />
+</a>
 </div>
 </details></div>
 </div>
@@ -601,8 +624,7 @@ razlikujeta v konformaciji. V seji so kopije molekul z isto konformacijo obarvan
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -660,8 +682,8 @@ By Miha Pavšič
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
