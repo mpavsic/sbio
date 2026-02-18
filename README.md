@@ -1,4 +1,4 @@
-# Struktura proteinov
+# Strukturna biologija
 
 Repozitorij je namenjen za uporabo pri predmetu **Strukturna biologija** za študente 2. letnika univerzitetnega študijskega programa **Biokemija** na [**Univerzi v Ljubljani**](https://www.uni-lj.si)**, [Fakulteti za kemijo in kemijsko tehnologijo](https://www.fkkt.uni-lj.si)**, in sicer kot dodatno študijsko gradivo.
 
