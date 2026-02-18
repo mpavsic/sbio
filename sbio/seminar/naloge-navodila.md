@@ -93,7 +93,7 @@ Pomembno je, da tematiko, ki jo predstavljate, tudi sami **razumete**, saj boste
 
 ```{admonition} Uporaba znanj in veščin pri predmetih Biokemijska informatika in Strukturna biologija
 :class: hint
-Še zdaleč ne bo nič narobe, če pri pripravi predstavitve uporabite znanje in veščine, pridobljene pri Biokemijski informatiki in Stukturi proteinov! Primeri: prikaz posebnosti kot so $\pi$ vijačnica, pakiranje v kristalu, karta (elektronske) gostote, simetrija, poravnave zaporedij, podobne strukture, ... Torej, pripravite lahko bioinformatske in strukturne analize (navedite uporabljene programe).
+Še zdaleč ne bo nič narobe, če pri pripravi predstavitve uporabite znanje in veščine, pridobljene pri Biokemijski informatiki in Stukturni biologiji! Primeri: prikaz posebnosti kot so $\pi$ vijačnica, pakiranje v kristalu, karta (elektronske) gostote, simetrija, poravnave zaporedij, podobne strukture, ... Torej, pripravite lahko bioinformatske in strukturne analize (navedite uporabljene programe).
 ```
 
 #### Predstavitev
