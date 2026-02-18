@@ -54,9 +54,6 @@ V posameznem študijskem letu morajo biti preko izbire člankov oz. tem seminars
 Ker je število oz. delež tem po metodah težko res tako absolutno definirati in se v nekaterih člankih pojavlja več zgoraj navedenih metod se v primeru dvomov ali težav pri izbiri posvetujte s predavateljem. Glavno metodo boste morali vpisati v tabelo z razporedom seminarskih nalog ob povezavi do članka. Velja pravilo: kdor prvi pride, prvi melje...
 ```
 
-
-Če niste prepričani, da je izbrani članek primeren, se posvetujte s predavateljem.
-
 Izbran članek (naslov članka in povezava do članka v obliki `https://doi.org/DOI`, npr. `https://doi.org/10.1038/s41594-023-01144-y`) čimprej oz. najkasneje do dogovorjenega roka vpišite v razpored seminarjev  – s tem ste si članek "rezervirali".
 
 ```{admonition} Namig za izbiro članka
