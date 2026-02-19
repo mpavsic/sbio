@@ -147,7 +147,7 @@ Udeležba na treh uvodnih seminarjih (PDB, MolStar, PyMOL, določanje strukture)
 ### Oddaja datotek
 Datoteke s predstavitvijo v formatu PDF, izhodiščni članek (prav tako PDF) ter spremljajoče datoteke s sejami do dogovorjenega roka oddajte preko povezave, objavljene v [spletni učilnici UL FKKT](https://ucilnica.fkkt.uni-lj.si).
 
-Datoteke, ki jih boste oddali, **obvezno** poimenujte po ključu `SP-S##-INICIALKE-oznaka` + ustrezna končnica, ki je lahko:
+Datoteke, ki jih boste oddali, **obvezno** poimenujte po ključu `SB-S##-INICIALKE-oznaka` + ustrezna končnica, ki je lahko:
 - `.pdf` (predstavitev, članek),
 - `.py` (seja v UCSF Chimera),
 - `.cxs` (seja v ChimeraX),
@@ -166,13 +166,13 @@ Pri ključu za poimenovanje je `##` zaporedna številka vaše seminarske naloge,
 ```{admonition} Primer poimenovanja
 :class: note
 Miha Pavšič in Špela Jager, katerih seminar ima zaporedno številko 7 in bi skupaj predstavljala strukturo s kortaktinom stabiliziranega kompleksa Arp2/3, slike pa sta pripravil v MolStar, bi na primer lahko oddala datoteke:
-- `SP-S07-MP_SP-Arp23-kortaktin.pdf` (vsebuje predstavitev s slikami, katerim je dodan pripis imen datotek s sejami),
-- `SP-S07-MP_SP-Arp23-kortaktin-clanek.pdf` (izhodiščni članek)
-- `SP-S07-MP-Arp23-kortaktin_kompleks.molx` (seja za prikaz kompleksa v MolStar),
-- `SP-S07-SP-Arp23-kortaktin_hidrofobnost.molx` (prikaz hidrofobnosti površine Arp2/3),
-- `SP-S07-MP_SP-Arp23-kortaktin_interakcije.molx` (prikaz medmolekulskih interakcij med Arp2/3 in kortaktinom).
+- `SB-S07-MP_SJ-Arp23-kortaktin.pdf` (vsebuje predstavitev s slikami, katerim je dodan pripis imen datotek s sejami),
+- `SB-S07-MP_SJ-Arp23-kortaktin-clanek.pdf` (izhodiščni članek)
+- `SB-S07-MP-Arp23-kortaktin_kompleks.molx` (seja za prikaz kompleksa v MolStar),
+- `SB-S07-SJ-Arp23-kortaktin_hidrofobnost.molx` (prikaz hidrofobnosti površine Arp2/3),
+- `SB-S07-SJ-Arp23-kortaktin_interakcije.molx` (prikaz medmolekulskih interakcij med Arp2/3 in kortaktinom).
 
-Zaželjeno je, da vse datoteke, ki jih mislite oddati, spravite v eno ZIP datoteko (poimenovano v stilu `SP-S07-MP_SP-Arp23-kortaktin.zip` po zgledu zgoraj).
+Zaželjeno je, da vse datoteke, ki jih mislite oddati, spravite v eno ZIP datoteko (poimenovano v stilu `SB-S07-MP_SJ-Arp23-kortaktin.zip` po zgledu zgoraj).
 ```
 
 (izvedba-predstavitve)=
