@@ -48,7 +48,7 @@ Osnova za pripravo seminarja je en izhodiščni članek, ki si ga vsak par izber
 :class: danger
 V posameznem študijskem letu morajo biti preko izbire člankov oz. tem seminarskih nalog **ustrezno zastopane glavne metode določanja strukture** in sicer velja za študijsko leto 2025/2026 naslednje:
 - XRD: 10 člankov/seminarjev
-- krio-EM: 9 člankov/seminarjev
+- krio-EM: 10 člankov/seminarjev
 - NMR: 3 članki/seminarji
 
 Ker je število oz. delež tem po metodah težko res tako absolutno definirati in se v nekaterih člankih pojavlja več zgoraj navedenih metod se v primeru dvomov ali težav pri izbiri posvetujte s predavateljem. Glavno metodo boste morali vpisati v tabelo z razporedom seminarskih nalog ob povezavi do članka. Velja pravilo: kdor prvi pride, prvi melje...
