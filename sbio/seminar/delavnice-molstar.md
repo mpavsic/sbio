@@ -37,7 +37,7 @@ Na delavnici bodo predstavljeni spodaj navedeni vidiki uporabe orodja [MolStar](
   - ustvarjanje novih komponent ter dodajanje načinov njihovega prikaza
 - [ ] prikaz nekovalentnih interakcij
 - [ ] meritve razdalj
-- [ ] superpozicija (superpozicija z govejim citokromom P540 (PDB ID [3MZS](https://www.rcsb.org/structure/3MZS)))
+- [ ] superpozicija (superpozicija z govejim citokromom P450 (PDB ID [3MZS](https://www.rcsb.org/structure/3MZS)))
 - [ ] nastavitve vizualizacije
   - barva ozadja
   - prikaz režnja (*clipping*)
