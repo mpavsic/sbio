@@ -1,6 +1,6 @@
 # Zanimivosti
 
-Na tej strani so je zbranih nekaj zanimivosti iz sveta strukturne biologije. ***Gre za neobvezno študijsko gradivo.***
+Na tej strani je zbranih nekaj zanimivosti iz sveta strukturne biologije. ***Gre za neobvezno študijsko gradivo.***
 
 ## Zgodovina strukturne biologije
 
