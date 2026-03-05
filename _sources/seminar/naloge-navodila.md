@@ -113,6 +113,7 @@ Pripravite "klasično" predstavitev, kot ste to do sedaj že vajeni, pri tem pa 
 - **Vse prikaze struktur, katerih določitev je opisana v izbranem članku, morate pripraviti sami z uporabo izbranega [orodja za vizualizacijo struktur](vizualizacija-struktur).**
   - **K vsaki tako pripavljeni sliki morate pripisati [ime datoteke s sejo](oddaja-datotek), ki je bila uporabljena za izris.**
 - Vse drsnice lahko izdelate v skupaj s kolegom v paru, lahko pa si delo enakomerno porazdelite. **Da bo razvidno, kaj je bil prispevek posameznika k predstavitvi, naj bodo vse drsnice v desnem spodnjem vogalu označene z inicialkami enega ali obeh avtorjev posamezne drsnice.**
+  - Enako velja za datoteke s sejami (izris struktur) – v ime datotek dodajte inicialne avtorja datoteke (ali obeh avtorjev).
 
 ```{admonition} Opomba
 :class: note
