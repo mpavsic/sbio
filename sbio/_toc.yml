@@ -42,6 +42,7 @@ parts:
     - file: seminar/naloge-navodila
       title: Navodila
 #    - file: seminar/naloge_2023-2024/naloge_2023-2024
-- caption: Priloge
+- caption: Razno
   chapters:
-  - file: priloge/reference
+  - file: razno/zanimivosti
+  - file: razno/reference
