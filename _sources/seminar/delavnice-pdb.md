@@ -26,11 +26,12 @@ Na delavnici bodo predstavljeni spodaj navedeni vidiki [zbirke PDB ter nekaterih
   - [ ] osnovno iskanje
   - [ ] filtriranje zadetkov (metoda, ločljivost, ...)
   - [ ] napredno iskanje: [https://www.rcsb.org/search/advanced](https://www.rcsb.org/search/advanced)
-	- atributi strukture
-	- atributi majhnih molekul
-	- podobnost po zaporedju/strukturi
-	- strukturni motivi
-	- kemijska podobnost
+	  - atributi strukture
+	  - atributi majhnih molekul
+	  - podobnost po zaporedju/strukturi
+	  - strukturni motivi
+	  - kemijska podobnost
+  - [ ] iskanje z ligandi (lastnosti, struktura): [https://www.rcsb.org/search/chemical](https://www.rcsb.org/search/chemical)
 - **PDBe**
   - [ ] "kje je kaj"" na osnovni strani: [https://www.ebi.ac.uk/pdbe/](https://www.ebi.ac.uk/pdbe/)
   - [ ] osnovno in napredno iskanje: [https://www.ebi.ac.uk/pdbe/entry/search/index/](https://www.ebi.ac.uk/pdbe/entry/search/index/)
