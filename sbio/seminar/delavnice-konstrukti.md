@@ -7,7 +7,7 @@ Namen delavnice je z analizo primerov pridobiti razumevanje o:
 - razlikah med aminokislinskim zaporedjem proteina v zbirki struktur in tistim v zbirki UniProt,
 - tem, zakaj nekaterih delov polipepotidne verige proteina v modelu strukture ni.
 
-Zgoraj navedeno je pomembno za pripravo seminarske naloge in sicer [dela, ki se nanaša na uporabljene metodološke pristope](naloge-navodila.md#vsebinavsebina), si mora obsegati nezanemarljiv del predstavitve.
+Zgoraj navedeno je pomembno za pripravo seminarske naloge in sicer [dela, ki se nanaša na uporabljene metodološke pristope](naloge-navodila.md#vsebinavsebina), saj mora le-ta obsegati nezanemarljiv del predstavitve.
 
 ## Potrebščine
 
