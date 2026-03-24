@@ -166,6 +166,6 @@ Pri *3D View* lahko model strukture vrtimo v 3D, prikaz pa lahko prilagajamo pre
 ![primer zapisa v EMDB 2](slike/emdb-primer2.png)
 
 (bmrb)=
-## PDB-IHM (PDB Integrative anf Hybrid Models)
+## PDB-IHM (PDB Integrative and Hybrid Models)
 
-[PDB-IHM](https://pdb-ihm.org/) je zbirka modelov večjih makromolekulskih struktur/kompleksov, pridobljenih s pristopi integrirane strukturne biologije ali modeliranja. V osnovi spada pod PDB in bo v prihodnosti integrirana v to zbirko tudi integrirana, a zaenkrat obstaja ločeno zaradi specifike metodoloških pristopov, s katerimi so bili modeli pridobljeni. Vsak zapis v to zbirko vključuje seznam uporabljenih pristopov (eksperimentalno določene strukture, podatki iz prečnega povezovanja + masne spektrometrije, modeliranje, ...) ter povezave na nekatere "vhodne" podatke (npr. eksperimentalno določene strukture komponent kompleksa).
+[PDB-IHM](https://pdb-ihm.org/) je zbirka modelov večjih makromolekulskih struktur/kompleksov, pridobljenih s pristopi integrirane strukturne biologije ali modeliranja. V osnovi spada pod PDB in od 2026 so ti modeli prikazani kot del PDB (*Integrative PDB Structure*). Vsak zapis v to zbirko vključuje seznam uporabljenih pristopov (eksperimentalno določene strukture, podatki iz prečnega povezovanja + masne spektrometrije, modeliranje, ...) ter povezave na nekatere "vhodne" podatke (npr. eksperimentalno določene strukture komponent kompleksa).
