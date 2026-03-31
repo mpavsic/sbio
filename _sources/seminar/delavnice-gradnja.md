@@ -119,7 +119,7 @@ Oglejte si še, kako izgleda elektronska gostota pri nižji ločljivosti in sice
 
 ## Drugi viri
 
-- kratek opis različnih kart elektronske gostote na strani RCSB PDB: [X-ray Electron Density Maps](https://www.rcsb.org/docs/general-help/x-ray-electron-density-maps)
+- kratek opis različnih kart elektronske gostote na strani RCSB PDB: [X-ray Electron Density Maps](https://www.rcsb.org/docs/general-help/electron-density-maps-and-coefficient-files)
 
 ## Uporabljeni podatki
 
