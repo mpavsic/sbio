@@ -88,7 +88,7 @@ Nekaj namigov, kaj popraviti:
 - [ ] Oglejte si S428. Kaj manjka? (Glejte namig 4.)
 - [ ] Oglejte si C-končni del. Bi lahko zgradili še kakšen del polipeptidne verige? (Glejte namig 5.)
 - [ ] Analizirajte nezmodelirane "balončke" (*blobs*; *Menu* > *Validation* > *Unmodelled blobs...*). Prvi na seznamu je največji. Kaj bi lahko sem umestili? Poglejte, s čim je bil protein kristaliziran in kaj je bilo v pufru.
-    - Ligand lahko dodate tako: *Menu* > *Ligand* > *Get monomer...* > vnesite Ligand Expo ID.
+    - Ligand lahko dodate tako: *Menu* > *Ligand* > *Get monomer...* > vnesite kodo liganda (iz treh znakov), ki jo poiščete z [RCSB PDB Chemical Search](https://www.rcsb.org/search/chemical), pri čemer iščete pod *Chemical Synonyms*
         - Po dodatku liganda je potrebno izpiliti ujemanje z elektronsko gostoto.
     - Druga možnost je avtomatsko iskanje liganda preko *Menu* > *Ligand* > *Find ligand...*, pri čemer pa moramo ligand že imeti naložen nekje v prostoru.
 
