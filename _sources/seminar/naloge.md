@@ -5,3 +5,5 @@ Približno dve tretjini obsega seminarskih ur pri predmetu predstavljajo predsta
 - veščine glede uporabe orodij za vizualizacijo in analizo struktur – ta orodja so predstavljena na vajah, v okviru [seminarskih delavnic](delavnice.md) in tekom predavanj.
 
 Seminarske naloge je potrebno pripraviti v skladu z [navodili](naloge-navodila.md).
+
+Vse seminarske naloge za tekoče študijsko leto so dostopne v [spletni učilnici UL FKKT](https://ucilnica.fkkt.uni-lj.si).
