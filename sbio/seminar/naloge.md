@@ -6,4 +6,4 @@ Približno dve tretjini obsega seminarskih ur pri predmetu predstavljajo predsta
 
 Seminarske naloge je potrebno pripraviti v skladu z [navodili](naloge-navodila.md).
 
-Vse seminarske naloge za tekoče študijsko leto so dostopne v [spletni učilnici UL FKKT](https://ucilnica.fkkt.uni-lj.si).
+Vse seminarske naloge v tekočem študijskem letu so dostopne v [spletni učilnici UL FKKT](https://ucilnica.fkkt.uni-lj.si).
