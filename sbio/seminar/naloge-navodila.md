@@ -78,7 +78,7 @@ Neposredna uporaba besedila, zgeneriranega z orodji "umetne inteligence" kot je 
 #### Vsebina
 Vsebinsko razdelite predstavitev na:
 - **uvod**, kjer predstavite proučevano makromolekulo ter problem, ki ga raziskava naslavlja,
-- **metodološke pristope** (20–40 % predstavitve), pri tem pa opišite:
+- **metodološke pristope** (20–40 % predstavitve, priporočeno v obliki [ene ali več shem](predstavitev-metodoloskega-dela)), pri tem pa opišite:
   - pripravo vzorca (navedite in razložite morebitne posebnosti, npr. ekspresijski sistem, uporaba fuzijskih proteinov, skrajšanih oblik, izolacija kompleksov in membranskih proteinov, priprava nukleinskih kislin, ligandi, ...),
   - uporabljene metode in sicer tako tiste, ki so bile neposredno uporabljene pri določitvi strukture, kot tudi morebitne druge komplementarne metode (modeliranje, SAXS, ...), pri tem pa poudarite in razložite morebitne posebnosti,
 - **rezultate** (40–60 % predstavitve), kjer ne prikažete samo določene strukture ampak tudi razložite, na katera biokemijska/molekularna-biološka vprašanja struktura odgovarja, torej povežite strukturo s funkcijo, ne pozabite pa posameznih rezultatov povezati z uporabljenimi metodološkimi pristopi,
@@ -96,6 +96,12 @@ Pomembno je, da tematiko, ki jo predstavljate, tudi sami **razumete**, saj boste
 Še zdaleč ne bo nič narobe, če pri pripravi predstavitve uporabite znanje in veščine, pridobljene pri Biokemijski informatiki in Stukturni biologiji! Primeri: prikaz posebnosti kot so $\pi$ vijačnica, pakiranje v kristalu, karta (elektronske) gostote, simetrija, poravnave zaporedij, podobne strukture, ... Torej, pripravite lahko bioinformatske in strukturne analize (navedite uporabljene programe).
 ```
 
+(predstavitev-metodoloskega-dela)=
+```{admonition} Predstavitev metodološkega dela
+:class: hint
+Pripravo makromolekulskih vzorcev za strukturno analizo, potek določanja strukture in podobno je najbolje predstaviti v obliki shem poteka dela (posamezni koraki, povezani s puščicami). Posebej nazorne prikaze lahko ustvarite s pomočjo namenskih orodij kot je [BioRender](https://www.biorender.com/).
+```
+
 #### Predstavitev
 Pripravite "klasično" predstavitev, kot ste to do sedaj že vajeni, pri tem pa upoštevajte smernice in navodila:
 - Za pripravo lahko izberite poljuben program, upoštevajte le praktično omejitev glede [izvedbe predstavitve](izvedba-predstavitve).
@@ -109,6 +115,7 @@ Pripravite "klasično" predstavitev, kot ste to do sedaj že vajeni, pri tem pa 
 - Drsnice naj vsebujejo **zadostno količino besedila**, da bodo lahko služile kot študijsko gradivo kolegom pri pripravi na izpit. Besedila seveda naj ne bo preveč.
   - Zaželjeno je, da kot pomoč kolegom pri študiju vključite dodatno besedilo kot opombe k drsnicam, predstavitev pa nato shranite kot datoteko PDF na način, da bo končna datoteka vsebovala tudi te opombe.
 - Vključite **primerno količino slikovnega materiala**, lahko tudi iz druge literature (če ni vzeto iz osnovnega članka obvezno navedite vire ločeno na zadnji drsnici v obliki seznama).
+- Metodološki del predstavite čim bolj jasno in nazorno, priporočena je upodaba [shem poteka dela](predstavitev-metodoloskega-dela).
 - **Slike iz osnovnega članka in druge literature lahko uporabite le v uvodu in opisu metodoških pristopov** (npr. pri razlagi neke metode), pri rezultatih pa le takrat, ko ne gre neposredno za prikaze struktur, določenih v izbranem članku.
 - **Vse prikaze struktur, katerih določitev je opisana v izbranem članku, morate pripraviti sami z uporabo izbranega [orodja za vizualizacijo struktur](vizualizacija-struktur).**
   - **K vsaki tako pripavljeni sliki morate pripisati [ime datoteke s sejo](oddaja-datotek), ki je bila uporabljena za izris.**
