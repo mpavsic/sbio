@@ -6,8 +6,8 @@ Namen delavnice je spoznati osnove ročne gradnje in piljenja modela strukture p
 
 ## Kaj potrebujete?
 
-- spletni brskalnik (najbolje na namiznem ali prenosnem računalniku, pogojno na tablici, na slednji je sicer malce težje manipulirati z modeli struktur; mobilni telefon ni primeren),
-- povezavo v splet.
+- spletni brskalnik (najbolje na namiznem ali prenosnem računalniku; tablica zaradi težje manipulacije z modeli in dodatnih plavajočih oken v nekaterih programih ni primerna)
+- povezavo v splet
 
 ```{admonition} Miška
 :class: hint
