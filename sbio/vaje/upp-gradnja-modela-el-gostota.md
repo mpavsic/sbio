@@ -53,7 +53,7 @@ Kemijsko ime za avibaktam je (2S,5R)-1-formil-5-[(sulfooksi)amino]piperidin-2-ka
 (difrakcijski-podatki)=
 ### Difrakcijski podatki in začetni model
 
-Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska skupina $P 2_1 2_1 2_1$), za faziranje z molekulsko zamenjavo ([*molecular replacement*](https://en.wikipedia.org/wiki/Molecular_replacement)) pa je bila uporabljena znana (eksperimentalno določena) struktura podobne $\beta$-laktamaze. Po molekulski zamenjavi je bil ta začetni model uporabljen za začetno gradnjo modela strukture KPC-2.
+Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska skupina $P 2_1 2_1 2_1$), za faziranje z molekulsko zamenjavo ([*molecular replacement*](https://en.wikipedia.org/wiki/Molecular_replacement)) pa je bila uporabljena znana (eksperimentalno določena) struktura podobne $\beta$-laktamaze. Po molekulski zamenjavi je bil ta začetni model uporabljen za začetno gradnjo modela strukture KPC-2. V asimetrični enoti je ena molekula proteina, KPC-2 pa je sicer znan kot monomeren protein.
 
 - datoteka z elektronsko gostoto (karti $2F_o – F_c$ in $F_o – F_c$): [KPC2avi.mtz](datoteke/KPC2avi.mtz)
 - datoteka z delno zgrajenim modelom strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb)
@@ -62,5 +62,11 @@ Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska s
 
 1. Pojdite na spletno stran [Moorhen.org](https://moorhen.org/).
 2. Naložite PDB (koordinate) in MTZ (strukturni faktorji, karte elektronske gostote) datoteki (`"hamburger menu" > File > Open Files`), [prenešeni s te spletne strani](difrakcijski-podatki).
-3. Koordinate povežite s kartami: `"hamburger menu" > File > Associate reflections to map...`.
-4. 
+3. Spremenite prikaz proteina iz načina 'Ribbons' v 'Bonds': `Models` >  ikona svinčnika...
+4. Koordinate povežite s kartami: `"hamburger menu" > File > Associate reflections to map...`.
+5. 
+
+
+
+
+Vklopite prikaz simetrijsko povezanih molekul v drugih asimetričnih enotah.
