@@ -48,7 +48,7 @@ Protein je bil kristaliziran z uporabo metode z difuzijo vodne pare na način se
 
 Kemijsko ime za avibaktam je (2S,5R)-1-formil-5-[(sulfooksi)amino]piperidin-2-karboksamid, najdemo ga v zbirki ligandov na RCSB PDB (koda [NXL](https://www.rcsb.org/ligand/NXL)).
 
-<iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/mpavsic.github.io/sbio/vaje/seje/avibaktam-NXL.molx&snapshot-url-type=molx&hide-controls=1" style="width: 100%; height: 300px; border: 0px"></iframe>
+<iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/vaje/seje/avibaktam-NXL.molx&snapshot-url-type=molx&hide-controls=1" style="width: 100%; height: 300px; border: 0px"></iframe>
 
 (difrakcijski-podatki)=
 ### Difrakcijski podatki in začetni model
