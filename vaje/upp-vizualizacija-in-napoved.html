@@ -1,0 +1,1175 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vaje pri predmetu Uporaba proteomskih podatkov &#8212; Strukturna biologija</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'vaje/upp-vizualizacija-in-napoved';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/sbio/vaje/upp-vizualizacija-in-napoved.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../naslovnica.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo_sbio_s.png" class="logo__image only-light" alt="Strukturna biologija - Home"/>
+    <script>document.write(`<img src="../_static/logo_sbio_s.png" class="logo__image only-dark" alt="Strukturna biologija - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../naslovnica.html">
+                    Strukturna biologija
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../strukture/navodila.html">Kako uporabljati modele?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/vizualizacija.html">Vizualizacija</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/prim.html">Primarna struktura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/ss.html">Sekundarna struktura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/interakcije.html">Interakcije</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/motivi.html">Motivi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/razredi.html">Razredi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/kristalografija.html">Kristalografija</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/nmr.html">NMR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/membranski_proteini.html">Membranski proteini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/proteini-na.html">Proteini:NA</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Orodjarna</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orodjarna/zbirke.html">Zbirke strukturnih podatkov</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/zbirke-eksperimentalne.html">Eksperimentalno določene strukture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/modeli.html">Modeli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/zbirke-druge.html">Druge zbirke</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orodjarna/vizualizacija.html">Vizualizacija struktur</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/chimera.html">ChimeraX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/molstar.html">MolStar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/pymol.html">PyMOL</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../orodjarna/analiza.html">Analiza struktur idr.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/delavnice.html">Seminarske delavnice</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-molstar.html">Delavnica: MolStar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pdb.html">Delavnica: PDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-konstrukti.html">Delavnica: Konstrukti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-gradnja.html">Delavnica: Gradnja</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pymol.html">Delavnica: PyMOL</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/naloge.html">Seminarske naloge</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/naloge-navodila.html">Navodila</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vaje</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="upp-2026.html">Uporaba proteomskih podatkov (vaje) 2026/2027</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../razno/reference.html">Reference</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/vaje/upp-vizualizacija-in-napoved.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fvaje/upp-vizualizacija-in-napoved.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/vaje/upp-vizualizacija-in-napoved.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Vaje pri predmetu Uporaba proteomskih podatkov</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Vaje pri predmetu Uporaba proteomskih podatkov</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizacija-in-analiza-proteinskih-struktur-s-programom-ucsf-chimerax">Vizualizacija in analiza proteinskih struktur s programom UCSF ChimeraX</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#namen-vaje">Namen vaje</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osnove-chimerax-zunajcelicni-del-proteina-epcam-pdb-4mzv">1. Osnove ChimeraX: zunajcelični del proteina EpCAM (PDB: 4MZV)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#navodila">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vprasanja">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konformacijske-spremembe-adenilat-kinaza-pdb-4ake-in-1ake">2. Konformacijske spremembe: adenilat kinaza (PDB: 4AKE in 1AKE)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bolezenska-mutacija-ki-spremeni-medmolekulske-interakcije-hemoglobin-pdb-2hhb-in-2hbs">3. Bolezenska mutacija, ki spremeni medmolekulske interakcije: hemoglobin (PDB: 2HHB in 2HBS)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bolezenska-mutacija-ki-vpliva-na-koordinacijo-kovine-sod1-pdb-2c9v-in-1oez">4. Bolezenska mutacija, ki vpliva na koordinacijo kovine: SOD1 (PDB: 2C9V in 1OEZ)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Vprašanja</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#drugi-sklop-vaj-2-uri">Drugi sklop vaj (2 uri)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#napovedovanje-proteinskih-struktur-in-kompleksov-alphafold-server-in-swiss-model">Napovedovanje proteinskih struktur in kompleksov: AlphaFold Server in SWISS-MODEL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Namen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uniprot-zaporedje-in-domene-proteina-sh3glb2">1. UniProt: zaporedje in domene proteina SH3GLB2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold-server-napoved-monomera">2. AlphaFold Server: napoved monomera</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swiss-model-modeliranje-na-podlagi-homolognih-struktur">3. SWISS-MODEL: modeliranje na podlagi homolognih struktur</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lokalna-in-globalna-zanesljivost-plddt-in-pae">4. Lokalna in globalna zanesljivost: pLDDT in PAE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold-server-napoved-homodimera">5. AlphaFold Server: napoved homodimera</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chimerax-superpozicija-alphafold-in-swiss-model">6. ChimeraX: superpozicija AlphaFold in SWISS-MODEL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zakljucna-naloga">Zaključna naloga</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#viri">Viri</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="vaje-pri-predmetu-uporaba-proteomskih-podatkov">
+<h1>Vaje pri predmetu Uporaba proteomskih podatkov<a class="headerlink" href="#vaje-pri-predmetu-uporaba-proteomskih-podatkov" title="Link to this heading">#</a></h1>
+<section id="vizualizacija-in-analiza-proteinskih-struktur-s-programom-ucsf-chimerax">
+<h2>Vizualizacija in analiza proteinskih struktur s programom UCSF ChimeraX<a class="headerlink" href="#vizualizacija-in-analiza-proteinskih-struktur-s-programom-ucsf-chimerax" title="Link to this heading">#</a></h2>
+<p><strong>Predvideno trajanje:</strong> približno 3 ure<br />
+<strong>Program:</strong> UCSF ChimeraX<br />
+<strong>Podatkovna zbirka:</strong> <a class="reference external" href="https://www.rcsb.org/">Protein Data Bank (RCSB PDB)</a></p>
+<section id="namen-vaje">
+<h3>Namen vaje<a class="headerlink" href="#namen-vaje" title="Link to this heading">#</a></h3>
+<p>Namen vaje je spoznati osnovna orodja za pregledovanje in analizo tridimenzionalnih struktur proteinov ter povezati opažene strukturne značilnosti z biološko funkcijo proteinov. Študenti se bodo naučili poiskati in naložiti eksperimentalno določene strukture iz zbirke PDB, spreminjati njihove prikaze, izbirati posamezne verige, aminokislinske ostanke in atome ter preučevati molekularne površine in interakcije. Primerjali bodo različni konformaciji istega proteina in na dveh primerih bolezenskih mutacij pojasnili njune strukturne posledice.</p>
+<p><strong>Po koncu vaj boste znali:</strong></p>
+<ul class="simple">
+<li><p>poiskati strukturo v zbirki PDB in razbrati njene osnovne podatke;</p></li>
+<li><p>razlikovati med asimetrično enoto, kristalografsko osnovno celico in biološko sestavo proteina;</p></li>
+<li><p>prikazati sekundarno strukturo, posamezne atome, ligande, površino in interakcije;</p></li>
+<li><p>uporabiti sekvenčni pregledovalnik in povezavo na anotacije UniProt;</p></li>
+<li><p>poravnati dve strukturi in izdelati animiran prehod (<em>morph</em>) med konformacijama;</p></li>
+<li><p>razložiti strukturni učinek izbranih bolezenskih mutacij.</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Opomba:</strong> Ukazi predpostavljajo, da na začetku vsakega sklopa zaprete prejšnje modele. Številke modelov (<code class="docutils literal notranslate"><span class="pre">#1</span></code>, <code class="docutils literal notranslate"><span class="pre">#2</span></code> itd.) vedno preverite v oknu <strong>Models</strong>, saj se lahko razlikujejo.</p>
+</div></blockquote>
+</section>
+</section>
+<hr class="docutils" />
+<section id="osnove-chimerax-zunajcelicni-del-proteina-epcam-pdb-4mzv">
+<h2>1. Osnove ChimeraX: zunajcelični del proteina EpCAM (PDB: 4MZV)<a class="headerlink" href="#osnove-chimerax-zunajcelicni-del-proteina-epcam-pdb-4mzv" title="Link to this heading">#</a></h2>
+<p><strong>Struktura:</strong> <a class="reference external" href="https://www.rcsb.org/structure/4MZV">4MZV – zunajcelični del človeškega EpCAM</a></p>
+<section id="namen">
+<h3>Namen<a class="headerlink" href="#namen" title="Link to this heading">#</a></h3>
+<p>Spoznati uporabniški vmesnik, načine izbire in prikaza posameznih delov strukture ter osnovne metode analize proteinskih površin in medatomskih interakcij. Na primeru EpCAM spoznati razliko med kristalografsko asimetrično enoto, osnovno celico kristala in biološkim dimerom ter uporabo sekvenčnih anotacij.</p>
+</section>
+<section id="navodila">
+<h3>Navodila<a class="headerlink" href="#navodila" title="Link to this heading">#</a></h3>
+<p><strong>1. Nalaganje in orientacija v programu</strong></p>
+<ol class="arabic">
+<li><p>Odprite program ChimeraX in naložite strukturo:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>open 4mzv
+</pre></div>
+</div>
+</li>
+<li><p>Z miško preizkusite rotacijo, premikanje in povečavo modela. Poiščite menije <strong>File</strong>, <strong>Select</strong>, <strong>Actions</strong> in <strong>Tools</strong> ter zavihke <strong>Home</strong>, <strong>Molecule Display</strong>, <strong>Graphics</strong> in <strong>Right Mouse</strong>.</p></li>
+<li><p>V oknu <strong>Models</strong> preverite številko modela in njegovo vsebino. Oglejte si tudi stran 4MZV v zbirki PDB: metodo določitve strukture, ločljivost, verige in prisotne majhne molekule.</p></li>
+</ol>
+<p><strong>2. Načini prikaza in izbira atomov</strong></p>
+<ol class="arabic" start="4">
+<li><p>Preizkusite skrivanje in prikaz atomov ter prikaz proteina kot traku (<em>cartoon</em>). Primeri ukazov:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>hide atoms
+show ligand
+hide :HOH
+</pre></div>
+</div>
+</li>
+<li><p>Vključite oziroma izključite prikaz posameznih aminokislinskih ostankov. Preizkusite izbiro verige ali ostanka s klikom v strukturi in z ukazom, npr.:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>select #1/A:50
+show sel atoms
+label sel residues
+select clear
+</pre></div>
+</div>
+</li>
+<li><p>Preizkusite barvanje celotnega proteina, posameznih verig in atomov glede na kemijski element. Uporabite <strong>Actions → Color</strong> ali zavihke na orodni vrstici.</p></li>
+<li><p>Prikažite cisteinske ostanke in poiščite disulfidne vezi. Po potrebi skrijte preostale atome, da bo preglednejše.</p></li>
+</ol>
+<p><strong>3. Ligand, površine in medatomske razdalje</strong></p>
+<ol class="arabic" start="8">
+<li><p>Poiščite prisotno majhno molekulo <strong>DMU</strong> (decyl-β-D-maltopyranoside). Gre za detergent in <strong>ne za fiziološki ligand EpCAM</strong>.</p></li>
+<li><p>Označite DMU in poiščite bližnje aminokislinske ostanke z izbiro območja okoli liganda (<em>zone</em>) oziroma z orodjem <strong>Contacts</strong>.</p></li>
+<li><p>Prikažite molekularno površino in nastavite prosojnost:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>surface
+transparency 60 target s
+</pre></div>
+</div>
+</li>
+<li><p>Z orodjem <strong>Side View</strong> preizkusite rezanje pogleda (<em>clipping</em>). Oglejte si še nastavitev globinskega učinka (<em>depth cue</em>).</p></li>
+<li><p>Izberite dva atoma in izmerite njuno razdaljo z načinom <strong>Right Mouse → Distance</strong> ali ukazom <code class="docutils literal notranslate"><span class="pre">distance</span> <span class="pre">sel</span></code> (če sta izbrana natanko dva atoma).</p></li>
+<li><p>Z orodjem <strong>Tools → Structure Analysis → H-Bonds</strong> poiščite vodikove vezi, na primer znotraj α-vijačnice. Oglejte si, kateri atomi sodelujejo pri teh vezeh.</p></li>
+</ol>
+<p><strong>4. Kristalografska osnovna celica, biološki dimer in interakcije med podenotami</strong></p>
+<ol class="arabic" start="14">
+<li><p>V zbirki PDB preverite, koliko proteinskih verig vsebuje <strong>asimetrična enota</strong> in koliko jih vsebuje <strong>biološka sestava</strong> EpCAM. Poiščite tudi podatke o kristalografski prostorski skupini.</p></li>
+<li><p>Iz izhodiščne asimetrične enote (<code class="docutils literal notranslate"><span class="pre">#1</span></code>) ustvarite vse simetrijsko povezane kopije, ki sestavljajo eno kristalografsko <strong>osnovno celico</strong>, in prikažite njen obris:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>unitcell #1
+unitcell outline #1
+</pre></div>
+</div>
+</li>
+<li><p>Oglejte si <strong>štiri asimetrične enote</strong> znotraj prikazane osnovne celice. Preverite, kako so razporejene in ali kateri dve sestavljata biološki dimer. Razmislite, ali mora biološka sestava nujno ležati v mejah ene osnovne celice.</p></li>
+<li><p>Iz izhodiščne asimetrične enote nato ustvarite <strong>biološki dimer</strong>:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>sym #1 assembly 1
+</pre></div>
+</div>
+<p>Po potrebi v oknu <strong>Models</strong> začasno skrijte model osnovne celice in njen obris, da boste dimer bolje videli. Pri strukturi 4MZV dimer poveže izhodiščno podenoto s simetrijsko povezano podenoto, ki v prikazani postavitvi osnovne celice leži v <strong>sosednji celici</strong>.</p>
+</li>
+<li><p>V oknu <strong>Models</strong> preverite številko nastalega modela in njegovih podenot ter obe podenoti pobarvajte različno. Številka modela se po ukazih <code class="docutils literal notranslate"><span class="pre">unitcell</span></code> lahko razlikuje od prejšnjih primerov.</p></li>
+<li><p>Poiščite stično površino med podenotama dimera. Uporabite <strong>Contacts</strong> in/ali <strong>H-Bonds</strong>. Če sta podenoti v ločenih podmodelih (npr. <code class="docutils literal notranslate"><span class="pre">#4.1</span></code> in <code class="docutils literal notranslate"><span class="pre">#4.2</span></code>), pri iskanju vodikovih vezi omogočite tudi <strong>intermodel</strong> interakcije; po potrebi omejite iskanje na izbrani podenoti.</p></li>
+</ol>
+<p><strong>5. Zaporedje in anotacije</strong></p>
+<ol class="arabic simple" start="20">
+<li><p>Odprite <strong>Sequence Viewer</strong>, poiščite ostanek, ki ste ga predhodno izbrali v tridimenzionalnem prikazu, in preverite, kako se izbira odraža v zaporedju.</p></li>
+<li><p>Poiščite povezavo na <strong>UniProt (P16422)</strong> in preglejte razpoložljive anotacije proteina EpCAM.</p></li>
+</ol>
+<p><strong>Dodatno, če ostane čas:</strong> preizkusite barvanje površine po hidrofobnosti (<code class="docutils literal notranslate"><span class="pre">mlp</span></code>) in približnem elektrostatskem potencialu (<code class="docutils literal notranslate"><span class="pre">coulombic</span></code>); z orodjem <strong>Find Cavities</strong> poiščite vdolbine v molekularni površini.</p>
+</section>
+<section id="vprasanja">
+<h3>Vprašanja<a class="headerlink" href="#vprasanja" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Katere osnovne informacije o strukturi dobimo v zbirki PDB in kaj pomeni njena ločljivost?</p></li>
+<li><p>Kakšna je razlika med <strong>asimetrično enoto</strong>, <strong>osnovno celico kristala</strong> in <strong>biološko sestavo</strong> proteina EpCAM?</p></li>
+<li><p>Koliko asimetričnih enot je v prikazani osnovni celici? Ali kateri dve tvorita biološki dimer? Kako pojasnite, da lahko podenoti biološkega dimera ležita v dveh sosednjih osnovnih celicah?</p></li>
+<li><p>Kaj ugotovite o prostorski razporeditvi cisteinskih ostankov in disulfidnih vezi? Zakaj so te vezi pomembne za zunajcelične proteine?</p></li>
+<li><p>Kateri ostanki ležijo v bližini molekule DMU? Ali lahko zgolj na podlagi njene prisotnosti v kristalni strukturi sklepamo, da gre za fiziološki ligand?</p></li>
+<li><p>Katere vrste interakcij opazite na stiku med podenotama dimera? Ali je vsaka medatomska bližina tudi vodikova vez?</p></li>
+<li><p>Katere informacije o proteinu pridobimo s povezavo med tridimenzionalno strukturo, zaporedjem in zbirko UniProt?</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="konformacijske-spremembe-adenilat-kinaza-pdb-4ake-in-1ake">
+<h2>2. Konformacijske spremembe: adenilat kinaza (PDB: 4AKE in 1AKE)<a class="headerlink" href="#konformacijske-spremembe-adenilat-kinaza-pdb-4ake-in-1ake" title="Link to this heading">#</a></h2>
+<p><strong>Strukturi:</strong> <a class="reference external" href="https://www.rcsb.org/structure/4AKE">4AKE – odprta konformacija</a>; <a class="reference external" href="https://www.rcsb.org/structure/1AKE">1AKE – zaprta, z inhibitorjem Ap5A stabilizirana konformacija</a></p>
+<section id="id1">
+<h3>Namen<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Spoznati poravnavo proteinskih struktur (<em>superposition</em>) in izdelavo interpolacije med dvema konformacijama istega proteina (<em>morph</em>). Povezati premike proteinskih domen z vezavo substratov oziroma inhibitorja in encimsko funkcijo.</p>
+<p>Adenilat kinaza katalizira reakcijo <strong>ATP + AMP ⇌ 2 ADP</strong>.</p>
+</section>
+<section id="id2">
+<h3>Navodila<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Zaprite predhodne modele in naložite obe strukturi:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>close
+open 4ake
+open 1ake
+</pre></div>
+</div>
+</li>
+<li><p>Preverite vsebino obeh struktur. Kaj je prisotno v 1AKE, česar ni v 4AKE?</p></li>
+<li><p>Za preprostejšo primerjavo odstranite verigo B iz vsake strukture, tako da ostane po ena proteinska veriga:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>delete #1/B
+delete #2/B
+</pre></div>
+</div>
+</li>
+<li><p>Strukturi različno pobarvajte in poravnajte verigi A:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>matchmaker #2/A to #1/A
+</pre></div>
+</div>
+<p>Enako nalogo poskusite najti z orodjem <strong>Matchmaker</strong> v grafičnem vmesniku.</p>
+</li>
+<li><p>Opazujte, katere regije se najbolje prekrivajo in katere se razlikujejo. V oknu <strong>Log</strong> poiščite podatek o RMSD, če je izpisan.</p></li>
+<li><p>Izdelajte animirani prehod med konformacijama:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>morph #1,2 frames 120 wrap true
+</pre></div>
+</div>
+</li>
+<li><p>S časovnim drsnikom predvajajte prehod in spremljajte premikanje domen. Po potrebi poskusite spremeniti število sličic.</p></li>
+</ol>
+</section>
+<section id="id3">
+<h3>Vprašanja<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Katera struktura predstavlja bolj odprto in katera bolj zaprto konformacijo adenilat kinaze?</p></li>
+<li><p>Katere regije proteina se pri prehodu med konformacijama najbolj premaknejo? Ali je celoten protein enako gibljiv?</p></li>
+<li><p>Kako bi lahko zapiranje domen pripomoglo k vezavi substratov in katalizi?</p></li>
+<li><p>Kaj pove RMSD in zakaj je pri primerjavi dveh konformacij pomembno, katere atome vključimo v poravnavo?</p></li>
+<li><p>Ali <em>morph</em> prikazuje dejansko eksperimentalno izmerjeno pot gibanja proteina ali matematično interpolacijo med dvema določenima strukturama?</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="bolezenska-mutacija-ki-spremeni-medmolekulske-interakcije-hemoglobin-pdb-2hhb-in-2hbs">
+<h2>3. Bolezenska mutacija, ki spremeni medmolekulske interakcije: hemoglobin (PDB: 2HHB in 2HBS)<a class="headerlink" href="#bolezenska-mutacija-ki-spremeni-medmolekulske-interakcije-hemoglobin-pdb-2hhb-in-2hbs" title="Link to this heading">#</a></h2>
+<p><strong>Strukturi:</strong> <a class="reference external" href="https://www.rcsb.org/structure/2HHB">2HHB – običajni deoksihemoglobin</a>; <a class="reference external" href="https://www.rcsb.org/structure/2HBS">2HBS – deoksihemoglobin S</a></p>
+<section id="id4">
+<h3>Namen<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Na primeru anemije srpastih celic razumeti, kako lahko sprememba ene aminokisline spremeni kemijske lastnosti površine proteina in povzroči patološko povezovanje proteinskih kompleksov, tudi če se celotna struktura posameznega tetramera bistveno ne spremeni.</p>
+</section>
+<section id="id5">
+<h3>Navodila<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Zaprite prejšnje modele in naložite strukturo običajnega deoksihemoglobina:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>close
+open 2hhb
+</pre></div>
+</div>
+</li>
+<li><p>Pobarvajte verige različno in določite, koliko α- in β-verig vsebuje tetramer. Oglejte si hemske skupine.</p></li>
+<li><p>V β-verigi B poiščite aminokislinski ostanek <strong>Glu6 (E6)</strong>:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>select #1/B:6
+show sel atoms
+label sel residues
+</pre></div>
+</div>
+</li>
+<li><p>Premislite, kakšne lastnosti ima glutamat: kakšen je njegov naboj in ali je hidrofilen oziroma hidrofoben?</p></li>
+<li><p>Naložite strukturo hemoglobina S:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>open 2hbs
+</pre></div>
+</div>
+</li>
+<li><p>V β-verigi B poiščite <strong>Val6 (V6)</strong>:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>select #2/B:6
+show sel atoms
+label sel residues
+</pre></div>
+</div>
+</li>
+<li><p>Primerjajte položaj in kemijske lastnosti obeh stranskih verig. Po potrebi poravnajte ustrezni β-verigi:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>matchmaker #2/B to #1/B
+</pre></div>
+</div>
+</li>
+<li><p>Oglejte si še druge verige v 2HBS. Kristalna struktura vsebuje več hemoglobinskih tetramerov in omogoča raziskovanje stikov, povezanih s polimerizacijo HbS. Poiščite hidrofobni žep na sosednjem tetrameru, s katerim lahko interagira Val6.</p></li>
+</ol>
+</section>
+<section id="id6">
+<h3>Vprašanja<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Koliko α- in β-verig sestavlja en hemoglobinski tetramer? Kakšno vlogo ima hem?</p></li>
+<li><p>Katere kemijske lastnosti se spremenijo pri substituciji <strong>E6V</strong>?</p></li>
+<li><p>Zakaj lahko zamenjava hidrofilne, negativno nabite aminokisline s hidrofobno aminokislino povzroči nove interakcije med proteini?</p></li>
+<li><p>Ali mora mutacija povzročiti veliko spremembo terciarne strukture, da ima resne fiziološke posledice?</p></li>
+<li><p>Zakaj hemoglobin S pri deoksigenaciji tvori vlakna in kako to vpliva na obliko eritrocitov?</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="bolezenska-mutacija-ki-vpliva-na-koordinacijo-kovine-sod1-pdb-2c9v-in-1oez">
+<h2>4. Bolezenska mutacija, ki vpliva na koordinacijo kovine: SOD1 (PDB: 2C9V in 1OEZ)<a class="headerlink" href="#bolezenska-mutacija-ki-vpliva-na-koordinacijo-kovine-sod1-pdb-2c9v-in-1oez" title="Link to this heading">#</a></h2>
+<p><strong>Strukturi:</strong> <a class="reference external" href="https://www.rcsb.org/structure/2C9V">2C9V – človeška Cu/Zn superoksid dismutaza (nemutirana)</a>; <a class="reference external" href="https://www.rcsb.org/structure/1OEZ">1OEZ – mutant SOD1 H46R</a></p>
+<section id="id7">
+<h3>Namen<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Spoznati vlogo kovinskih ionov v zgradbi in funkciji encimov ter na primeru bolezenske mutacije SOD1 H46R raziskati, kako zamenjava aminokislinskega ostanka vpliva na koordinacijsko okolje bakra. Primer povezati z družinsko obliko amiotrofične lateralne skleroze (ALS).</p>
+</section>
+<section id="id8">
+<h3>Navodila<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Zaprite predhodne modele in naložite nemutirano strukturo SOD1:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>close
+open 2c9v
+</pre></div>
+</div>
+</li>
+<li><p>Poiščite <strong>Cu</strong> in <strong>Zn</strong> ter si oglejte aminokislinske ostanke v njuni okolici. Kovinske ione in koordinirajoče stranske verige prikažite kot atome oziroma paličice.</p></li>
+<li><p>Poiščite <strong>His46 (H46)</strong> in določite, kateri njegov atom je usmerjen proti bakrovemu ionu. Izmerite razdaljo med ustreznim atomom histidina in bakrom.</p></li>
+<li><p>Naložite mutirano strukturo:</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>open 1oez
+</pre></div>
+</div>
+</li>
+<li><p>Za primerjavo poravnajte ustrezni proteinski verigi (po potrebi izberite po eno verigo iz vsakega modela):</p>
+<div class="highlight-chimerax notranslate"><div class="highlight"><pre><span></span>matchmaker #2/A to #1/A
+</pre></div>
+</div>
+</li>
+<li><p>V mutirani strukturi poiščite <strong>Arg46 (R46)</strong>. Primerjajte stranski verigi histidina in arginina ter okolico kovinskega vezavnega mesta.</p></li>
+<li><p>Ugotovite, kateri kovinski ion je prisoten v mutirani strukturi in kateri manjka. Upoštevajte, da na prisotnost ionov v eksperimentalni strukturi vplivajo tudi pogoji priprave vzorca.</p></li>
+</ol>
+</section>
+<section id="id9">
+<h3>Vprašanja<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Kakšna je biološka funkcija encima SOD1 in zakaj sta zanj pomembna kovinska iona?</p></li>
+<li><p>Kako histidin sodeluje pri koordinaciji bakra? Kateri atomi njegovih stranskih verig omogočajo takšno interakcijo?</p></li>
+<li><p>Kako se histidin in arginin razlikujeta po zgradbi in kemijskih lastnostih?</p></li>
+<li><p>Kakšna je razlika med kovinsko koordinacijsko vezjo in običajno vodikovo vezjo?</p></li>
+<li><p>Kaj opazite pri primerjavi kovinskih mest v strukturah 2C9V in 1OEZ? Ali iz same strukture lahko povsem razložimo mehanizem nastanka ALS?</p></li>
+</ol>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="drugi-sklop-vaj-2-uri">
+<h1>Drugi sklop vaj (2 uri)<a class="headerlink" href="#drugi-sklop-vaj-2-uri" title="Link to this heading">#</a></h1>
+<section id="napovedovanje-proteinskih-struktur-in-kompleksov-alphafold-server-in-swiss-model">
+<h2>Napovedovanje proteinskih struktur in kompleksov: AlphaFold Server in SWISS-MODEL<a class="headerlink" href="#napovedovanje-proteinskih-struktur-in-kompleksov-alphafold-server-in-swiss-model" title="Link to this heading">#</a></h2>
+<p><strong>Predvideno trajanje:</strong> približno 2 uri<br />
+<strong>Orodja:</strong> <a class="reference external" href="https://www.uniprot.org/">UniProt</a>, <a class="reference external" href="https://alphafoldserver.com/">AlphaFold Server</a>, <a class="reference external" href="https://alphafold.ebi.ac.uk/">AlphaFold Protein Structure Database</a>, <a class="reference external" href="https://swissmodel.expasy.org/interactive">SWISS-MODEL</a>, UCSF ChimeraX, <a class="reference external" href="https://www.rcsb.org/">RCSB PDB</a>.</p>
+<p><strong>Glavni protein:</strong> človeški <strong>endophilin-B2 (SH3GLB2)</strong>, UniProt <strong><a class="reference external" href="https://www.uniprot.org/uniprotkb/Q9NR46/entry">Q9NR46</a></strong>, 395 aminokislin. Gre za naravni večdomenski protein, za katerega pri pregledu UniProt/PDB nismo našli eksperimentalne strukture. Zanj pa obstaja že računska napoved v <a class="reference external" href="https://alphafold.ebi.ac.uk/entry/Q9NR46">AlphaFold DB</a>. To <strong>ni</strong> eksperimentalna struktura.</p>
+<p><strong>Zgradba:</strong> domena <strong>BAR (24–287)</strong>, povezovalna regija približno <strong>288–334</strong>, domena <strong>SH3 (335–395)</strong>. Meje so po anotacijah UniProt, ne po neposredni analizi nove napovedi.</p>
+<blockquote>
+<div><p><strong>Opomba za izvedbo:</strong> Ta protein je strukturno <em>obetaven</em> primer za razlikovanje med pLDDT in PAE, vendar <strong>močna meddomenska negotovost v rezultatu AlphaFold Server ni vnaprej zagotovljena</strong>. Pred vajami preverite dejanski PAE in shranite ustrezno napoved. Zanesljiv rezervni prikaz koncepta je primer <strong>RAD23A (UniProt P54725)</strong> iz uradne predstavitve AlphaFold: posamezne regije so napovedane z visoko lokalno zanesljivostjo, medsebojna lega pa je manj zanesljiva. Ta rezervni primer ni nadomestilo za osrednjo praktično nalogo.</p>
+</div></blockquote>
+<section id="id10">
+<h3>Namen<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p>Spoznati postopek pridobivanja aminokislinskega zaporedja in napovedovanja strukture proteina, ki <strong>nima znane eksperimentalne strukture celotne molekule</strong>. Na večdomenskem proteinu razlikovati med <strong>lokalno zanesljivostjo</strong> napovedanih domen (pLDDT) in <strong>zanesljivostjo njihove medsebojne lege</strong> (PAE). Nato spoznati modeliranje na podlagi homolognih strukturnih predlog (SWISS-MODEL), modeliranje homooligomerov in primerjavo modelov s strukturno superpozicijo v ChimeraX.</p>
+<p><strong>Po koncu vaj boste znali:</strong></p>
+<ul class="simple">
+<li><p>v UniProt poiskati in prenesti kanonično aminokislinsko zaporedje ter identificirati domene;</p></li>
+<li><p>pripraviti napoved monomera in homodimera v AlphaFold Server;</p></li>
+<li><p>interpretirati pLDDT, PAE, pTM in ipTM ter ločiti zanesljivost posamezne domene od zanesljivosti njene lege glede na druge domene/verige;</p></li>
+<li><p>poiskati eksperimentalno določene homologe in izbrati predloge v SWISS-MODEL;</p></li>
+<li><p>primerjati modelske domene z orodjem Matchmaker v ChimeraX, ne da bi superpoziciji pripisali več, kot je mogoče sklepati.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="uniprot-zaporedje-in-domene-proteina-sh3glb2">
+<h2>1. UniProt: zaporedje in domene proteina SH3GLB2<a class="headerlink" href="#uniprot-zaporedje-in-domene-proteina-sh3glb2" title="Link to this heading">#</a></h2>
+<section id="id11">
+<h3>Namen<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<p>Spoznati UniProt kot vir zaporedja in funkcionalnih anotacij ter razumeti, zakaj je poznavanje organizacije domen pomembno pri napovedovanju proteinov.</p>
+</section>
+<section id="id12">
+<h3>Navodila<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>V UniProt poiščite <strong>Q9NR46</strong>. Zabeležite ime proteina, organizem, dolžino in osnovno funkcijo.</p></li>
+<li><p>Prenesite <strong>kanonično zaporedje</strong> v obliki FASTA in ga shranite kot <code class="docutils literal notranslate"><span class="pre">SH3GLB2.fasta</span></code>.</p></li>
+<li><p>V razdelku <strong>Family &amp; Domains</strong> poiščite domeni <strong>BAR</strong> in <strong>SH3</strong> ter njune meje.</p></li>
+<li><p>Oglejte si tudi področje med domenama in preverite morebitne anotacije, povezane s sekundarno strukturo, urejenostjo in oligomerizacijo.</p></li>
+<li><p>Preverite povezave s PDB in AlphaFold DB. <strong>Ločite eksperimentalne strukture od računsko napovedanih.</strong></p></li>
+</ol>
+</section>
+<section id="id13">
+<h3>Vprašanja<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Kako sta funkciji BAR in SH3 domene različni?</p></li>
+<li><p>Ali lahko iz zaporedja in domenske organizacije vnaprej zagotovo določimo njuno medsebojno orientacijo?</p></li>
+<li><p>Zakaj obstoj napovedi v AlphaFold DB <strong>ne pomeni</strong>, da je eksperimentalna struktura proteina že znana?</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="alphafold-server-napoved-monomera">
+<h2>2. AlphaFold Server: napoved monomera<a class="headerlink" href="#alphafold-server-napoved-monomera" title="Link to this heading">#</a></h2>
+<section id="id14">
+<h3>Namen<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<p>Spoznati vhodne podatke za AlphaFold 3 in pripraviti novo napoved celotnega večdomenskega proteina.</p>
+</section>
+<section id="id15">
+<h3>Navodila<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Odprite <a class="reference external" href="https://alphafoldserver.com/">AlphaFold Server</a> in ustvarite novo napoved z imenom <code class="docutils literal notranslate"><span class="pre">SH3GLB2_monomer</span></code>.</p></li>
+<li><p>Vnesite celotno kanonično zaporedje Q9NR46 in nastavite <strong>eno kopijo</strong> proteinske verige.</p></li>
+<li><p>Oddajte nalogo. Med izračunom nadaljujte z nalogo SWISS-MODEL.</p></li>
+<li><p>Ko je napoved na voljo, preglejte <strong>vseh pet modelov</strong>, ne samo najvišje uvrščenega, in prenesite rezultate (mmCIF in spremljajoči JSON z ocenami zanesljivosti).</p></li>
+</ol>
+</section>
+<section id="id16">
+<h3>Vprašanja<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Kaj je izhod napovedi poleg atomskih koordinat?</p></li>
+<li><p>Zakaj lahko različne napovedi istega zaporedja kažejo različne medsebojne lege domen?</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="swiss-model-modeliranje-na-podlagi-homolognih-struktur">
+<h2>3. SWISS-MODEL: modeliranje na podlagi homolognih struktur<a class="headerlink" href="#swiss-model-modeliranje-na-podlagi-homolognih-struktur" title="Link to this heading">#</a></h2>
+<section id="id17">
+<h3>Namen<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<p>Spoznati modeliranje na podlagi predloge in razliko med <strong>zanesljivostjo zvitja posamezne domene</strong> ter neznano <strong>razporeditvijo celotnega večdomenskega proteina</strong>.</p>
+</section>
+<section id="id18">
+<h3>Navodila<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Odprite <a class="reference external" href="https://swissmodel.expasy.org/interactive">SWISS-MODEL</a> in vnesite celotno zaporedje Q9NR46.</p></li>
+<li><p>Zaženite <strong>Search for Templates</strong>. Poiščite predloge, določene <strong>eksperimentalno</strong>, ter zabeležite PDB-identifikator, identiteto zaporedja in pokritost.</p></li>
+<li><p>Posebej preverite, ali najdene predloge pokrivajo predvsem <strong>BAR</strong> ali <strong>SH3</strong> domeno. Ne predpostavljajte, da ena predloga določa pravilno lego obeh domen.</p></li>
+<li><p>Izberite primerno eksperimentalno predlogo za vsaj eno domeno in izdelajte model. Če samodejno modeliranje izdela samo del proteina, to <strong>ni napaka naloge</strong> — zabeležite, kateri ostanki so modelirani.</p></li>
+<li><p>Če je smiselno, ponovite modeliranje za <strong>izolirani segment SH3 (ostanki 335–395)</strong>; pri primerjavi upoštevajte, da ima izrezano zaporedje drugačno oštevilčenje kot celoten protein.</p></li>
+<li><p>Prenesite pripravljene modele in zabeležite oceno kakovosti (npr. QMEANDisCo, kjer je na voljo).</p></li>
+</ol>
+<blockquote>
+<div><p><strong>Pozor:</strong> SWISS-MODEL lahko kot predlogo predlaga tudi računski model iz <strong>AlphaFold DB</strong>. Za poučno primerjavo dveh različnih pristopov izberite predlogo, določeno <strong>z eksperimentalno metodo</strong>, kadar je to mogoče. Model iz homologije je še vedno računska napoved, ne eksperimentalni rezultat.</p>
+</div></blockquote>
+</section>
+<section id="id19">
+<h3>Vprašanja<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Zakaj je v večdomenskem proteinu lahko napoved ene domene dobra, čeprav celoten model ni zanesljiv?</p></li>
+<li><p>Kakšna je razlika med pokritostjo zaporedja (<em>coverage</em>) in identiteto zaporedja (<em>sequence identity</em>)?</p></li>
+<li><p>Kako bi ovrednotili primerjavo, če SWISS-MODEL pokriva samo eno domeno, AlphaFold pa celoten protein?</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="lokalna-in-globalna-zanesljivost-plddt-in-pae">
+<h2>4. Lokalna in globalna zanesljivost: pLDDT in PAE<a class="headerlink" href="#lokalna-in-globalna-zanesljivost-plddt-in-pae" title="Link to this heading">#</a></h2>
+<section id="id20">
+<h3>Namen<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<p>Pojasniti, zakaj <strong>visok pLDDT obeh domen ne zagotavlja pravilne medsebojne orientacije</strong>.</p>
+</section>
+<section id="id21">
+<h3>Navodila<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Odprite rezultat napovedi monomera <code class="docutils literal notranslate"><span class="pre">SH3GLB2_monomer</span></code> in strukturo obarvajte po <strong>pLDDT</strong>.</p></li>
+<li><p>Poiščite regije BAR, SH3 in povezovalno regijo. Zabeležite, ali so strukturirane domene napovedane z višjim pLDDT kot povezovalna regija.</p></li>
+<li><p>Odprite <strong>PAE (Predicted Aligned Error)</strong> in po zaporednih položajih poiščite območja, ki približno ustrezajo obema domenama.</p></li>
+<li><p>Primerjajte <strong>diagonalna bloka</strong> (pari ostankov znotraj iste domene) in <strong>zunajdiagonalna bloka</strong> (pari ostankov iz različnih domen). Nižji PAE pomeni zanesljivejšo napoved medsebojne lege, višji pa večjo negotovost.</p></li>
+<li><p>Primerjajte več napovedanih modelov. Ali sta domeni podobno zviti, vendar drugače medsebojno orientirani?</p></li>
+<li><p>Preverite skupno oceno <strong>pTM</strong> in premislite, zakaj ta ne nadomesti pregleda matrike PAE.</p></li>
+</ol>
+</section>
+<section id="id22">
+<h3>Vprašanja<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Kaj pomeni <strong>pLDDT &gt; 90</strong> za strukturo posamezne regije? Česa nam ne pove?</p></li>
+<li><p>Kaj pomeni visok <strong>PAE med dvema domenama</strong>, če ima vsaka domena zase visok pLDDT?</p></li>
+<li><p>Ali visok meddomenski PAE <strong>dokazuje</strong>, da sta domeni v celici gibljivi, ali kaže predvsem na <strong>negotovost napovedi</strong>?</p></li>
+<li><p>Kako bi preverili, ali je povezovalna regija res intrinzično neurejena?</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="alphafold-server-napoved-homodimera">
+<h2>5. AlphaFold Server: napoved homodimera<a class="headerlink" href="#alphafold-server-napoved-homodimera" title="Link to this heading">#</a></h2>
+<section id="id23">
+<h3>Namen<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
+<p>Razlikovati med vprašanjem, kako sta domeni razporejeni <strong>znotraj ene verige</strong>, in vprašanjem, kako sta postavljeni <strong>dve proteinski podenoti v kompleksu</strong>.</p>
+</section>
+<section id="id24">
+<h3>Navodila<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>V AlphaFold Server ustvarite novo nalogo <code class="docutils literal notranslate"><span class="pre">SH3GLB2_dimer</span></code> z <strong>dvema kopijama</strong> istega zaporedja Q9NR46.</p></li>
+<li><p>Ko je rezultat na voljo, primerjajte strukturi obeh verig in ocenite, kateri del proteina tvori stik med podenotama.</p></li>
+<li><p>Oglejte si <strong>medverižni PAE</strong>, <strong>ipTM</strong> in morebitne razlike med petimi napovedmi.</p></li>
+<li><p>Razlikujte med <strong>znotrajverižnim meddomenskim PAE</strong> in <strong>medverižnim PAE</strong>. Oba se nanašata na relativno razporeditev, vendar na različni strukturni vprašanji.</p></li>
+<li><p>Ne sklepajte, da je vsak napovedan stik dokaz fiziološke oligomerizacije; v pomoč naj bodo tudi podatki o proteinu in znane interakcije.</p></li>
+</ol>
+</section>
+<section id="id25">
+<h3>Vprašanja<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Ali visok pLDDT obeh verig dokazuje, da je model dimera pravilen?</p></li>
+<li><p>Kakšno dodatno informacijo pri kompleksu prispeva <strong>ipTM</strong>?</p></li>
+<li><p>Ali bi lahko isti protein tvoril drugačen dimer ali interagiral z drugo proteinsko verigo?</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="chimerax-superpozicija-alphafold-in-swiss-model">
+<h2>6. ChimeraX: superpozicija AlphaFold in SWISS-MODEL<a class="headerlink" href="#chimerax-superpozicija-alphafold-in-swiss-model" title="Link to this heading">#</a></h2>
+<section id="id26">
+<h3>Namen<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
+<p>Primerjati modela <strong>ustrezajočih domen</strong> in razumeti omejitve interpretacije RMSD pri delno modeliranih večdomenskih proteinih.</p>
+</section>
+<section id="id27">
+<h3>Navodila<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>V ChimeraX naložite napoved AlphaFold 3 in izdelani model SWISS-MODEL. Zabeležite njuni številki v <strong>Models</strong>.</p></li>
+<li><p>S programom <strong>Matchmaker</strong> poravnajte model SWISS-MODEL z ustrezno regijo napovedi AlphaFold. Pred primerjavo preverite, ali obe strukturi predstavljata <strong>isto zaporedno območje</strong>.</p></li>
+<li><p>Oglejte si lokalne razlike v sekundarni strukturi, zankah in RMSD. Zabeležite <strong>število primerjanih aminokislinskih ostankov</strong>.</p></li>
+<li><p>Če imate ločen model SH3 domene, primerjajte tudi tega, vendar ne poskušajte iz dveh ločenih domenskih superpozicij neposredno rekonstruirati zanesljive orientacije celotnega proteina.</p></li>
+<li><p>Primerjajte <strong>napovedi različnih metod</strong>, vendar upoštevajte, da podoben zvitek domene ne potrjuje pravilne prostorske razporeditve domen.</p></li>
+</ol>
+</section>
+<section id="id28">
+<h3>Vprašanja<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Ali sta AlphaFold in SWISS-MODEL napovedala podoben zvitek izbrane domene?</p></li>
+<li><p>Zakaj nizek RMSD poravnanih domen še ne potrjuje celotne strukture večdomenskega proteina?</p></li>
+<li><p>Kaj nam več pove o medsebojnem položaju domen: dobra lokalna superpozicija ali interdomenski PAE?</p></li>
+<li><p>Kje je vsaka od obeh metod najmočnejša in kakšne omejitve ima uporabljeni strukturni dokaz?</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="zakljucna-naloga">
+<h2>Zaključna naloga<a class="headerlink" href="#zakljucna-naloga" title="Link to this heading">#</a></h2>
+<p>V največ treh stavkih pojasnite, zakaj lahko za isti proteinski model velja: <strong>»Obe domeni sta zelo zanesljivo napovedani, celotna struktura pa ni.«</strong> V odgovoru uporabite izraza <strong>pLDDT</strong> in <strong>PAE</strong>.</p>
+<hr class="docutils" />
+<section id="viri">
+<h3>Viri<a class="headerlink" href="#viri" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.uniprot.org/uniprotkb/Q9NR46/entry">UniProt: SH3GLB2, Q9NR46</a></p></li>
+<li><p><a class="reference external" href="https://alphafold.ebi.ac.uk/entry/Q9NR46">AlphaFold Database: Q9NR46</a></p></li>
+<li><p><a class="reference external" href="https://www.ebi.ac.uk/training/online/courses/alphafold/alphafold-3-and-alphafold-server/alphafold-server-your-gateway-to-alphafold-3/interpreting-results-from-alphafold-server/">EMBL-EBI: Interpretacija rezultatov AlphaFold Server</a></p></li>
+<li><p><a class="reference external" href="https://swissmodel.expasy.org/docs/help">SWISS-MODEL dokumentacija</a></p></li>
+<li><p><a class="reference external" href="https://deepmind.google/blog/enabling-high-accuracy-protein-structure-prediction-at-the-proteome-scale/">DeepMind: primer visoke lokalne zanesljivosti in nezanesljive meddomenske orientacije</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./vaje"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Vaje pri predmetu Uporaba proteomskih podatkov</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizacija-in-analiza-proteinskih-struktur-s-programom-ucsf-chimerax">Vizualizacija in analiza proteinskih struktur s programom UCSF ChimeraX</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#namen-vaje">Namen vaje</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osnove-chimerax-zunajcelicni-del-proteina-epcam-pdb-4mzv">1. Osnove ChimeraX: zunajcelični del proteina EpCAM (PDB: 4MZV)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#navodila">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vprasanja">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konformacijske-spremembe-adenilat-kinaza-pdb-4ake-in-1ake">2. Konformacijske spremembe: adenilat kinaza (PDB: 4AKE in 1AKE)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bolezenska-mutacija-ki-spremeni-medmolekulske-interakcije-hemoglobin-pdb-2hhb-in-2hbs">3. Bolezenska mutacija, ki spremeni medmolekulske interakcije: hemoglobin (PDB: 2HHB in 2HBS)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bolezenska-mutacija-ki-vpliva-na-koordinacijo-kovine-sod1-pdb-2c9v-in-1oez">4. Bolezenska mutacija, ki vpliva na koordinacijo kovine: SOD1 (PDB: 2C9V in 1OEZ)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Vprašanja</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#drugi-sklop-vaj-2-uri">Drugi sklop vaj (2 uri)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#napovedovanje-proteinskih-struktur-in-kompleksov-alphafold-server-in-swiss-model">Napovedovanje proteinskih struktur in kompleksov: AlphaFold Server in SWISS-MODEL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Namen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uniprot-zaporedje-in-domene-proteina-sh3glb2">1. UniProt: zaporedje in domene proteina SH3GLB2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold-server-napoved-monomera">2. AlphaFold Server: napoved monomera</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#swiss-model-modeliranje-na-podlagi-homolognih-struktur">3. SWISS-MODEL: modeliranje na podlagi homolognih struktur</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lokalna-in-globalna-zanesljivost-plddt-in-pae">4. Lokalna in globalna zanesljivost: pLDDT in PAE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold-server-napoved-homodimera">5. AlphaFold Server: napoved homodimera</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chimerax-superpozicija-alphafold-in-swiss-model">6. ChimeraX: superpozicija AlphaFold in SWISS-MODEL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Namen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Navodila</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Vprašanja</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zakljucna-naloga">Zaključna naloga</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#viri">Viri</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mpavsic.github.io/sbio">Strukturna biologija</a> by <span property="cc:attributionName">Miha Pavšič</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
