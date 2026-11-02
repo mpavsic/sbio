@@ -433,7 +433,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vasa-naloga">Vaša naloga</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postavimo-protein-v-kontekst-nekaj-malega-o-kpc-2">Postavimo protein v kontekst (= nekaj malega o KPC-2)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postavimo-protein-v-kontekst-nekaj-o-kpc-2">Postavimo protein v kontekst (nekaj o KPC-2)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosno-o-beta-laktamazah">Splošno o <span class="math notranslate nohighlight">\(\beta\)</span>-laktamazah</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kpc-2">KPC-2</a></li>
 </ul>
@@ -444,7 +444,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difrakcijski-podatki-in-zacetni-model">Difrakcijski podatki in začetni model</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viri">Viri</a></li>
 </ul>
             </nav>
@@ -475,8 +478,8 @@ document.write(`
 <li><p>Na koncu vaš dograjen in izboljšan model primerjajte z izpiljenim modelom strukture, deponiranim v zbirko PDB.</p></li>
 </ul>
 </section>
-<section id="postavimo-protein-v-kontekst-nekaj-malega-o-kpc-2">
-<h2>Postavimo protein v kontekst (= nekaj malega o KPC-2)<a class="headerlink" href="#postavimo-protein-v-kontekst-nekaj-malega-o-kpc-2" title="Link to this heading">#</a></h2>
+<section id="postavimo-protein-v-kontekst-nekaj-o-kpc-2">
+<h2>Postavimo protein v kontekst (nekaj o KPC-2)<a class="headerlink" href="#postavimo-protein-v-kontekst-nekaj-o-kpc-2" title="Link to this heading">#</a></h2>
 <section id="splosno-o-beta-laktamazah">
 <h3>Splošno o <span class="math notranslate nohighlight">\(\beta\)</span>-laktamazah<a class="headerlink" href="#splosno-o-beta-laktamazah" title="Link to this heading">#</a></h3>
 <p><span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze so bakterijski encimi, ki s hidrolizo odprejo <span class="math notranslate nohighlight">\(\beta\)</span>-laktamski obroč antibiotikov in jih tako inaktivirajo. S tem preprečijo, da bi antibiotiki zavirali sintezo bakterijske celične stene, zato so pomemben vzrok odpornosti proti penicilinom, cefalosporinom in drugim <span class="math notranslate nohighlight">\(\beta\)</span>-laktamskim antibiotikom (več: <a class="reference external" href="https://sl.wikipedia.org/wiki/Betalaktamski_antibiotik">Betalaktamski_antibiotik &#64; Wikipedia</a>).</p>
@@ -553,7 +556,20 @@ PNKDDKHSEAVIAAAARLALEGLG
 </ul>
 </li>
 </ol>
-<p>Primer popravljanja modela strukture:</p>
+<section id="primer-popravljanja-modela-strukture">
+<h3>Primer popravljanja modela strukture<a class="headerlink" href="#primer-popravljanja-modela-strukture" title="Link to this heading">#</a></h3>
+<p>Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> je prikazana modro, diferenčna karta elektronske gostote <span class="math notranslate nohighlight">\(F_o – F_c\)</span> pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).</p>
+<p>Prikazani so koraki:</p>
+<ol class="arabic simple">
+<li><p>Iz elektronske gostote (tako <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> kot tudi <span class="math notranslate nohighlight">\(F_o – F_c\)</span>) je jasno razvidno, da je stranska skupina fenilalaninskega ostanka napačno pozicionirana. Gre za napačen rotamer.</p></li>
+<li><p>Boljši rotamer izberemo preko možnosti <code class="docutils literal notranslate"><span class="pre">Change</span> <span class="pre">rotamers</span></code>, to orodje že samo izbere najprimernejši rotamer in ga…</p></li>
+<li><p>… umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta <span class="math notranslate nohighlight">\(F_o – F_c\)</span> avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).</p></li>
+<li><p>Ogled bližine tega ostanka razkrije še eno napako in sicer slabo pozicionirano stransko skupino metioninskega ostanka.</p></li>
+<li><p>Uporabimo orodje <code class="docutils literal notranslate"><span class="pre">Auto-fit</span> <span class="pre">Rotamer</span></code>, ki izbere drug rotamer stranske skupine in ga umesti tako, da …</p></li>
+<li><p>… se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta <span class="math notranslate nohighlight">\(F_o – F_c\)</span> ne kaže na nobene anomalije.</p></li>
+</ol>
+<p><img alt="Primer popravljanja modela strukture" src="../_images/primer-popravljanja-modela-strukture.png" /></p>
+</section>
 </section>
 <hr class="docutils" />
 <section id="viri">
@@ -610,7 +626,7 @@ PNKDDKHSEAVIAAAARLALEGLG
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vasa-naloga">Vaša naloga</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postavimo-protein-v-kontekst-nekaj-malega-o-kpc-2">Postavimo protein v kontekst (= nekaj malega o KPC-2)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postavimo-protein-v-kontekst-nekaj-o-kpc-2">Postavimo protein v kontekst (nekaj o KPC-2)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosno-o-beta-laktamazah">Splošno o <span class="math notranslate nohighlight">\(\beta\)</span>-laktamazah</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kpc-2">KPC-2</a></li>
 </ul>
@@ -621,7 +637,10 @@ PNKDDKHSEAVIAAAARLALEGLG
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difrakcijski-podatki-in-zacetni-model">Difrakcijski podatki in začetni model</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viri">Viri</a></li>
 </ul>
   </nav></div>
