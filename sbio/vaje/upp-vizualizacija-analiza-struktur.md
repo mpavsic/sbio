@@ -1,11 +1,10 @@
-# Vaje pri predmetu Uporaba proteomskih podatkov
-## Vizualizacija in analiza proteinskih struktur s programom UCSF ChimeraX
+# Vizualizacija in analiza proteinskih struktur s programom UCSF ChimeraX
 
 **Predvideno trajanje:** približno 3 ure  
 **Program:** UCSF ChimeraX  
 **Podatkovna zbirka:** [Protein Data Bank (RCSB PDB)](https://www.rcsb.org/)
 
-### Namen vaje
+## Namen vaje
 
 Namen vaje je spoznati osnovna orodja za pregledovanje in analizo tridimenzionalnih struktur proteinov ter povezati opažene strukturne značilnosti z biološko funkcijo proteinov. Študenti se bodo naučili poiskati in naložiti eksperimentalno določene strukture iz zbirke PDB, spreminjati njihove prikaze, izbirati posamezne verige, aminokislinske ostanke in atome ter preučevati molekularne površine in interakcije. Primerjali bodo različni konformaciji istega proteina in na dveh primerih bolezenskih mutacij pojasnili njune strukturne posledice.
 
@@ -409,7 +408,7 @@ V največ treh stavkih pojasnite, zakaj lahko za isti proteinski model velja: **
 
 ---
 
-### Viri
+## Viri
 
 - [UniProt: SH3GLB2, Q9NR46](https://www.uniprot.org/uniprotkb/Q9NR46/entry)
 - [AlphaFold Database: Q9NR46](https://alphafold.ebi.ac.uk/entry/Q9NR46)

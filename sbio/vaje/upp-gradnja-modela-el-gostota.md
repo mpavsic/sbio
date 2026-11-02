@@ -84,4 +84,6 @@ Primer popravljanja modela strukture:
 
 ---
 
+## Viri
+
 Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka **Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study** {cite:p}`Emsley2010aaa`.

@@ -45,6 +45,7 @@ parts:
 - caption: Vaje
   chapters:
   - file: vaje/upp-2026
+    title: UPP vaje 2026/2027
 - caption: Razno
   chapters:
   - file: razno/zanimivosti
