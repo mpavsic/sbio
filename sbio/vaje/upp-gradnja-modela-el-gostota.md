@@ -12,7 +12,7 @@ Pri delu bomo uporabljali program [Moorhen](https://moorhen.org/), ki predstavlj
     - 'Dogradite' pomeni, da v trenutnem modelu strukure nekateri deli (aminokislinski ostanki, ligandi, ...) manjkajo in jih morate dodati, 'izboljšajte' pa, da prilagodite koordinate dodatnih ter v modelu že prisotnih atomov/ostankov tako, da bodo kar se da skladni z eksperimentalnimi podatki (elektronska gostota) kot tudi stereokemijskimi parametri (Ramachandranov diagram, dolžine vezi, koti med vezmi, rotameri itd.) in bo končen model imel tudi kemijski smisel.
 - Na koncu vaš dograjen in izboljšan model primerjajte z izpiljenim modelom strukture, deponiranim v zbirko PDB.
 
-## Postavimo protein v kontekst (= nekaj malega o KPC-2)
+## Postavimo protein v kontekst (nekaj o KPC-2)
 
 ### Splošno o $\beta$-laktamazah
 
@@ -84,8 +84,19 @@ Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska s
 10. Ko boste z delom končali shranite koordinate popravljenega modela strukture in ga primerjajte (npr. preko vrednosti RMSD) z v zbirko PDB deponiranimi koordinatami: [KPC2avi_orig_clean.pdb](datoteke/KPC2avi_orig_clean.pdb).
     - Za superpozicijo lahko uporabite [PDB Pairwise Structure Alignment](https://www.rcsb.org/alignment) (pri simbolu smetnjaka kliknite na puščico in izberite `File Upload`; kot referenčno strukturo lahko vpišete kar koto PDB 4ZBE) ali pa UCSG ChimeraX.
 
-Primer popravljanja modela strukture:
+### Primer popravljanja modela strukture
 
+Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote $2F_o – F_c$ je prikazana modro, diferenčna karta elektronske gostote $F_o – F_c$ pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).
+
+Prikazani so koraki:
+1. Iz elektronske gostote (tako $2F_o – F_c$ kot tudi $F_o – F_c$) je jasno razvidno, da je stranska skupina fenilalaninskega ostanka napačno pozicionirana. Gre za napačen rotamer.
+2. Boljši rotamer izberemo preko možnosti `Change rotamers`, to orodje že samo izbere najprimernejši rotamer in ga...
+3. ... umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta $F_o – F_c$ avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).
+4. Ogled bližine tega ostanka razkrije še eno napako in sicer slabo pozicionirano stransko skupino metioninskega ostanka.
+5. Uporabimo orodje `Auto-fit Rotamer`, ki izbere drug rotamer stranske skupine in ga umesti tako, da ...
+6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $F_o – F_c$ ne kaže na nobene anomalije.
+
+![Primer popravljanja modela strukture](slike/primer-popravljanja-modela-strukture.png)
 
 ---
 
