@@ -60,6 +60,8 @@ Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska s
 
 ## Potek vaje
 
+### Karta pri visoki ločljivosti (1.8 Å)
+
 1. Pojdite na spletno stran [Moorhen.org](https://moorhen.org/).
 2. Naložite PDB (koordinate) in MTZ datoteki (strukturni faktorji, karte elektronske gostote) (`"hamburger menu" > File > Open Files`), [prenešeni s te spletne strani](difrakcijski-podatki).
    - Datoteki lahko naložite hkrati (obe označite pri odpiranju) ali pa eno za drugo.
@@ -84,7 +86,7 @@ Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska s
 10. Ko boste z delom končali shranite koordinate popravljenega modela strukture in ga primerjajte (npr. preko vrednosti RMSD) z v zbirko PDB deponiranimi koordinatami: [KPC2avi_orig_clean.pdb](datoteke/KPC2avi_orig_clean.pdb).
     - Za superpozicijo lahko uporabite [PDB Pairwise Structure Alignment](https://www.rcsb.org/alignment) (pri simbolu smetnjaka kliknite na puščico in izberite `File Upload`; kot referenčno strukturo lahko vpišete kar koto PDB 4ZBE) ali pa UCSG ChimeraX.
 
-### Primer popravljanja modela strukture
+#### Primer popravljanja modela strukture
 
 Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote $2F_o – F_c$ je prikazana modro, diferenčna karta elektronske gostote $F_o – F_c$ pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).
 
@@ -97,6 +99,12 @@ Prikazani so koraki:
 6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $F_o – F_c$ ne kaže na nobene anomalije.
 
 ![Primer popravljanja modela strukture](slike/primer-popravljanja-modela-strukture.png)
+
+### Karta pri nizki ločljivosti (3.5 Å)
+
+
+
+## Vprašanja
 
 ---
 

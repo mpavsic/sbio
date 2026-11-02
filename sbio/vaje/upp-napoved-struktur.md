@@ -94,7 +94,12 @@ Spoznati modeliranje na podlagi predloge in razliko med **zanesljivostjo zvitja 
 
 ### Namen
 
-Pojasniti, zakaj **visok pLDDT obeh domen ne zagotavlja pravilne medsebojne orientacije**.
+Pojasniti
+### Vprašanja
+
+1. Ali sta AlphaFold in SWISS-MODEL napovedala podoben zvitek izbrane domene?
+2. Zakaj nizek RMSD poravnanih domen še ne potrjuje celotne strukture večdomenskega proteina?
+3. Kaj n, zakaj **visok pLDDT obeh domen ne zagotavlja pravilne medsebojne orientacije**.
 
 ### Navodila
 
