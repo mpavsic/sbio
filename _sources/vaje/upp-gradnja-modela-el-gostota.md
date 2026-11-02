@@ -18,7 +18,7 @@ Pri delu bomo uporabljali program [Moorhen](https://moorhen.org/), ki predstavlj
 
 $\beta$-laktamaze so bakterijski encimi, ki s hidrolizo odprejo $\beta$-laktamski obroč antibiotikov in jih tako inaktivirajo. S tem preprečijo, da bi antibiotiki zavirali sintezo bakterijske celične stene, zato so pomemben vzrok odpornosti proti penicilinom, cefalosporinom in drugim $\beta$-laktamskim antibiotikom (več: [Betalaktamski_antibiotik @ Wikipedia](https://sl.wikipedia.org/wiki/Betalaktamski_antibiotik)).
 
-![Betalaktamski antibiotiki](slike/betalaktmski-antibiotiki.png)
+![Betalaktamski antibiotiki](slike/betalaktamski-antibiotiki.png)
 
 Po Amblerjevi klasifikaciji jih delimo v štiri razrede, A, B, C in D: razredi A, C in D imajo v aktivnem mestu katalitični serin, razred B pa obsega metalo-$\beta$-laktamaze, ki za delovanje potrebujejo cinkove ione. Med značilne predstavnike sodijo encimi TEM, SHV, CTX-M in KPC v razredu A, NDM, VIM in IMP v razredu B, AmpC v razredu C ter encimi OXA v razredu D. Posebej problematične so $\beta$-laktamaze razširjenega spektra (*Extended-Spectrum Beta-Lactamases*, ESBL) in karbapenemaze, saj zmanjšujejo izbor učinkovitih antibiotikov, njihovi geni pa se lahko med bakterijami širijo s plazmidi.
 
@@ -48,7 +48,7 @@ Protein je bil kristaliziran z uporabo metode z difuzijo vodne pare na način se
 
 Kemijsko ime za avibaktam je (2S,5R)-1-formil-5-[(sulfooksi)amino]piperidin-2-karboksamid, najdemo ga v zbirki ligandov na RCSB PDB (koda [NXL](https://www.rcsb.org/ligand/NXL)).
 
-<iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/mpavsic.github.io/sbio/vaje/seje/structure/avibaktam-NXL.molx&snapshot-url-type=molx&hide-controls=1" style="width: 100%; height: 300px; border: 0px"></iframe>
+<iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/mpavsic.github.io/sbio/vaje/seje/avibaktam-NXL.molx&snapshot-url-type=molx&hide-controls=1" style="width: 100%; height: 300px; border: 0px"></iframe>
 
 (difrakcijski-podatki)=
 ### Difrakcijski podatki in začetni model
