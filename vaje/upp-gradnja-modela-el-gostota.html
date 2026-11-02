@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gradnja modela strukture z uporabo elektronske gostote &#8212; Strukturna biologija</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'vaje/upp-gradnja-modela-el-gostota';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/sbio/vaje/upp-gradnja-modela-el-gostota.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../naslovnica.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo_sbio_s.png" class="logo__image only-light" alt="Strukturna biologija - Home"/>
+    <script>document.write(`<img src="../_static/logo_sbio_s.png" class="logo__image only-dark" alt="Strukturna biologija - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../naslovnica.html">
+                    Strukturna biologija
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../strukture/navodila.html">Kako uporabljati modele?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/vizualizacija.html">Vizualizacija</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/prim.html">Primarna struktura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/ss.html">Sekundarna struktura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/interakcije.html">Interakcije</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/motivi.html">Motivi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/razredi.html">Razredi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/kristalografija.html">Kristalografija</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/nmr.html">NMR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/membranski_proteini.html">Membranski proteini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/proteini-na.html">Proteini:NA</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Orodjarna</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orodjarna/zbirke.html">Zbirke strukturnih podatkov</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/zbirke-eksperimentalne.html">Eksperimentalno določene strukture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/modeli.html">Modeli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/zbirke-druge.html">Druge zbirke</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orodjarna/vizualizacija.html">Vizualizacija struktur</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/chimera.html">ChimeraX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/molstar.html">MolStar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/pymol.html">PyMOL</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../orodjarna/analiza.html">Analiza struktur idr.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/delavnice.html">Seminarske delavnice</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-molstar.html">Delavnica: MolStar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pdb.html">Delavnica: PDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-konstrukti.html">Delavnica: Konstrukti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-gradnja.html">Delavnica: Gradnja</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pymol.html">Delavnica: PyMOL</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/naloge.html">Seminarske naloge</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/naloge-navodila.html">Navodila</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vaje</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="upp-2026.html">Uporaba proteomskih podatkov (vaje) 2026/2027</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../razno/reference.html">Reference</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/vaje/upp-gradnja-modela-el-gostota.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fvaje/upp-gradnja-modela-el-gostota.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/vaje/upp-gradnja-modela-el-gostota.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Gradnja modela strukture z uporabo elektronske gostote</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vasa-naloga">Vaša naloga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postavimo-protein-v-kontekst-nekaj-malega-o-kpc-2">Postavimo protein v kontekst (= nekaj malega o KPC-2)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosno-o-beta-laktamazah">Splošno o <span class="math notranslate nohighlight">\(\beta\)</span>-laktamazah</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kpc-2">KPC-2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatki">Vhodni podatki</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protein">Protein</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kristalizacija-in-ligand">Kristalizacija in ligand</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difrakcijski-podatki-in-zacetni-model">Difrakcijski podatki in začetni model</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="gradnja-modela-strukture-z-uporabo-elektronske-gostote">
+<h1>Gradnja modela strukture z uporabo elektronske gostote<a class="headerlink" href="#gradnja-modela-strukture-z-uporabo-elektronske-gostote" title="Link to this heading">#</a></h1>
+<section id="namen">
+<h2>Namen<a class="headerlink" href="#namen" title="Link to this heading">#</a></h2>
+<p>Namen delavnice je spoznati osnove ročne gradnje in piljenja modela strukture proteina z uporabo eksperimentalnih podatkov, v konkretnem primeru gre za elektronsko gostoto, izračunano iz difrakcijskih podatkov (makromolekulska X-žarkovna kristalografija), podobni principi pa veljajo tudi v primeru elektronske difrakcije in krio-elektronske mikroskopije.</p>
+<p>Pri delu bomo uporabljali program <a class="reference external" href="https://moorhen.org/">Moorhen</a>, ki predstavlja spletno različico programa <a class="reference external" href="https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/">COOT</a> (Crystallographic Object-Oriented Toolkit), danes najpogosteje uporabljanega programa za gradnjo, piljenje in validacijo modelov struktur makromolekul <span id="id1">[<a class="reference internal" href="../razno/reference.html#id16" title="Paul Emsley, Bernhard Lohkamp, William G. Scott, and Kevin Cowtan. Features and development of coot. Acta Crystallographica Section D - Biological Crystallography, 66:486-501, 2010. doi:10.1107/S0907444910007493.">Emsley <em>et al.</em>, 2010</a>]</span>. Isti program se lahko uporablja tako za gradnjo modelov struktur na osnovi podatkov, pridobljenih z difrakcijo (rentgenska, elektronska difrakcija), kot tudi s krio-elektronsko mikroskopijo.</p>
+</section>
+<section id="vasa-naloga">
+<h2>Vaša naloga<a class="headerlink" href="#vasa-naloga" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Z uporabo Morheen dogradite in izboljšajte model strukture <span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze KPC-2 z vezanim inhibitorjem avibaktamom, pri tem pa uporabite karto elektronske gostote, izračunano na osnovi difrakcijskih podatkov (ločljivost 1.8 Å).</p>
+<ul>
+<li><p>‘Dogradite’ pomeni, da v trenutnem modelu strukure nekateri deli (aminokislinski ostanki, ligandi, …) manjkajo in jih morate dodati, ‘izboljšajte’ pa, da prilagodite koordinate dodatnih ter v modelu že prisotnih atomov/ostankov tako, da bodo kar se da skladni z eksperimentalnimi podatki (elektronska gostota) kot tudi stereokemijskimi parametri (Ramachandranov diagram, dolžine vezi, koti med vezmi, rotameri itd.) in bo končen model imel tudi kemijski smisel.</p></li>
+</ul>
+</li>
+<li><p>Na koncu vaš dograjen in izboljšan model primerjajte z izpiljenim modelom strukture, deponiranim v zbirko PDB.</p></li>
+</ul>
+</section>
+<section id="postavimo-protein-v-kontekst-nekaj-malega-o-kpc-2">
+<h2>Postavimo protein v kontekst (= nekaj malega o KPC-2)<a class="headerlink" href="#postavimo-protein-v-kontekst-nekaj-malega-o-kpc-2" title="Link to this heading">#</a></h2>
+<section id="splosno-o-beta-laktamazah">
+<h3>Splošno o <span class="math notranslate nohighlight">\(\beta\)</span>-laktamazah<a class="headerlink" href="#splosno-o-beta-laktamazah" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze so bakterijski encimi, ki s hidrolizo odprejo <span class="math notranslate nohighlight">\(\beta\)</span>-laktamski obroč antibiotikov in jih tako inaktivirajo. S tem preprečijo, da bi antibiotiki zavirali sintezo bakterijske celične stene, zato so pomemben vzrok odpornosti proti penicilinom, cefalosporinom in drugim <span class="math notranslate nohighlight">\(\beta\)</span>-laktamskim antibiotikom (več: <a class="reference external" href="https://sl.wikipedia.org/wiki/Betalaktamski_antibiotik">Betalaktamski_antibiotik &#64; Wikipedia</a>).</p>
+<p><img alt="Betalaktamski antibiotiki" src="vaje/slike/betalaktmski-antibiotiki.png" /></p>
+<p>Po Amblerjevi klasifikaciji jih delimo v štiri razrede, A, B, C in D: razredi A, C in D imajo v aktivnem mestu katalitični serin, razred B pa obsega metalo-<span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze, ki za delovanje potrebujejo cinkove ione. Med značilne predstavnike sodijo encimi TEM, SHV, CTX-M in KPC v razredu A, NDM, VIM in IMP v razredu B, AmpC v razredu C ter encimi OXA v razredu D. Posebej problematične so <span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze razširjenega spektra (<em>Extended-Spectrum Beta-Lactamases</em>, ESBL) in karbapenemaze, saj zmanjšujejo izbor učinkovitih antibiotikov, njihovi geni pa se lahko med bakterijami širijo s plazmidi.</p>
+<p>Njihovo delovanje lahko obidemo s kombiniranjem <span class="math notranslate nohighlight">\(\beta\)</span>-laktamskega antibiotika z zaviralcem (inhibitorjem) <span class="math notranslate nohighlight">\(\beta\)</span>-laktamaz, ki antibiotik zaščiti pred encimsko razgradnjo. Klasični primeri so <strong>amoksicilin s klavulansko kislino, ampicilin s sulbaktamom in piperacilin s tazobaktamom</strong>, pri čemer ti zaviralci delujejo predvsem proti številnim encimom razreda A. Novejše kombinacije vključujejo <strong>ceftazidim z avibaktamom, meropenem z vaborbaktamom in imipenem z relebaktamom</strong>, ki omogočajo zaščito tudi pred nekaterimi <span class="math notranslate nohighlight">\(\beta\)</span>-laktamazami, odpornimi proti starejšim zaviralcem. Avibaktam zavira številne encime razredov A in C ter nekatere razreda D, vaborbaktam in relebaktam pa predvsem encime razredov A in C; nobeden od teh treh zaviralcev ne zavira metalo-<span class="math notranslate nohighlight">\(\beta\)</span>-laktamaz razreda B. Pri bakterijah z metalo-<span class="math notranslate nohighlight">\(\beta\)</span>-laktamazami je uporabna kombinacija <strong>aztreonama z avibaktamom</strong>, saj je aztreonam praviloma odporen proti hidrolizi s temi encimi, avibaktam pa ga zaščiti pred drugimi <span class="math notranslate nohighlight">\(\beta\)</span>-laktamazami, ki jih bakterija lahko proizvaja hkrati.</p>
+</section>
+<section id="kpc-2">
+<h3>KPC-2<a class="headerlink" href="#kpc-2" title="Link to this heading">#</a></h3>
+<p>KPC-2 (<em>Klebsiella pneumoniae</em> karbapenemaza tipa 2) je serinska <span class="math notranslate nohighlight">\(\beta\)</span>-laktamaza razreda A, ki hidrolizira številne <span class="math notranslate nohighlight">\(\beta\)</span>-laktamske antibiotike, vključno s karbapenemi, in tako bakterijam omogoča odpornost tudi proti tem pomembnim zdravilom. <strong>Avibaktam jo zavira tako, da s katalitičnim serinom v njenem aktivnem mestu tvori reverzibilno kovalentno vez in prepreči razgradnjo antibiotika.</strong> Kombinacija ceftazidima z avibaktamom je pomembna možnost zdravljenja okužb z bakterijami, ki proizvajajo KPC-2, saj hkratna administracija omogoča učinkovito delovanje ceftazidima. Težavo lahko predstavljajo mutacije KPC-2, ki zmanjšajo občutljivost za avibaktam in povzročijo odpornost tudi proti tej kombinaciji. Razumevanje podrobnosti vezave avibaktama na KPC-2 je tako pomembno z vidika načrtovanja novih tovrstnih inhibitorjev.</p>
+</section>
+</section>
+<section id="vhodni-podatki">
+<h2>Vhodni podatki<a class="headerlink" href="#vhodni-podatki" title="Link to this heading">#</a></h2>
+<section id="protein">
+<h3>Protein<a class="headerlink" href="#protein" title="Link to this heading">#</a></h3>
+<p>Gre za encim KPC-2 iz <em>Klebsiella pneumoniae</em> (UniProt <a class="reference external" href="https://www.uniprot.org/uniprotkb/Q9F663">Q9F663</a>), rekombinantno pripravljen v <strong>Escherichia coli</strong>. Za izražanje je bila uporabljena nekoliko skrajšana oblika proteina z naslednjim aminokislinskim zaporedjem:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>TNLVAEPFAKLEQDFGGSIGVYAMDTGSGATVSYRAEERFPLCSSFKGFLAAAVLARSQQ
+QAGLLDTPIRYGKNALVPWSPISEKYLTTGMTVAELSAAAVQYSDNAAANLLLKELGGPA
+GLTAFMRSIGDTTFRLDRWELELNSAIPGDARDTSSPRAVTESLQKLTLGSALAAPQRQQ
+FVDWLKGNTTGNHRIRAAVPADWAVGDKTGTCGVYGTANDYAVVWPTGRAPIVLAVYTRA
+PNKDDKHSEAVIAAAARLALEGLG
+</pre></div>
+</div>
+</section>
+<section id="kristalizacija-in-ligand">
+<h3>Kristalizacija in ligand<a class="headerlink" href="#kristalizacija-in-ligand" title="Link to this heading">#</a></h3>
+<p>Protein je bil kristaliziran z uporabo metode z difuzijo vodne pare na način sedeče kapljice, raztopina rezervoarja je imela naslednjo sestavo: 20 % (w/v) PEG 6000, 100 mM kalijev tiocianat, 100 mM citrat pH 4,0. Dobljeni kristali so bili inkubirani 8 min v raztopini avibaktama (koncentracija 5 mM) v nekoliko spremenjeni matični raztopini (25 % PEG 6000, 100 mM citrat pH 5.0, 20 % etilen glikol), nato pa zamrznjeni v tekočem dušiku.</p>
+<p>Kemijsko ime za avibaktam je (2S,5R)-1-formil-5-[(sulfooksi)amino]piperidin-2-karboksamid, najdemo ga v zbirki ligandov na RCSB PDB (koda <a class="reference external" href="https://www.rcsb.org/ligand/NXL">NXL</a>).</p>
+<iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/mpavsic.github.io/sbio/vaje/seje/structure/avibaktam-NXL.molx&snapshot-url-type=molx&hide-controls=1" style="width: 100%; height: 300px; border: 0px"></iframe>
+</section>
+<section id="difrakcijski-podatki-in-zacetni-model">
+<span id="difrakcijski-podatki"></span><h3>Difrakcijski podatki in začetni model<a class="headerlink" href="#difrakcijski-podatki-in-zacetni-model" title="Link to this heading">#</a></h3>
+<p>Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska skupina <span class="math notranslate nohighlight">\(P 2_1 2_1 2_1\)</span>), za faziranje z molekulsko zamenjavo (<a class="reference external" href="https://en.wikipedia.org/wiki/Molecular_replacement"><em>molecular replacement</em></a>) pa je bila uporabljena znana (eksperimentalno določena) struktura podobne <span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze. Po molekulski zamenjavi je bil ta začetni model uporabljen za začetno gradnjo modela strukture KPC-2. V asimetrični enoti je ena molekula proteina, KPC-2 pa je sicer znan kot monomeren protein.</p>
+<ul class="simple">
+<li><p>datoteka z elektronsko gostoto (karti <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> in <span class="math notranslate nohighlight">\(F_o – F_c\)</span>): <a class="reference download internal" download="" href="../_downloads/072ea78c3448182704f2ff57915350ba/KPC2avi.mtz"><span class="xref download myst">KPC2avi.mtz</span></a></p></li>
+<li><p>datoteka z delno zgrajenim modelom strukture: <a class="reference download internal" download="" href="../_downloads/2edf771288307fd0452ed641fbb0cd5e/KPC2avi.pdb"><span class="xref download myst">KPC2avi.pdb</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="potek-vaje">
+<h2>Potek vaje<a class="headerlink" href="#potek-vaje" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Pojdite na spletno stran <a class="reference external" href="https://moorhen.org/">Moorhen.org</a>.</p></li>
+<li><p>Naložite PDB (koordinate) in MTZ datoteki (strukturni faktorji, karte elektronske gostote) (<code class="docutils literal notranslate"><span class="pre">&quot;hamburger</span> <span class="pre">menu&quot;</span> <span class="pre">&gt;</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">Files</span></code>), <a class="reference internal" href="#difrakcijski-podatki"><span class="std std-ref">prenešeni s te spletne strani</span></a>.</p>
+<ul class="simple">
+<li><p>Datoteki lahko naložite hkrati (obe označite pri odpiranju) ali pa eno za drugo.</p></li>
+</ul>
+</li>
+<li><p>Oglejte si, kako se elektronska gostota nadaljuje “v neskončnost”.</p></li>
+<li><p>Omogočite izračun R-faktorja in osveževanje kart elektronske gostote tako, da naložene karte in podatke povežete s strukturo: <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Connect</span> <span class="pre">Molecule</span> <span class="pre">and</span> <span class="pre">Maps...</span> <span class="pre">&gt;</span> <span class="pre">Ok</span></code></p></li>
+<li><p>Spremenite prikaz proteina iz načina ‘Ribbons’ v ‘Bonds’ (sicer ne vidite posameznih ostankov): <code class="docutils literal notranslate"><span class="pre">Models</span></code> &gt;  ikona svinčnika…</p></li>
+<li><p>Vklopite prikaz atomov iz sosednjih asimetričnih enot: <code class="docutils literal notranslate"><span class="pre">Models</span> <span class="pre">&gt;</span> <span class="pre">(zobnik)</span> <span class="pre">&gt;</span> <span class="pre">Cell</span> <span class="pre">and</span> <span class="pre">Symmetry</span> <span class="pre">&gt;</span> <span class="pre">Show</span> <span class="pre">symmetry</span> <span class="pre">mates</span></code>.</p></li>
+<li><p>Nastavite nivo konturiranja diferenčne karte elektronske gostote (<span class="math notranslate nohighlight">\(F_o – F_c\)</span>) na pribl. RMSD 3,4–3,5: <code class="docutils literal notranslate"><span class="pre">Maps</span></code>, uporabite drsnik pri karti KPC2avi.-map-1.</p></li>
+<li><p>Z orodji, ki jih najdete pod <code class="docutils literal notranslate"><span class="pre">Validation</span></code>, analizirajte ujemanje modela strukture z elektronsko gostoto in stereokemijskimi parametri, na primer:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Difference</span> <span class="pre">Map</span> <span class="pre">Peaks...</span></code> vam pokaže, kje v strukturi nekaj manjka (zeleno obarvana diferenčna karta el. gostote) oz. je tam, kjer ne bi smelo biti (rdeče obarvana diferenčna karta el. gostote)),</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ramachandran</span> <span class="pre">Plot...</span></code> vam pokaže, kateri ostanki so izven favoriziranih in dovoljenih območij kombinacij dihedralnih kotov glavne verige,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Unmodelled</span> <span class="pre">Blobs...</span></code> vam poišče “oblačke” elektronske gostote, ki niso zapolnjeni z atomi (torej v modelu strukuture tam nekaj manjka),</p></li>
+<li><p>idr.</p></li>
+<li><p>Nekaj napak v strukturi vam razkrije že vklop “Ramachandran Balls” in “Contact Dots” (s slednjim lahko identificirate atome, ki sicer niso kovalentno povezavi, so si pa preblizu): <code class="docutils literal notranslate"><span class="pre">Models</span> <span class="pre">&gt;</span> <span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">(različne</span> <span class="pre">možnosti)</span></code>.</p></li>
+</ul>
+</li>
+<li><p>V model strukture dodajte tudi manjkajoča liganda – eden izmed njih je komponenta kristalizacijskega pufra (jo lahko prepoznate po obliki oblačka elektronske gostote?), drugi pa inhibitor encima.</p></li>
+<li><p><strong>Priporočeno je, da med delom občasno shranite koordinate ali kar celotno sejo, saj boste vse popravke izgubili, če se vam brskalnik sesuje ali ga po nesreči zaprete!</strong></p></li>
+<li><p>Ko boste z delom končali shranite koordinate popravljenega modela strukture in ga primerjajte (npr. preko vrednosti RMSD) z v zbirko PDB deponiranimi koordinatami: <a class="reference internal" href="#datoteke/KPC2avi-orig-clean.pdb"><span class="xref myst">KPC2avi-orig-clean.pdb</span></a>.</p>
+<ul class="simple">
+<li><p>Za superpozicijo lahko uporabite <a class="reference external" href="https://www.rcsb.org/alignment">PDB Pairwise Structure Alignment</a> (pri simbolu smetnjaka kliknite na puščico in izberite <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Upload</span></code>; kot referenčno strukturo lahko vpišete kar koto PDB 4ZBE) ali pa UCSG ChimeraX.</p></li>
+</ul>
+</li>
+</ol>
+<p>Primer popravljanja modela strukture:</p>
+<hr class="docutils" />
+<p>Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka <strong>Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study</strong> <span id="id2">[<a class="reference internal" href="../razno/reference.html#id16" title="Paul Emsley, Bernhard Lohkamp, William G. Scott, and Kevin Cowtan. Features and development of coot. Acta Crystallographica Section D - Biological Crystallography, 66:486-501, 2010. doi:10.1107/S0907444910007493.">Emsley <em>et al.</em>, 2010</a>]</span>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./vaje"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vasa-naloga">Vaša naloga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postavimo-protein-v-kontekst-nekaj-malega-o-kpc-2">Postavimo protein v kontekst (= nekaj malega o KPC-2)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosno-o-beta-laktamazah">Splošno o <span class="math notranslate nohighlight">\(\beta\)</span>-laktamazah</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kpc-2">KPC-2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vhodni-podatki">Vhodni podatki</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protein">Protein</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kristalizacija-in-ligand">Kristalizacija in ligand</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difrakcijski-podatki-in-zacetni-model">Difrakcijski podatki in začetni model</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mpavsic.github.io/sbio">Strukturna biologija</a> by <span property="cc:attributionName">Miha Pavšič</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
