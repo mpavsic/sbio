@@ -153,4 +153,7 @@ Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje mode
 
 Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka **Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study** {cite:p}`Krishnan2015aaa`.
 
-Pri pripravi datotek so bili uporabljeni programi iz paketov [CCP4]()
+Pri pripravi datotek so bili uporabljeni programi:
+- [Coot](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/)
+- [CCP4: Software for Macromolecular X-Ray Crystallography](https://www.ccp4.ac.uk/)
+- [Phenix](https://www.phenix-online.org/)
