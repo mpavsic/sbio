@@ -11,6 +11,7 @@ Pri delu bomo uporabljali program [Moorhen](https://moorhen.org/), ki predstavlj
 - Z uporabo Morheen dogradite in izboljšajte model strukture $\beta$-laktamaze KPC-2 z vezanim inhibitorjem avibaktamom, pri tem pa uporabite karto elektronske gostote, izračunano na osnovi difrakcijskih podatkov (ločljivost 1,8 Å).
     - 'Dogradite' pomeni, da v trenutnem modelu strukure nekateri deli (aminokislinski ostanki, ligandi, ...) manjkajo in jih morate dodati, 'izboljšajte' pa, da prilagodite koordinate dodatnih ter v modelu že prisotnih atomov/ostankov tako, da bodo kar se da skladni z eksperimentalnimi podatki (elektronska gostota) kot tudi stereokemijskimi parametri (Ramachandranov diagram, dolžine vezi, koti med vezmi, rotameri itd.) in bo končen model imel tudi kemijski smisel.
 - Na koncu vaš dograjen in izboljšan model primerjajte z izpiljenim modelom strukture, deponiranim v zbirko PDB.
+- Gradnjo in ročno piljenje modela ponovite z uporabo karte elektronske gostote pri nižji ločljivosti (3,5 Å) ter primerjajte, kako sedaj razločite orientacije stranskih skupin, manjkajoče dele ipd.
 
 ## Postavimo protein v kontekst (nekaj o KPC-2)
 
@@ -151,3 +152,5 @@ Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje mode
 ## Viri
 
 Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka **Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study** {cite:p}`Krishnan2015aaa`.
+
+Pri pripravi datotek so bili uporabljeni programi iz paketov [CCP4]()
