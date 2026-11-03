@@ -65,7 +65,7 @@ Pri "popravljanju" modela strukture bomo najprej uporabili karto visoke ločljiv
 
 >Datoteke:
 >- delno zgrajen model strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb),
->- elektronska gostota (karti $2mF_o – DF_c$ in $mF_o – DF_c$, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): [KPC2avi_1p8.mtz](datoteke/KPC2avi.mtz).
+>- elektronska gostota (karti $2mF_o – DF_c$ in $mF_o – DF_c$, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): [KPC2avi_1p8.mtz](datoteke/KPC2avi_1p8.mtz).
 
 ```{admonition} Kaj so oznake $F_o$, $DF_c$ ...?
 :class: hint
