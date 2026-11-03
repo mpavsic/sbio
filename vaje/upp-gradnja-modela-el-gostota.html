@@ -445,7 +445,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-visoki-locljivosti-1-8-a">Karta pri visoki ločljivosti (1.8 Å)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-visoki-locljivosti-1-8-a">Karta pri visoki ločljivosti (1,8 Å)</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
 </ul>
 </li>
@@ -519,16 +519,20 @@ PNKDDKHSEAVIAAAARLALEGLG
 <section id="difrakcijski-podatki-in-zacetni-model">
 <span id="difrakcijski-podatki"></span><h3>Difrakcijski podatki in začetni model<a class="headerlink" href="#difrakcijski-podatki-in-zacetni-model" title="Link to this heading">#</a></h3>
 <p>Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska skupina <span class="math notranslate nohighlight">\(P 2_1 2_1 2_1\)</span>), za faziranje z molekulsko zamenjavo (<a class="reference external" href="https://en.wikipedia.org/wiki/Molecular_replacement"><em>molecular replacement</em></a>) pa je bila uporabljena znana (eksperimentalno določena) struktura podobne <span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze. Po molekulski zamenjavi je bil ta začetni model uporabljen za začetno gradnjo modela strukture KPC-2. V asimetrični enoti je ena molekula proteina, KPC-2 pa je sicer znan kot monomeren protein.</p>
-<ul class="simple">
-<li><p>Datoteka z elektronsko gostoto (karti <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> in <span class="math notranslate nohighlight">\(F_o – F_c\)</span>): <a class="reference download internal" download="" href="../_downloads/072ea78c3448182704f2ff57915350ba/KPC2avi.mtz"><span class="xref download myst">KPC2avi.mtz</span></a></p></li>
-<li><p>Datoteka z delno zgrajenim modelom strukture: <a class="reference download internal" download="" href="../_downloads/2edf771288307fd0452ed641fbb0cd5e/KPC2avi.pdb"><span class="xref download myst">KPC2avi.pdb</span></a></p></li>
-</ul>
 </section>
 </section>
 <section id="potek-vaje">
 <h2>Potek vaje<a class="headerlink" href="#potek-vaje" title="Link to this heading">#</a></h2>
 <section id="karta-pri-visoki-locljivosti-1-8-a">
-<h3>Karta pri visoki ločljivosti (1.8 Å)<a class="headerlink" href="#karta-pri-visoki-locljivosti-1-8-a" title="Link to this heading">#</a></h3>
+<span id="visoka-locljivost"></span><h3>Karta pri visoki ločljivosti (1,8 Å)<a class="headerlink" href="#karta-pri-visoki-locljivosti-1-8-a" title="Link to this heading">#</a></h3>
+<p>Pri “popravljanju” modela strukture bomo najprej uporabili karto visoke ločljivosti, izračunano na podlagi vseh eksperimentalnih podatkov.</p>
+<blockquote>
+<div><p>Datoteke:</p>
+<ul class="simple">
+<li><p>delno zgrajen model strukture: <a class="reference download internal" download="" href="../_downloads/2edf771288307fd0452ed641fbb0cd5e/KPC2avi.pdb"><span class="xref download myst">KPC2avi.pdb</span></a>,</p></li>
+<li><p>elektronska gostota (karti <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> in <span class="math notranslate nohighlight">\(F_o – F_c\)</span>, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): <a class="reference internal" href="#datoteke/KPC2avi.mtz"><span class="xref myst">KPC2avi_1p8.mtz</span></a>.</p></li>
+</ul>
+</div></blockquote>
 <ol class="arabic simple">
 <li><p>Pojdite na spletno stran <a class="reference external" href="https://moorhen.org/">Moorhen.org</a>.</p></li>
 <li><p>Naložite PDB (koordinate) in MTZ datoteki (strukturni faktorji, karte elektronske gostote) (<code class="docutils literal notranslate"><span class="pre">&quot;hamburger</span> <span class="pre">menu&quot;</span> <span class="pre">&gt;</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">Files</span></code>), <a class="reference internal" href="#difrakcijski-podatki"><span class="std std-ref">prenešeni s te spletne strani</span></a>.</p>
@@ -580,6 +584,14 @@ PNKDDKHSEAVIAAAARLALEGLG
 </section>
 <section id="karta-pri-nizki-locljivosti-3-5-a">
 <h3>Karta pri nizki ločljivosti (3.5 Å)<a class="headerlink" href="#karta-pri-nizki-locljivosti-3-5-a" title="Link to this heading">#</a></h3>
+<p>Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje modela strukture – uporabite isti začetni delno zgrajen model strukture kot pri visoki ločljivosti, le datoteka s kartami elektronske gostote je druga. Vsi ostali koraki so enaki kot <a class="reference internal" href="#visoka-locljivost"><span class="std std-ref">prej</span></a>.</p>
+<blockquote>
+<div><p>Datoteke:</p>
+<ul class="simple">
+<li><p>delno zgrajen model strukture: <a class="reference download internal" download="" href="../_downloads/2edf771288307fd0452ed641fbb0cd5e/KPC2avi.pdb"><span class="xref download myst">KPC2avi.pdb</span></a> (to je ista datoteka kot pri visoki ločljivosti),</p></li>
+<li><p>elektronska gostota (karti <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> in <span class="math notranslate nohighlight">\(F_o – F_c\)</span>, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): <a class="reference internal" href="#datoteke/KPC2avi.mtz"><span class="xref myst">KPC2avi_3p5.mtz</span></a>.</p></li>
+</ul>
+</div></blockquote>
 </section>
 </section>
 <section id="vprasanja">
@@ -652,7 +664,7 @@ PNKDDKHSEAVIAAAARLALEGLG
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-visoki-locljivosti-1-8-a">Karta pri visoki ločljivosti (1.8 Å)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-visoki-locljivosti-1-8-a">Karta pri visoki ločljivosti (1,8 Å)</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
 </ul>
 </li>

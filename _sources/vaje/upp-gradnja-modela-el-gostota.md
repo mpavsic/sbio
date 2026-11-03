@@ -55,12 +55,16 @@ Kemijsko ime za avibaktam je (2S,5R)-1-formil-5-[(sulfooksi)amino]piperidin-2-ka
 
 Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska skupina $P 2_1 2_1 2_1$), za faziranje z molekulsko zamenjavo ([*molecular replacement*](https://en.wikipedia.org/wiki/Molecular_replacement)) pa je bila uporabljena znana (eksperimentalno določena) struktura podobne $\beta$-laktamaze. Po molekulski zamenjavi je bil ta začetni model uporabljen za začetno gradnjo modela strukture KPC-2. V asimetrični enoti je ena molekula proteina, KPC-2 pa je sicer znan kot monomeren protein.
 
-- Datoteka z elektronsko gostoto (karti $2F_o – F_c$ in $F_o – F_c$): [KPC2avi.mtz](datoteke/KPC2avi.mtz)
-- Datoteka z delno zgrajenim modelom strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb)
-
 ## Potek vaje
 
-### Karta pri visoki ločljivosti (1.8 Å)
+(visoka-locljivost)=
+### Karta pri visoki ločljivosti (1,8 Å)
+
+Pri "popravljanju" modela strukture bomo najprej uporabili karto visoke ločljivosti, izračunano na podlagi vseh eksperimentalnih podatkov.
+
+>Datoteke:
+>- delno zgrajen model strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb),
+>- elektronska gostota (karti $2F_o – F_c$ in $F_o – F_c$, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): [KPC2avi_1p8.mtz](datoteke/KPC2avi.mtz).
 
 1. Pojdite na spletno stran [Moorhen.org](https://moorhen.org/).
 2. Naložite PDB (koordinate) in MTZ datoteki (strukturni faktorji, karte elektronske gostote) (`"hamburger menu" > File > Open Files`), [prenešeni s te spletne strani](difrakcijski-podatki).
@@ -102,7 +106,11 @@ Prikazani so koraki:
 
 ### Karta pri nizki ločljivosti (3.5 Å)
 
+Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje modela strukture – uporabite isti začetni delno zgrajen model strukture kot pri visoki ločljivosti, le datoteka s kartami elektronske gostote je druga. Vsi ostali koraki so enaki kot [prej](visoka-locljivost).
 
+>Datoteke:
+>- delno zgrajen model strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb) (to je ista datoteka kot pri visoki ločljivosti),
+>- elektronska gostota (karti $2F_o – F_c$ in $F_o – F_c$, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): [KPC2avi_3p5.mtz](datoteke/KPC2avi.mtz).
 
 ## Vprašanja
 
