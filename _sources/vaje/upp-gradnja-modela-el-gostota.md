@@ -101,6 +101,8 @@ Ko naredite spremembo v modelu strukture, ki izboljša ujemanje z eksperimentaln
 ```
 
 9. V model strukture dodajte tudi manjkajoča liganda – eden izmed njih je komponenta kristalizacijskega pufra (jo lahko prepoznate po obliki oblačka elektronske gostote?), drugi pa inhibitor encima.
+    - Ligand najprej prenesite iz zbirke ligandov: `Ligand > Get monomer...`.
+    - Za umeščanje liganda lahko uporabite avtomatsko iskanje liganda: `Ligand > Find ligand...`.
 10. Ko boste z delom končali shranite koordinate popravljenega modela strukture in ga primerjajte (npr. preko vrednosti RMSD) z v zbirko PDB deponiranimi koordinatami: [KPC2avi_orig_clean.pdb](datoteke/KPC2avi_orig_clean.pdb).
     - Za superpozicijo lahko uporabite [PDB Pairwise Structure Alignment](https://www.rcsb.org/alignment) (pri simbolu smetnjaka kliknite na puščico in izberite `File Upload`; kot referenčno strukturo lahko vpišete kar koto PDB 4ZBE) ali pa UCSG ChimeraX.
 
