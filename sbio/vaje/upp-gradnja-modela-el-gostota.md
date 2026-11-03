@@ -121,7 +121,7 @@ Prikazani so koraki:
 3. ... umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta $mF_o – DF_c$ avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).
 4. Ogled bližine tega ostanka razkrije še eno napako in sicer slabo pozicionirano stransko skupino metioninskega ostanka.
 5. Uporabimo orodje `Auto-fit Rotamer`, ki izbere drug rotamer stranske skupine in ga umesti tako, da ...
-6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $mF_o – DF_c$ ne kaže na nobene anomalije.
+6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $mF_o – DF_c$ ne kaže na nobene anomalije. Po potrebi lahko uporabimo tudi `Refine Residues`.
 
 ![Primer popravljanja modela strukture](slike/primer-popravljanja-modela-strukture.png)
 
