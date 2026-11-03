@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
@@ -50,7 +50,7 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -230,7 +230,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vaje</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="upp-2026.html">UPP vaje 2026/2027</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upp-2026.html">Uporaba proteomskih podatkov (vaje) 2026/2027</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
 <ul class="nav bd-sidenav">
@@ -445,9 +445,14 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-visoki-locljivosti-1-8-a">Karta pri visoki ločljivosti (1.8 Å)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-nizki-locljivosti-3-5-a">Karta pri nizki ločljivosti (3.5 Å)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vprasanja">Vprašanja</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viri">Viri</a></li>
 </ul>
             </nav>
@@ -470,7 +475,7 @@ document.write(`
 <section id="vasa-naloga">
 <h2>Vaša naloga<a class="headerlink" href="#vasa-naloga" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Z uporabo Morheen dogradite in izboljšajte model strukture <span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze KPC-2 z vezanim inhibitorjem avibaktamom, pri tem pa uporabite karto elektronske gostote, izračunano na osnovi difrakcijskih podatkov (ločljivost 1.8 Å).</p>
+<li><p>Z uporabo Morheen dogradite in izboljšajte model strukture <span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze KPC-2 z vezanim inhibitorjem avibaktamom, pri tem pa uporabite karto elektronske gostote, izračunano na osnovi difrakcijskih podatkov (ločljivost 1,8 Å).</p>
 <ul>
 <li><p>‘Dogradite’ pomeni, da v trenutnem modelu strukure nekateri deli (aminokislinski ostanki, ligandi, …) manjkajo in jih morate dodati, ‘izboljšajte’ pa, da prilagodite koordinate dodatnih ter v modelu že prisotnih atomov/ostankov tako, da bodo kar se da skladni z eksperimentalnimi podatki (elektronska gostota) kot tudi stereokemijskimi parametri (Ramachandranov diagram, dolžine vezi, koti med vezmi, rotameri itd.) in bo končen model imel tudi kemijski smisel.</p></li>
 </ul>
@@ -522,6 +527,8 @@ PNKDDKHSEAVIAAAARLALEGLG
 </section>
 <section id="potek-vaje">
 <h2>Potek vaje<a class="headerlink" href="#potek-vaje" title="Link to this heading">#</a></h2>
+<section id="karta-pri-visoki-locljivosti-1-8-a">
+<h3>Karta pri visoki ločljivosti (1.8 Å)<a class="headerlink" href="#karta-pri-visoki-locljivosti-1-8-a" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Pojdite na spletno stran <a class="reference external" href="https://moorhen.org/">Moorhen.org</a>.</p></li>
 <li><p>Naložite PDB (koordinate) in MTZ datoteki (strukturni faktorji, karte elektronske gostote) (<code class="docutils literal notranslate"><span class="pre">&quot;hamburger</span> <span class="pre">menu&quot;</span> <span class="pre">&gt;</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">Files</span></code>), <a class="reference internal" href="#difrakcijski-podatki"><span class="std std-ref">prenešeni s te spletne strani</span></a>.</p>
@@ -557,7 +564,7 @@ PNKDDKHSEAVIAAAARLALEGLG
 </li>
 </ol>
 <section id="primer-popravljanja-modela-strukture">
-<h3>Primer popravljanja modela strukture<a class="headerlink" href="#primer-popravljanja-modela-strukture" title="Link to this heading">#</a></h3>
+<h4>Primer popravljanja modela strukture<a class="headerlink" href="#primer-popravljanja-modela-strukture" title="Link to this heading">#</a></h4>
 <p>Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> je prikazana modro, diferenčna karta elektronske gostote <span class="math notranslate nohighlight">\(F_o – F_c\)</span> pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).</p>
 <p>Prikazani so koraki:</p>
 <ol class="arabic simple">
@@ -570,6 +577,13 @@ PNKDDKHSEAVIAAAARLALEGLG
 </ol>
 <p><img alt="Primer popravljanja modela strukture" src="../_images/primer-popravljanja-modela-strukture.png" /></p>
 </section>
+</section>
+<section id="karta-pri-nizki-locljivosti-3-5-a">
+<h3>Karta pri nizki ločljivosti (3.5 Å)<a class="headerlink" href="#karta-pri-nizki-locljivosti-3-5-a" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="vprasanja">
+<h2>Vprašanja<a class="headerlink" href="#vprasanja" title="Link to this heading">#</a></h2>
 </section>
 <hr class="docutils" />
 <section id="viri">
@@ -638,9 +652,14 @@ PNKDDKHSEAVIAAAARLALEGLG
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-visoki-locljivosti-1-8-a">Karta pri visoki ločljivosti (1.8 Å)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-nizki-locljivosti-3-5-a">Karta pri nizki ločljivosti (3.5 Å)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vprasanja">Vprašanja</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viri">Viri</a></li>
 </ul>
   </nav></div>
