@@ -444,7 +444,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difrakcijski-podatki-in-zacetni-model">Difrakcijski podatki in začetni model</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradnja-modela">Gradnja modela</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-visoki-locljivosti-1-8-a">Karta pri visoki ločljivosti (1,8 Å)</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
 </ul>
@@ -521,8 +521,8 @@ PNKDDKHSEAVIAAAARLALEGLG
 <p>Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska skupina <span class="math notranslate nohighlight">\(P 2_1 2_1 2_1\)</span>), za faziranje z molekulsko zamenjavo (<a class="reference external" href="https://en.wikipedia.org/wiki/Molecular_replacement"><em>molecular replacement</em></a>) pa je bila uporabljena znana (eksperimentalno določena) struktura podobne <span class="math notranslate nohighlight">\(\beta\)</span>-laktamaze. Po molekulski zamenjavi je bil ta začetni model uporabljen za začetno gradnjo modela strukture KPC-2. V asimetrični enoti je ena molekula proteina, KPC-2 pa je sicer znan kot monomeren protein.</p>
 </section>
 </section>
-<section id="potek-vaje">
-<h2>Potek vaje<a class="headerlink" href="#potek-vaje" title="Link to this heading">#</a></h2>
+<section id="gradnja-modela">
+<h2>Gradnja modela<a class="headerlink" href="#gradnja-modela" title="Link to this heading">#</a></h2>
 <section id="karta-pri-visoki-locljivosti-1-8-a">
 <span id="visoka-locljivost"></span><h3>Karta pri visoki ločljivosti (1,8 Å)<a class="headerlink" href="#karta-pri-visoki-locljivosti-1-8-a" title="Link to this heading">#</a></h3>
 <p>Pri “popravljanju” modela strukture bomo najprej uporabili karto visoke ločljivosti, izračunano na podlagi vseh eksperimentalnih podatkov.</p>
@@ -530,7 +530,7 @@ PNKDDKHSEAVIAAAARLALEGLG
 <div><p>Datoteke:</p>
 <ul class="simple">
 <li><p>delno zgrajen model strukture: <a class="reference download internal" download="" href="../_downloads/2edf771288307fd0452ed641fbb0cd5e/KPC2avi.pdb"><span class="xref download myst">KPC2avi.pdb</span></a>,</p></li>
-<li><p>elektronska gostota (karti <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> in <span class="math notranslate nohighlight">\(F_o – F_c\)</span>, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): <a class="reference internal" href="#datoteke/KPC2avi.mtz"><span class="xref myst">KPC2avi_1p8.mtz</span></a>.</p></li>
+<li><p>elektronska gostota (karti <span class="math notranslate nohighlight">\(2mF_o – F_c\)</span> in <span class="math notranslate nohighlight">\(mF_o – F_c\)</span>, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): <a class="reference internal" href="#datoteke/KPC2avi.mtz"><span class="xref myst">KPC2avi_1p8.mtz</span></a>.</p></li>
 </ul>
 </div></blockquote>
 <ol class="arabic simple">
@@ -544,7 +544,7 @@ PNKDDKHSEAVIAAAARLALEGLG
 <li><p>Omogočite izračun R-faktorja in osveževanje kart elektronske gostote tako, da naložene karte in podatke povežete s strukturo: <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Connect</span> <span class="pre">Molecule</span> <span class="pre">and</span> <span class="pre">Maps...</span> <span class="pre">&gt;</span> <span class="pre">Ok</span></code></p></li>
 <li><p>Spremenite prikaz proteina iz načina ‘Ribbons’ v ‘Bonds’ (sicer ne vidite posameznih ostankov): <code class="docutils literal notranslate"><span class="pre">Models</span></code> &gt;  ikona svinčnika…</p></li>
 <li><p>Vklopite prikaz atomov iz sosednjih asimetričnih enot: <code class="docutils literal notranslate"><span class="pre">Models</span> <span class="pre">&gt;</span> <span class="pre">(zobnik)</span> <span class="pre">&gt;</span> <span class="pre">Cell</span> <span class="pre">and</span> <span class="pre">Symmetry</span> <span class="pre">&gt;</span> <span class="pre">Show</span> <span class="pre">symmetry</span> <span class="pre">mates</span></code>.</p></li>
-<li><p>Nastavite nivo konturiranja diferenčne karte elektronske gostote (<span class="math notranslate nohighlight">\(F_o – F_c\)</span>) na pribl. RMSD 3,4–3,5: <code class="docutils literal notranslate"><span class="pre">Maps</span></code>, uporabite drsnik pri karti KPC2avi.-map-1.</p></li>
+<li><p>Nastavite nivo konturiranja diferenčne karte elektronske gostote (<span class="math notranslate nohighlight">\(mF_o – F_c\)</span>) na pribl. RMSD 3,4–3,5: <code class="docutils literal notranslate"><span class="pre">Maps</span></code>, uporabite drsnik pri karti KPC2avi.-map-1.</p></li>
 <li><p>Z orodji, ki jih najdete pod <code class="docutils literal notranslate"><span class="pre">Validation</span></code>, analizirajte ujemanje modela strukture z elektronsko gostoto in stereokemijskimi parametri, na primer:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Difference</span> <span class="pre">Map</span> <span class="pre">Peaks...</span></code> vam pokaže, kje v strukturi nekaj manjka (zeleno obarvana diferenčna karta el. gostote) oz. je tam, kjer ne bi smelo biti (rdeče obarvana diferenčna karta el. gostote)),</p></li>
@@ -569,15 +569,15 @@ PNKDDKHSEAVIAAAARLALEGLG
 </ol>
 <section id="primer-popravljanja-modela-strukture">
 <h4>Primer popravljanja modela strukture<a class="headerlink" href="#primer-popravljanja-modela-strukture" title="Link to this heading">#</a></h4>
-<p>Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> je prikazana modro, diferenčna karta elektronske gostote <span class="math notranslate nohighlight">\(F_o – F_c\)</span> pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).</p>
+<p>Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote <span class="math notranslate nohighlight">\(2mF_o – F_c\)</span> je prikazana modro, diferenčna karta elektronske gostote <span class="math notranslate nohighlight">\(mF_o – F_c\)</span> pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).</p>
 <p>Prikazani so koraki:</p>
 <ol class="arabic simple">
-<li><p>Iz elektronske gostote (tako <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> kot tudi <span class="math notranslate nohighlight">\(F_o – F_c\)</span>) je jasno razvidno, da je stranska skupina fenilalaninskega ostanka napačno pozicionirana. Gre za napačen rotamer.</p></li>
+<li><p>Iz elektronske gostote (tako <span class="math notranslate nohighlight">\(2mF_o – F_c\)</span> kot tudi <span class="math notranslate nohighlight">\(mF_o – F_c\)</span>) je jasno razvidno, da je stranska skupina fenilalaninskega ostanka napačno pozicionirana. Gre za napačen rotamer.</p></li>
 <li><p>Boljši rotamer izberemo preko možnosti <code class="docutils literal notranslate"><span class="pre">Change</span> <span class="pre">rotamers</span></code>, to orodje že samo izbere najprimernejši rotamer in ga…</p></li>
-<li><p>… umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta <span class="math notranslate nohighlight">\(F_o – F_c\)</span> avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).</p></li>
+<li><p>… umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta <span class="math notranslate nohighlight">\(mF_o – F_c\)</span> avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).</p></li>
 <li><p>Ogled bližine tega ostanka razkrije še eno napako in sicer slabo pozicionirano stransko skupino metioninskega ostanka.</p></li>
 <li><p>Uporabimo orodje <code class="docutils literal notranslate"><span class="pre">Auto-fit</span> <span class="pre">Rotamer</span></code>, ki izbere drug rotamer stranske skupine in ga umesti tako, da …</p></li>
-<li><p>… se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta <span class="math notranslate nohighlight">\(F_o – F_c\)</span> ne kaže na nobene anomalije.</p></li>
+<li><p>… se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta <span class="math notranslate nohighlight">\(mF_o – F_c\)</span> ne kaže na nobene anomalije.</p></li>
 </ol>
 <p><img alt="Primer popravljanja modela strukture" src="../_images/primer-popravljanja-modela-strukture.png" /></p>
 </section>
@@ -589,9 +589,13 @@ PNKDDKHSEAVIAAAARLALEGLG
 <div><p>Datoteke:</p>
 <ul class="simple">
 <li><p>delno zgrajen model strukture: <a class="reference download internal" download="" href="../_downloads/2edf771288307fd0452ed641fbb0cd5e/KPC2avi.pdb"><span class="xref download myst">KPC2avi.pdb</span></a> (to je ista datoteka kot pri visoki ločljivosti),</p></li>
-<li><p>elektronska gostota (karti <span class="math notranslate nohighlight">\(2F_o – F_c\)</span> in <span class="math notranslate nohighlight">\(F_o – F_c\)</span>, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): <a class="reference internal" href="#datoteke/KPC2avi.mtz"><span class="xref myst">KPC2avi_3p5.mtz</span></a>.</p></li>
+<li><p>elektronska gostota (karti <span class="math notranslate nohighlight">\(2mF_o – F_c\)</span> in <span class="math notranslate nohighlight">\(mF_o – F_c\)</span>, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): <a class="reference internal" href="#datoteke/KPC2avi.mtz"><span class="xref myst">KPC2avi_3p5.mtz</span></a>.</p></li>
 </ul>
 </div></blockquote>
+<div class="note admonition">
+<p class="admonition-title">Opomba</p>
+<p>Z omejitvijo podatkov z 1,8 Å na 3,5 Å ponazorimo izgubo strukturnih podrobnosti, ne posnemamo pa v celoti eksperimenta s kristalom, ki uklanja le do 3,5 Å. Pri tem postopku odstranimo reflekse z medravninskimi razdaljami, manjšimi od 3,5 Å. Ti prispevajo informacije o finejših podrobnostih strukture. Preostale izmerjene amplitude in njihove negotovosti ostanejo nespremenjene. Tako lahko naši omejeni podatki dajejo čistejšo karto kot dejanski podatki z mejno ločljivostjo 3,5 Å. Poleg tega uporabljamo model, ki je bil prvotno določen pri 1,8 Å in zato že vsebuje natančne strukturne informacije. Ker model prispeva faze za izračun kart, je vaja lažja od določanja strukture zgolj iz podatkov pri 3,5 Å. Postopek torej ponazarja izgubo podrobnosti zaradi omejitve ločljivosti, ne pa vseh težav dejanskega eksperimenta pri nižji ločljivosti.</p>
+</div>
 </section>
 </section>
 <section id="vprasanja">
@@ -600,7 +604,7 @@ PNKDDKHSEAVIAAAARLALEGLG
 <hr class="docutils" />
 <section id="viri">
 <h2>Viri<a class="headerlink" href="#viri" title="Link to this heading">#</a></h2>
-<p>Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka <strong>Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study</strong> <span id="id2">[<a class="reference internal" href="../razno/reference.html#id16" title="Paul Emsley, Bernhard Lohkamp, William G. Scott, and Kevin Cowtan. Features and development of coot. Acta Crystallographica Section D - Biological Crystallography, 66:486-501, 2010. doi:10.1107/S0907444910007493.">Emsley <em>et al.</em>, 2010</a>]</span>.</p>
+<p>Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka <strong>Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study</strong> <span id="id2">[<a class="reference internal" href="../razno/reference.html#id2" title="Nikhil P. Krishnan, Nhu Q. Nguyen, Krisztina M. Papp-Wallace, Robert A. Bonomo, and Focco van den Akker. Inhibition of klebsiella β-lactamases (shv-1 and kpc-2) by avibactam: a structural study. PLOS ONE, 10(9):1–13, 09 2015. URL: https://doi.org/10.1371/journal.pone.0136813, doi:10.1371/journal.pone.0136813.">Krishnan <em>et al.</em>, 2015</a>]</span>.</p>
 </section>
 </section>
 
@@ -663,7 +667,7 @@ PNKDDKHSEAVIAAAARLALEGLG
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difrakcijski-podatki-in-zacetni-model">Difrakcijski podatki in začetni model</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradnja-modela">Gradnja modela</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#karta-pri-visoki-locljivosti-1-8-a">Karta pri visoki ločljivosti (1,8 Å)</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#primer-popravljanja-modela-strukture">Primer popravljanja modela strukture</a></li>
 </ul>

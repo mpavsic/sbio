@@ -55,7 +55,7 @@ Kemijsko ime za avibaktam je (2S,5R)-1-formil-5-[(sulfooksi)amino]piperidin-2-ka
 
 Difrakcijski podatki so bili posneti pod krio-pogoji, sprocesirani (prostorska skupina $P 2_1 2_1 2_1$), za faziranje z molekulsko zamenjavo ([*molecular replacement*](https://en.wikipedia.org/wiki/Molecular_replacement)) pa je bila uporabljena znana (eksperimentalno določena) struktura podobne $\beta$-laktamaze. Po molekulski zamenjavi je bil ta začetni model uporabljen za začetno gradnjo modela strukture KPC-2. V asimetrični enoti je ena molekula proteina, KPC-2 pa je sicer znan kot monomeren protein.
 
-## Potek vaje
+## Gradnja modela
 
 (visoka-locljivost)=
 ### Karta pri visoki ločljivosti (1,8 Å)
@@ -64,7 +64,7 @@ Pri "popravljanju" modela strukture bomo najprej uporabili karto visoke ločljiv
 
 >Datoteke:
 >- delno zgrajen model strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb),
->- elektronska gostota (karti $2F_o – F_c$ in $F_o – F_c$, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): [KPC2avi_1p8.mtz](datoteke/KPC2avi.mtz).
+>- elektronska gostota (karti $2mF_o – F_c$ in $mF_o – F_c$, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): [KPC2avi_1p8.mtz](datoteke/KPC2avi.mtz).
 
 1. Pojdite na spletno stran [Moorhen.org](https://moorhen.org/).
 2. Naložite PDB (koordinate) in MTZ datoteki (strukturni faktorji, karte elektronske gostote) (`"hamburger menu" > File > Open Files`), [prenešeni s te spletne strani](difrakcijski-podatki).
@@ -73,7 +73,7 @@ Pri "popravljanju" modela strukture bomo najprej uporabili karto visoke ločljiv
 4. Omogočite izračun R-faktorja in osveževanje kart elektronske gostote tako, da naložene karte in podatke povežete s strukturo: `File > Connect Molecule and Maps... > Ok`
 5. Spremenite prikaz proteina iz načina 'Ribbons' v 'Bonds' (sicer ne vidite posameznih ostankov): `Models` >  ikona svinčnika...
 6. Vklopite prikaz atomov iz sosednjih asimetričnih enot: `Models > (zobnik) > Cell and Symmetry > Show symmetry mates`.
-7. Nastavite nivo konturiranja diferenčne karte elektronske gostote ($F_o – F_c$) na pribl. RMSD 3,4–3,5: `Maps`, uporabite drsnik pri karti KPC2avi.-map-1.
+7. Nastavite nivo konturiranja diferenčne karte elektronske gostote ($mF_o – F_c$) na pribl. RMSD 3,4–3,5: `Maps`, uporabite drsnik pri karti KPC2avi.-map-1.
 8. Z orodji, ki jih najdete pod `Validation`, analizirajte ujemanje modela strukture z elektronsko gostoto in stereokemijskimi parametri, na primer:
    - `Difference Map Peaks...` vam pokaže, kje v strukturi nekaj manjka (zeleno obarvana diferenčna karta el. gostote) oz. je tam, kjer ne bi smelo biti (rdeče obarvana diferenčna karta el. gostote)),
    - `Ramachandran Plot...` vam pokaže, kateri ostanki so izven favoriziranih in dovoljenih območij kombinacij dihedralnih kotov glavne verige,
@@ -92,15 +92,15 @@ Pri "popravljanju" modela strukture bomo najprej uporabili karto visoke ločljiv
 
 #### Primer popravljanja modela strukture
 
-Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote $2F_o – F_c$ je prikazana modro, diferenčna karta elektronske gostote $F_o – F_c$ pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).
+Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote $2mF_o – F_c$ je prikazana modro, diferenčna karta elektronske gostote $mF_o – F_c$ pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).
 
 Prikazani so koraki:
-1. Iz elektronske gostote (tako $2F_o – F_c$ kot tudi $F_o – F_c$) je jasno razvidno, da je stranska skupina fenilalaninskega ostanka napačno pozicionirana. Gre za napačen rotamer.
+1. Iz elektronske gostote (tako $2mF_o – F_c$ kot tudi $mF_o – F_c$) je jasno razvidno, da je stranska skupina fenilalaninskega ostanka napačno pozicionirana. Gre za napačen rotamer.
 2. Boljši rotamer izberemo preko možnosti `Change rotamers`, to orodje že samo izbere najprimernejši rotamer in ga...
-3. ... umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta $F_o – F_c$ avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).
+3. ... umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta $mF_o – F_c$ avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).
 4. Ogled bližine tega ostanka razkrije še eno napako in sicer slabo pozicionirano stransko skupino metioninskega ostanka.
 5. Uporabimo orodje `Auto-fit Rotamer`, ki izbere drug rotamer stranske skupine in ga umesti tako, da ...
-6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $F_o – F_c$ ne kaže na nobene anomalije.
+6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $mF_o – F_c$ ne kaže na nobene anomalije.
 
 ![Primer popravljanja modela strukture](slike/primer-popravljanja-modela-strukture.png)
 
@@ -110,7 +110,12 @@ Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje mode
 
 >Datoteke:
 >- delno zgrajen model strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb) (to je ista datoteka kot pri visoki ločljivosti),
->- elektronska gostota (karti $2F_o – F_c$ in $F_o – F_c$, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): [KPC2avi_3p5.mtz](datoteke/KPC2avi.mtz).
+>- elektronska gostota (karti $2mF_o – F_c$ in $mF_o – F_c$, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): [KPC2avi_3p5.mtz](datoteke/KPC2avi.mtz).
+
+```{admonition} Opomba
+:class: note
+Z omejitvijo podatkov z 1,8 Å na 3,5 Å ponazorimo izgubo strukturnih podrobnosti, ne posnemamo pa v celoti eksperimenta s kristalom, ki uklanja le do 3,5 Å. Pri tem postopku odstranimo reflekse z medravninskimi razdaljami, manjšimi od 3,5 Å. Ti prispevajo informacije o finejših podrobnostih strukture. Preostale izmerjene amplitude in njihove negotovosti ostanejo nespremenjene. Tako lahko naši omejeni podatki dajejo čistejšo karto kot dejanski podatki z mejno ločljivostjo 3,5 Å. Poleg tega uporabljamo model, ki je bil prvotno določen pri 1,8 Å in zato že vsebuje natančne strukturne informacije. Ker model prispeva faze za izračun kart, je vaja lažja od določanja strukture zgolj iz podatkov pri 3,5 Å. Postopek torej ponazarja izgubo podrobnosti zaradi omejitve ločljivosti, ne pa vseh težav dejanskega eksperimenta pri nižji ločljivosti.
+```
 
 ## Vprašanja
 
@@ -118,4 +123,4 @@ Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje mode
 
 ## Viri
 
-Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka **Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study** {cite:p}`Emsley2010aaa`.
+Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka **Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study** {cite:p}`Krishnan2015aaa`.
