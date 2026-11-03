@@ -64,7 +64,15 @@ Pri "popravljanju" modela strukture bomo najprej uporabili karto visoke ločljiv
 
 >Datoteke:
 >- delno zgrajen model strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb),
->- elektronska gostota (karti $2mF_o – F_c$ in $mF_o – F_c$, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): [KPC2avi_1p8.mtz](datoteke/KPC2avi.mtz).
+>- elektronska gostota (karti $2mF_o – DF_c$ in $mF_o – DF_c$, v datoteki so tudi strukturni faktorji, ločljivost 1,8 Å): [KPC2avi_1p8.mtz](datoteke/KPC2avi.mtz).
+
+```{admonition} Kaj so oznake $F_o$, $DF_c$ ...?
+:class: hint
+- $F_o$ se nanaša na eksperimentalno določene amplitude
+- $DF_c$ se nanaša na amplitude, izračunane iz modela strukture
+- $m$ uteži prispevek $F_o$ glede na negotovost faz
+- $D$ prilagodi prispevek $DF_c$ glede na ocenjeno napako modela
+```
 
 1. Pojdite na spletno stran [Moorhen.org](https://moorhen.org/).
 2. Naložite PDB (koordinate) in MTZ datoteki (strukturni faktorji, karte elektronske gostote) (`"hamburger menu" > File > Open Files`), [prenešeni s te spletne strani](difrakcijski-podatki).
@@ -73,13 +81,18 @@ Pri "popravljanju" modela strukture bomo najprej uporabili karto visoke ločljiv
 4. Omogočite izračun R-faktorja in osveževanje kart elektronske gostote tako, da naložene karte in podatke povežete s strukturo: `File > Connect Molecule and Maps... > Ok`
 5. Spremenite prikaz proteina iz načina 'Ribbons' v 'Bonds' (sicer ne vidite posameznih ostankov): `Models` >  ikona svinčnika...
 6. Vklopite prikaz atomov iz sosednjih asimetričnih enot: `Models > (zobnik) > Cell and Symmetry > Show symmetry mates`.
-7. Nastavite nivo konturiranja diferenčne karte elektronske gostote ($mF_o – F_c$) na pribl. RMSD 3,4–3,5: `Maps`, uporabite drsnik pri karti KPC2avi.-map-1.
+7. Nastavite nivo konturiranja diferenčne karte elektronske gostote ($mF_o – DF_c$) na pribl. RMSD 3,4–3,5: `Maps`, uporabite drsnik pri karti KPC2avi.-map-1.
 8. Z orodji, ki jih najdete pod `Validation`, analizirajte ujemanje modela strukture z elektronsko gostoto in stereokemijskimi parametri, na primer:
    - `Difference Map Peaks...` vam pokaže, kje v strukturi nekaj manjka (zeleno obarvana diferenčna karta el. gostote) oz. je tam, kjer ne bi smelo biti (rdeče obarvana diferenčna karta el. gostote)),
    - `Ramachandran Plot...` vam pokaže, kateri ostanki so izven favoriziranih in dovoljenih območij kombinacij dihedralnih kotov glavne verige,
    - `Unmodelled Blobs...` vam poišče "oblačke" elektronske gostote, ki niso zapolnjeni z atomi (torej v modelu strukuture tam nekaj manjka),
    - idr.
    - Nekaj napak v strukturi vam razkrije že vklop "Ramachandran Balls" in "Contact Dots" (s slednjim lahko identificirate atome, ki sicer niso kovalentno povezavi, so si pa preblizu): `Models > Tools > (različne možnosti)`.
+
+```{admonition} Zbiranje Moorhen točk
+:class: info
+Ko naredite spremembo v modelu strukture, ki izboljša ujemanje z eksperimentalnimi podatki, se zniža vrednost $R_work$, pridobite pa *Moorhen points*.
+```
 
 ```{admonition} Vmesno shranjevanje koordinat
 :class: danger
@@ -90,17 +103,22 @@ Pri "popravljanju" modela strukture bomo najprej uporabili karto visoke ločljiv
 10. Ko boste z delom končali shranite koordinate popravljenega modela strukture in ga primerjajte (npr. preko vrednosti RMSD) z v zbirko PDB deponiranimi koordinatami: [KPC2avi_orig_clean.pdb](datoteke/KPC2avi_orig_clean.pdb).
     - Za superpozicijo lahko uporabite [PDB Pairwise Structure Alignment](https://www.rcsb.org/alignment) (pri simbolu smetnjaka kliknite na puščico in izberite `File Upload`; kot referenčno strukturo lahko vpišete kar koto PDB 4ZBE) ali pa UCSG ChimeraX.
 
+```{admonition} Kaj sledi ročni gradnji modela?
+:class: hint
+V praksi bi tej **ročni gradnji in piljenju modela strukture** (*model building and refinement*) sledili **cikli avtomatskega piljenja**, kjer se prilagajajo položaji atomov, njihovi parametri (B-faktorji, zasedenost), tako da se model čim bolje ujema z eksperimentalnimi podatki in hkrati ohranja smiselno geometrijo (Ramachandranov diagram, dolžine vezi, koti, ...). Nato se izračunajo nove karte elektronske gostote, vendar postopek praviloma ne odpravi vseh večjih napak in ne zgradi manjkajočih delov strukture, zato je potrebno tudi ročno preverjanje in popravljanje modela. Torej, spet bi sledil cikel ročnega piljenja, nato spet avtomatsko piljenje ... dokler se parametri piljenja (med drugim tudi faktorja $R$ in $R_{free}$) ne stabilizirajo in dosežejo ustreznih vrednosti.
+```
+
 #### Primer popravljanja modela strukture
 
-Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote $2mF_o – F_c$ je prikazana modro, diferenčna karta elektronske gostote $mF_o – F_c$ pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).
+Na spodnji sliki so je prikazan primer popravljanja modela strukture. Karta elektronske gostote $2mF_o – DF_c$ je prikazana modro, diferenčna karta elektronske gostote $mF_o – DF_c$ pa zeleno (pozitivna gostota = nekaj manjka v modelu strukture na tem mestu) oz. rdeče (negativna gostota = na tem mestu je v modelu strukture nekaj, za kar ni eksperimentalnih podatkov).
 
 Prikazani so koraki:
-1. Iz elektronske gostote (tako $2mF_o – F_c$ kot tudi $mF_o – F_c$) je jasno razvidno, da je stranska skupina fenilalaninskega ostanka napačno pozicionirana. Gre za napačen rotamer.
+1. Iz elektronske gostote (tako $2mF_o – DF_c$ kot tudi $mF_o – DF_c$) je jasno razvidno, da je stranska skupina fenilalaninskega ostanka napačno pozicionirana. Gre za napačen rotamer.
 2. Boljši rotamer izberemo preko možnosti `Change rotamers`, to orodje že samo izbere najprimernejši rotamer in ga...
-3. ... umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta $mF_o – F_c$ avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).
+3. ... umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta $mF_o – DF_c$ avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).
 4. Ogled bližine tega ostanka razkrije še eno napako in sicer slabo pozicionirano stransko skupino metioninskega ostanka.
 5. Uporabimo orodje `Auto-fit Rotamer`, ki izbere drug rotamer stranske skupine in ga umesti tako, da ...
-6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $mF_o – F_c$ ne kaže na nobene anomalije.
+6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $mF_o – DF_c$ ne kaže na nobene anomalije.
 
 ![Primer popravljanja modela strukture](slike/primer-popravljanja-modela-strukture.png)
 
@@ -110,14 +128,23 @@ Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje mode
 
 >Datoteke:
 >- delno zgrajen model strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb) (to je ista datoteka kot pri visoki ločljivosti),
->- elektronska gostota (karti $2mF_o – F_c$ in $mF_o – F_c$, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): [KPC2avi_3p5.mtz](datoteke/KPC2avi.mtz).
+>- elektronska gostota (karti $2mF_o – DF_c$ in $mF_o – DF_c$, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): [KPC2avi_3p5.mtz](datoteke/KPC2avi.mtz).
 
 ```{admonition} Opomba
 :class: note
-Z omejitvijo podatkov z 1,8 Å na 3,5 Å ponazorimo izgubo strukturnih podrobnosti, ne posnemamo pa v celoti eksperimenta s kristalom, ki uklanja le do 3,5 Å. Pri tem postopku odstranimo reflekse z medravninskimi razdaljami, manjšimi od 3,5 Å. Ti prispevajo informacije o finejših podrobnostih strukture. Preostale izmerjene amplitude in njihove negotovosti ostanejo nespremenjene. Tako lahko naši omejeni podatki dajejo čistejšo karto kot dejanski podatki z mejno ločljivostjo 3,5 Å. Poleg tega uporabljamo model, ki je bil prvotno določen pri 1,8 Å in zato že vsebuje natančne strukturne informacije. Ker model prispeva faze za izračun kart, je vaja lažja od določanja strukture zgolj iz podatkov pri 3,5 Å. Postopek torej ponazarja izgubo podrobnosti zaradi omejitve ločljivosti, ne pa vseh težav dejanskega eksperimenta pri nižji ločljivosti.
+**Z omejitvijo podatkov z 1,8 Å na 3,5 Å zgolj ponazorimo izgubo strukturnih podrobnosti, ne posnemamo pa v celoti eksperimenta s kristalom, ki uklanja le do 3,5 Å.** Pri tem postopku odstranimo reflekse z medravninskimi razdaljami, manjšimi od 3,5 Å. Ti prispevajo informacije o finejših podrobnostih strukture. Preostale izmerjene amplitude in njihove negotovosti ostanejo nespremenjene. Tako lahko naši omejeni podatki dajejo čistejšo karto kot dejanski podatki z mejno ločljivostjo 3,5 Å. Poleg tega uporabljamo model, ki je bil prvotno določen pri 1,8 Å in zato že vsebuje natančne strukturne informacije. Ker model prispeva faze za izračun kart, je vaja lažja od določanja strukture zgolj iz podatkov pri 3,5 Å. Postopek torej ponazarja izgubo podrobnosti zaradi omejitve ločljivosti, ne pa vseh težav dejanskega eksperimenta pri nižji ločljivosti.
 ```
 
-## Vprašanja
+## Vprašanja za v razmislek
+
+1. **Vpliv ločljivosti**: Katere napake v modelu strukture lahko zanesljivo prepoznate in popravite pri 1,8 Å, pri 3,5 Å pa ne?
+2. **Rotameri**: Kako s kartama $2mF_o – DF_c$ in $mF_o – DF_c$ prepoznate napačen rotamer? Kako prispeva okolica (bližnji ostanki in/ali ogrodje) k izbiri rotamera oz. umestitvi ostanka v elektronsko gostoto?
+3. **Disulfidna vez**: Kateri podatki podpirajo obstoj disulfidne vezi med dvema cisteinskima ostankoma?
+4. **Manjkajoči deli verige**: Kako določite potek in zaporedno umestitev manjkajočega odseka polipeptidne verige? Kdaj je bolje odsek pustiti nemodeliran, namesto da ga zgradite na podlagi pričakovane strukture?
+5. **Alternativne konformacije**: Kako razlikujete dve alternativni konformaciji ostanka od ene napačno postavljene konformacije ali šuma? Kako bi določili njuni zasedenosti in zakaj je takšna interpretacija pri 3,5 Å težja?
+6. **Identiteta ligandov**: Kako presodite, ali gostota pripada komponenti kristalizacijskega pufra ali inhibitorju encima? Upoštevajte obliko gostote, kemijsko okolje in stike s proteinom. Ali poznavanje sestave vzorca samo po sebi dokazuje identiteto liganda?
+7. **Preverjanje popravkov**: Kako boste po ponovnem izboljševanju modela preverili, ali so bili vaši popravki upravičeni? Zakaj samo znižanje $R_{work}$ ne zadošča in kako pri presoji uporabite $R_{free}$, geometrijo ter preostalo diferenčno gostoto?
+   - Komentar: V vašem primeru sta $R_{work}$ in $R_{free}$ enaka zaradi neupoštevanja oznak v naloženih datotekah.
 
 ---
 
