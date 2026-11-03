@@ -131,7 +131,7 @@ Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje mode
 
 >Datoteke:
 >- delno zgrajen model strukture: [KPC2avi.pdb](datoteke/KPC2avi.pdb) (to je ista datoteka kot pri visoki ločljivosti),
->- elektronska gostota (karti $2mF_o – DF_c$ in $mF_o – DF_c$, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): [KPC2avi_3p5.mtz](datoteke/KPC2avi.mtz).
+>- elektronska gostota (karti $2mF_o – DF_c$ in $mF_o – DF_c$, pa tudi strukturni faktorji; odrezano pri ločljivosti 3,5 Å): [KPC2avi_3p5.mtz](datoteke/KPC2avi_3p5.mtz).
 
 ```{admonition} Opomba
 :class: note
