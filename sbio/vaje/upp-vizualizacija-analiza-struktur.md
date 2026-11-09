@@ -418,4 +418,4 @@ V največ treh stavkih pojasnite, zakaj lahko za isti proteinski model velja: **
 
 ---
 
-*Vajo je pripravil Jošt Jočevar*.
+*Vajo je pripravil Jošt Hočevar*.
