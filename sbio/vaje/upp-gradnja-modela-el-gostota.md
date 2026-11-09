@@ -153,7 +153,7 @@ Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje mode
 
 ## Viri
 
-Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka **Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study** {cite:p}`Krishnan2015aaa`.
+Za pripravo datotek za vaje so bili uporabljeni javno dostopni podatki iz članka **Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study** {cite:p}`Krishnan2015aaa`.
 
 Pri pripravi datotek so bili uporabljeni programi:
 - [Coot](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/)
