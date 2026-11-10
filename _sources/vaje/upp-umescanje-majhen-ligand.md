@@ -32,7 +32,7 @@ Kot tarčo (t.j. protein, v katerega umeščamo ligand) bomo uporabili človešk
 
 ### Ligand
 
-**Nimesulid** (angl. *nimesulide*(https://en.wikipedia.org/wiki/Nimesulide)) je majhna organska molekula iz skupine nesteroidnih protivnetnih zdravil (NSAIDs, *nonsteroidal anti-inflammatory drugs*). Poleg njegovega uveljavljenega protivnetnega delovanja so raziskovalci pokazali tudi neposredno vezavo na bromodomeni BRD2 in BRD4.
+**Nimesulid** (angl. [*nimesulide*](https://en.wikipedia.org/wiki/Nimesulide)) je majhna organska molekula iz skupine nesteroidnih protivnetnih zdravil (NSAIDs, *nonsteroidal anti-inflammatory drugs*). Poleg njegovega uveljavljenega protivnetnega delovanja so raziskovalci pokazali tudi neposredno vezavo na bromodomeni BRD2 in BRD4.
 
 <iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/vaje/seje/nimesulid-NIM.molx&snapshot-url-type=molx&hide-controls=1" style="width: 75%; height: 500px; border: 0px"></iframe>
 
@@ -62,7 +62,7 @@ Najprej je potrebno pripraviti strukturo tarče (proteina) in liganda v primerne
 - [`BRD_BD2-pdb5IBN-clean.pdb`](datoteke/BRD2_BD2-pdb5IBN-clean.pdb) (kristalna struktura apo-oblike domene BD2 proteina BRD2, t.j. brez liganda; PDB [5IBN](https://www.rcsb.org/structure/5IBN))
 - **dodatno še sami pripravite in shranite dva modela strukture mutiranega BD2 BRD2** na osnovi `BRD2_BD2-pdb24KN-clean.pdb`, pri čemer v ChimeraX (uporabite znanje s [prejšnje vaje](upp-vizualizacija-analiza-struktur.md)) ločeno zmutirate:
    - **N429A** (UniProt številčenje) – ta mutacija je opažena "v naravi", tako zmutirana DB2 ne veže več acetiliranega K12 histona H4
-   - **L381F** (UniProt številčenje) – tudi na tem mestu je znana mutacija in sicer L381A, ki zmanjša jakost vezave acetiliranega K12 histona H4, vi pa boste za namen vaje ta leucinski ostazenk zmutirali v fenilalaninskega
+   - **L381F** (UniProt številčenje) – tudi na tem mestu je znana mutacija in sicer L381A, ki zmanjša jakost vezave acetiliranega K12 histona H4, vi pa boste za namen vaje ta leucinski ostazenk zmutirali v fenilalaninskega; tukaj lahko naredite še minimizacijo strukture (`Tools > Structure Editing > Minimize Structure`)
 
 ```{admonition} Shranjevanje koordinat relativno glede na druge koordinate
 :class: hint
