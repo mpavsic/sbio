@@ -2,7 +2,7 @@
 
 ## Namen
 
-Namen delavnice je spoznati osnove ročne gradnje in piljenja modela strukture proteina z uporabo eksperimentalnih podatkov, v konkretnem primeru gre za elektronsko gostoto, izračunano iz difrakcijskih podatkov (makromolekulska X-žarkovna kristalografija), podobni principi pa veljajo tudi v primeru elektronske difrakcije in krio-elektronske mikroskopije.
+Namen vaje je spoznati osnove ročne gradnje in piljenja modela strukture proteina z uporabo eksperimentalnih podatkov, v konkretnem primeru gre za elektronsko gostoto, izračunano iz difrakcijskih podatkov (makromolekulska X-žarkovna kristalografija), podobni principi pa veljajo tudi v primeru elektronske difrakcije in krio-elektronske mikroskopije.
 
 Pri delu bomo uporabljali program [Moorhen](https://moorhen.org/), ki predstavlja spletno različico programa [COOT](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/) (Crystallographic Object-Oriented Toolkit), danes najpogosteje uporabljanega programa za gradnjo, piljenje in validacijo modelov struktur makromolekul {cite:p}`Emsley2010aaa`. Isti program se lahko uporablja tako za gradnjo modelov struktur na osnovi podatkov, pridobljenih z difrakcijo (rentgenska, elektronska difrakcija), kot tudi s krio-elektronsko mikroskopijo.
 
@@ -121,7 +121,7 @@ Prikazani so koraki:
 3. ... umesti v elektronsko gostoto (po potrebi lahko naredimo še prileganje v elektronsko gostoto posebej, glejte korak spodaj za metioninski ostanek). Ob tem se nam karta $mF_o – DF_c$ avtomatsko osveži (seveda le, če smo omogočili izračun R-faktorja in osveževanje kart elektronske gostote).
 4. Ogled bližine tega ostanka razkrije še eno napako in sicer slabo pozicionirano stransko skupino metioninskega ostanka.
 5. Uporabimo orodje `Auto-fit Rotamer`, ki izbere drug rotamer stranske skupine in ga umesti tako, da ...
-6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $mF_o – DF_c$ ne kaže na nobene anomalije.
+6. ... se dobro prilega elektronski gostoti. Spet, avtomatsko osvežena karta $mF_o – DF_c$ ne kaže na nobene anomalije. Po potrebi lahko uporabimo tudi `Refine Residues`.
 
 ![Primer popravljanja modela strukture](slike/primer-popravljanja-modela-strukture.png)
 
@@ -153,7 +153,7 @@ Za ilustracijo, kaj pomeni slaba ločljivost, (delno) ponovite popravljanje mode
 
 ## Viri
 
-Za pripravo datotek za vaje so bili uporabljeno javno dostopni podatki iz članka **Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study** {cite:p}`Krishnan2015aaa`.
+Za pripravo datotek za vaje so bili uporabljeni javno dostopni podatki iz članka **Inhibition of Klebsiella beta-Lactamases (SHV-1 and KPC-2) by Avibactam: A Structural Study** {cite:p}`Krishnan2015aaa`.
 
 Pri pripravi datotek so bili uporabljeni programi:
 - [Coot](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/)

@@ -177,3 +177,7 @@ V največ treh stavkih pojasnite, zakaj lahko za isti proteinski model velja: **
 - [EMBL-EBI: Interpretacija rezultatov AlphaFold Server](https://www.ebi.ac.uk/training/online/courses/alphafold/alphafold-3-and-alphafold-server/alphafold-server-your-gateway-to-alphafold-3/interpreting-results-from-alphafold-server/)
 - [SWISS-MODEL dokumentacija](https://swissmodel.expasy.org/docs/help)
 - [DeepMind: primer visoke lokalne zanesljivosti in nezanesljive meddomenske orientacije](https://deepmind.google/blog/enabling-high-accuracy-protein-structure-prediction-at-the-proteome-scale/)
+
+---
+
+*Vajo je pripravil Jošt Jočevar*.
