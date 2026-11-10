@@ -1,0 +1,777 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Umeščanje majhne molekule v protein &#8212; Strukturna biologija</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'vaje/upp-umescanje-majhen-ligand';</script>
+    <link rel="canonical" href="https://mpavsic.github.io/sbio/vaje/upp-umescanje-majhen-ligand.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../naslovnica.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo_sbio_s.png" class="logo__image only-light" alt="Strukturna biologija - Home"/>
+    <script>document.write(`<img src="../_static/logo_sbio_s.png" class="logo__image only-dark" alt="Strukturna biologija - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../naslovnica.html">
+                    Strukturna biologija
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../strukture/navodila.html">Kako uporabljati modele?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/vizualizacija.html">Vizualizacija</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/prim.html">Primarna struktura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/ss.html">Sekundarna struktura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/interakcije.html">Interakcije</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/motivi.html">Motivi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/razredi.html">Razredi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/kristalografija.html">Kristalografija</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/nmr.html">NMR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/membranski_proteini.html">Membranski proteini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/proteini-na.html">Proteini:NA</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Orodjarna</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orodjarna/zbirke.html">Zbirke strukturnih podatkov</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/zbirke-eksperimentalne.html">Eksperimentalno določene strukture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/modeli.html">Modeli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/zbirke-druge.html">Druge zbirke</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orodjarna/vizualizacija.html">Vizualizacija struktur</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/chimera.html">ChimeraX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/molstar.html">MolStar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/pymol.html">PyMOL</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../orodjarna/analiza.html">Analiza struktur idr.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/delavnice.html">Seminarske delavnice</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-molstar.html">Delavnica: MolStar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pdb.html">Delavnica: PDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-konstrukti.html">Delavnica: Konstrukti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-gradnja.html">Delavnica: Gradnja</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pymol.html">Delavnica: PyMOL</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/naloge.html">Seminarske naloge</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/naloge-navodila.html">Navodila</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vaje</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="upp-2026.html">Uporaba proteomskih podatkov (vaje) 2026/2027</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../razno/reference.html">Reference</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/vaje/upp-umescanje-majhen-ligand.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fvaje/upp-umescanje-majhen-ligand.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/vaje/upp-umescanje-majhen-ligand.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Umeščanje majhne molekule v protein</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregled-pristopov-umescanja">Pregled pristopov umeščanja</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarca-in-ligand">Tarča in ligand</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarca">Tarča</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ligand">Ligand</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medicinska-relevantnost">Medicinska relevantnost</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autodock-vina">AutoDock Vina</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#namestitev-programa">Namestitev programa</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-vhodnih-sturktur">Priprava vhodnih sturktur</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#odstranjevanje-nezelenih-delov">Odstranjevanje neželenih delov</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dodajanje-vodikovih-atomov">Dodajanje vodikovih atomov</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-parametrov-za-umescanje">Priprava parametrov za umeščanje</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#umescanje">Umeščanje</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold-3">AlphaFold 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analiza-modelov-kompleksov">Analiza modelov kompleksov</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viri">Viri</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="umescanje-majhne-molekule-v-protein">
+<h1>Umeščanje majhne molekule v protein<a class="headerlink" href="#umescanje-majhne-molekule-v-protein" title="Link to this heading">#</a></h1>
+<section id="namen">
+<h2>Namen<a class="headerlink" href="#namen" title="Link to this heading">#</a></h2>
+<p>Namen vaje je spoznati osnove molekulskega umeščanja (tudi sidranje, angl. <em>docking</em>) ter ovrednotiti vpliv izbrane strukture proteina na napoved vezave liganda. Isti ligand bomo namreč umeščali v protein iz eksperimentalno določenega kompleksa, iz katerega bomo ligand predhodno odstranili, v neodvisno eksperimentalno določeno strukturo, mutirane oblike proteina ter v model AlphaFold. Napovedane položaje in orientacije liganda bomo primerjali z eksperimentalnim vezavnim načinom ter presodili, kako razlike v strukturi/konformaciji vezavnega mesta vplivajo na uspešnost umeščanja.</p>
+</section>
+<section id="pregled-pristopov-umescanja">
+<h2>Pregled pristopov umeščanja<a class="headerlink" href="#pregled-pristopov-umescanja" title="Link to this heading">#</a></h2>
+<p>Pri umeščanju majhnih molekul v proteine se danes uporablja več komplementarnih pristopov. Razlikujejo se predvsem v načinu iskanja vezavnih poz, obravnavi konformacijski fleksibilnosti proteina in ocenjevanju/rangiranju rezultatov. Na splošno jih lahko razdelimo v skupine:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>pristop</p></th>
+<th class="head"><p>osnovni princip</p></th>
+<th class="head"><p>primeri programov</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>klasično molekulsko umeščanje</strong></p></td>
+<td><p>išče položaje, orientacije in konformacije liganda v večinoma togem proteinu ter jih razvrsti s približno ocenjevalno funkcijo</p></td>
+<td><p><a class="reference external" href="https://vina.scripps.edu/">AutoDock Vina</a>, <a class="reference external" href="https://www.schrodinger.com/platform/products/glide/">Glide</a>, DOCK (precej star program)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>umeščanje z upoštevanjem konformacijske fleksibilnosti proteina</strong></p></td>
+<td><p>ligand umešča v več različnih konformacij proteina (<em>ensemble docking</em>) ali med postopkom prilagaja vezavno mesto ligandu (<em>induced-fit docking</em>)</p></td>
+<td><p>umeščanje v zbirko struktur (različne konformacije), <a class="reference external" href="https://www.schrodinger.com/platform/products/glide/">Glide/Prime</a>, <a class="reference external" href="https://www.schrodinger.com/products/ifd-md">IFD-MD</a> (Induced-Fit Docking Molecular Dynamics)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>umeščanje z ocenjevanjem z UI</strong></p></td>
+<td><p>klasično iskanje poz dopolnjuje z nevronskimi mrežami za njihovo ocenjevanje oziroma optimizacijo</p></td>
+<td><p><a class="reference external" href="https://github.com/gnina/gnina">GNINA</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>generativno umeščanje z UI</strong></p></td>
+<td><p>naučen model neposredno generira možne vezavne poze liganda v podani strukturi proteina</p></td>
+<td><p><a class="reference external" href="https://github.com/gcorso/DiffDock">DiffDock</a>, DiffDock-L</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>skupno napovedovanje strukture kompleksa</strong></p></td>
+<td><p>iz zaporedja proteina in strukture liganda napove strukturo celotnega kompleksa, vključno s konformacijo proteina</p></td>
+<td><p><a class="reference external" href="https://github.com/google-deepmind/alphafold3">AlphaFold 3</a> (<a class="reference external" href="https://alphafoldserver.com/">strežnik</a>), <a class="reference external" href="https://github.com/jwohlwend/boltz">Boltz-2</a>, <a class="reference external" href="https://github.com/chaidiscovery/chai-lab">Chai-1</a> oz. <a class="reference external" href="https://www.chaidiscovery.com/">Chai-2</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Klasični in nekateri pristopi z UI torej uporabljajo že “pripravljeno” strukturo proteina (eksperimentalno določeno ali napovedano vnaprej ločeno brez liganda), medtem ko modeli za skupno napovedovanje kompleksa napovedujejo strukturo proteina hkrati z vezanim ligandom. Za kovalentne inhibitorje, koordinacijo kovin, pomembne vezavne vode in makrociklične ligande so pogosto potrebni posebni protokoli.</p>
+<p><strong>Pri tej vaji boste spoznali na nek način obe skrajnosti</strong>:</p>
+<ul class="simple">
+<li><p><strong>klasično umeščanje</strong> z uporabo programa AutoDock Vina, ki išče možne položaje, orientacije in konformacije majhne molekule v izbranem območju proteina. Pri običajnem postopku je protein tog, ligand pa lahko spreminja konformacijo z vrtenjem okoli izbranih vezi. Program dobljene vezavne poze razvrsti z ocenjevalno funkcijo, ki približno ovrednoti ugodnost vezave. Dobljene ocene omogočajo primerjavo napovedanih poz, vendar same po sebi ne dokazujejo vezave in ne predstavljajo zanesljive vezavne afinitete;</p></li>
+<li><p><strong>napovedovanje strukture kompleksa</strong> z AlphaFold 3.</p></li>
+</ul>
+</section>
+<section id="tarca-in-ligand">
+<h2>Tarča in ligand<a class="headerlink" href="#tarca-in-ligand" title="Link to this heading">#</a></h2>
+<section id="tarca">
+<h3>Tarča<a class="headerlink" href="#tarca" title="Link to this heading">#</a></h3>
+<p>Kot tarčo (t.j. protein, v katerega umeščamo ligand) bomo uporabili človeški protein <strong>BRD2</strong> (<em>Bromodomain-containing protein 2</em>, UniProt <a class="reference external" href="https://www.uniprot.org/uniprotkb/P25440/">P25440</a>). Spada v <strong>družino BET</strong> (<em>bromodomain and extra-terminal</em>), kamor uvrščamo zraven BRD2 še paraloge BRD3, BRD4 in BRDT (več o njih v <a class="reference external" href="https://doi.org/10.1038/s41392-020-00384-4">preglednem članku</a>). Vsebuje dve bromodomeni, BD1 in BD2, ki prepoznavata acetilirane lizinske ostanke na histonih in drugih proteinih. Model strukture BRD2 je na voljo v <a class="reference external" href="https://alphafold.ebi.ac.uk/entry/AF-P25440-3-F1">AlphaFold Protein Structure Database</a>.</p>
+<p><strong>Proteini BET delujejo kot “bralci” epigenetskih oznak</strong> – z bromodomenami (BD) prepoznavajo acetilirane regije kromatina ter sodelujejo pri povezovanju teh oznak z uravnavanjem transkripcije. BRD2 med drugim sodeluje pri začetku transkripcije, saj povezuje acetilirane nukleosome s transkripcijskim kompleksom TFIID. S tem vpliva na izražanje genov, pomembnih za celično delovanje, proliferacijo in odzivanje na zunanje signale. Zaradi vloge proteinov BET pri rakavih in vnetnih procesih so njihove <strong>bromodomene zanimive tarče za razvoj modulatorjev/inhibitorjev</strong>, ki preprečujejo prepoznavanje acetiliranih proteinov.</p>
+</section>
+<section id="ligand">
+<h3>Ligand<a class="headerlink" href="#ligand" title="Link to this heading">#</a></h3>
+<p><strong>Nimesulid</strong> (angl. <em>nimesulide</em>(<a class="reference external" href="https://en.wikipedia.org/wiki/Nimesulide">https://en.wikipedia.org/wiki/Nimesulide</a>)) je majhna organska molekula iz skupine nesteroidnih protivnetnih zdravil (NSAIDs, <em>nonsteroidal anti-inflammatory drugs</em>). Poleg njegovega uveljavljenega protivnetnega delovanja so raziskovalci pokazali tudi neposredno vezavo na bromodomeni BRD2 in BRD4.</p>
+<iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/vaje/seje/nimesulid-NIM.molx&snapshot-url-type=molx&hide-controls=1" style="width: 75%; height: 500px; border: 0px"></iframe>
+<p>Zapis za nimesulid kot ligand v zbirki PDB je dostopen pod kodo <a class="reference external" href="https://www.rcsb.org/ligand/NIM">NIM</a>.</p>
+</section>
+<section id="medicinska-relevantnost">
+<h3>Medicinska relevantnost<a class="headerlink" href="#medicinska-relevantnost" title="Link to this heading">#</a></h3>
+<p>Nimesulid se uporablja za lajšanje akutnih menstrualnih bolečin; njegovo običajno delovanje je povezano z zaviranjem ciklooksigenaz in zmanjšano tvorbo prostaglandinov. Zaradi tveganja za poškodbe jeter je njegova sistemska uporaba v EU na kratkotrajno uporabo. Vezava na bromodomene BET predstavlja raziskovalno ugotovitev in izhodišče za razvoj novih spojin, ne pa sicer uveljavljene uporabe nimesulida kot epigenetskega ali protirakavega zdravila.</p>
+</section>
+</section>
+<section id="potek-vaje">
+<h2>Potek vaje<a class="headerlink" href="#potek-vaje" title="Link to this heading">#</a></h2>
+<section id="autodock-vina">
+<h3>AutoDock Vina<a class="headerlink" href="#autodock-vina" title="Link to this heading">#</a></h3>
+<section id="namestitev-programa">
+<h4>Namestitev programa<a class="headerlink" href="#namestitev-programa" title="Link to this heading">#</a></h4>
+<p>Posebna namestitev ni potrebna, prenesite si le prevedeno obliko zadnje verzije z GitHub za <a class="reference external" href="https://github.com/ccsb-scripps/AutoDock-Vina">običajno poganjanje</a> ali <a class="reference external" href="https://github.com/ccsb-scripps/AutoDock-GPU">poganjanje z GPU pospešitvijo</a>. Pazite, da izberete izberite ustreznen operacijski sistem in arhitekturo.</p>
+<p>Prenešeno datoteko naredite izvršilno, na primer z <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">a+x</span> <span class="pre">vina_1.2.7_mac_aarch64</span></code>. Če boste program poganjali na novejših verzijah macOS morate zaobiti varnostne mehanizme: <code class="docutils literal notranslate"><span class="pre">xattr</span> <span class="pre">-d</span> <span class="pre">com.apple.quarantine</span> <span class="pre">vina_1.2.7_mac_aarch64</span></code>.</p>
+</section>
+<section id="priprava-vhodnih-sturktur">
+<h4>Priprava vhodnih sturktur<a class="headerlink" href="#priprava-vhodnih-sturktur" title="Link to this heading">#</a></h4>
+<section id="odstranjevanje-nezelenih-delov">
+<h5>Odstranjevanje neželenih delov<a class="headerlink" href="#odstranjevanje-nezelenih-delov" title="Link to this heading">#</a></h5>
+<p>Najprej je potrebno pripraviti strukturo tarče (proteina) in liganda v primernem formatu, npr. PDB, in sicer v ločenih datotekah. Datoteke lahko pripravite sami s pomočjo kakšne skripte, UCSF ChimeraX, … (pobrišete vse neproteinske molekule, vključno v vodo), za večjo prikladnost pa so spodaj na voljo naslednje že “očiščene” strukture tarče:</p>
+<ul class="simple">
+<li><p><a class="reference download internal" download="" href="../_downloads/890d6b46c9ec93463912e0290e0fd544/BRD2_BD2-pdb24KN-clean.pdb"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">BRD2_BD2-pdb24KN-clean.pdb</span></code></span></a> (gre za kristalno strukturo domene BD2 proteina BRD2, določeno v kompleksu z našim ligandom, nimesulidom, iz katere pa je bil slednji odstranjen; PDB <a class="reference external" href="https://www.rcsb.org/structure/24KN">24KN</a>)</p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/8357c3f6ee328b96534a010da44d28b5/BRD2_BD2-modaf3.pdb"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">BRD2_BD2-modaf3.pdb</span></code></span></a> (AlphaFold 3 model domene BD2 proteina BRD2 in sicer z identičnim aminokislinskim zaporedjem kot v zapisu PDB <a class="reference external" href="https://www.rcsb.org/structure/24KN">24KN</a>; izmed petih izračunanih modelov je bil izbran prvi, ostali so imeli izredno podobno konformacijo)</p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/6d4ba9d294912309ff22a3ae22b156a7/BRD2_BD2-pdb5IBN-clean.pdb"><span class="xref download myst"><code class="docutils literal notranslate"><span class="pre">BRD_BD2-pdb5IBN-clean.pdb</span></code></span></a> (kristalna struktura apo-oblike domene BD2 proteina BRD2, t.j. brez liganda; PDB <a class="reference external" href="https://www.rcsb.org/structure/5IBN">5IBN</a>)</p></li>
+<li><p><strong>dodatno še sami pripravite in shranite dva modela strukture mutiranega BD2 BRD2</strong> na osnovi <code class="docutils literal notranslate"><span class="pre">BRD2_BD2-pdb24KN-clean.pdb</span></code>, pri čemer v ChimeraX (uporabite znanje s <a class="reference internal" href="upp-vizualizacija-analiza-struktur.html"><span class="std std-doc">prejšnje vaje</span></a>) ločeno zmutirate:</p>
+<ul>
+<li><p><strong>N429A</strong> (UniProt številčenje) – ta mutacija je opažena “v naravi”, tako zmutirana DB2 ne veže več acetiliranega K12 histona H4</p></li>
+<li><p><strong>L381F</strong> (UniProt številčenje) – tudi na tem mestu je znana mutacija in sicer L381A, ki zmanjša jakost vezave acetiliranega K12 histona H4, vi pa boste za namen vaje ta leucinski ostazenk zmutirali v fenilalaninskega</p></li>
+</ul>
+</li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">Shranjevanje koordinat relativno glede na druge koordinate</p>
+<p>Za lažjo pripravo parametrov za umeščanje in primerjavo rezultatov je priporočljivo, da imate vse modele struktur tarče odprte hkrati v ChimeraX, jih poravnate (<code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Structure</span> <span class="pre">analysis</span> <span class="pre">&gt;</span> <span class="pre">Matchmaker</span></code>), ter nato shranite v ločene datoteke in pri tem omogočite shranjevanje koordinat relativno glede na eno od struktur (<code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">relative</span> <span class="pre">to</span> <span class="pre">model...</span></code>). Tako so bile strukture <code class="docutils literal notranslate"><span class="pre">BRD2_BD2-modaf3.pdb</span></code> in <code class="docutils literal notranslate"><span class="pre">BRD_DB2-pdb5IBN-clean.pdb</span></code> poravnane in shranjene relativno glede na <code class="docutils literal notranslate"><span class="pre">BRD2_BD2-pdb24KN-clean.pdb</span></code>.</p>
+</div>
+</section>
+<section id="dodajanje-vodikovih-atomov">
+<h5>Dodajanje vodikovih atomov<a class="headerlink" href="#dodajanje-vodikovih-atomov" title="Link to this heading">#</a></h5>
+<p>Naslednji korak je:</p>
+<ul class="simple">
+<li><p>dodajanje vodikovih atomov na strukture proteina in liganda ter pripis delnih nabojev (pri določeni vrednosti pH, ponavadi je to 7 ali 7.4),</p></li>
+<li><p>določitev, okoli katerih vezi v ligandu je možna rotacija (privzeto se pusti vse, okoli katerih je rotacija teoretično možna),</p></li>
+<li><p>posebna parametrizacija, ki jo uporablja polje sil v AutoDock.</p></li>
+</ul>
+<p>Pri tem iz datotek formata PDB dobimo datoteke formata PDBQT (Q je oznaka za delni naboj, T pa za AutoDock Atom Type).</p>
+<p>Pretvorbo lahko naredimo na več načinov oz. z različnimi programi, mi bomo uporabili kar spletni <a class="reference external" href="https://www.moldraw.com/tools/free-chem-tools/pdb-to-pdbqt-converter.html">PDB-to-PDBQT converter</a>. <strong>Torej, vse vhodne datoteke pretvorite in si jih shranite (najbolje z istim imenom, le končnica naj bo <code class="docutils literal notranslate"><span class="pre">.pdbqt</span></code>).</strong></p>
+</section>
+</section>
+<section id="priprava-parametrov-za-umescanje">
+<h4>Priprava parametrov za umeščanje<a class="headerlink" href="#priprava-parametrov-za-umescanje" title="Link to this heading">#</a></h4>
+<p>Katere parametre AutoDock Vina potrebuje lahko izvemo enostavno tako, da program začenemo brez parametrov: <code class="docutils literal notranslate"><span class="pre">./vina_1.2.7_linux_x86_64</span></code>. Nekaj najbolj pogostih je navedenih tukaj:</p>
+<ul class="simple">
+<li><p>datoteka s strukturo tarče v formatu PDBQT (<code class="docutils literal notranslate"><span class="pre">receptor</span></code>),</p></li>
+<li><p>datoteka z ligandom v formatu PDBQT (<code class="docutils literal notranslate"><span class="pre">ligand</span></code>),</p></li>
+<li><p>središče iskalne škatle (<em>box center</em>; <code class="docutils literal notranslate"><span class="pre">center_x</span></code>, <code class="docutils literal notranslate"><span class="pre">center_y</span></code>, <code class="docutils literal notranslate"><span class="pre">center_z</span></code>) – koordinate središča območja, v katerem program išče vezavne poze liganda (če približno vemo, kam ciljamo, lahko z ustrezno prilagoditvijo tega parametra in velikostjo škatle pohitrimi iskanje),</p></li>
+<li><p>velikost iskalne škatle (<em>box size</em>; <code class="docutils literal notranslate"><span class="pre">size_x</span></code>, <code class="docutils literal notranslate"><span class="pre">size_y</span></code>, <code class="docutils literal notranslate"><span class="pre">size_z</span></code>) – dolžine robov iskalnega območja v smereh x, y in z, izražene v Å,</p></li>
+<li><p>temeljitost iskanja  (<code class="docutils literal notranslate"><span class="pre">exhaustiveness</span></code>) – uravnava obseg iskanja; večja vrednost praviloma poveča računski čas in možnost, da program najde ugodne poze; parameter ima lahko vrednosti med 1 in 8,</p></li>
+<li><p>razmik mreže (<em>grid spacing</em>, <code class="docutils literal notranslate"><span class="pre">spacing</span></code>) – razdalja med sosednjimi točkami mreže za predizračun interakcij, izražena v Å; za vajo ohranimo privzeto vrednost 0,375 Å</p></li>
+<li><p>število procesorskih jeder (<code class="docutils literal notranslate"><span class="pre">cpu</span></code>),</p></li>
+<li><p>izhodna datoteka (<code class="docutils literal notranslate"><span class="pre">out</span></code>) – ime izhodne PDBQT datoteke, ki bo vsebovala poze liganda (če jo odpremo skupaj z vhodno strukturo tarče/receptorja, bo ligand pravilno postavljen relativno glede na tarčo).</p></li>
+</ul>
+<p>Položaj središča škatle in njeno velikost lahko določimo v UCSF ChimeraX in sicer tako, da najprej instaliramo vtičnik Vinardock (preko <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">More</span> <span class="pre">Tools...</span></code>), nato pa:</p>
+<ol class="arabic simple">
+<li><p>Naložimo strukturo tarče oz. receptorja (lahko kar PDBQT datoteko).</p></li>
+<li><p>Ustrezno premaknemo središče in prilagodimo velikost škatle. Če želimo zajeti celoten protein lahko kar kliknemo na <code class="docutils literal notranslate"><span class="pre">Autobox</span></code>.</p></li>
+<li><p>Središče in velikost škatle vidimo pod <code class="docutils literal notranslate"><span class="pre">Center</span></code> in <code class="docutils literal notranslate"><span class="pre">Size</span></code>, skopiramo si jih lahko s <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">config</span></code>.</p></li>
+</ol>
+<p>AutoDock Vina lahko poganjamo tako, da zahtevane parametre določimo kar v ukazni vrstici, lahko pa si pripravimo konfiguracijsko datoteko, na primer <code class="docutils literal notranslate"><span class="pre">BRD2_BD2-pdb24KN.txt</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">receptor</span> <span class="o">=</span> <span class="n">BRD2_BD2</span><span class="o">-</span><span class="n">pdb24KN</span><span class="o">-</span><span class="n">clean_receptor</span><span class="o">.</span><span class="n">pdbqt</span>
+<span class="n">ligand</span> <span class="o">=</span> <span class="n">NIM</span><span class="o">.</span><span class="n">pdbqt</span>
+<span class="n">cpu</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">exhaustiveness</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">center_x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">center_y</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">center_z</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">size_x</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">size_y</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">size_z</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">BRD2_BD2</span><span class="o">-</span><span class="n">pdb24KN</span><span class="o">-</span><span class="n">NIM</span><span class="o">.</span><span class="n">pdbqt</span>
+</pre></div>
+</div>
+</section>
+<section id="umescanje">
+<h4>Umeščanje<a class="headerlink" href="#umescanje" title="Link to this heading">#</a></h4>
+<p>Če ste parametre zapisali v konfiguracijsko datoteko lahko umeščanje zaženemo kot <code class="docutils literal notranslate"><span class="pre">./vina_1.2.7_linux_x86_64</span> <span class="pre">--config</span> <span class="pre">BRD2_BD2-pdb24KN.txt</span></code>, sicer pač uporabite zapis navedbo parametrov neposredno v ukazni vrstici.</p>
+<p>Pazite, da za posamezna poganjanja z različnimi parametri določite novo izhodno datoteko; privzeto (če ni posebej določeno) dobi izhodna datoteka ime <code class="docutils literal notranslate"><span class="pre">${ligand}_out.pdbqt</span></code>.</p>
+<p>Rezultate umeščanja si ogledate tako, da v UCSF ChimeraX hkrati odprete strukturo tarče in pa izhodno PDBQT datoteko; avtomatsko se vam odpre okno, v katerem lahko izbirate posamezne poze in si ogledate nekaj statistike.</p>
+<p><strong>Zaženite vsa umeščanja, pri tem pa pazite, da boste imeli izhodne datoteke smiselno poimenovane (da boste prepoznali, kaj je kaj).</strong></p>
+</section>
+</section>
+<section id="alphafold-3">
+<h3>AlphaFold 3<a class="headerlink" href="#alphafold-3" title="Link to this heading">#</a></h3>
+<p>Izračun strukture kompleksa tarče in liganda lahko enostavno naredimo na <a class="reference external" href="https://alphafoldserver.com/">strežniku AlphaFold 3</a>:</p>
+<ol class="arabic simple">
+<li><p>Kot protein vnesemo aminokislinsko zaporedje tarče.</p></li>
+<li><p>Dodamo še eno “entiteto”, katere tip nastavimo na <code class="docutils literal notranslate"><span class="pre">CCD</span> <span class="pre">Code</span></code> in v primeru nimesulida vnesemo kodo <code class="docutils literal notranslate"><span class="pre">NIM</span></code>.</p></li>
+<li><p>Posel pošljemo na strežnik, počakamo … in nato prenesemo datoteko z modeli strukture kompleksa in ocenami zanesljivosti).</p></li>
+</ol>
+<p>Zraven zaporedja divjega tipa naredite umeščanje tudi z mutirano obliko BD2 BRD2 z mutacijo L381F.</p>
+</section>
+<section id="analiza-modelov-kompleksov">
+<h3>Analiza modelov kompleksov<a class="headerlink" href="#analiza-modelov-kompleksov" title="Link to this heading">#</a></h3>
+<p>Rezultate vseh sedmih umeščanj primerjajte med seboj ter s kristalno strukturo kompleksa (PDB <a class="reference external" href="https://www.rcsb.org/structure/24KN">24KN</a>) z uporabo UCSF ChimeraX (rezultate iz AlphaFold 3 poravnajte z MatchMaker-jem) in odgovorite na vprašanja:</p>
+<ol class="arabic simple">
+<li><p><strong>Kako dobro umeščanje v kristalno strukturo BRD2 BD2 reproducira eksperimentalno vezavno pozo nimesulida?</strong> Primerjajte položaj, orientacijo in konformacijo liganda. Ali je eksperimentalni pozi najbolj podobna prav najbolje ocenjena poza?</p></li>
+<li><p><strong>Kako izbira strukture receptorja vpliva na rezultate umeščanja?</strong> Primerjajte rezultate za kristalno strukturo kompleksa z odstranjenim ligandom, neodvisno določeno apo-strukturo in model AlphaFold 3. Katere razlike v vezavnem mestu bi lahko pojasnile opažene razlike, če sploh so kakšne?</p></li>
+<li><p><strong>Katere interakcije stabilizirajo nimesulid v eksperimentalnem kompleksu in katere se ohranijo v napovedanih pozah?</strong> Ocenite vodikove vezi, hidrofobne stike in morebitne sterične ovire. Ali podobna ocena AutoDock Vina vedno pomeni tudi podoben vzorec interakcij?</p></li>
+<li><p><strong>Kako mutacija N429A vpliva na napovedano vezavo nimesulida?</strong> Ali izguba vezave acetiliranega Lys12 histona H4 nujno pomeni tudi izgubo vezave nimesulida? Odgovor utemeljite s primerjavo kemijskih skupin in njihovih interakcij z vezavnim mestom.</p></li>
+<li><p><strong>Kako se rezultat umeščanja spremeni pri mutaciji L381F?</strong> Ali večja stranska skupina prepreči prvotno vezavno pozo, povzroči premik liganda ali omogoči drugačne ugodne stike? Kako bi na rezultat vplivala možnost spremembe rotamera Phe381?</p></li>
+<li><p><strong>Kako se kompleks, neposredno napovedan z AlphaFold 3, razlikuje od rezultatov umeščanja z AutoDock Vina in eksperimentalne strukture?</strong> Primerjajte tako ligand kot bližnje aminokislinske ostanke. Ali je morebitna boljša namestitev liganda povezana tudi z drugačno konformacijo vezavnega mesta?</p></li>
+<li><p><strong>Ali AlphaFold 3 pri napovedi kompleksa mutante L381F z nimesulidom predvidi prilagoditev vezavnega mesta, ki omogoči vezavo liganda?</strong> Primerjajte rotamer Phe381, položaj nimesulida in morebitne sterične ovire z rezultatom umeščanja z AutoDock Vina ter eksperimentalnim kompleksom izhodnega proteina. Ali napoved kompleksa brez steričnih ovir že dokazuje, da mutanta veže nimesulid?</p></li>
+<li><p><strong>Kaj lahko na podlagi teh izračunov sklepate o dejanski vezavi in afiniteti nimesulida?</strong> Ali ugodna ocena AutoDock Vina oziroma visoka zanesljivost modela AlphaFold 3 dokazujeta vezavo? Predlagajte eksperimentalno metodo za preverjanje napovedanih razlik med izhodnim proteinom in mutantama.</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="viri">
+<h2>Viri<a class="headerlink" href="#viri" title="Link to this heading">#</a></h2>
+<p>Za pripravo datotek za vaje so bili uporabljeni javno dostopni podatki iz članka <strong>BET Bromodomain Targeting by NSAIDs: Structural, Biophysical, and Computational Insights</strong> <span id="id1">[<a class="reference internal" href="../razno/reference.html#id2" title="Ashok Sridhar, Nivetha Kandhasami, Shruti Mathur, Gopinatha Krishnappa, Saravanamuthu Thiyagarajan, and Balasundaram Padmanabhan. Bet bromodomain targeting by nsaids: structural, biophysical, and computational insights. Proteins: Structure, Function, and Bioinformatics, 94(12):1965–1989, 2026. URL: https://doi.org/10.1002/prot.70154, doi:10.1002/prot.70154.">Sridhar <em>et al.</em>, 2026</a>]</span>.</p>
+<p>Drugi programi, uporabljeni med pripravo datotek:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.cgl.ucsf.edu/chimerax/">UCSF ChimeraX</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./vaje"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen">Namen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pregled-pristopov-umescanja">Pregled pristopov umeščanja</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarca-in-ligand">Tarča in ligand</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarca">Tarča</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ligand">Ligand</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medicinska-relevantnost">Medicinska relevantnost</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potek-vaje">Potek vaje</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autodock-vina">AutoDock Vina</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#namestitev-programa">Namestitev programa</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-vhodnih-sturktur">Priprava vhodnih sturktur</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#odstranjevanje-nezelenih-delov">Odstranjevanje neželenih delov</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dodajanje-vodikovih-atomov">Dodajanje vodikovih atomov</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-parametrov-za-umescanje">Priprava parametrov za umeščanje</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#umescanje">Umeščanje</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alphafold-3">AlphaFold 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analiza-modelov-kompleksov">Analiza modelov kompleksov</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viri">Viri</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mpavsic.github.io/sbio">Strukturna biologija</a> by <span property="cc:attributionName">Miha Pavšič</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
