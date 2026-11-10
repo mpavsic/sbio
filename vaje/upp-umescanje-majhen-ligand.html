@@ -442,7 +442,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#namestitev-programa">Namestitev programa</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-vhodnih-sturktur">Priprava vhodnih sturktur</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#odstranjevanje-nezelenih-delov">Odstranjevanje neželenih delov</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dodajanje-vodikovih-atomov">Dodajanje vodikovih atomov</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dodajanje-vodikovih-atomov-idr">Dodajanje vodikovih atomov idr.</a></li>
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-parametrov-za-umescanje">Priprava parametrov za umeščanje</a></li>
@@ -560,8 +560,8 @@ document.write(`
 <p>Za lažjo pripravo parametrov za umeščanje in primerjavo rezultatov je priporočljivo, da imate vse modele struktur tarče odprte hkrati v ChimeraX, jih poravnate (<code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">Structure</span> <span class="pre">analysis</span> <span class="pre">&gt;</span> <span class="pre">Matchmaker</span></code>), ter nato shranite v ločene datoteke in pri tem omogočite shranjevanje koordinat relativno glede na eno od struktur (<code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">relative</span> <span class="pre">to</span> <span class="pre">model...</span></code>). Tako so bile strukture <code class="docutils literal notranslate"><span class="pre">BRD2_BD2-modaf3.pdb</span></code> in <code class="docutils literal notranslate"><span class="pre">BRD_DB2-pdb5IBN-clean.pdb</span></code> poravnane in shranjene relativno glede na <code class="docutils literal notranslate"><span class="pre">BRD2_BD2-pdb24KN-clean.pdb</span></code>.</p>
 </div>
 </section>
-<section id="dodajanje-vodikovih-atomov">
-<h5>Dodajanje vodikovih atomov<a class="headerlink" href="#dodajanje-vodikovih-atomov" title="Link to this heading">#</a></h5>
+<section id="dodajanje-vodikovih-atomov-idr">
+<h5>Dodajanje vodikovih atomov idr.<a class="headerlink" href="#dodajanje-vodikovih-atomov-idr" title="Link to this heading">#</a></h5>
 <p>Naslednji korak je:</p>
 <ul class="simple">
 <li><p>dodajanje vodikovih atomov na strukture proteina in liganda ter pripis delnih nabojev (pri določeni vrednosti pH, ponavadi je to 7 ali 7.4),</p></li>
@@ -585,7 +585,7 @@ document.write(`
 <li><p>število procesorskih jeder (<code class="docutils literal notranslate"><span class="pre">cpu</span></code>),</p></li>
 <li><p>izhodna datoteka (<code class="docutils literal notranslate"><span class="pre">out</span></code>) – ime izhodne PDBQT datoteke, ki bo vsebovala poze liganda (če jo odpremo skupaj z vhodno strukturo tarče/receptorja, bo ligand pravilno postavljen relativno glede na tarčo).</p></li>
 </ul>
-<p>Položaj središča škatle in njeno velikost lahko določimo v UCSF ChimeraX in sicer tako, da najprej instaliramo vtičnik Vinardock (preko <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">More</span> <span class="pre">Tools...</span></code>), nato pa:</p>
+<p>Položaj središča škatle in njeno velikost lahko določimo v UCSF ChimeraX in sicer tako, da najprej <strong>instaliramo vtičnik Vinardock</strong> (preko <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">&gt;</span> <span class="pre">More</span> <span class="pre">Tools...</span></code>), nato pa:</p>
 <ol class="arabic simple">
 <li><p>Naložimo strukturo tarče oz. receptorja (lahko kar PDBQT datoteko).</p></li>
 <li><p>Ustrezno premaknemo središče in prilagodimo velikost škatle. Če želimo zajeti celoten protein lahko kar kliknemo na <code class="docutils literal notranslate"><span class="pre">Autobox</span></code>.</p></li>
@@ -709,7 +709,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#namestitev-programa">Namestitev programa</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-vhodnih-sturktur">Priprava vhodnih sturktur</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#odstranjevanje-nezelenih-delov">Odstranjevanje neželenih delov</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dodajanje-vodikovih-atomov">Dodajanje vodikovih atomov</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dodajanje-vodikovih-atomov-idr">Dodajanje vodikovih atomov idr.</a></li>
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-parametrov-za-umescanje">Priprava parametrov za umeščanje</a></li>

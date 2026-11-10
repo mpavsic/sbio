@@ -69,7 +69,7 @@ Najprej je potrebno pripraviti strukturo tarče (proteina) in liganda v primerne
 Za lažjo pripravo parametrov za umeščanje in primerjavo rezultatov je priporočljivo, da imate vse modele struktur tarče odprte hkrati v ChimeraX, jih poravnate (`Tools > Structure analysis > Matchmaker`), ter nato shranite v ločene datoteke in pri tem omogočite shranjevanje koordinat relativno glede na eno od struktur (`Save relative to model...`). Tako so bile strukture `BRD2_BD2-modaf3.pdb` in `BRD_DB2-pdb5IBN-clean.pdb` poravnane in shranjene relativno glede na `BRD2_BD2-pdb24KN-clean.pdb`.
 ```
 
-##### Dodajanje vodikovih atomov
+##### Dodajanje vodikovih atomov idr.
 
 Naslednji korak je:
 - dodajanje vodikovih atomov na strukture proteina in liganda ter pripis delnih nabojev (pri določeni vrednosti pH, ponavadi je to 7 ali 7.4),
@@ -92,7 +92,7 @@ Katere parametre AutoDock Vina potrebuje lahko izvemo enostavno tako, da program
 - število procesorskih jeder (`cpu`),
 - izhodna datoteka (`out`) – ime izhodne PDBQT datoteke, ki bo vsebovala poze liganda (če jo odpremo skupaj z vhodno strukturo tarče/receptorja, bo ligand pravilno postavljen relativno glede na tarčo).
 
-Položaj središča škatle in njeno velikost lahko določimo v UCSF ChimeraX in sicer tako, da najprej instaliramo vtičnik Vinardock (preko `Tools > More Tools...`), nato pa:
+Položaj središča škatle in njeno velikost lahko določimo v UCSF ChimeraX in sicer tako, da najprej **instaliramo vtičnik Vinardock** (preko `Tools > More Tools...`), nato pa:
 1. Naložimo strukturo tarče oz. receptorja (lahko kar PDBQT datoteko).
 2. Ustrezno premaknemo središče in prilagodimo velikost škatle. Če želimo zajeti celoten protein lahko kar kliknemo na `Autobox`.
 3. Središče in velikost škatle vidimo pod `Center` in `Size`, skopiramo si jih lahko s `Copy config`.
