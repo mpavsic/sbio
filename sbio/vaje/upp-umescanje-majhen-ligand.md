@@ -32,7 +32,7 @@ Kot tarčo (t.j. protein, v katerega umeščamo ligand) bomo uporabili človešk
 
 ### Ligand
 
-**Nimesulid** (angl. *nimesulide*(https://en.wikipedia.org/wiki/Nimesulide)) je majhna organska molekula iz skupine nesteroidnih protivnetnih zdravil (NSAIDs, *nonsteroidal anti-inflammatory drugs*). Poleg njegovega uveljavljenega protivnetnega delovanja so raziskovalci pokazali tudi neposredno vezavo na bromodomeni BRD2 in BRD4.
+**Nimesulid** (angl. [*nimesulide*](https://en.wikipedia.org/wiki/Nimesulide)) je majhna organska molekula iz skupine nesteroidnih protivnetnih zdravil (NSAIDs, *nonsteroidal anti-inflammatory drugs*). Poleg njegovega uveljavljenega protivnetnega delovanja so raziskovalci pokazali tudi neposredno vezavo na bromodomeni BRD2 in BRD4.
 
 <iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/vaje/seje/nimesulid-NIM.molx&snapshot-url-type=molx&hide-controls=1" style="width: 75%; height: 500px; border: 0px"></iframe>
 
@@ -62,14 +62,14 @@ Najprej je potrebno pripraviti strukturo tarče (proteina) in liganda v primerne
 - [`BRD_BD2-pdb5IBN-clean.pdb`](datoteke/BRD2_BD2-pdb5IBN-clean.pdb) (kristalna struktura apo-oblike domene BD2 proteina BRD2, t.j. brez liganda; PDB [5IBN](https://www.rcsb.org/structure/5IBN))
 - **dodatno še sami pripravite in shranite dva modela strukture mutiranega BD2 BRD2** na osnovi `BRD2_BD2-pdb24KN-clean.pdb`, pri čemer v ChimeraX (uporabite znanje s [prejšnje vaje](upp-vizualizacija-analiza-struktur.md)) ločeno zmutirate:
    - **N429A** (UniProt številčenje) – ta mutacija je opažena "v naravi", tako zmutirana DB2 ne veže več acetiliranega K12 histona H4
-   - **L381F** (UniProt številčenje) – tudi na tem mestu je znana mutacija in sicer L381A, ki zmanjša jakost vezave acetiliranega K12 histona H4, vi pa boste za namen vaje ta leucinski ostazenk zmutirali v fenilalaninskega
+   - **L381F** (UniProt številčenje) – tudi na tem mestu je znana mutacija in sicer L381A, ki zmanjša jakost vezave acetiliranega K12 histona H4, vi pa boste za namen vaje ta leucinski ostazenk zmutirali v fenilalaninskega; tukaj lahko naredite še minimizacijo strukture (`Tools > Structure Editing > Minimize Structure`)
 
 ```{admonition} Shranjevanje koordinat relativno glede na druge koordinate
 :class: hint
 Za lažjo pripravo parametrov za umeščanje in primerjavo rezultatov je priporočljivo, da imate vse modele struktur tarče odprte hkrati v ChimeraX, jih poravnate (`Tools > Structure analysis > Matchmaker`), ter nato shranite v ločene datoteke in pri tem omogočite shranjevanje koordinat relativno glede na eno od struktur (`Save relative to model...`). Tako so bile strukture `BRD2_BD2-modaf3.pdb` in `BRD_DB2-pdb5IBN-clean.pdb` poravnane in shranjene relativno glede na `BRD2_BD2-pdb24KN-clean.pdb`.
 ```
 
-##### Dodajanje vodikovih atomov
+##### Dodajanje vodikovih atomov idr.
 
 Naslednji korak je:
 - dodajanje vodikovih atomov na strukture proteina in liganda ter pripis delnih nabojev (pri določeni vrednosti pH, ponavadi je to 7 ali 7.4),
@@ -92,7 +92,7 @@ Katere parametre AutoDock Vina potrebuje lahko izvemo enostavno tako, da program
 - število procesorskih jeder (`cpu`),
 - izhodna datoteka (`out`) – ime izhodne PDBQT datoteke, ki bo vsebovala poze liganda (če jo odpremo skupaj z vhodno strukturo tarče/receptorja, bo ligand pravilno postavljen relativno glede na tarčo).
 
-Položaj središča škatle in njeno velikost lahko določimo v UCSF ChimeraX in sicer tako, da najprej instaliramo vtičnik Vinardock (preko `Tools > More Tools...`), nato pa:
+Položaj središča škatle in njeno velikost lahko določimo v UCSF ChimeraX in sicer tako, da najprej **instaliramo vtičnik Vinardock** (preko `Tools > More Tools...`), nato pa:
 1. Naložimo strukturo tarče oz. receptorja (lahko kar PDBQT datoteko).
 2. Ustrezno premaknemo središče in prilagodimo velikost škatle. Če želimo zajeti celoten protein lahko kar kliknemo na `Autobox`.
 3. Središče in velikost škatle vidimo pod `Center` in `Size`, skopiramo si jih lahko s `Copy config`.
