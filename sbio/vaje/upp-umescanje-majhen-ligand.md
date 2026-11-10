@@ -2,9 +2,7 @@
 
 ## Namen
 
-Namen vaje je spoznati osnove molekulskega umeščanja (angl. *docking*) ter ovrednotiti vpliv izbrane strukture proteina na napoved vezave liganda. Isti ligand bomo umeščali v protein iz eksperimentalno določenega kompleksa, iz katerega bomo ligand predhodno odstranili, v neodvisno eksperimentalno določeno strukturo in v model AlphaFold. Napovedane položaje in orientacije liganda bomo primerjali z eksperimentalnim vezavnim načinom ter presodili, kako razlike v strukturi/konformaciji vezavnega mesta vplivajo na uspešnost umeščanja.
-
-*V literaturi boste namesto izraza 'umeščanje' zasledili tudi izraz 'sidranje'.*
+Namen vaje je spoznati osnove molekulskega umeščanja (tudi sidranje, angl. *docking*) ter ovrednotiti vpliv izbrane strukture proteina na napoved vezave liganda. Isti ligand bomo namreč umeščali v protein iz eksperimentalno določenega kompleksa, iz katerega bomo ligand predhodno odstranili, v neodvisno eksperimentalno določeno strukturo, mutirane oblike proteina ter v model AlphaFold. Napovedane položaje in orientacije liganda bomo primerjali z eksperimentalnim vezavnim načinom ter presodili, kako razlike v strukturi/konformaciji vezavnega mesta vplivajo na uspešnost umeščanja.
 
 ## Pregled pristopov umeščanja
 
@@ -28,13 +26,13 @@ Klasični in nekateri pristopi z UI torej uporabljajo že "pripravljeno" struktu
 
 ### Tarča
 
-Kot tarčo (t.j. protein, v katerega umeščamo ligand) bomo uporabili človeški protein [**BRD2**] (*Bromodomain-containing protein 2*, UniProt [P25440](https://www.uniprot.org/uniprotkb/P25440/)). Spada v družino BET (*bromodomain and extra-terminal*), kamor uvrščamo zraven BRD2 še paraloge BRD3, BRD4 in BRDT (več o njih v [preglednem članku](https://doi.org/10.1038/s41392-020-00384-4)). Vsebuje dve bromodomeni, BD1 in BD2, ki prepoznavata acetilirane lizinske ostanke na histonih in drugih proteinih. Model strukture BRD2 je na voljo v [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/entry/AF-P25440-3-F1).
+Kot tarčo (t.j. protein, v katerega umeščamo ligand) bomo uporabili človeški protein **BRD2** (*Bromodomain-containing protein 2*, UniProt [P25440](https://www.uniprot.org/uniprotkb/P25440/)). Spada v **družino BET** (*bromodomain and extra-terminal*), kamor uvrščamo zraven BRD2 še paraloge BRD3, BRD4 in BRDT (več o njih v [preglednem članku](https://doi.org/10.1038/s41392-020-00384-4)). Vsebuje dve bromodomeni, BD1 in BD2, ki prepoznavata acetilirane lizinske ostanke na histonih in drugih proteinih. Model strukture BRD2 je na voljo v [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/entry/AF-P25440-3-F1).
 
-Proteini BET delujejo kot "bralci" epigenetskih oznak – prek bromodomen (BD) prepoznavajo acetilirane regije kromatina ter sodelujejo pri povezovanju teh oznak z uravnavanjem transkripcije. BRD2 med drugim sodeluje pri začetku transkripcije, saj povezuje acetilirane nukleosome s transkripcijskim kompleksom TFIID. S tem vpliva na izražanje genov, pomembnih za celično delovanje, proliferacijo in odzivanje na zunanje signale. Zaradi vloge proteinov BET pri rakavih in vnetnih procesih so njihove bromodomene zanimive tarče za razvoj zaviralcev, ki preprečujejo prepoznavanje acetiliranih proteinov.
+**Proteini BET delujejo kot "bralci" epigenetskih oznak** – z bromodomenami (BD) prepoznavajo acetilirane regije kromatina ter sodelujejo pri povezovanju teh oznak z uravnavanjem transkripcije. BRD2 med drugim sodeluje pri začetku transkripcije, saj povezuje acetilirane nukleosome s transkripcijskim kompleksom TFIID. S tem vpliva na izražanje genov, pomembnih za celično delovanje, proliferacijo in odzivanje na zunanje signale. Zaradi vloge proteinov BET pri rakavih in vnetnih procesih so njihove **bromodomene zanimive tarče za razvoj modulatorjev/inhibitorjev**, ki preprečujejo prepoznavanje acetiliranih proteinov.
 
 ### Ligand
 
-Nimesulid (angl. *nimesulide*(https://en.wikipedia.org/wiki/Nimesulide)) je majhna organska molekula iz skupine nesteroidnih protivnetnih zdravil (NSAIDs, *nonsteroidal anti-inflammatory drugs*). Poleg njegovega uveljavljenega protivnetnega delovanja so raziskovalci pokazali tudi neposredno vezavo na bromodomeni BRD2 in BRD4.
+**Nimesulid** (angl. *nimesulide*(https://en.wikipedia.org/wiki/Nimesulide)) je majhna organska molekula iz skupine nesteroidnih protivnetnih zdravil (NSAIDs, *nonsteroidal anti-inflammatory drugs*). Poleg njegovega uveljavljenega protivnetnega delovanja so raziskovalci pokazali tudi neposredno vezavo na bromodomeni BRD2 in BRD4.
 
 <iframe src="https://molstar.org/viewer/?snapshot-url=https://raw.githubusercontent.com/mpavsic/sbio/main/sbio/vaje/seje/nimesulid-NIM.molx&snapshot-url-type=molx&hide-controls=1" style="width: 75%; height: 500px; border: 0px"></iframe>
 
@@ -50,38 +48,49 @@ Nimesulid se uporablja za lajšanje akutnih menstrualnih bolečin; njegovo obič
 
 #### Namestitev programa
 
-Posebna namestitev ni potrebna, prenesite si le prevedeno obliko zadnje verzije z GitHub za [običajno poganjanje](https://github.com/ccsb-scripps/AutoDock-Vina) ali [poganjanje z GPU pospešitvijo](https://github.com/ccsb-scripps/AutoDock-GPU); izberite ustrezno arhitekturo.
+Posebna namestitev ni potrebna, prenesite si le prevedeno obliko zadnje verzije z GitHub za [običajno poganjanje](https://github.com/ccsb-scripps/AutoDock-Vina) ali [poganjanje z GPU pospešitvijo](https://github.com/ccsb-scripps/AutoDock-GPU). Pazite, da izberete izberite ustreznen operacijski sistem in arhitekturo.
 
-Če boste program poganjali na novejših verzijah macOS morate omogočiti zaganjanje programa, na primer: `xattr -d com.apple.quarantine vina_1.2.7_mac_aarch64` in `chmod a+x vina_1.2.7_mac_aarch64` (slednje je potrebno tudi na Linux).
+Prenešeno datoteko naredite izvršilno, na primer z `chmod a+x vina_1.2.7_mac_aarch64`. Če boste program poganjali na novejših verzijah macOS morate zaobiti varnostne mehanizme: `xattr -d com.apple.quarantine vina_1.2.7_mac_aarch64`.
 
 #### Priprava vhodnih sturktur
 
-Najprej je potrebno pripraviti strukturo tarče (proteina) in liganda v primernem formatu, npr. PDB, in sicer v ločenih datotekah. Datoteke lahko pripravite sami s pomočjo kakšne skripte, UCSF ChimeraX, ... (pač, pobrišete vse neproteinske molekule), za večjo prikladnost so spodaj na voljo naslednje že "očiščene" strukture tarče: 
+##### Odstranjevanje neželenih delov
+
+Najprej je potrebno pripraviti strukturo tarče (proteina) in liganda v primernem formatu, npr. PDB, in sicer v ločenih datotekah. Datoteke lahko pripravite sami s pomočjo kakšne skripte, UCSF ChimeraX, ... (pobrišete vse neproteinske molekule, vključno v vodo), za večjo prikladnost pa so spodaj na voljo naslednje že "očiščene" strukture tarče: 
 - [`BRD2_BD2-pdb24KN-clean.pdb`](datoteke/BRD2_BD2-pdb24KN-clean.pdb) (gre za kristalno strukturo domene BD2 proteina BRD2, določeno v kompleksu z našim ligandom, nimesulidom, iz katere pa je bil slednji odstranjen; PDB [24KN](https://www.rcsb.org/structure/24KN))
 - [`BRD2_BD2-modaf3.pdb`](datoteke/BRD2_BD2-modaf3.pdb) (AlphaFold 3 model domene BD2 proteina BRD2 in sicer z identičnim aminokislinskim zaporedjem kot v zapisu PDB [24KN](https://www.rcsb.org/structure/24KN); izmed petih izračunanih modelov je bil izbran prvi, ostali so imeli izredno podobno konformacijo)
-- [`BRD_DB2-pdb5IBN-clean.pdb`](datoteke/BRD2_BD2-pdb5IBN-clean.pdb) (kristalna struktura apo-oblike domene BD2 proteina BRD2, t.j. brez liganda; PDB [5IBN](https://www.rcsb.org/structure/5IBN))
+- [`BRD_BD2-pdb5IBN-clean.pdb`](datoteke/BRD2_BD2-pdb5IBN-clean.pdb) (kristalna struktura apo-oblike domene BD2 proteina BRD2, t.j. brez liganda; PDB [5IBN](https://www.rcsb.org/structure/5IBN))
 - **dodatno še sami pripravite in shranite dva modela strukture mutiranega BD2 BRD2** na osnovi `BRD2_BD2-pdb24KN-clean.pdb`, pri čemer v ChimeraX (uporabite znanje s [prejšnje vaje](upp-vizualizacija-analiza-struktur.md)) ločeno zmutirate:
-   - N429A (UniProt številčenje) – ta mutacija je opažena "v naravi", tako zmutirana DB2 ne veže več acetiliranega K12 histona H4
-   - L381F (UniProt številčenje) – tudi na tem mestu je znana mutacija in sicer L381A, ki zmanjša jakost vezave acetiliranega K12 histona H4, vi pa boste za namen vaje ta leucinski ostazenk zmutirali v fenilalaninskega
+   - **N429A** (UniProt številčenje) – ta mutacija je opažena "v naravi", tako zmutirana DB2 ne veže več acetiliranega K12 histona H4
+   - **L381F** (UniProt številčenje) – tudi na tem mestu je znana mutacija in sicer L381A, ki zmanjša jakost vezave acetiliranega K12 histona H4, vi pa boste za namen vaje ta leucinski ostazenk zmutirali v fenilalaninskega
 
-```{admonition} Shranjevanje koordinat
+```{admonition} Shranjevanje koordinat relativno glede na druge koordinate
 :class: hint
-Za lažjo pripravo parametrov za umeščanje in primerjavo rezultatov je priporočljivo, da imate vse modele struktur tarče odprte hkrati v ChimeraX, jih poravnate, ter nato shranite v ločene datoteke in pri tem omogočite shranjevanje koordinat relativno glede na eno od struktur (`Save relative to model...`). Tako so bile strukture `BRD2_BD2-modaf3.pdb` in `BRD_DB2-pdb5IBN-clean.pdb` poravnane in shranjene relativno glede na `BRD2_BD2-pdb24KN-clean.pdb`.
+Za lažjo pripravo parametrov za umeščanje in primerjavo rezultatov je priporočljivo, da imate vse modele struktur tarče odprte hkrati v ChimeraX, jih poravnate (`Tools > Structure analysis > Matchmaker`), ter nato shranite v ločene datoteke in pri tem omogočite shranjevanje koordinat relativno glede na eno od struktur (`Save relative to model...`). Tako so bile strukture `BRD2_BD2-modaf3.pdb` in `BRD_DB2-pdb5IBN-clean.pdb` poravnane in shranjene relativno glede na `BRD2_BD2-pdb24KN-clean.pdb`.
 ```
 
-Naslednji korak je dodajanje vodikovih atomov na strukture proteina (pri določeni vrednosti pH, ponavadi je to 7 ali 7.4) in liganda ter določitev, okoli katerih vezi v ligandu je možna rotacija (privzeto se pusti vse, okoli katerih je rotacija teoretično možna) – pri tem iz datotek formata PDB dobimo datoteke formata PDBQT. To lahko naredimo na več načinov oz. z različnimi programi, mi bomo uporabili kar spletni [PDB-to-PDBQT converter](https://www.moldraw.com/tools/free-chem-tools/pdb-to-pdbqt-converter.html). **Torej, vse vhodne datoteke pretvorite in si jih shranite (najbolje z istim imenom, le končnica naj bo `.pdbqt`).**
+##### Dodajanje vodikovih atomov
+
+Naslednji korak je:
+- dodajanje vodikovih atomov na strukture proteina in liganda ter pripis delnih nabojev (pri določeni vrednosti pH, ponavadi je to 7 ali 7.4),
+- določitev, okoli katerih vezi v ligandu je možna rotacija (privzeto se pusti vse, okoli katerih je rotacija teoretično možna),
+- posebna parametrizacija, ki jo uporablja polje sil v AutoDock.
+
+Pri tem iz datotek formata PDB dobimo datoteke formata PDBQT (Q je oznaka za delni naboj, T pa za AutoDock Atom Type).
+
+Pretvorbo lahko naredimo na več načinov oz. z različnimi programi, mi bomo uporabili kar spletni [PDB-to-PDBQT converter](https://www.moldraw.com/tools/free-chem-tools/pdb-to-pdbqt-converter.html). **Torej, vse vhodne datoteke pretvorite in si jih shranite (najbolje z istim imenom, le končnica naj bo `.pdbqt`).**
 
 #### Priprava parametrov za umeščanje
 
 Katere parametre AutoDock Vina potrebuje lahko izvemo enostavno tako, da program začenemo brez parametrov: `./vina_1.2.7_linux_x86_64`. Nekaj najbolj pogostih je navedenih tukaj:
-- datoteka s strukturo tarče (receptor)
-- datoteka z ligandom
-- središče iskalne škatle (*box center*) – koordinate središča območja, v katerem program išče vezavne poze liganda (če približno vemo, kam ciljamo, lahko z ustrezno prilagoditvijo tega parametra in velikostjo škatle pohitrimi iskanje)
-- velikost iskalne škatle (*box size*) – dolžine robov iskalnega območja v smereh x, y in z, izražene v Å
-- temeljitost iskanja  (*exhaustiveness*) – uravnava obseg iskanja; večja vrednost praviloma poveča računski čas in možnost, da program najde ugodne poze; parameter ima lahko vrednosti med 1 in 8
+- datoteka s strukturo tarče v formatu PDBQT (`receptor`),
+- datoteka z ligandom v formatu PDBQT (`ligand`),
+- središče iskalne škatle (*box center*; `center_x`, `center_y`, `center_z`) – koordinate središča območja, v katerem program išče vezavne poze liganda (če približno vemo, kam ciljamo, lahko z ustrezno prilagoditvijo tega parametra in velikostjo škatle pohitrimi iskanje),
+- velikost iskalne škatle (*box size*; `size_x`, `size_y`, `size_z`) – dolžine robov iskalnega območja v smereh x, y in z, izražene v Å,
+- temeljitost iskanja  (`exhaustiveness`) – uravnava obseg iskanja; večja vrednost praviloma poveča računski čas in možnost, da program najde ugodne poze; parameter ima lahko vrednosti med 1 in 8,
 - razmik mreže (*grid spacing*, `spacing`) – razdalja med sosednjimi točkami mreže za predizračun interakcij, izražena v Å; za vajo ohranimo privzeto vrednost 0,375 Å
-- število procesorskih jeder (`cpu`)
-- izhodna datoteka (`out`) – ime izhodne PDBQT datoteke, ki bo vsebovala poze liganda (če jo odpremo skupaj z vhodno strukturo tarče/receptorja, bo ligand pravilno postavljen relativno glede na tarčo)
+- število procesorskih jeder (`cpu`),
+- izhodna datoteka (`out`) – ime izhodne PDBQT datoteke, ki bo vsebovala poze liganda (če jo odpremo skupaj z vhodno strukturo tarče/receptorja, bo ligand pravilno postavljen relativno glede na tarčo).
 
 Položaj središča škatle in njeno velikost lahko določimo v UCSF ChimeraX in sicer tako, da najprej instaliramo vtičnik Vinardock (preko `Tools > More Tools...`), nato pa:
 1. Naložimo strukturo tarče oz. receptorja (lahko kar PDBQT datoteko).
