@@ -1,0 +1,741 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Modeliranje proteinskega kompleksa z uporabo XL-MS podatkov &#8212; Strukturna biologija</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'vaje/upp-modeliranje-xl-ms';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="canonical" href="https://mpavsic.github.io/sbio/vaje/upp-modeliranje-xl-ms.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../naslovnica.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo_sbio_s.png" class="logo__image only-light" alt="Strukturna biologija - Home"/>
+    <img src="../_static/logo_sbio_s.png" class="logo__image only-dark pst-js-only" alt="Strukturna biologija - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../naslovnica.html">
+                    Strukturna biologija
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strukture</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../strukture/navodila.html">Kako uporabljati modele?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/vizualizacija.html">Vizualizacija</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/prim.html">Primarna struktura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/ss.html">Sekundarna struktura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/interakcije.html">Interakcije</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/motivi.html">Motivi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/razredi.html">Razredi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/kristalografija.html">Kristalografija</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/nmr.html">NMR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/membranski_proteini.html">Membranski proteini</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../strukture/proteini-na.html">Proteini:NA</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Orodjarna</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orodjarna/zbirke.html">Zbirke strukturnih podatkov</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/zbirke-eksperimentalne.html">Eksperimentalno določene strukture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/modeli.html">Modeli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/zbirke-druge.html">Druge zbirke</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orodjarna/vizualizacija.html">Vizualizacija struktur</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/chimera.html">ChimeraX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/molstar.html">MolStar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orodjarna/pymol.html">PyMOL</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../orodjarna/analiza.html">Analiza struktur idr.</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/delavnice.html">Seminarske delavnice</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-molstar.html">Delavnica: MolStar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pdb.html">Delavnica: PDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-konstrukti.html">Delavnica: Konstrukti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-gradnja.html">Delavnica: Gradnja</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/delavnice-pymol.html">Delavnica: PyMOL</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../seminar/naloge.html">Seminarske naloge</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../seminar/naloge-navodila.html">Navodila</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vaje</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="upp-2026.html">UPP vaje 2026/2027</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Razno</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../razno/zanimivosti.html">Zanimivosti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../razno/reference.html">Reference</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/edit/main/sbio/vaje/upp-modeliranje-xl-ms.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mpavsic/sbio/issues/new?title=Issue%20on%20page%20%2Fvaje/upp-modeliranje-xl-ms.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/vaje/upp-modeliranje-xl-ms.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Modeliranje proteinskega kompleksa z uporabo XL-MS podatkov</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen-vaje">Namen vaje</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biolosko-ozadje">Biološko ozadje</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xl-ms">XL-MS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navodila">Navodila</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#namestitev-xmas">1. Namestitev XMAS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizacija-precnih-povezav">2. Vizualizacija prečnih povezav</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haddock">3. HADDOCK</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-vhodnih-podatkov-za-disvis">4. Priprava vhodnih podatkov za DISVIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disvis">5. DISVIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizacija-disvis">6. Vizualizacija DISVIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ce-je-izracun-haddock-koncan">7. Če je izračun HADDOCK končan…</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vprasanja">Vprašanja</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="modeliranje-proteinskega-kompleksa-z-uporabo-xl-ms-podatkov">
+<h1>Modeliranje proteinskega kompleksa z uporabo XL-MS podatkov<a class="headerlink" href="#modeliranje-proteinskega-kompleksa-z-uporabo-xl-ms-podatkov" title="Link to this heading">#</a></h1>
+<p><strong>Prevideno trajanje:</strong> približno 2 uri<br />
+<strong>Programi:</strong> UCSF ChimeraX z dodatkom XMAS, <a class="reference external" href="https://wenmr.science.uu.nl/haddock2.4/">HADDOCK 2.4</a>, <a class="reference external" href="https://wenmr.science.uu.nl/disvis/">DisVis</a><br />
+<strong>Vhodne datoteke:</strong> <code class="docutils literal notranslate"><span class="pre">IL7.pdb</span></code>, <code class="docutils literal notranslate"><span class="pre">IL7R.pdb</span></code>, <code class="docutils literal notranslate"><span class="pre">BS3.tsv</span></code>, <code class="docutils literal notranslate"><span class="pre">EDC.tsv</span></code></p>
+<section id="namen-vaje">
+<h2>Namen vaje<a class="headerlink" href="#namen-vaje" title="Link to this heading">#</a></h2>
+<p>Namen vaje je sezaniti se z uporabo kemijskih prečnih povezav (XL, angl. <em>cross-links</em>) kot prostorskih omejitev pri modeliranju medproteinskih kompleksov in sicer na primeru modeliranja kompleksa med interlevkinom-7 (IL-7) in njegovim receptorjem (IL-7Rα).</p>
+</section>
+<hr class="docutils" />
+<section id="biolosko-ozadje">
+<h2>Biološko ozadje<a class="headerlink" href="#biolosko-ozadje" title="Link to this heading">#</a></h2>
+<p><strong>Interlevkin 7 (IL-7)</strong> je citokin, ki sodeluje pri razvoju, preživetju in homeostazi limfocitov, zlasti celic T. Ima značilno zgradbo citokinov s štirimi α-vijačnicami.</p>
+<p><strong>Receptor IL-7Rα</strong> je podenota receptorja, ki prepozna IL-7. Pri signalizaciji sodeluje še receptorska podenota γc, ki je <strong>ne bomo</strong> vključili v naše modeliranje. Vezava citokina omogoča aktivacijo signalnih poti JAK/STAT. Spremembe v delovanju receptorsko-signalnega sistema so povezane z motnjami razvoja in delovanja imunskega sistema.</p>
+<p>V tej vaji modeliramo <strong>interakcijo dveh proteinov</strong>, IL-7 in zunajceličnega dela IL-7Rα. Datoteki s strukturo posameznih komponent kompleksa sta bili pripravljeni na osnovi eksperimentalno določenih struktur (zbirka PDB). Referenčna struktura njunega kompleksa je sicer znana (PDB 3DI2), vendar je ne bomo uporabili kot vhodni podatek za modeliranje, temveč le za namen preverjanja pravilnosti napovedi kompleksa.</p>
+<blockquote>
+<div><p><strong>O podatkih:</strong> Prečne povezave izhajajo iz literature, a so bile rekonstruirane za uporabo v XMAS.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="xl-ms">
+<h2>XL-MS<a class="headerlink" href="#xl-ms" title="Link to this heading">#</a></h2>
+<p><strong>Kemijsko prečno povezovanje proteinov v povezavi z masno spektrometrijo (XL-MS)</strong> omogoča odkrivanje medproteinskih interakcij v vzorcih čistih proteinov, celičnih lizatih, izoliranih organelih in tudi neposredno v celicah. Pri tej metodi s kemičnim reagentom kovalentno povežemo reaktivne skupine aminokislinskih ostankov, ki so med reakcijo dovolj blizu v prostoru. Če povezava nastane med dvema različnima proteinoma, lahko z identifikacijo povezanih peptidov ugotovimo, katera proteina sta bila v neposredni prostorski bližini. Tako lahko prepoznamo tudi šibke ali prehodne interakcije, ki se pri izolaciji proteinskih kompleksov, ki niso tako povezani, pogosto izgubijo. Pri analizi na ravni proteoma identificirane povezave združimo v mrežo proteinskih stikov ter raziskujemo organizacijo kompleksov in povezave med celičnimi procesi. Za prečno povezovanje znotraj nepoškodovanih celic moramo uporabiti reagent, ki prehaja skozi celično membrano, medtem ko te zahteve pri analizi lizatov ni. Pomembna prednost XL-MS je, da poleg identitete proteinskih partnerjev pogosto določi tudi konkretna aminokislinska ostanka, med katerima je nastala povezava. Vendar prostorska bližina sama po sebi še ne dokazuje stabilne ali funkcionalno pomembne interakcije, saj lahko zajamemo tudi kratkotrajna “srečanja” proteinov. Pri kompleksnih vzorcih je zato posebej pomembno ustrezno omejiti delež napačnih identifikacij, in sicer tako na ravni povezanih peptidov kot na ravni sklepov o proteinskih interakcijah.</p>
+<p>Pri raziskovanju izbranega proteinskega kompleksa je glavni cilj običajno določiti medsebojno razporeditev podenot in preveriti predlagane strukturne modele. Medproteinske povezave omejujejo možne lege in orientacije podenot, povezave znotraj posameznega proteina pa dajejo informacije o njegovi konformaciji in razporeditvi domen. Če poznamo strukture posameznih komponent, lahko te podatke uporabimo za njihovo sestavljanje v model kompleksa. XL-MS je posebej uporabna pri velikih, gibljivih ali heterogenih kompleksih, pri katerih je določanje celotne strukture z eno samo metodo zahtevno. V integrativni strukturni biologiji jo zato povezujemo s krioelektronsko mikroskopijo, rentgensko kristalografijo, NMR, SAXS in računskimi napovedmi struktur. Z njo lahko preverjamo tudi napovedane vezavne površine ter razlikujemo med alternativnimi modeli kompleksa. Primerjava povezav v različnih razmerah, na primer ob prisotnosti liganda ali po mutaciji, lahko razkrije konformacijske spremembe in preurejanje podenot. Ker eksperiment zajame populacijo molekul, lahko različne povezave izvirajo iz različnih konformacij, zato ni nujno, da jih lahko pojasnimo z eno samo strukturo. XL-MS zato praviloma ne zagotovi popolne atomske strukture, temveč omejeno število prostorskih informacij, ki pomagajo pri gradnji, izbiri in vrednotenju modelov.</p>
+<p>Pri XL-MS se uporabljajo različni povezovalci, ki reagirajo z različnimi skupinami in imajo različne dolžine “ročice”. Kot aminski povezovalec z daljšim mostičkom (ročico) se pogosto uporablja BS3, kot povezovalec z “ničelnim” mostičkom pa najpogosteje EDC.</p>
+<p><img alt="BS3 in EDC" src="../_images/BS3-EDC.png" /></p>
+<p><strong>BS3 oziroma bis(sulfosukcinimidil)suberat</strong> je vodotopen homobifunkcionalni reagent, kar pomeni, da ima na obeh koncih enaki reaktivni skupini. Njegova sulfo-NHS-estra reagirata predvsem s primarnimi aminskimi skupinami stranskih verig lizinskih ostankov in prostih N-koncev proteinov ter tvorita stabilni amidni vezi. V nastali povezavi ostane vgrajen povezovalni mostiček z dolžino približno 11,4 Å, ki določa razdaljo med povezanima aminskima skupinama, ne pa med atomoma Cα. BS3 slabo prehaja skozi celične membrane, zato je primeren predvsem za vzorce izoliranih proteinov, lizate in dostopne površine celic. <strong>EDC oziroma 1-etil-3-(3-dimetilaminopropil)karbodiimid</strong> deluje drugače, saj aktivira karboksilne skupine aspartatnih ali glutamatnih ostankov ali celo prostega C-konca proteina. Aktivirana karboksilna skupina lahko nato reagira s primarno aminsko skupino lizinskih ostankov ali N-konca in tvori neposredno amidno vez. EDC se ne vgradi v končni produkt, zato ga označujemo kot povezovalec z ničelno dolžino mostička, čeprav razdalja med atomoma Cα povezanih ostankov seveda ni nič. Pogosto ga uporabljamo skupaj z NHS ali sulfo-NHS, ki stabilizira aktivirani intermediat in izboljša učinkovitost povezovanja. BS3 tako praviloma povezuje dve aminski skupini, EDC pa karboksilno in aminsko skupino, zato reagenta dajeta komplementarne informacije o proteinskih stikih.</p>
+<p><img alt="mehanizem EDC" src="../_images/EDC-mehanizem.png" /></p>
+<p><strong>Splošni potek eksperimenta</strong>:</p>
+<ol class="arabic simple">
+<li><p>Pripravo vzorca v pogojih, ki čim bolje ohranjajo relevantno strukturo in interakcije proteinov ter omogočajo izbrano kemijsko reakcijo.</p></li>
+<li><p>Po dodatku povezovalca reakcijo časovno omejimo in ustavimo (npr. pri BS3 pogosto z dodatkom spojine s primarno amino skilino, npr. Tris), saj lahko pretirano povezovanje povzroči nastanek neželenih produktov oz. nespecifične povezave.</p></li>
+<li><p>Proteine nato običajno denaturiramo, reduciramo in alkiliramo cisteinske ostanke ter jih s proteazami, najpogosteje s tripsinom (cepi za lizinskimi in argininskimi ostanki), razgradimo v peptide.</p></li>
+<li><p>Ker so prečno povezani peptidi navadno maloštevilni v primerjavi z nepovezanimi, jih lahko pred analizo obogatimo oziroma vzorec frakcioniramo. Ta korak je možen pri uporabi posebnih povezovalcev, ki imajo ustrezno “oznako”, npr. pri fosforilni skupini povezovalca PhoX lahko uporabimo IMAC z Fe<sup>3+</sup> ioni.</p></li>
+<li><p>Sledi ločevanje s tekočinsko kromatografijo in tandemska masna spektrometrija, pri kateri iz mas prekurzorskih ionov in njihovih fragmentov določimo zaporedji obeh peptidov ter mesti povezave.</p></li>
+<li><p>Specializirana programska oprema pri iskanju upošteva zaporedja proteinov (+ izrbane modifikacije), reaktivnost in masni prispevek povezovalca, rezultate pa filtriramo glede na zanesljivost identifikacije.</p></li>
+<li><p>Dobljene aminokislinske pare preslikamo na strukture ali modele in jih pretvorimo v prostorske omejitve, običajno zgornje meje dovoljenih razdalj. Pri določanju teh meja upoštevamo dolžino povezovalca, dolžino in gibljivost stranskih verig, konformacijsko gibljivost proteina ter izbiro merjenih atomov, zato se za BS3 pogosto uporabljajo meje okoli 25–30 Å med atomoma Cα, odvisno od modelirnega pristopa. Upoštevamo lahko tudi pot povezovalca po površini, saj kratka ravna razdalja skozi notranjost proteina še ne pomeni, da je povezava fizično izvedljiva.</p></li>
+<li><p>Omejitve nato uporabimo pri računalniškem umeščanju in vrednotenju podenot, pri čemer odsotnost določene povezave ne dokazuje velike razdalje, njena kršitev v modelu pa lahko kaže na napačen model, alternativno konformacijo ali napačno identifikacijo.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="navodila">
+<h2>Navodila<a class="headerlink" href="#navodila" title="Link to this heading">#</a></h2>
+<p>Prečne povezave bomo najprej vizualizirali na strukturi z orodjem XMAS. Model kompleksa bomo pripravili z makromolekularnim umeščanjem na strežniku HADDOCK. V vmesnem času bomo z orodjem DisVis vizualizirali interakcijski prostor, ki je dostopen omejitvam razdalj. Primerjali bomo prostor, ki ga omejujejo prečne povezave z BS3 in prostor, ki ga omejujejo prečne povezave z BS3 in EDC.</p>
+<section id="namestitev-xmas">
+<h3>1. Namestitev XMAS<a class="headerlink" href="#namestitev-xmas" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>V <strong>Tools → More tools</strong> poiščite XMAS in ga inštalirajte. Uspešna inštalacija se izpiše v log.</p></li>
+<li><p>Po inštalaciji orodja XMAS bo verjetno potrebno spremeniti inštalacije pandas in numpy, ki jih uporablja ChimeraX. <strong>Tools → General → Shell</strong>: <code class="docutils literal notranslate"><span class="pre">devel</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pandas==2.2.3</span> <span class="pre">--no-deps</span></code> in <code class="docutils literal notranslate"><span class="pre">devel</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pytz</span></code>.</p></li>
+<li><p>Zaprite in ponovno zaženite ChimeroX.</p></li>
+</ol>
+</section>
+<section id="vizualizacija-precnih-povezav">
+<h3>2. Vizualizacija prečnih povezav<a class="headerlink" href="#vizualizacija-precnih-povezav" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>V ChimeraX odprite <a class="reference download internal" download="" href="../_downloads/31940088af1e11a0c7d98a0e75a6382e/IL7.pdb"><span class="xref download myst">IL7.pdb</span></a> in <a class="reference download internal" download="" href="../_downloads/4e1596696faed2e73da7dd9c3aa35ca8/IL7R.pdb"><span class="xref download myst">IL7R.pdb</span></a>.</p></li>
+<li><p><strong>Tools → Structure Analysis → XMAS</strong>.</p></li>
+<li><p>V <strong>Evidence files → Import files</strong> uvozite <a class="reference download internal" download="" href="../_downloads/89ce038be8f4fdb04591ad44dae66879/BS3.tsv"><span class="xref download myst">BS3.tsv</span></a> in <a class="reference download internal" download="" href="../_downloads/f178f5e67d4b2862cbf163d10a1be422/EDC.tsv"><span class="xref download myst">EDC.tsv</span></a>.</p></li>
+<li><p>V <strong>Molecular models</strong> izberite oba proteina, v <strong>Evidence files</strong> obe tabeli in uporabite <strong>Map crosslinks</strong>.</p></li>
+<li><p>V <strong>Crosslink models</strong> poiščite povezave iz obeh datotek. Pričakujemo <strong>4 povezave BS3</strong> in <strong>1 povezavo EDC</strong>.</p></li>
+<li><p>Pokažite najprej samo BS3, nato samo EDC in nazadnje vse povezave. Ali povezave nakazujejo, preko katere površine protein interagirata?</p></li>
+</ol>
+<p><strong>Pomembno:</strong> Proteina zaenkrat nimata pravilne medsebojne orientacije. Trenutna dolžina črtkane povezave v ChimeraX zato <strong>še ne pomeni</strong>, da je eksperimentalna povezava napačna.</p>
+</section>
+<section id="haddock">
+<h3>3. HADDOCK<a class="headerlink" href="#haddock" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Odprite in zaženite <a class="reference external" href="https://wenmr.science.uu.nl/haddock2.4/">HADDOCK 2.4</a>.</p></li>
+</ol>
+<blockquote>
+<div><p><strong>Opomba:</strong> Na strežniku je uporaba omejitev razdalj omejena za uporabnike Expert ali Guru.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Naložite <code class="docutils literal notranslate"><span class="pre">IL7R.pdb</span></code> in <code class="docutils literal notranslate"><span class="pre">IL7.pdb</span></code>.</p></li>
+<li><p>Aminokislinske ostanke, ki so bili med proteinoma prečno povezani, označite kot <strong>active residues</strong>.</p></li>
+</ol>
+</section>
+<section id="priprava-vhodnih-podatkov-za-disvis">
+<h3>4. Priprava vhodnih podatkov za DISVIS<a class="headerlink" href="#priprava-vhodnih-podatkov-za-disvis" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>V XMAS izberite samo <strong>BS3</strong> povezave in odprite <strong>Integrate → Create DisVis input</strong>.</p></li>
+<li><p>Izberite <strong>IL-7Rα kot fixed chain</strong> in <strong>IL-7 kot scanning chain</strong>. Pri vseh izvozih ohranite ta vrstni red.</p></li>
+<li><p>Nastavite omejitve <strong>5–28 Å</strong> in shranite datoteko kot <code class="docutils literal notranslate"><span class="pre">disvis_BS3.txt</span></code>.</p></li>
+<li><p>V urejevalniku preverite, da vsebuje <strong>4 vrstice</strong>, vsaka z osmimi polji: oznaka verige, številka ostanka, atom prvega proteina; nato isto za drugi protein; nato spodnja in zgornja meja.</p></li>
+<li><p>Zaprite prejšnje okno za izvoz, izberite <strong>samo EDC</strong> povezavo in ponovno odprite <strong>Integrate → Create DisVis input</strong>.</p></li>
+<li><p>Fixed in scanning chain naj sta enaka kot pri točki 2. Uporabite <strong>5–17 Å</strong>, izvozite kot <code class="docutils literal notranslate"><span class="pre">disvis_EDC.txt</span></code> (<strong>1 vrstica</strong>).</p></li>
+<li><p>Izdelajte <code class="docutils literal notranslate"><span class="pre">disvis_BS3_EDC.txt</span></code> tako, da na konec štirih vrstic BS3 dodate vrstico EDC.</p></li>
+<li><p>Preverite: <strong>5 vrstic</strong>, od tega <strong>4 z mejama 5 in 28 Å</strong> in <strong>1 z mejama 0 in 17 Å</strong>. Ne spreminjajte številčenja ostankov med datotekami.</p></li>
+</ol>
+</section>
+<section id="disvis">
+<h3>5. DISVIS<a class="headerlink" href="#disvis" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Na <a class="reference external" href="https://wenmr.science.uu.nl/disvis/">DisVis</a> kot <strong>fixed chain</strong> naložite IL-7Rα in kot <strong>scanning chain</strong> IL-7. Uporabite izvorna PDB-modela z <strong>istim številčenjem, kot ga vsebuje datoteka <code class="docutils literal notranslate"><span class="pre">disvis_BS3.txt</span></code></strong>.</p></li>
+<li><p>Za prvi izračun naložite <code class="docutils literal notranslate"><span class="pre">disvis_BS3.txt</span></code> in oddajte opravilo <strong>BS3</strong>.</p></li>
+<li><p>Za drugi izračun uporabite enaki strukturi in enake ostale nastavitve, vendar naložite <code class="docutils literal notranslate"><span class="pre">disvis_BS3_EDC.txt</span></code>. Oddajte opravilo <strong>BS3_EDC</strong>.</p></li>
+<li><p>Ko sta opravili končani, prenesite in razširite vsak arhiv rezultatov <strong>v svojo mapo</strong>.</p></li>
+</ol>
+</section>
+<section id="vizualizacija-disvis">
+<h3>6. Vizualizacija DISVIS<a class="headerlink" href="#vizualizacija-disvis" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>V XMAS izberite <strong>Integrate → Analyze DisVis output</strong>.</p></li>
+<li><p>Izberite mapo z razširjenimi rezultati <strong>BS3</strong> in kliknite <strong>Use folder</strong>. Oglejte si naložena proteina, vizualizirane omejitve in volumenski zemljevid <code class="docutils literal notranslate"><span class="pre">accessible_interaction_space.mrc</span></code>.</p></li>
+<li><p>Z orodjem za prikaz volumskih podatkov (<strong>Volume Viewer</strong>) prilagodite prikaz prostorskega območja. Zapišite, za koliko skladnih omejitev je prikazan posamezni nivo.</p></li>
+<li><p>Odprite še rezultate <strong>BS3_EDC</strong>, najbolje v <strong>ločeni seji ChimeraX</strong>, da se volumni in modeli ne pomešajo.</p></li>
+<li><p>Primerjajte velikost in obliko <strong>dostopnega interakcijskega prostora</strong>, število skladnih omejitev in morebitne kršitve. V oknu XMAS lahko pregledate tudi rezultate, povezane z <strong>z-vrednostmi (<em>z-scores</em>)</strong> posameznih omejitev.</p></li>
+</ol>
+<p><strong>Kaj je ta volumen?</strong> Predstavlja možne položaje težišča premičnega proteina, skladne z določenim številom razdaljnih omejitev. <strong>Ni</strong> elektronska gostota in <strong>ni</strong> ena določena atomska struktura kompleksa. DisVis vrednoti omejitve in prostor mogočih orientacij, HADDOCK pa ustvarja konkretne strukturne modele.</p>
+</section>
+<section id="ce-je-izracun-haddock-koncan">
+<h3>7. Če je izračun HADDOCK končan…<a class="headerlink" href="#ce-je-izracun-haddock-koncan" title="Link to this heading">#</a></h3>
+<p>Če so rezultati na voljo med vajami, odprite najbolje ocenjeni model oziroma predstavnika vodilnega grozda v ChimeraX. Primerjajte lego povezav, vmesno površino in skladnost modela s podatki XL-MS. Če izračun še ni končan, ta korak izpustite; ne nadomešča analize DisVis.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="vprasanja">
+<h2>Vprašanja<a class="headerlink" href="#vprasanja" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Kakšna je kemijska razlika med povezovalnima reagentoma BS3 in EDC? Zakaj uporabimo različno velike razdaljne omejitve?</p></li>
+<li><p>Zakaj povezave, prikazane med dvema še neporavnanima proteinoma, ne moremo oceniti zgolj po trenutni dolžini v ChimeraX?</p></li>
+<li><p>Zakaj je pri kombiniranju obeh tipov podatkov pomembno, da vsak <em>cross-link</em> ohrani svojo lastno razdaljno mejo?</p></li>
+<li><p>Ali manjši dostopni interakcijski prostor sam po sebi dokazuje, da je napovedana orientacija pravilna?</p></li>
+<li><p>Kaj pomenijo kršitve posameznih omejitev? Ali je vsaka kršitev dokaz napačne eksperimentalne identifikacije?</p></li>
+<li><p>V čem se izhodna podatka programov HADDOCK in DisVis bistveno razlikujeta?</p></li>
+<li><p>Kako bi lahko preverili pravilnost najboljšega modela, če bi imeli na voljo neodvisno eksperimentalno strukturo kompleksa?</p></li>
+</ol>
+<hr class="docutils" />
+<p><em>Vajo sta pripravila Jošt Hočevar in Miha Pavšič</em>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./vaje"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen-vaje">Namen vaje</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biolosko-ozadje">Biološko ozadje</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xl-ms">XL-MS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navodila">Navodila</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#namestitev-xmas">1. Namestitev XMAS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizacija-precnih-povezav">2. Vizualizacija prečnih povezav</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haddock">3. HADDOCK</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-vhodnih-podatkov-za-disvis">4. Priprava vhodnih podatkov za DISVIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disvis">5. DISVIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizacija-disvis">6. Vizualizacija DISVIS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ce-je-izracun-haddock-koncan">7. Če je izračun HADDOCK končan…</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vprasanja">Vprašanja</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Miha Pavšič
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mpavsic.github.io/sbio">Strukturna biologija</a> by <span property="cc:attributionName">Miha Pavšič</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
