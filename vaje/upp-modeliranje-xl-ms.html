@@ -468,7 +468,12 @@
                 <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen-vaje">Namen vaje</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biolosko-ozadje">Biološko ozadje</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xl-ms">XL-MS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xl-ms">XL-MS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosno">Splošno</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precni-povezovalci">Prečni povezovalci</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosni-potek-eksperimenta">Splošni potek eksperimenta</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navodila">Navodila</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#namestitev-xmas">1. Namestitev XMAS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizacija-precnih-povezav">2. Vizualizacija prečnih povezav</a></li>
@@ -513,13 +518,20 @@
 <hr class="docutils" />
 <section id="xl-ms">
 <h2>XL-MS<a class="headerlink" href="#xl-ms" title="Link to this heading">#</a></h2>
+<section id="splosno">
+<h3>Splošno<a class="headerlink" href="#splosno" title="Link to this heading">#</a></h3>
 <p><strong>Kemijsko prečno povezovanje proteinov v povezavi z masno spektrometrijo (XL-MS)</strong> omogoča odkrivanje medproteinskih interakcij v vzorcih čistih proteinov, celičnih lizatih, izoliranih organelih in tudi neposredno v celicah. Pri tej metodi s kemičnim reagentom kovalentno povežemo reaktivne skupine aminokislinskih ostankov, ki so med reakcijo dovolj blizu v prostoru. Če povezava nastane med dvema različnima proteinoma, lahko z identifikacijo povezanih peptidov ugotovimo, katera proteina sta bila v neposredni prostorski bližini. Tako lahko prepoznamo tudi šibke ali prehodne interakcije, ki se pri izolaciji proteinskih kompleksov, ki niso tako povezani, pogosto izgubijo. Pri analizi na ravni proteoma identificirane povezave združimo v mrežo proteinskih stikov ter raziskujemo organizacijo kompleksov in povezave med celičnimi procesi. Za prečno povezovanje znotraj nepoškodovanih celic moramo uporabiti reagent, ki prehaja skozi celično membrano, medtem ko te zahteve pri analizi lizatov ni. Pomembna prednost XL-MS je, da poleg identitete proteinskih partnerjev pogosto določi tudi konkretna aminokislinska ostanka, med katerima je nastala povezava. Vendar prostorska bližina sama po sebi še ne dokazuje stabilne ali funkcionalno pomembne interakcije, saj lahko zajamemo tudi kratkotrajna “srečanja” proteinov. Pri kompleksnih vzorcih je zato posebej pomembno ustrezno omejiti delež napačnih identifikacij, in sicer tako na ravni povezanih peptidov kot na ravni sklepov o proteinskih interakcijah.</p>
 <p>Pri raziskovanju izbranega proteinskega kompleksa je glavni cilj običajno določiti medsebojno razporeditev podenot in preveriti predlagane strukturne modele. Medproteinske povezave omejujejo možne lege in orientacije podenot, povezave znotraj posameznega proteina pa dajejo informacije o njegovi konformaciji in razporeditvi domen. Če poznamo strukture posameznih komponent, lahko te podatke uporabimo za njihovo sestavljanje v model kompleksa. XL-MS je posebej uporabna pri velikih, gibljivih ali heterogenih kompleksih, pri katerih je določanje celotne strukture z eno samo metodo zahtevno. V integrativni strukturni biologiji jo zato povezujemo s krioelektronsko mikroskopijo, rentgensko kristalografijo, NMR, SAXS in računskimi napovedmi struktur. Z njo lahko preverjamo tudi napovedane vezavne površine ter razlikujemo med alternativnimi modeli kompleksa. Primerjava povezav v različnih razmerah, na primer ob prisotnosti liganda ali po mutaciji, lahko razkrije konformacijske spremembe in preurejanje podenot. Ker eksperiment zajame populacijo molekul, lahko različne povezave izvirajo iz različnih konformacij, zato ni nujno, da jih lahko pojasnimo z eno samo strukturo. XL-MS zato praviloma ne zagotovi popolne atomske strukture, temveč omejeno število prostorskih informacij, ki pomagajo pri gradnji, izbiri in vrednotenju modelov.</p>
+</section>
+<section id="precni-povezovalci">
+<h3>Prečni povezovalci<a class="headerlink" href="#precni-povezovalci" title="Link to this heading">#</a></h3>
 <p>Pri XL-MS se uporabljajo različni povezovalci, ki reagirajo z različnimi skupinami in imajo različne dolžine “ročice”. Kot aminski povezovalec z daljšim mostičkom (ročico) se pogosto uporablja BS3, kot povezovalec z “ničelnim” mostičkom pa najpogosteje EDC.</p>
 <p><img alt="BS3 in EDC" src="../_images/BS3-EDC.png" /></p>
 <p><strong>BS3 oziroma bis(sulfosukcinimidil)suberat</strong> je vodotopen homobifunkcionalni reagent, kar pomeni, da ima na obeh koncih enaki reaktivni skupini. Njegova sulfo-NHS-estra reagirata predvsem s primarnimi aminskimi skupinami stranskih verig lizinskih ostankov in prostih N-koncev proteinov ter tvorita stabilni amidni vezi. V nastali povezavi ostane vgrajen povezovalni mostiček z dolžino približno 11,4 Å, ki določa razdaljo med povezanima aminskima skupinama, ne pa med atomoma Cα. BS3 slabo prehaja skozi celične membrane, zato je primeren predvsem za vzorce izoliranih proteinov, lizate in dostopne površine celic. <strong>EDC oziroma 1-etil-3-(3-dimetilaminopropil)karbodiimid</strong> deluje drugače, saj aktivira karboksilne skupine aspartatnih ali glutamatnih ostankov ali celo prostega C-konca proteina. Aktivirana karboksilna skupina lahko nato reagira s primarno aminsko skupino lizinskih ostankov ali N-konca in tvori neposredno amidno vez. EDC se ne vgradi v končni produkt, zato ga označujemo kot povezovalec z ničelno dolžino mostička, čeprav razdalja med atomoma Cα povezanih ostankov seveda ni nič. Pogosto ga uporabljamo skupaj z NHS ali sulfo-NHS, ki stabilizira aktivirani intermediat in izboljša učinkovitost povezovanja. BS3 tako praviloma povezuje dve aminski skupini, EDC pa karboksilno in aminsko skupino, zato reagenta dajeta komplementarne informacije o proteinskih stikih.</p>
 <p><img alt="mehanizem EDC" src="../_images/EDC-mehanizem.png" /></p>
-<p><strong>Splošni potek eksperimenta</strong>:</p>
+</section>
+<section id="splosni-potek-eksperimenta">
+<h3>Splošni potek eksperimenta<a class="headerlink" href="#splosni-potek-eksperimenta" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Pripravo vzorca v pogojih, ki čim bolje ohranjajo relevantno strukturo in interakcije proteinov ter omogočajo izbrano kemijsko reakcijo.</p></li>
 <li><p>Po dodatku povezovalca reakcijo časovno omejimo in ustavimo (npr. pri BS3 pogosto z dodatkom spojine s primarno amino skilino, npr. Tris), saj lahko pretirano povezovanje povzroči nastanek neželenih produktov oz. nespecifične povezave.</p></li>
@@ -530,6 +542,7 @@
 <li><p>Dobljene aminokislinske pare preslikamo na strukture ali modele in jih pretvorimo v prostorske omejitve, običajno zgornje meje dovoljenih razdalj. Pri določanju teh meja upoštevamo dolžino povezovalca, dolžino in gibljivost stranskih verig, konformacijsko gibljivost proteina ter izbiro merjenih atomov, zato se za BS3 pogosto uporabljajo meje okoli 25–30 Å med atomoma Cα, odvisno od modelirnega pristopa. Upoštevamo lahko tudi pot povezovalca po površini, saj kratka ravna razdalja skozi notranjost proteina še ne pomeni, da je povezava fizično izvedljiva.</p></li>
 <li><p>Omejitve nato uporabimo pri računalniškem umeščanju in vrednotenju podenot, pri čemer odsotnost določene povezave ne dokazuje velike razdalje, njena kršitev v modelu pa lahko kaže na napačen model, alternativno konformacijo ali napačno identifikacijo.</p></li>
 </ol>
+</section>
 </section>
 <hr class="docutils" />
 <section id="navodila">
@@ -673,7 +686,12 @@
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namen-vaje">Namen vaje</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biolosko-ozadje">Biološko ozadje</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xl-ms">XL-MS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xl-ms">XL-MS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosno">Splošno</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precni-povezovalci">Prečni povezovalci</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splosni-potek-eksperimenta">Splošni potek eksperimenta</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navodila">Navodila</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#namestitev-xmas">1. Namestitev XMAS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizacija-precnih-povezav">2. Vizualizacija prečnih povezav</a></li>
