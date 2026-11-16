@@ -24,9 +24,13 @@ V tej vaji modeliramo **interakcijo dveh proteinov**, IL-7 in zunajceličnega de
 
 ## XL-MS
 
+### Splošno
+
 **Kemijsko prečno povezovanje proteinov v povezavi z masno spektrometrijo (XL-MS)** omogoča odkrivanje medproteinskih interakcij v vzorcih čistih proteinov, celičnih lizatih, izoliranih organelih in tudi neposredno v celicah. Pri tej metodi s kemičnim reagentom kovalentno povežemo reaktivne skupine aminokislinskih ostankov, ki so med reakcijo dovolj blizu v prostoru. Če povezava nastane med dvema različnima proteinoma, lahko z identifikacijo povezanih peptidov ugotovimo, katera proteina sta bila v neposredni prostorski bližini. Tako lahko prepoznamo tudi šibke ali prehodne interakcije, ki se pri izolaciji proteinskih kompleksov, ki niso tako povezani, pogosto izgubijo. Pri analizi na ravni proteoma identificirane povezave združimo v mrežo proteinskih stikov ter raziskujemo organizacijo kompleksov in povezave med celičnimi procesi. Za prečno povezovanje znotraj nepoškodovanih celic moramo uporabiti reagent, ki prehaja skozi celično membrano, medtem ko te zahteve pri analizi lizatov ni. Pomembna prednost XL-MS je, da poleg identitete proteinskih partnerjev pogosto določi tudi konkretna aminokislinska ostanka, med katerima je nastala povezava. Vendar prostorska bližina sama po sebi še ne dokazuje stabilne ali funkcionalno pomembne interakcije, saj lahko zajamemo tudi kratkotrajna "srečanja" proteinov. Pri kompleksnih vzorcih je zato posebej pomembno ustrezno omejiti delež napačnih identifikacij, in sicer tako na ravni povezanih peptidov kot na ravni sklepov o proteinskih interakcijah.
 
 Pri raziskovanju izbranega proteinskega kompleksa je glavni cilj običajno določiti medsebojno razporeditev podenot in preveriti predlagane strukturne modele. Medproteinske povezave omejujejo možne lege in orientacije podenot, povezave znotraj posameznega proteina pa dajejo informacije o njegovi konformaciji in razporeditvi domen. Če poznamo strukture posameznih komponent, lahko te podatke uporabimo za njihovo sestavljanje v model kompleksa. XL-MS je posebej uporabna pri velikih, gibljivih ali heterogenih kompleksih, pri katerih je določanje celotne strukture z eno samo metodo zahtevno. V integrativni strukturni biologiji jo zato povezujemo s krioelektronsko mikroskopijo, rentgensko kristalografijo, NMR, SAXS in računskimi napovedmi struktur. Z njo lahko preverjamo tudi napovedane vezavne površine ter razlikujemo med alternativnimi modeli kompleksa. Primerjava povezav v različnih razmerah, na primer ob prisotnosti liganda ali po mutaciji, lahko razkrije konformacijske spremembe in preurejanje podenot. Ker eksperiment zajame populacijo molekul, lahko različne povezave izvirajo iz različnih konformacij, zato ni nujno, da jih lahko pojasnimo z eno samo strukturo. XL-MS zato praviloma ne zagotovi popolne atomske strukture, temveč omejeno število prostorskih informacij, ki pomagajo pri gradnji, izbiri in vrednotenju modelov.
+
+### Prečni povezovalci
 
 Pri XL-MS se uporabljajo različni povezovalci, ki reagirajo z različnimi skupinami in imajo različne dolžine "ročice". Kot aminski povezovalec z daljšim mostičkom (ročico) se pogosto uporablja BS3, kot povezovalec z "ničelnim" mostičkom pa najpogosteje EDC.
 
@@ -36,7 +40,8 @@ Pri XL-MS se uporabljajo različni povezovalci, ki reagirajo z različnimi skupi
 
 ![mehanizem EDC](slike/EDC-mehanizem.png)
 
-**Splošni potek eksperimenta**:
+### Splošni potek eksperimenta
+
 1. Pripravo vzorca v pogojih, ki čim bolje ohranjajo relevantno strukturo in interakcije proteinov ter omogočajo izbrano kemijsko reakcijo.
 2. Po dodatku povezovalca reakcijo časovno omejimo in ustavimo (npr. pri BS3 pogosto z dodatkom spojine s primarno amino skilino, npr. Tris), saj lahko pretirano povezovanje povzroči nastanek neželenih produktov oz. nespecifične povezave.
 3. Proteine nato običajno denaturiramo, reduciramo in alkiliramo cisteinske ostanke ter jih s proteazami, najpogosteje s tripsinom (cepi za lizinskimi in argininskimi ostanki), razgradimo v peptide.
